@@ -148,27 +148,28 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="mt-8 flex flex-wrap gap-4"
+              className="mt-8 flex flex-row gap-3 sm:gap-4 w-full max-w-xl"
             >
               <motion.a
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: "spring", stiffness: 400, damping: 15 }}
                 href="#contact"
-                className="group inline-flex items-center gap-2.5 rounded-xl bg-cta px-7 py-4.5 text-sm font-bold uppercase tracking-wider text-cta-foreground shadow-cta hover:brightness-110 transition-all duration-300"
+                className="group inline-flex items-center justify-center gap-2 rounded-xl bg-cta px-3 py-3.5 sm:px-7 sm:py-4.5 text-[11px] sm:text-sm font-bold uppercase tracking-wider text-cta-foreground shadow-cta hover:brightness-110 transition-all duration-300 flex-1 text-center"
               >
-                Get Free Estimate
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                <span>Get Free Estimate</span>
+                <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1 shrink-0" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.03, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ type: "spring", stiffness: 400, damping: 15 }}
                 href="tel:+15202212010"
-                className="inline-flex items-center gap-2.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 px-7 py-4.5 text-sm font-bold uppercase tracking-wider text-white transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 px-3 py-3.5 sm:px-7 sm:py-4.5 text-[11px] sm:text-sm font-bold uppercase tracking-wider text-white transition-all duration-300 flex-1 text-center"
               >
-                <Phone className="h-4 w-4 text-electric" />
-                Call (520) 221-2010
+                <Phone className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-electric shrink-0" />
+                <span className="hidden min-[370px]:inline">Call (520) 221-2010</span>
+                <span className="inline min-[370px]:hidden">Call Now</span>
               </motion.a>
             </motion.div>
 

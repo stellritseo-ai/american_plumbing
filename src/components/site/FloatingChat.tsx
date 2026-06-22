@@ -119,7 +119,7 @@ export function FloatingChat() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end max-w-[calc(100vw-2rem)] sm:max-w-none">
       {/* Chat Popover */}
       <AnimatePresence>
         {isOpen && (
@@ -128,7 +128,7 @@ export function FloatingChat() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="glass rounded-3xl w-[350px] sm:w-[380px] h-[500px] flex flex-col shadow-2xl overflow-hidden mb-4 text-foreground"
+            className="glass rounded-3xl w-[calc(100vw-2rem)] sm:w-[380px] h-[500px] flex flex-col shadow-2xl overflow-hidden mb-4 text-foreground"
           >
             {/* Popover Header */}
             <div className="bg-gradient-to-r from-navy to-primary p-4 text-white flex items-center justify-between">

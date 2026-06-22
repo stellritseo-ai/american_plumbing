@@ -85,7 +85,7 @@ export function WhyChooseUs() {
           <span className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
             Our Advantage
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy tracking-tight lg:whitespace-nowrap mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy tracking-tight mb-4 text-balance">
             The Difference is in the <span className="text-gradient-brand">Details.</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-500 max-w-xl mx-auto font-medium leading-relaxed">

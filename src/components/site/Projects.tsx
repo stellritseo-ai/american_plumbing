@@ -51,7 +51,7 @@ export function Projects() {
             <span className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
               Featured Projects
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy tracking-tight lg:whitespace-nowrap">
+            <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy tracking-tight text-balance">
               Featured <span className="text-gradient-brand">Work</span> Across Tucson.
             </h2>
           </div>

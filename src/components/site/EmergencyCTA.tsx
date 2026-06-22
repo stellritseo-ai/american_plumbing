@@ -47,7 +47,7 @@ export function EmergencyCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold capitalize tracking-tight leading-tight md:whitespace-nowrap"
+              className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold capitalize tracking-tight leading-tight text-balance"
             >
               Need immediate plumbing assistance?
             </motion.h2>

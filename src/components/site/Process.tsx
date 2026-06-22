@@ -100,7 +100,7 @@ export function Process() {
           <span className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
             Step by step process
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy tracking-tight lg:whitespace-nowrap">
+          <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy tracking-tight text-balance">
             We Complete Every{" "}
             <span className="text-gradient-brand">Step Carefully.</span>
           </h2>

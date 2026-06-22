@@ -245,6 +245,8 @@ function Pin({
         
         {/* Label frame */}
         <span className={`px-2.5 py-0.5 rounded-lg backdrop-blur-sm border transition-all duration-300 text-[10px] font-bold uppercase tracking-wider whitespace-nowrap shadow-sm ${
+          primary || active ? "inline-block" : "hidden sm:inline-block"
+        } ${
           active
             ? "bg-primary border-primary text-white scale-105 shadow-[0_4px_12px_rgba(59,130,246,0.3)]"
             : "bg-navy/85 border-slate-800/80 text-white group-hover:bg-primary group-hover:border-primary/50 group-hover:text-white"

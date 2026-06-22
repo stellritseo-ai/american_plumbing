@@ -72,10 +72,10 @@ export function Footer() {
       <div className="absolute -bottom-40 right-10 w-[350px] h-[350px] bg-electric/5 rounded-full blur-3xl pointer-events-none animate-pulse" style={{ animationDuration: '10s' }} />
 
       <div className="relative mx-auto w-[90%] max-w-7xl py-20 lg:py-24 z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-10">
           
           {/* Logo & Description */}
-          <div className="sm:col-span-2 lg:col-span-4">
+          <div className="col-span-2 lg:col-span-4">
             <div className="flex items-center">
               <img
                 src={logo}
@@ -129,7 +129,7 @@ export function Footer() {
           <Col title="Our Services" items={servicesLinks} />
 
           {/* Contact & Hours Column (4-span grid layout subsplit) */}
-          <div className="sm:col-span-2 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-6">
+          <div className="col-span-2 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-6">
             
             {/* Contact Details */}
             <div>
@@ -242,7 +242,7 @@ export function Footer() {
 
 function Col({ title, items }: { title: string; items: { label: string; href: string }[] }) {
   return (
-    <div className="sm:col-span-1 lg:col-span-2">
+    <div className="col-span-1 lg:col-span-2">
       <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-6">
         {title}
       </div>

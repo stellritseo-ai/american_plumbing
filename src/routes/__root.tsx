@@ -93,6 +93,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
         },
         { name: "googlebot", content: "index, follow" },
+        {
+          name: "google-site-verification",
+          content: "utGc9nIaCID8ZbFUB3Nl0O45RNVt0k24yA0GSDn5H2I",
+        },
         { name: "theme-color", content: "#0f172a" },
         { title: "American Commercial Plumbing LLC — Tucson, AZ Plumbers" },
         {

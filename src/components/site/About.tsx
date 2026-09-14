@@ -180,12 +180,23 @@ export function About() {
               <span className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-4 sm:mb-5">
                 Who We Are
               </span>
-              <h2 className="text-[26px] sm:text-4xl lg:text-5xl font-extrabold text-navy leading-tight tracking-tight text-balance capitalize">
+              <h2
+                style={{
+                  fontSize: "44px",
+                  marginTop: "-13px",
+                  lineHeight: "50px",
+                  marginBottom: "-11px",
+                }}
+                className="font-extrabold text-navy tracking-tight text-balance capitalize"
+              >
                 Tucson's most{" "}
                 <span className="text-gradient-brand">trusted</span> plumbing
                 experts since 1999.
               </h2>
-              <p className="mt-4 sm:mt-6 text-sm sm:text-base text-muted-foreground leading-relaxed font-semibold max-w-2xl">
+              <p
+                style={{ lineHeight: "33px", marginBottom: "-15px" }}
+                className="mt-4 sm:mt-6 text-sm sm:text-base text-muted-foreground leading-relaxed font-semibold max-w-2xl"
+              >
                 American Commercial Plumbing LLC is a family-run enterprise led by
                 owner Shawn Holton, built on a heritage of clean engineering,
                 integrity, and client satisfaction. From commercial sewer operations

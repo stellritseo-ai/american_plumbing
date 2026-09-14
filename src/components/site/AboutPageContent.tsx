@@ -35,12 +35,15 @@ import drainImg from "@/assets/service-drain.jpg";
 import leakImg from "@/assets/service-leak.jpg";
 import logo from "@/assets/logo.png";
 
+import { submitLead } from "../../lib/send-lead";
+
 export function AboutPageContent() {
   const [activeCategory, setActiveCategory] = useState<
     "commercial" | "residential" | "waterheater" | "sewer" | "drain" | "leak"
   >("commercial");
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formSubmitting, setFormSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -63,7 +66,7 @@ export function AboutPageContent() {
       icon: Users,
       title: "Family-Owned & Operated",
       desc: "As a family business, our name is on the line with every job. We treat your property with the same respect we would our own.",
-      badge: "Shawn Hamilton & Family",
+      badge: "Shawn Holton & Family",
       accent: "from-amber-600 to-orange-600",
     },
     {
@@ -114,7 +117,7 @@ export function AboutPageContent() {
     {
       icon: Heart,
       title: "Family-Owned & Community Trust",
-      desc: "Led by founder Shawn Hamilton, we believe in doing things the right way. Every client is treated with neighborly respect.",
+      desc: "Led by founder Shawn Holton, we believe in doing things the right way. Every client is treated with neighborly respect.",
     },
     {
       icon: Award,
@@ -297,7 +300,7 @@ export function AboutPageContent() {
             >
               <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1 text-xs font-black uppercase tracking-widest text-primary mb-4">
                 <Star className="w-3.5 h-3.5 text-cta fill-current" />
-                <span>Founded by Shawn Hamilton in 1999</span>
+                <span>Founded by Shawn Holton in 1999</span>
               </div>
 
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-black text-navy leading-tight tracking-tight">
@@ -306,7 +309,7 @@ export function AboutPageContent() {
 
               <p className="mt-6 text-slate-700 text-base sm:text-lg leading-relaxed font-medium">
                 American Commercial Plumbing LLC is a family-run enterprise proudly founded and led by
-                owner <strong className="text-navy font-bold">Shawn Hamilton</strong>. For over two
+                owner <strong className="text-navy font-bold">Shawn Holton</strong>. For over two
                 decades, we have been a staple in the Tucson community, building a reputation not just
                 on the quality of our pipes and fixtures, but on the foundation of clean engineering,
                 integrity, and client satisfaction.
@@ -844,7 +847,7 @@ export function AboutPageContent() {
                   American Commercial Plumbing LLC
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-slate-300 font-medium">
-                  Family-run enterprise led by Shawn Hamilton. Serving Southern Arizona since 1999.
+                  Family-run enterprise led by Shawn Holton. Serving Southern Arizona since 1999.
                 </p>
 
                 <div className="mt-8 space-y-5">
@@ -963,8 +966,19 @@ export function AboutPageContent() {
                   </motion.div>
                 ) : (
                   <form
-                    onSubmit={(e) => {
+                    onSubmit={async (e) => {
                       e.preventDefault();
+                      setFormSubmitting(true);
+                      await submitLead({
+                        formTitle: "About Page - Service Request Form",
+                        name: formData.name,
+                        phone: formData.phone,
+                        email: formData.email,
+                        service: formData.serviceType,
+                        urgency: formData.isEmergency ? "URGENT 24/7 EMERGENCY" : "Standard Scheduling",
+                        message: formData.message,
+                      });
+                      setFormSubmitting(false);
                       setFormSubmitted(true);
                     }}
                     className="space-y-5"
@@ -1082,9 +1096,10 @@ export function AboutPageContent() {
                     <div className="flex flex-wrap items-center gap-3 pt-2">
                       <button
                         type="submit"
-                        className="flex-1 min-w-[180px] bg-cta hover:brightness-110 text-white text-xs font-black uppercase tracking-wider px-8 py-3.5 rounded-full shadow-cta transition-all active:scale-95 flex items-center justify-center gap-2 cursor-pointer"
+                        disabled={formSubmitting}
+                        className="flex-1 min-w-[180px] bg-cta hover:brightness-110 text-white text-xs font-black uppercase tracking-wider px-8 py-3.5 rounded-full shadow-cta transition-all active:scale-95 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                       >
-                        <span>Request Service</span>
+                        <span>{formSubmitting ? "Submitting..." : "Request Service"}</span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
 

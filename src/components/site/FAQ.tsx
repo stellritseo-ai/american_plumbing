@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import logo from "@/assets/logo.png";
-import heroVideo from "@/assets/herovideo.mp4";
 
 export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
@@ -71,7 +70,7 @@ export function FAQ() {
             {/* Video Player Container */}
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.03)] border border-neutral-200/50 bg-black mb-6">
               <video
-                src={heroVideo}
+                src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
                 controls
                 playsInline
                 className="w-full h-full object-cover"

@@ -187,7 +187,7 @@ export function About() {
               </h2>
               <p className="mt-4 sm:mt-6 text-sm sm:text-base text-muted-foreground leading-relaxed font-semibold max-w-2xl">
                 American Commercial Plumbing LLC is a family-run enterprise led by
-                owner Shawn Hamilton, built on a heritage of clean engineering,
+                owner Shawn Holton, built on a heritage of clean engineering,
                 integrity, and client satisfaction. From commercial sewer operations
                 to standard home kitchen leaks, we deliver flat-rate diagnostic
                 answers.

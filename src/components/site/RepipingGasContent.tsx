@@ -30,6 +30,7 @@ import {
   Activity,
   Trees,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import repipeImg from "@/assets/service-repiping.jpg";
 
@@ -48,13 +49,21 @@ export function RepipingGasContent() {
     notes: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 800);
+    await submitLead({
+      formTitle: "Repiping & Gas Lines Estimate Form",
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      propertyType: `${formData.propertyType} (${formData.homeAge})`,
+      service: formData.serviceType,
+      address: formData.address,
+      message: formData.notes,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   const trustBadges = [
@@ -437,14 +446,14 @@ export function RepipingGasContent() {
                 and most cost-effective financial decision is to replace the entire system with modern, high-efficiency piping.
               </p>
 
-              {/* Shawn Hamilton / Clean Engineering Note */}
+              {/* Shawn Holton / Clean Engineering Note */}
               <div className="p-6 rounded-2xl bg-blue-50/70 border border-blue-200/70 text-slate-700 text-sm leading-relaxed">
                 <div className="flex items-center gap-2.5 mb-2 font-black text-navy">
                   <ShieldCheck className="w-4.5 h-4.5 text-primary" />
-                  <span>25+ Years of Tucson Experience · Led by Shawn Hamilton</span>
+                  <span>25+ Years of Tucson Experience · Led by Shawn Holton</span>
                 </div>
                 At American Commercial Plumbing LLC, we specialize in whole-home and commercial repiping.
-                Led by owner Shawn Hamilton, our family-run business has been serving Tucson since 1999.
+                Led by owner Shawn Holton, our family-run business has been serving Tucson since 1999.
                 We bring 25+ years of clean engineering expertise to every repiping project, ensuring your new system
                 is installed to code, built to last, and backed by our commitment to complete customer satisfaction.
               </div>

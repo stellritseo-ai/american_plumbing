@@ -12,19 +12,19 @@ function EmergencyRepairsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Emergency Repairs (24/7)",
-        item: "https://americancommercialplumbing.com/emergency-repairs",
+        item: "https://acptucson.com/emergency-repairs",
       },
     ],
   };
@@ -39,7 +39,7 @@ function EmergencyRepairsPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -151,7 +151,7 @@ export const Route = createFileRoute("/emergency-repairs")({
       {
         name: "keywords",
         content:
-          "24 7 plumber tucson, emergency plumbing tucson, burst pipe repair tucson, sewer backup emergency az, slab leak repair tucson, urgent plumber near me, shawn hamilton plumbing",
+          "24 7 plumber tucson, emergency plumbing tucson, burst pipe repair tucson, sewer backup emergency az, slab leak repair tucson, urgent plumber near me, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -164,11 +164,32 @@ export const Route = createFileRoute("/emergency-repairs")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/emergency-repairs",
+        content: "https://acptucson.com/emergency-repairs",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "24/7 Emergency Plumbing Repairs Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Plumbing emergency in Tucson? True 24/7 rapid emergency dispatch for burst pipes, sewer backups, water heaters & slab leaks. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -180,7 +201,7 @@ export const Route = createFileRoute("/emergency-repairs")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/emergency-repairs",
+        href: "https://acptucson.com/emergency-repairs",
       },
     ],
   }),

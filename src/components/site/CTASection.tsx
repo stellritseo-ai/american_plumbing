@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, ChevronDown, ArrowRight } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 export function CTASection() {
   const [name, setName] = useState("");
@@ -17,15 +18,17 @@ export function CTASection() {
     if (!name.trim() || !email.trim()) return;
 
     setIsSubmitting(true);
-    // Simulate API submission delay
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 800));
-      setIsSubmitted(true);
-    } catch (error) {
-      console.error("Failed to submit estimate request:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    await submitLead({
+      formTitle: "CTA Section - Estimate Request Form",
+      name: name.trim(),
+      phone: phone.trim(),
+      email: email.trim(),
+      address: address.trim(),
+      service: service,
+      message: message.trim(),
+    });
+    setIsSubmitting(false);
+    setIsSubmitted(true);
   };
 
   return (

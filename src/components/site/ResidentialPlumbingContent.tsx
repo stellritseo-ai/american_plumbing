@@ -30,6 +30,7 @@ import {
   Compass,
   Hammer,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import residentialCraftsmanshipImg from "@/assets/service-residential-craftsmanship.jpg";
 
@@ -53,13 +54,21 @@ export function ResidentialPlumbingContent() {
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 600);
+    await submitLead({
+      formTitle: "Residential Plumbing - Service Request Form",
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      propertyType: "Residential",
+      service: formData.serviceType,
+      urgency: formData.preferredTime,
+      message: formData.message,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   // ── 8 RESIDENTIAL SERVICES ──
@@ -361,7 +370,7 @@ export function ResidentialPlumbingContent() {
                   Your home is your sanctuary, and its plumbing system is the lifeline that keeps it running smoothly. A leaky pipe, a broken water heater, or a stubborn clog can disrupt your entire day and lead to costly water damage.
                 </p>
                 <p>
-                  At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we believe your home deserves the same precision, clean engineering, and high-quality materials we provide to large commercial facilities. Led by owner <strong className="text-navy font-bold">Shawn Hamilton</strong>, our family-run business has been serving Tucson homeowners for over 25 years. We treat your home with the respect it deserves—which means wearing shoe covers, laying down floor protection, and leaving your space cleaner than we found it.
+                  At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we believe your home deserves the same precision, clean engineering, and high-quality materials we provide to large commercial facilities. Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>, our family-run business has been serving Tucson homeowners for over 25 years. We treat your home with the respect it deserves—which means wearing shoe covers, laying down floor protection, and leaving your space cleaner than we found it.
                 </p>
                 <p>
                   When you invite us into your home, you aren't just getting a plumber; you're getting a trusted neighbor dedicated to your safety and comfort.
@@ -378,7 +387,7 @@ export function ResidentialPlumbingContent() {
                     "Every home we step into receives the exact same meticulous engineering and honest pricing we demand for our own families. No shortcuts, no hidden fees—just genuine craftsmanship."
                   </p>
                   <div className="mt-2 text-xs font-black text-navy uppercase tracking-wider">
-                    Shawn Hamilton <span className="font-normal text-slate-500">· Founder & Master Plumber</span>
+                    Shawn Holton <span className="font-normal text-slate-500">· Founder & Master Plumber</span>
                   </div>
                 </div>
               </div>

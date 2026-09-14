@@ -156,7 +156,7 @@ export function AboutHero() {
                         Leadership & Heritage
                       </p>
                       <h4 className="text-base font-bold text-white mt-0.5">
-                        Shawn Hamilton, Founder
+                        Shawn Holton, Founder
                       </h4>
                       <p className="text-xs text-white/70 mt-0.5 font-medium">
                         Leading Southern Arizona plumbing with integrity since 1999

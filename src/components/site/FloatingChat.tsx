@@ -12,6 +12,7 @@ import {
   Check,
 } from "lucide-react";
 import { toast } from "sonner";
+import { submitLead } from "../../lib/send-lead";
 
 interface Message {
   id: string;
@@ -99,7 +100,19 @@ export function FloatingChat() {
         botResponse =
           "Thank you! We've received your information. A plumbing specialist will reach out to you shortly. You can also reach us directly at (520) 221-2010 for immediate service.";
         setStep("submitted");
-        toast.success("Contact request received! We will call you shortly.");
+        
+        const historyText = [...messages, userMsg]
+          .map((m) => `${m.sender.toUpperCase()}: ${m.text}`)
+          .join("\n");
+        const isEmail = userText.includes("@");
+
+        submitLead({
+          formTitle: "Live Chat Widget - Callback Request",
+          name: "Website Visitor (Live Chat)",
+          phone: !isEmail ? userText : undefined,
+          email: isEmail ? userText : undefined,
+          message: `Visitor contact provided: ${userText}\n\nChat Transcript:\n${historyText}`,
+        });
       } else {
         botResponse =
           "Got it! Please provide your phone number or email address so we can answer your question and follow up details:";

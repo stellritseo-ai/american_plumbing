@@ -32,6 +32,7 @@ import {
   UserCheck,
   FileText,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import leakImg from "@/assets/service-leak.jpg";
 
@@ -50,13 +51,22 @@ export function LeakDetectionContent() {
     notes: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 800);
+    await submitLead({
+      formTitle: "Leak Detection & Repair Form",
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      propertyType: formData.propertyType,
+      service: `Leak Location: ${formData.leakArea}`,
+      address: formData.address,
+      urgency: formData.preferredTime,
+      message: formData.notes,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   const trustBadges = [
@@ -258,7 +268,7 @@ export function LeakDetectionContent() {
     {
       icon: ShieldCheck,
       title: "Licensed, Bonded & Insured",
-      desc: "Fully compliant Arizona ROC #321353 holder led by founder Shawn Hamilton for complete consumer protection and peace of mind.",
+      desc: "Fully compliant Arizona ROC #321353 holder led by founder Shawn Holton for complete consumer protection and peace of mind.",
     },
     {
       icon: Zap,
@@ -498,14 +508,14 @@ export function LeakDetectionContent() {
                 })}
               </div>
 
-              {/* Shawn Hamilton / Clean Engineering Note */}
+              {/* Shawn Holton / Clean Engineering Note */}
               <div className="p-5 rounded-2xl bg-blue-50/70 border border-blue-200/70 text-slate-700 text-sm leading-relaxed">
                 <div className="flex items-center gap-2.5 mb-2 font-black text-navy">
                   <ShieldCheck className="w-4 h-4 text-primary" />
-                  <span>25+ Years of Tucson Craftsmanship · Shawn Hamilton</span>
+                  <span>25+ Years of Tucson Craftsmanship · Shawn Holton</span>
                 </div>
                 At American Commercial Plumbing LLC, we believe in solving problems at the source.
-                Led by owner Shawn Hamilton, our family-run business has been protecting Tucson properties since 1999.
+                Led by owner Shawn Holton, our family-run business has been protecting Tucson properties since 1999.
                 We combine 25+ years of clean engineering expertise with cutting-edge diagnostic technology to find and
                 fix leaks with minimal disruption to your home or business.
               </div>

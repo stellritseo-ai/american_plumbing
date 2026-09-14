@@ -28,6 +28,7 @@ import {
   CheckCircle2,
   Wind,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import emergencyTechImg from "@/assets/service-emergency-dispatch.jpg";
 
@@ -58,13 +59,21 @@ export function EmergencyRepairsContent() {
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 600);
+    await submitLead({
+      formTitle: "Emergency Repairs - Priority Dispatch Request",
+      name: formData.name,
+      phone: formData.phone,
+      propertyType: formData.propertyType,
+      service: `Emergency: ${formData.emergencyType}`,
+      urgency: "CRITICAL 24/7 EMERGENCY",
+      address: formData.location,
+      message: formData.details,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   // ── 6 EMERGENCY SITUATIONS WE HANDLE ──

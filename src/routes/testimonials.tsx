@@ -12,13 +12,13 @@ function TestimonialsPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Testimonials",
-        item: "https://americancommercialplumbing.com/testimonials",
+        item: "https://acptucson.com/testimonials",
       },
     ],
   };
@@ -27,7 +27,7 @@ function TestimonialsPage() {
     "@context": "https://schema.org",
     "@type": "PlumbingService",
     name: "American Commercial Plumbing LLC",
-    image: "https://americancommercialplumbing.com/logo.png",
+    image: "https://acptucson.com/logo.png",
     telephone: "+15202212010",
     email: "shawn@acptucson.com",
     address: {
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/testimonials")({
       {
         name: "keywords",
         content:
-          "american commercial plumbing reviews, tucson plumber testimonials, emergency plumber reviews tucson, shawn hamilton plumbing reviews, commercial plumber ratings az",
+          "american commercial plumbing reviews, tucson plumber testimonials, emergency plumber reviews tucson, shawn holton plumbing reviews, commercial plumber ratings az",
       },
       {
         property: "og:title",
@@ -138,11 +138,32 @@ export const Route = createFileRoute("/testimonials")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/testimonials",
+        content: "https://acptucson.com/testimonials",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Client Testimonials & 5-Star Reviews | American Commercial Plumbing LLC — Tucson, AZ",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Read verified 5-star customer reviews for American Commercial Plumbing LLC in Tucson, AZ. Over 25 years of trusted plumbing service.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -154,7 +175,7 @@ export const Route = createFileRoute("/testimonials")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/testimonials",
+        href: "https://acptucson.com/testimonials",
       },
     ],
   }),

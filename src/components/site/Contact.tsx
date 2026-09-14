@@ -9,9 +9,11 @@ import {
   CheckCircle2,
   ShieldAlert,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   return (
     <section id="contact" className="relative py-12 sm:py-14 lg:py-[60px] bg-white border-b border-slate-100 overflow-hidden">
@@ -117,8 +119,19 @@ export function Contact() {
                 </motion.div>
               ) : (
                 <form
-                  onSubmit={(e) => {
+                  onSubmit={async (e) => {
                     e.preventDefault();
+                    setSubmitting(true);
+                    const fd = new FormData(e.currentTarget);
+                    await submitLead({
+                      formTitle: "Home Page - Free Estimate / Diagnostic Request",
+                      name: String(fd.get("name") || ""),
+                      phone: String(fd.get("phone") || ""),
+                      email: String(fd.get("email") || ""),
+                      service: String(fd.get("service") || ""),
+                      message: String(fd.get("message") || ""),
+                    });
+                    setSubmitting(false);
                     setSubmitted(true);
                   }}
                   className="space-y-6"
@@ -149,6 +162,7 @@ export function Contact() {
                     <div className="sm:col-span-2">
                       <Label>Service Needed</Label>
                       <select
+                        name="service"
                         required
                         className="mt-2.5 w-full rounded-xl border border-slate-200/80 bg-slate-50/50 px-4 py-3.5 text-xs font-semibold text-slate-600 focus:outline-none focus:ring-4 focus:ring-primary/10 focus:border-primary focus:bg-white transition-all duration-300 cursor-pointer"
                       >
@@ -166,6 +180,7 @@ export function Contact() {
                     <div className="sm:col-span-2">
                       <Label>Project Scope / Problem Description</Label>
                       <textarea
+                        name="message"
                         rows={4}
                         placeholder="Describe the leak location, fixtures, or scheduling needs..."
                         className="mt-2.5 w-full rounded-xl border border-slate-200/80 bg-slate-50/50 px-4 py-3.5 text-xs font-semibold text-slate-600 focus:outline-none focus:ring-4 focus:ring-primary/10 focus:border-primary focus:bg-white transition-all duration-300 resize-none"
@@ -178,9 +193,10 @@ export function Contact() {
                     whileTap={{ scale: 0.97 }}
                     transition={{ type: "spring", stiffness: 400, damping: 15 }}
                     type="submit"
-                    className="group inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-cta px-6 py-4.5 text-xs font-bold uppercase tracking-wider text-cta-foreground shadow-cta hover:brightness-110 cursor-pointer transition-[box-shadow] duration-300"
+                    disabled={submitting}
+                    className="group inline-flex w-full items-center justify-center gap-2.5 rounded-xl bg-cta px-6 py-4.5 text-xs font-bold uppercase tracking-wider text-cta-foreground shadow-cta hover:brightness-110 cursor-pointer transition-[box-shadow] duration-300 disabled:opacity-50"
                   >
-                    <span>Send Diagnostic Request</span>
+                    <span>{submitting ? "Sending Request..." : "Send Diagnostic Request"}</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </motion.button>
 

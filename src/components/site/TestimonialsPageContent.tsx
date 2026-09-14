@@ -230,7 +230,7 @@ const testimonials: Testimonial[] = [
     rating: 5,
     title: "The only plumbing contractor our 80-unit HOA trusts.",
     quote:
-      "Managing an 80-unit townhome community means constant plumbing variables—pressure regulator valves, main water line shutoffs, and irrigation tie-ins. Shawn Hamilton has been our trusted contractor for 8 years. Their invoicing is crystal-clear, transparent, and compliant with HOA reserve audits.",
+      "Managing an 80-unit townhome community means constant plumbing variables—pressure regulator valves, main water line shutoffs, and irrigation tie-ins. Shawn Holton has been our trusted contractor for 8 years. Their invoicing is crystal-clear, transparent, and compliant with HOA reserve audits.",
     author: "Frank D.",
     location: "HOA Board President",
     serviceTag: "HOA Community Infrastructure",
@@ -301,10 +301,13 @@ const commitments = [
   },
 ];
 
+import { submitLead } from "../../lib/send-lead";
+
 export function TestimonialsPageContent() {
   const [filter, setFilter] = useState<"all" | "residential" | "commercial">("all");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [submittedSuccess, setSubmittedSuccess] = useState(false);
+  const [modalSubmitting, setModalSubmitting] = useState(false);
   const [modalForm, setModalForm] = useState({
     name: "",
     email: "",
@@ -323,8 +326,20 @@ export function TestimonialsPageContent() {
   const residentialCount = testimonials.filter((t) => t.category === "residential").length;
   const commercialCount = testimonials.filter((t) => t.category === "commercial").length;
 
-  const handleModalSubmit = (e: React.FormEvent) => {
+  const handleModalSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setModalSubmitting(true);
+    await submitLead({
+      formTitle: "Customer Testimonial Submission",
+      name: modalForm.name,
+      email: modalForm.email,
+      location: modalForm.location,
+      propertyType: modalForm.serviceType === "residential" ? "Residential" : "Commercial",
+      rating: modalForm.rating,
+      service: modalForm.headline || "Customer Review",
+      message: `${modalForm.headline ? `Headline: ${modalForm.headline}\n\n` : ""}Review:\n${modalForm.reviewText}`,
+    });
+    setModalSubmitting(false);
     setSubmittedSuccess(true);
     setTimeout(() => {
       setSubmittedSuccess(false);
@@ -425,7 +440,7 @@ export function TestimonialsPageContent() {
                   </span>
                 </div>
                 <p className="text-xs font-bold text-slate-700 mt-1.5 leading-snug">
-                  Arizona ROC #321353 · Shawn Hamilton
+                  Arizona ROC #321353 · Shawn Holton
                 </p>
                 <p className="text-[11px] text-slate-500 font-medium mt-0.5">
                   State Compliant & Fully Bonded Since 1999
@@ -462,7 +477,7 @@ export function TestimonialsPageContent() {
                 <p>
                   At American Commercial Plumbing LLC, we believe that a job isn't finished until the
                   customer is 100% satisfied. As a family-owned and operated business led by Shawn
-                  Hamilton, we treat every home and commercial property with the same respect and
+                  Holton, we treat every home and commercial property with the same respect and
                   urgency we would our own.
                 </p>
                 <p>
@@ -546,7 +561,7 @@ export function TestimonialsPageContent() {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-600 font-semibold">
-                  <span>ROC #321353 · Shawn Hamilton</span>
+                  <span>ROC #321353 · Shawn Holton</span>
                   <span className="text-emerald-700 font-bold flex items-center gap-1.5">
                     <span className="h-2 w-2 rounded-full bg-emerald-500 animate-ping" />
                     24/7 Dispatch Ready
@@ -665,7 +680,7 @@ export function TestimonialsPageContent() {
                       <div className="mb-5 bg-[#F7F7F7] border border-slate-200/90 rounded-2xl p-4 text-xs">
                         <div className="flex items-center gap-1.5 font-black text-primary mb-1 text-[10px] uppercase tracking-wider">
                           <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                          Shawn Hamilton (Owner) Response:
+                          Shawn Holton (Owner) Response:
                         </div>
                         <p className="text-slate-600 leading-relaxed italic font-medium">
                           "{t.ownerReply}"
@@ -1037,10 +1052,11 @@ export function TestimonialsPageContent() {
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full inline-flex items-center justify-center gap-2 bg-cta hover:brightness-110 text-white font-black text-xs uppercase tracking-wider py-4 px-6 rounded-full shadow-cta transition-all cursor-pointer active:scale-95"
+                        disabled={modalSubmitting}
+                        className="w-full inline-flex items-center justify-center gap-2 bg-cta hover:brightness-110 text-white font-black text-xs uppercase tracking-wider py-4 px-6 rounded-full shadow-cta transition-all cursor-pointer active:scale-95 disabled:opacity-50"
                       >
                         <Send className="h-4 w-4" />
-                        <span>Submit My Testimonial</span>
+                        <span>{modalSubmitting ? "Submitting Review..." : "Submit My Testimonial"}</span>
                       </button>
                     </div>
                   </form>

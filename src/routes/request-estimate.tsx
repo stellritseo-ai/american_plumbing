@@ -12,13 +12,13 @@ function RequestEstimatePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Request an Estimate",
-        item: "https://americancommercialplumbing.com/request-estimate",
+        item: "https://acptucson.com/request-estimate",
       },
     ],
   };
@@ -33,7 +33,7 @@ function RequestEstimatePage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -163,7 +163,7 @@ export const Route = createFileRoute("/request-estimate")({
       {
         name: "keywords",
         content:
-          "free plumbing estimate tucson, plumbing quote tucson az, flat rate plumber tucson, water heater estimate, repiping estimate, shawn hamilton plumbing",
+          "free plumbing estimate tucson, plumbing quote tucson az, flat rate plumber tucson, water heater estimate, repiping estimate, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -176,11 +176,32 @@ export const Route = createFileRoute("/request-estimate")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/request-estimate",
+        content: "https://acptucson.com/request-estimate",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Request a Free Plumbing Estimate Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Get 100% upfront & honest pricing from American Commercial Plumbing LLC. Free estimates on water heaters, repiping, and commercial jobs in Tucson, AZ. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -192,7 +213,7 @@ export const Route = createFileRoute("/request-estimate")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/request-estimate",
+        href: "https://acptucson.com/request-estimate",
       },
     ],
   }),

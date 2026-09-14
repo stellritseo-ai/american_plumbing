@@ -8,7 +8,6 @@ import {
   Award,
   Star,
 } from "lucide-react";
-import heroVideo from "@/assets/herovideo.mp4";
 
 const trust = [
   {
@@ -75,7 +74,14 @@ export function Hero() {
             preload="auto"
             className="h-full w-full object-cover"
           >
-            <source src={heroVideo} type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
+              type="video/quicktime"
+            />
+            <source
+              src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
+              type="video/mp4"
+            />
           </video>
         </div>
         {/* Dark overlay to ensure text readability */}

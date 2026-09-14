@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
-import heroVideo from "@/assets/herovideo.mp4";
 
 export function StatsSection() {
   return (
@@ -70,7 +69,7 @@ export function StatsSection() {
             className="w-full lg:col-span-2 relative rounded-[2rem] overflow-hidden border border-slate-200/50 shadow-glow min-h-[260px] sm:min-h-[320px] lg:min-h-[400px] cursor-pointer group"
           >
             <video
-              src={heroVideo}
+              src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
               playsInline
               autoPlay
               muted

@@ -54,7 +54,7 @@ export function OurStory() {
                     <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
                       <div>
                         <div className="text-sm font-black text-navy uppercase tracking-wider">
-                          Shawn Hamilton
+                          Shawn Holton
                         </div>
                         <div className="text-[11px] font-bold text-primary">
                           Founder & Owner, American Commercial Plumbing LLC
@@ -104,7 +104,7 @@ export function OurStory() {
               <p>
                 <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong> is a
                 family-run enterprise proudly founded and led by owner{" "}
-                <span className="text-primary font-bold">Shawn Hamilton</span>. For over two decades, we
+                <span className="text-primary font-bold">Shawn Holton</span>. For over two decades, we
                 have been a staple in the Tucson community, building a reputation not just on the
                 quality of our pipes and fixtures, but on the foundation of clean engineering,
                 integrity, and client satisfaction.

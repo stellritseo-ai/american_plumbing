@@ -12,19 +12,19 @@ function DrainCleaningPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Drain Cleaning & Hydro Jetting Services",
-        item: "https://americancommercialplumbing.com/drain-cleaning",
+        item: "https://acptucson.com/drain-cleaning",
       },
     ],
   };
@@ -39,7 +39,7 @@ function DrainCleaningPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -169,7 +169,7 @@ export const Route = createFileRoute("/drain-cleaning")({
       {
         name: "keywords",
         content:
-          "drain cleaning tucson, hydro jetting tucson, clogged drain tucson az, rooter service tucson, grease trap line cleaning, sewer drain jetting, shawn hamilton plumbing",
+          "drain cleaning tucson, hydro jetting tucson, clogged drain tucson az, rooter service tucson, grease trap line cleaning, sewer drain jetting, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -182,11 +182,32 @@ export const Route = createFileRoute("/drain-cleaning")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/drain-cleaning",
+        content: "https://acptucson.com/drain-cleaning",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Drain Cleaning & Hydro Jetting Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Clear drains for good. 4,000 PSI hydro jetting, professional snaking & camera verification in Tucson, AZ. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -198,7 +219,7 @@ export const Route = createFileRoute("/drain-cleaning")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/drain-cleaning",
+        href: "https://acptucson.com/drain-cleaning",
       },
     ],
   }),

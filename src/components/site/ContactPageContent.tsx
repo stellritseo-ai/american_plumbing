@@ -22,6 +22,8 @@ import {
   MessageSquare,
 } from "lucide-react";
 
+import { submitLead } from "../../lib/send-lead";
+
 export function ContactPageContent() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -39,13 +41,22 @@ export function ContactPageContent() {
     smsConsent: true,
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
-      setSubmitted(true);
-    }, 600);
+    await submitLead({
+      formTitle: "Contact Page - Service & Estimate Form",
+      name: formData.fullName,
+      phone: formData.phone,
+      email: formData.email,
+      address: formData.serviceAddress,
+      propertyType: formData.propertyType,
+      service: formData.serviceNeeded,
+      preferredContact: formData.preferredContact,
+      message: `${formData.message}${formData.smsConsent ? "\n[Customer consented to SMS updates]" : ""}`,
+    });
+    setSubmitting(false);
+    setSubmitted(true);
   };
 
   const scrollToForm = () => {
@@ -58,7 +69,7 @@ export function ContactPageContent() {
   const whyChoosePoints = [
     {
       title: "25+ Years Serving Tucson",
-      desc: "A family-run enterprise proudly founded and led by Shawn Hamilton since 1999. Navigating local plumbing dynamics with unmatched expertise.",
+      desc: "A family-run enterprise proudly founded and led by Shawn Holton since 1999. Navigating local plumbing dynamics with unmatched expertise.",
       icon: Award,
       badge: "Since 1999",
       accent: "from-blue-600 to-indigo-700",
@@ -117,9 +128,9 @@ export function ContactPageContent() {
   ];
 
   return (
-    <div className="bg-white text-[#111111] overflow-hidden">
+    <div className="bg-white text-[#111111]">
       {/* ── 1. QUICK CONTACT & TRUST BAR (BELOW PAGEHEADER) ─────────── */}
-      <section className="relative z-20 -mt-10 mx-auto w-[92%] max-w-6xl">
+      <section className="relative z-20 -mt-10 sm:-mt-12 mx-auto w-[92%] max-w-6xl">
         <div className="bg-white/95 backdrop-blur-xl border border-slate-200/90 rounded-3xl p-5 sm:p-7 shadow-[0_15px_40px_-10px_rgba(12,35,87,0.12)]">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
@@ -347,7 +358,7 @@ export function ContactPageContent() {
                             required
                             value={formData.fullName}
                             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                            placeholder="Shawn Hamilton"
+                            placeholder="Shawn Holton"
                             className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
                           />
                         </div>

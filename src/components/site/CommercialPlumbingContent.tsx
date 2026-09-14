@@ -29,6 +29,7 @@ import {
   Send,
   Zap,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import commercialFacilityImg from "@/assets/service-commercial-facility.jpg";
 import commercialWorkImg from "@/assets/service-commercial.jpg";
@@ -54,13 +55,20 @@ export function CommercialPlumbingContent() {
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 600);
+    await submitLead({
+      formTitle: "Commercial Plumbing - Priority Dispatch Form",
+      name: `${formData.contactName}${formData.businessName ? ` (${formData.businessName})` : ""}`,
+      phone: formData.phone,
+      email: formData.email,
+      propertyType: `Commercial: ${formData.facilityType}`,
+      service: formData.serviceNeeded,
+      message: `${formData.message}${formData.businessName ? `\nBusiness: ${formData.businessName}` : ""}`,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   // ── 6 COMMERCIAL CAPABILITIES ──
@@ -350,7 +358,7 @@ export function CommercialPlumbingContent() {
                 </p>
                 <p>
                   At American Commercial Plumbing LLC, we understand the high stakes of commercial
-                  property management. Led by owner <strong className="text-navy font-bold">Shawn Hamilton</strong>,
+                  property management. Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>,
                   our team brings over two decades of clean engineering and large-scale diagnostic
                   expertise to every job. We don't just patch problems; we provide long-term, durable
                   solutions that keep your business running smoothly.
@@ -765,7 +773,7 @@ export function CommercialPlumbingContent() {
                   <h3 className="text-2xl font-black text-navy mb-2">Request Received</h3>
                   <p className="text-slate-600 text-sm max-w-md mx-auto font-medium">
                     Thank you! Our commercial dispatch team has received your project details. Shawn
-                    Hamilton or a senior commercial specialist will follow up shortly.
+                    Holton or a senior commercial specialist will follow up shortly.
                   </p>
                   <div className="mt-6">
                     <a

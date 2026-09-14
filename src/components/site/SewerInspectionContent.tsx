@@ -28,6 +28,7 @@ import {
   UserCheck,
   ShieldAlert,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import sewerImg from "@/assets/service-sewer.jpg";
 
@@ -53,13 +54,22 @@ export function SewerInspectionContent() {
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 600);
+    await submitLead({
+      formTitle: "Sewer Camera Inspection & Line Repair Form",
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      propertyType: formData.propertyType,
+      service: `Inspection Reason: ${formData.inspectionReason}`,
+      address: formData.address,
+      urgency: formData.preferredDate,
+      message: formData.notes,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   // ── 5 INSPECTION SCENARIOS ──
@@ -381,7 +391,7 @@ export function SewerInspectionContent() {
                     "Never guess what is happening underground. A camera inspection tells the truth—showing you the exact depth, location, and condition of your pipe so you never pay for unnecessary digging."
                   </p>
                   <div className="mt-2 text-xs font-black text-navy uppercase tracking-wider">
-                    Shawn Hamilton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
+                    Shawn Holton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroVideo from "@/assets/herovideo.mp4";
 
 export function PageHeader({
   eyebrow,
@@ -28,7 +27,14 @@ export function PageHeader({
           playsInline
           className="h-full w-full object-cover opacity-20"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
+            type="video/quicktime"
+          />
+          <source
+            src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
+            type="video/mp4"
+          />
         </video>
         {/* Deep layered gradients */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#07132b]/70 via-[#07132b]/85 to-[#07132b]" />

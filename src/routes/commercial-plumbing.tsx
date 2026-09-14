@@ -12,19 +12,19 @@ function CommercialPlumbingPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Commercial Plumbing",
-        item: "https://americancommercialplumbing.com/commercial-plumbing",
+        item: "https://acptucson.com/commercial-plumbing",
       },
     ],
   };
@@ -39,7 +39,7 @@ function CommercialPlumbingPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -149,7 +149,7 @@ export const Route = createFileRoute("/commercial-plumbing")({
       {
         name: "keywords",
         content:
-          "commercial plumbing tucson, commercial plumbers tucson az, emergency commercial plumber, backflow prevention tucson, restaurant plumbing tucson, multi-family plumbing az, shawn hamilton plumbing",
+          "commercial plumbing tucson, commercial plumbers tucson az, emergency commercial plumber, backflow prevention tucson, restaurant plumbing tucson, multi-family plumbing az, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -162,11 +162,32 @@ export const Route = createFileRoute("/commercial-plumbing")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/commercial-plumbing",
+        content: "https://acptucson.com/commercial-plumbing",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Commercial Plumbing Services Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Tucson’s premier commercial plumbing contractor. 24/7 emergency repair, hydro jetting, boilers & backflow prevention. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -178,7 +199,7 @@ export const Route = createFileRoute("/commercial-plumbing")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/commercial-plumbing",
+        href: "https://acptucson.com/commercial-plumbing",
       },
     ],
   }),

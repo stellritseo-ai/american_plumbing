@@ -87,6 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       meta: [
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "robots",
+          content:
+            "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        },
+        { name: "googlebot", content: "index, follow" },
+        { name: "theme-color", content: "#0f172a" },
         { title: "American Commercial Plumbing LLC — Tucson, AZ Plumbers" },
         {
           name: "description",
@@ -94,14 +101,41 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             "Licensed commercial and residential plumbing contractors in Tucson, AZ. 24/7 rapid dispatch, 25+ years experience. ROC #321353.",
         },
         { name: "author", content: "American Commercial Plumbing LLC" },
-        { property: "og:title", content: "American Commercial Plumbing LLC" },
+        { name: "publisher", content: "American Commercial Plumbing LLC" },
+        { name: "geo.region", content: "US-AZ" },
+        { name: "geo.placename", content: "Tucson, Arizona" },
+        { name: "geo.position", content: "32.2226;-110.9747" },
+        { name: "ICBM", content: "32.2226, -110.9747" },
+        { property: "og:site_name", content: "American Commercial Plumbing LLC" },
+        { property: "og:locale", content: "en_US" },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: "American Commercial Plumbing LLC — Tucson, AZ Plumbers" },
         {
           property: "og:description",
           content:
-            "Tucson's trusted commercial & residential plumbing specialists since 1999.",
+            "Tucson's trusted commercial & residential plumbing specialists since 1999. Licensed ROC #321353.",
         },
-        { property: "og:type", content: "website" },
+        {
+          property: "og:image",
+          content: "https://acptucson.com/og-image.png",
+        },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        {
+          property: "og:image:alt",
+          content: "American Commercial Plumbing LLC - Tucson Plumbers",
+        },
         { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: "American Commercial Plumbing LLC — Tucson, AZ Plumbers" },
+        {
+          name: "twitter:description",
+          content:
+            "Licensed commercial & residential plumbing contractors in Tucson, AZ. 24/7 emergency dispatch. ROC #321353.",
+        },
+        {
+          name: "twitter:image",
+          content: "https://acptucson.com/og-image.png",
+        },
       ],
       links: [
         {

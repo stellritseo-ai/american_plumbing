@@ -30,6 +30,7 @@ import {
   Trees,
   ShieldAlert,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import drainImg from "@/assets/service-drain.jpg";
 
@@ -55,13 +56,22 @@ export function DrainCleaningContent() {
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 600);
+    await submitLead({
+      formTitle: "Drain Cleaning & Hydro-Jetting Service Form",
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      propertyType: formData.propertyType,
+      service: `Drain Issue: ${formData.drainIssue}`,
+      address: formData.address,
+      urgency: formData.preferredTime,
+      message: formData.notes,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   // ── 6 DRAIN SERVICES ──
@@ -378,7 +388,7 @@ export function DrainCleaningContent() {
                   At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we take a different approach. We don't just remove the blockage—we restore your pipes to their original diameter, removing the buildup that causes recurrent clogs in the first place.
                 </p>
                 <p>
-                  Led by owner <strong className="text-navy font-bold">Shawn Hamilton</strong>, our family-run business has been serving Tucson and Southern Arizona since 1999. We bring commercial-grade equipment and 25+ years of clean engineering expertise to every drain cleaning job, whether it's a residential kitchen sink or a commercial grease line.
+                  Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>, our family-run business has been serving Tucson and Southern Arizona since 1999. We bring commercial-grade equipment and 25+ years of clean engineering expertise to every drain cleaning job, whether it's a residential kitchen sink or a commercial grease line.
                 </p>
               </div>
 
@@ -392,7 +402,7 @@ export function DrainCleaningContent() {
                     "Snaking pokes a small hole; hydro jetting restores the entire pipe. We clean all 360 degrees of the pipe wall so you don't have to deal with the same frustrating clog month after month."
                   </p>
                   <div className="mt-2 text-xs font-black text-navy uppercase tracking-wider">
-                    Shawn Hamilton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
+                    Shawn Holton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
                   </div>
                 </div>
               </div>

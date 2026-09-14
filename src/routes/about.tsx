@@ -12,13 +12,13 @@ function AboutPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "About Us",
-        item: "https://americancommercialplumbing.com/about",
+        item: "https://acptucson.com/about",
       },
     ],
   };
@@ -28,14 +28,14 @@ function AboutPage() {
     "@type": "AboutPage",
     name: "About American Commercial Plumbing LLC",
     description:
-      "Tucson's most trusted plumbing experts since 1999. Founded and led by owner Shawn Hamilton, delivering licensed commercial and residential plumbing services across Southern Arizona.",
-    url: "https://americancommercialplumbing.com/about",
+      "Tucson's most trusted plumbing experts since 1999. Founded and led by owner Shawn Holton, delivering licensed commercial and residential plumbing services across Southern Arizona.",
+    url: "https://acptucson.com/about",
     mainEntity: {
       "@type": "PlumbingService",
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -79,12 +79,12 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Learn about American Commercial Plumbing LLC. Founded by Shawn Hamilton in 1999 with 25+ years experience, licensed ROC #321353, serving Tucson and Southern Arizona.",
+          "Learn about American Commercial Plumbing LLC. Founded by Shawn Holton in 1999 with 25+ years experience, licensed ROC #321353, serving Tucson and Southern Arizona.",
       },
       {
         name: "keywords",
         content:
-          "about american commercial plumbing, tucson plumbers, shawn hamilton plumber, licensed commercial plumbing tucson az, residential plumbing tucson, roc 321353",
+          "about american commercial plumbing, tucson plumbers, shawn holton plumber, licensed commercial plumbing tucson az, residential plumbing tucson, roc 321353",
       },
       {
         property: "og:title",
@@ -97,11 +97,32 @@ export const Route = createFileRoute("/about")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/about",
+        content: "https://acptucson.com/about",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "About Us | American Commercial Plumbing LLC — Tucson, AZ",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Learn about American Commercial Plumbing LLC. Founded by Shawn Holton in 1999 with 25+ years experience, licensed ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -113,7 +134,7 @@ export const Route = createFileRoute("/about")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/about",
+        href: "https://acptucson.com/about",
       },
     ],
   }),

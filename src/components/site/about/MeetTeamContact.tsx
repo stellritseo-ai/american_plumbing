@@ -12,8 +12,11 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import { submitLead } from "../../../lib/send-lead";
+
 export function MeetTeamContact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -23,8 +26,19 @@ export function MeetTeamContact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitting(true);
+    await submitLead({
+      formTitle: "Meet The Team - Free Estimate Form",
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      service: formData.serviceType,
+      urgency: formData.isEmergency ? "URGENT 24/7 EMERGENCY" : "Standard",
+      message: formData.message,
+    });
+    setSubmitting(false);
     setSubmitted(true);
   };
 
@@ -75,7 +89,7 @@ export function MeetTeamContact() {
                 American Commercial Plumbing LLC
               </h3>
               <p className="mt-2 text-sm text-slate-300 font-medium leading-relaxed">
-                Founded & operated by Shawn Hamilton. Serving Southern Arizona with licensed master
+                Founded & operated by Shawn Holton. Serving Southern Arizona with licensed master
                 plumbing craftsmanship.
               </p>
 
@@ -199,7 +213,7 @@ export function MeetTeamContact() {
                     Service Request Submitted!
                   </h3>
                   <p className="mt-3 text-base text-slate-600 font-medium max-w-md mx-auto leading-relaxed">
-                    Thank you, {formData.name || "valued neighbor"}! Shawn Hamilton and our Tucson
+                    Thank you, {formData.name || "valued neighbor"}! Shawn Holton and our Tucson
                     dispatch team have received your details. We will contact you within the hour to
                     confirm your free estimate.
                   </p>
@@ -240,7 +254,7 @@ export function MeetTeamContact() {
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="Shawn Hamilton"
+                        placeholder="Shawn Holton"
                         className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300/80 text-navy text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all shadow-xs"
                       />
                     </div>
@@ -344,10 +358,11 @@ export function MeetTeamContact() {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       type="submit"
-                      className="flex-1 min-w-[200px] inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-cta text-white font-black text-sm uppercase tracking-wider shadow-cta hover:brightness-110 active:scale-95 transition-all cursor-pointer"
+                      disabled={submitting}
+                      className="flex-1 min-w-[200px] inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-cta text-white font-black text-sm uppercase tracking-wider shadow-cta hover:brightness-110 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
                     >
                       <Send className="h-4 w-4" />
-                      <span>Request Service</span>
+                      <span>{submitting ? "Sending Request..." : "Request Service"}</span>
                     </motion.button>
 
                     <motion.a

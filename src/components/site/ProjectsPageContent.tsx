@@ -247,7 +247,7 @@ export function ProjectsPageContent() {
     {
       icon: ShieldCheck,
       title: "Licensed & Code Compliant",
-      subtitle: "Arizona ROC #321353 · Shawn Hamilton quality control",
+      subtitle: "Arizona ROC #321353 · Shawn Holton quality control",
       badge: "ROC #321353",
     },
     {

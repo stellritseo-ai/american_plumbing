@@ -12,19 +12,19 @@ function RepipingGasPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Repiping & Gas Line Services",
-        item: "https://americancommercialplumbing.com/repiping-gas-lines",
+        item: "https://acptucson.com/repiping-gas-lines",
       },
     ],
   };
@@ -39,7 +39,7 @@ function RepipingGasPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -169,7 +169,7 @@ export const Route = createFileRoute("/repiping-gas-lines")({
       {
         name: "keywords",
         content:
-          "repiping tucson, gas line repair tucson az, whole home repipe tucson, copper repiping, pex pipe installation, gas line installation outdoor grill, shawn hamilton plumbing",
+          "repiping tucson, gas line repair tucson az, whole home repipe tucson, copper repiping, pex pipe installation, gas line installation outdoor grill, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -182,11 +182,32 @@ export const Route = createFileRoute("/repiping-gas-lines")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/repiping-gas-lines",
+        content: "https://acptucson.com/repiping-gas-lines",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Repiping & Gas Line Installation Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Restore your plumbing and protect your property. Whole-home PEX & copper repiping and certified gas lines in Tucson, AZ. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -198,7 +219,7 @@ export const Route = createFileRoute("/repiping-gas-lines")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/repiping-gas-lines",
+        href: "https://acptucson.com/repiping-gas-lines",
       },
     ],
   }),

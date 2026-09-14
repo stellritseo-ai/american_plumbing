@@ -12,19 +12,19 @@ function WaterHeaterPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Water Heater Services",
-        item: "https://americancommercialplumbing.com/water-heaters",
+        item: "https://acptucson.com/water-heaters",
       },
     ],
   };
@@ -39,7 +39,7 @@ function WaterHeaterPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -167,7 +167,7 @@ export const Route = createFileRoute("/water-heaters")({
       {
         name: "keywords",
         content:
-          "water heater repair tucson, tankless water heater tucson, water heater installation tucson, emergency water heater replacement, water heater flush tucson, shawn hamilton plumbing",
+          "water heater repair tucson, tankless water heater tucson, water heater installation tucson, emergency water heater replacement, water heater flush tucson, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -180,11 +180,32 @@ export const Route = createFileRoute("/water-heaters")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/water-heaters",
+        content: "https://acptucson.com/water-heaters",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Water Heater Repair & Installation Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Tucson's trusted water heater experts. Tank & tankless repairs, replacements, and maintenance. 100% upfront pricing. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -196,7 +217,7 @@ export const Route = createFileRoute("/water-heaters")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/water-heaters",
+        href: "https://acptucson.com/water-heaters",
       },
     ],
   }),

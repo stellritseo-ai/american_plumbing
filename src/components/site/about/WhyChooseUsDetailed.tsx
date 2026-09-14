@@ -18,7 +18,7 @@ export function WhyChooseUsDetailed() {
       id: "02",
       icon: Users,
       title: "Family-Owned & Operated",
-      badge: "Shawn Hamilton & Family",
+      badge: "Shawn Holton & Family",
       accent: "from-amber-500/10 to-orange-500/10",
       iconBg: "bg-cta/10 text-cta",
       description:

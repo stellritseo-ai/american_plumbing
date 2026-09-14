@@ -12,19 +12,19 @@ function SewerInspectionPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Sewer Line Inspection Services",
-        item: "https://americancommercialplumbing.com/sewer-line-inspection",
+        item: "https://acptucson.com/sewer-line-inspection",
       },
     ],
   };
@@ -39,7 +39,7 @@ function SewerInspectionPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -167,7 +167,7 @@ export const Route = createFileRoute("/sewer-line-inspection")({
       {
         name: "keywords",
         content:
-          "sewer line inspection tucson, sewer camera inspection tucson, video pipe scoping tucson, real estate sewer scope tucson az, tree root sewer repair, shawn hamilton plumbing",
+          "sewer line inspection tucson, sewer camera inspection tucson, video pipe scoping tucson, real estate sewer scope tucson az, tree root sewer repair, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -180,11 +180,32 @@ export const Route = createFileRoute("/sewer-line-inspection")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/sewer-line-inspection",
+        content: "https://acptucson.com/sewer-line-inspection",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Sewer Line Camera Inspection Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Advanced HD video camera sewer inspection in Tucson, AZ. Pinpoint root intrusions & cracked pipes without digging. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -196,7 +217,7 @@ export const Route = createFileRoute("/sewer-line-inspection")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/sewer-line-inspection",
+        href: "https://acptucson.com/sewer-line-inspection",
       },
     ],
   }),

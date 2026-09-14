@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Phone, Clock, Zap, ShieldCheck, CheckCircle2 } from "lucide-react";
-import heroVideo from "@/assets/herovideo.mp4";
 
 export function EmergencyCTA() {
   return (
@@ -15,7 +14,14 @@ export function EmergencyCTA() {
           preload="metadata"
           className="h-full w-full object-cover [will-change:transform] translate-z-0"
         >
-          <source src={heroVideo} type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
+            type="video/quicktime"
+          />
+          <source
+            src="https://res.cloudinary.com/ki6vfkhw/video/upload/v1789399007/acp-plumbing.mov"
+            type="video/mp4"
+          />
         </video>
         {/* Modern dark gradient overlay for visual depth and contrast */}
         <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/65 to-[#0c2357]/45" />

@@ -29,6 +29,7 @@ import {
   Home,
   ShieldAlert,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 import waterHeaterImg from "@/assets/service-waterheater.jpg";
 
@@ -53,13 +54,20 @@ export function WaterHeaterContent() {
     }
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 600);
+    await submitLead({
+      formTitle: "Water Heater Service & Replacement Form",
+      name: formData.name,
+      phone: formData.phone,
+      email: formData.email,
+      service: `${formData.serviceNeeded} (${formData.heaterType})`,
+      urgency: formData.timeframe,
+      message: formData.notes,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   // ── 5 WATER HEATER SERVICES ──
@@ -351,7 +359,7 @@ export function WaterHeaterContent() {
                   At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we specialize in keeping your hot water flowing. Whether you need a quick repair on a traditional tank system or are ready to upgrade to a modern, energy-efficient tankless unit, our certified technicians have the expertise to get the job done right.
                 </p>
                 <p>
-                  Led by owner <strong className="text-navy font-bold">Shawn Hamilton</strong>, our family-run business has been serving Tucson since 1999. We bring commercial-grade precision and clean engineering to every residential and commercial water heater project, ensuring your system is installed to code, operates safely, and lasts for years to come.
+                  Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>, our family-run business has been serving Tucson since 1999. We bring commercial-grade precision and clean engineering to every residential and commercial water heater project, ensuring your system is installed to code, operates safely, and lasts for years to come.
                 </p>
               </div>
 
@@ -365,7 +373,7 @@ export function WaterHeaterContent() {
                     "In Tucson, hard water is ruthless on water heaters. We don't just swap parts; we engineer installations and flushes that maximize lifespan and efficiency, backed by honest, upfront flat-rate pricing."
                   </p>
                   <div className="mt-2 text-xs font-black text-navy uppercase tracking-wider">
-                    Shawn Hamilton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
+                    Shawn Holton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
                   </div>
                 </div>
               </div>

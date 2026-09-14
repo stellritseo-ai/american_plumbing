@@ -218,7 +218,7 @@ export function Footer() {
         {/* Bottom Copy/Trademark Row with Back to Top trigger */}
         <div className="mt-12 sm:mt-16 pt-8 border-t border-slate-900 flex flex-col sm:flex-row flex-wrap items-center justify-between gap-4 sm:gap-6 text-center sm:text-left">
           <p className="text-xs text-slate-500 font-semibold">
-            © {new Date().getFullYear()} American Commercial Plumbing LLC. All rights reserved.
+            © {new Date().getFullYear()} American Commercial Plumbing LLC. All rights reserved. Design By StellR IT LLC
           </p>
 
           <div className="flex items-center gap-6">

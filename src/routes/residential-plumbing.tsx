@@ -12,19 +12,19 @@ function ResidentialPlumbingPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Residential Plumbing",
-        item: "https://americancommercialplumbing.com/residential-plumbing",
+        item: "https://acptucson.com/residential-plumbing",
       },
     ],
   };
@@ -39,7 +39,7 @@ function ResidentialPlumbingPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -159,7 +159,7 @@ export const Route = createFileRoute("/residential-plumbing")({
       {
         name: "keywords",
         content:
-          "residential plumbing tucson, residential plumbers tucson az, emergency plumber tucson, water heater repair tucson, drain cleaning tucson, slab leak detection tucson, repiping tucson, shawn hamilton plumbing",
+          "residential plumbing tucson, residential plumbers tucson az, emergency plumber tucson, water heater repair tucson, drain cleaning tucson, slab leak detection tucson, repiping tucson, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -172,11 +172,32 @@ export const Route = createFileRoute("/residential-plumbing")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/residential-plumbing",
+        content: "https://acptucson.com/residential-plumbing",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Residential Plumbing Services Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Tucson's trusted residential plumbers. 24/7 emergency repairs, water heaters, leak detection & repiping. Upfront pricing, ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -188,7 +209,7 @@ export const Route = createFileRoute("/residential-plumbing")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/residential-plumbing",
+        href: "https://acptucson.com/residential-plumbing",
       },
     ],
   }),

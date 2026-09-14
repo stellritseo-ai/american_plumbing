@@ -11,13 +11,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://americancommercialplumbing.com/",
+      item: "https://acptucson.com/",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Projects & Portfolio",
-      item: "https://americancommercialplumbing.com/projects",
+      item: "https://acptucson.com/projects",
     },
   ],
 };
@@ -33,7 +33,7 @@ const gallerySchema = {
     name: "American Commercial Plumbing LLC",
     founder: {
       "@type": "Person",
-      name: "Shawn Hamilton",
+      name: "Shawn Holton",
     },
     telephone: "+15202212010",
     email: "shawn@acptucson.com",
@@ -99,7 +99,7 @@ const faqSchema = {
       name: "Can I get a detailed estimate for a project similar to one shown here?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Absolutely. We offer 100% upfront flat-rate pricing. You can request a free estimate online through our request form or call our dispatch team directly at (520) 221-2010 to review your project scope with Shawn Hamilton and our master technicians.",
+        text: "Absolutely. We offer 100% upfront flat-rate pricing. You can request a free estimate online through our request form or call our dispatch team directly at (520) 221-2010 to review your project scope with Shawn Holton and our master technicians.",
       },
     },
   ],
@@ -144,7 +144,7 @@ export const Route = createFileRoute("/projects")({
       {
         name: "keywords",
         content:
-          "plumbing projects tucson, plumbing portfolio tucson az, commercial plumbing jobs, repiping pictures tucson, water heater installation photos, shawn hamilton plumbing work",
+          "plumbing projects tucson, plumbing portfolio tucson az, commercial plumbing jobs, repiping pictures tucson, water heater installation photos, shawn holton plumbing work",
       },
       {
         property: "og:title",
@@ -157,11 +157,32 @@ export const Route = createFileRoute("/projects")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/projects",
+        content: "https://acptucson.com/projects",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Plumbing Projects & Work Portfolio Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Browse real Tucson plumbing projects by American Commercial Plumbing LLC. Commercial buildouts, whole-home repiping, water heaters & drain jetting. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -173,7 +194,7 @@ export const Route = createFileRoute("/projects")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/projects",
+        href: "https://acptucson.com/projects",
       },
     ],
   }),

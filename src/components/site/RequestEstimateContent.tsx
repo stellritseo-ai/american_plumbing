@@ -29,6 +29,7 @@ import {
   Smartphone,
   Info,
 } from "lucide-react";
+import { submitLead } from "../../lib/send-lead";
 
 export function RequestEstimateContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -48,13 +49,23 @@ export function RequestEstimateContent() {
     smsConsent: true,
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormSubmitting(true);
-    setTimeout(() => {
-      setFormSubmitting(false);
-      setFormSubmitted(true);
-    }, 800);
+    await submitLead({
+      formTitle: "Request Estimate Page Form",
+      name: formData.fullName,
+      phone: formData.phone,
+      email: formData.email,
+      address: formData.address,
+      propertyType: formData.propertyType,
+      service: formData.serviceNeeded,
+      urgency: `Preferred time: ${formData.contactTime}`,
+      preferredContact: formData.contactMethod,
+      message: `${formData.projectDescription}\n[Referral: ${formData.hearAboutUs}]${formData.smsConsent ? "\n[SMS updates consent: Yes]" : ""}`,
+    });
+    setFormSubmitting(false);
+    setFormSubmitted(true);
   };
 
   const trustBadges = [
@@ -355,7 +366,7 @@ export function RequestEstimateContent() {
                 free, no-obligation estimates on a wide range of plumbing installations, replacements, and large-scale projects.
               </p>
               <p className="text-slate-600 leading-relaxed text-base mb-8">
-                Led by owner Shawn Hamilton, our family-run business has been serving Tucson since 1999.
+                Led by owner Shawn Holton, our family-run business has been serving Tucson since 1999.
                 We combine 25+ years of clean engineering expertise with a commitment to honest, responsive communication.
                 When you request an estimate from us, you get straight answers and real engineering precision.
               </p>
@@ -364,7 +375,7 @@ export function RequestEstimateContent() {
               <div className="p-6 rounded-2xl bg-blue-50/70 border border-blue-200/70 text-slate-700 text-sm leading-relaxed">
                 <div className="flex items-center gap-2.5 mb-2 font-black text-navy">
                   <ShieldCheck className="w-4.5 h-4.5 text-primary" />
-                  <span>The Shawn Hamilton Commitment · Tucson Since 1999</span>
+                  <span>The Shawn Holton Commitment · Tucson Since 1999</span>
                 </div>
                 "Plumbing should never come with fine print or surprise invoices. We quote the actual scope,
                 stand by our flat rates, and treat your property with the same care we would our own."

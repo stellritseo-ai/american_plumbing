@@ -12,19 +12,19 @@ function LeakDetectionPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Services",
-        item: "https://americancommercialplumbing.com/#services",
+        item: "https://acptucson.com/#services",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Leak Detection & Repair Services",
-        item: "https://americancommercialplumbing.com/leak-detection",
+        item: "https://acptucson.com/leak-detection",
       },
     ],
   };
@@ -39,7 +39,7 @@ function LeakDetectionPage() {
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -169,7 +169,7 @@ export const Route = createFileRoute("/leak-detection")({
       {
         name: "keywords",
         content:
-          "leak detection tucson, slab leak detection tucson, thermal imaging pipe inspection, acoustic water leak detector, hidden water leak repair, shawn hamilton plumbing",
+          "leak detection tucson, slab leak detection tucson, thermal imaging pipe inspection, acoustic water leak detector, hidden water leak repair, shawn holton plumbing",
       },
       {
         property: "og:title",
@@ -182,11 +182,32 @@ export const Route = createFileRoute("/leak-detection")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/leak-detection",
+        content: "https://acptucson.com/leak-detection",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Water Leak Detection & Repair Tucson, AZ | American Commercial Plumbing LLC",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Find the leak. Fix the problem. Protect your property. Acoustic & thermal leak detection in Tucson, AZ. ROC #321353.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -198,7 +219,7 @@ export const Route = createFileRoute("/leak-detection")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/leak-detection",
+        href: "https://acptucson.com/leak-detection",
       },
     ],
   }),

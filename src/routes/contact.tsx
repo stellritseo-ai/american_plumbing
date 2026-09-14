@@ -12,13 +12,13 @@ function ContactPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://americancommercialplumbing.com/",
+        item: "https://acptucson.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Contact Us",
-        item: "https://americancommercialplumbing.com/contact",
+        item: "https://acptucson.com/contact",
       },
     ],
   };
@@ -27,13 +27,13 @@ function ContactPage() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Contact American Commercial Plumbing LLC",
-    url: "https://americancommercialplumbing.com/contact",
+    url: "https://acptucson.com/contact",
     mainEntity: {
       "@type": "PlumbingService",
       name: "American Commercial Plumbing LLC",
       founder: {
         "@type": "Person",
-        name: "Shawn Hamilton",
+        name: "Shawn Holton",
       },
       telephone: "+15202212010",
       email: "shawn@acptucson.com",
@@ -90,7 +90,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "keywords",
         content:
-          "contact american commercial plumbing, tucson plumbers phone number, emergency plumber tucson az, plumbing estimates tucson, shawn hamilton plumbing, roc 321353",
+          "contact american commercial plumbing, tucson plumbers phone number, emergency plumber tucson az, plumbing estimates tucson, shawn holton plumbing, roc 321353",
       },
       {
         property: "og:title",
@@ -103,11 +103,32 @@ export const Route = createFileRoute("/contact")({
       },
       {
         property: "og:url",
-        content: "https://americancommercialplumbing.com/contact",
+        content: "https://acptucson.com/contact",
       },
       {
         property: "og:type",
         content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://acptucson.com/og-image.png",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Contact Us & Free Estimates | American Commercial Plumbing LLC — Tucson, AZ",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Contact American Commercial Plumbing LLC in Tucson, AZ. Call (520) 221-2010 for 24/7 emergency service, commercial plumbing & free estimates.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://acptucson.com/og-image.png",
       },
     ],
     links: [
@@ -119,7 +140,7 @@ export const Route = createFileRoute("/contact")({
       },
       {
         rel: "canonical",
-        href: "https://americancommercialplumbing.com/contact",
+        href: "https://acptucson.com/contact",
       },
     ],
   }),

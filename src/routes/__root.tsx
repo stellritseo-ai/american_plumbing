@@ -53,6 +53,12 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
           Something went wrong on our end. You can try refreshing or head back
           home.
         </p>
+        {import.meta.env.DEV && error && (
+          <div className="mt-4 p-3 bg-red-50 border border-red-200 text-red-700 text-xs text-left rounded-lg font-mono overflow-auto max-h-48">
+            <div className="font-bold mb-1">{error.name || "Error"}: {error.message}</div>
+            {error.stack && <pre className="whitespace-pre-wrap text-[10px] opacity-80">{error.stack}</pre>}
+          </div>
+        )}
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
             onClick={() => {
@@ -81,16 +87,36 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       meta: [
         { charSet: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { title: "Lovable App" },
-        { name: "description", content: "Lovable Generated Project" },
-        { name: "author", content: "Lovable" },
-        { property: "og:title", content: "Lovable App" },
-        { property: "og:description", content: "Lovable Generated Project" },
+        { title: "American Commercial Plumbing LLC — Tucson, AZ Plumbers" },
+        {
+          name: "description",
+          content:
+            "Licensed commercial and residential plumbing contractors in Tucson, AZ. 24/7 rapid dispatch, 25+ years experience. ROC #321353.",
+        },
+        { name: "author", content: "American Commercial Plumbing LLC" },
+        { property: "og:title", content: "American Commercial Plumbing LLC" },
+        {
+          property: "og:description",
+          content:
+            "Tucson's trusted commercial & residential plumbing specialists since 1999.",
+        },
         { property: "og:type", content: "website" },
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:site", content: "@Lovable" },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon.png",
+        },
+        {
+          rel: "shortcut icon",
+          href: "/favicon.ico",
+        },
+        {
+          rel: "apple-touch-icon",
+          href: "/favicon.png",
+        },
         {
           rel: "stylesheet",
           href: appCss,
@@ -108,6 +134,9 @@ function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <HeadContent />
       </head>
       <body>

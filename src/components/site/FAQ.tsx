@@ -10,7 +10,7 @@ export function FAQ() {
   const faqs = [
     {
       q: "Are you licensed and insured in Arizona?",
-      a: "Yes, American Commercial Plumbing is fully licensed, bonded, and insured. Our ROC license number is ROC #382109, and we carry comprehensive general liability and workman's compensation insurance for your complete peace of mind."
+      a: "Yes, American Commercial Plumbing is fully licensed, bonded, and insured. Our ROC license number is ROC #321353, and we carry comprehensive general liability and workman's compensation insurance for your complete peace of mind."
     },
     {
       q: "Do you offer residential plumbing, or only commercial?",
@@ -35,7 +35,7 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="relative py-[60px] bg-[#fafbfe] border-b border-slate-100">
+    <section id="faq" className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe] border-b border-slate-100">
       <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
       
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
@@ -85,7 +85,7 @@ export function FAQ() {
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                href="#contact"
+                href="/request-estimate"
                 className="relative group inline-flex items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-cta to-red-600 px-8 py-4 text-xs font-bold uppercase tracking-wider text-white shadow-cta hover:brightness-110 transition-all duration-300 cursor-pointer"
               >
                 <span>Get a Free Estimate</span>
@@ -96,7 +96,7 @@ export function FAQ() {
 
           {/* Right Column: Accordion Card Wrapper (50% width) */}
           <div className="w-full lg:sticky lg:top-24">
-            <div className="w-full bg-white rounded-[32px] p-6 md:p-8 shadow-[0_25px_60px_rgba(0,0,0,0.025)] border border-neutral-100/80 space-y-4">
+            <div className="w-full bg-white rounded-[32px] p-4 sm:p-6 md:p-8 shadow-[0_25px_60px_rgba(0,0,0,0.025)] border border-neutral-100/80 space-y-4">
               {faqs.map((f, i) => {
                 const isOpen = open === i;
                 return (

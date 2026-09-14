@@ -32,48 +32,56 @@ const services = [
     desc: "Premium repairs, full repiping, and bathroom remodeling for Tucson homes.",
     img: resi,
     icon: Home,
+    href: "/residential-plumbing",
   },
   {
     title: "Commercial Plumbing",
     desc: "High-capacity drainage, main lines, and water systems built for business.",
     img: comm,
     icon: Building2,
+    href: "/commercial-plumbing",
   },
   {
     title: "Emergency Repairs",
     desc: "Rapid 24/7 dispatching for leak containment and pipe blockages.",
     img: emer,
     icon: Siren,
+    href: "/emergency-repairs",
   },
   {
     title: "Water Heater Services",
     desc: "Eco-friendly tankless installs, replacement, and system flushes.",
     img: wh,
     icon: Flame,
+    href: "/water-heaters",
   },
   {
     title: "Sewer Line Repair",
     desc: "Camera inspections, drain scoping, and trenchless pipe relining.",
     img: sewer,
     icon: GitBranch,
+    href: "/sewer-line-inspection",
   },
   {
     title: "Drain Cleaning",
     desc: "Hydro-jetting solutions that strip grease and roots from lines.",
     img: drain,
     icon: Waves,
+    href: "/drain-cleaning",
   },
   {
     title: "Leak Detection",
     desc: "Non-destructive acoustic and thermal leak tracking technology.",
     img: leak,
     icon: ScanSearch,
+    href: "/leak-detection",
   },
   {
     title: "Repiping Services",
     desc: "Complete plumbing repiping with premium PEX and durable copper.",
     img: repipe,
     icon: Wrench,
+    href: "/repiping-gas-lines",
   },
 ];
 
@@ -84,12 +92,12 @@ export function Services() {
   return (
     <section
       id="services"
-      className="relative py-[60px] bg-secondary/20 overflow-hidden"
+      className="relative py-12 sm:py-16 lg:py-[60px] bg-secondary/20 overflow-hidden"
     >
       <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none" />
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
         {/* Top Header Grid */}
-        <div className="grid lg:grid-cols-12 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center mb-10 sm:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -115,7 +123,7 @@ export function Services() {
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                href="#contact"
+                href="/request-estimate"
                 className="inline-flex items-center gap-2 bg-navy hover:bg-primary text-white rounded-xl px-6 py-4 text-xs font-bold uppercase tracking-wider transition-all duration-300"
               >
                 Request Free Estimate
@@ -125,10 +133,11 @@ export function Services() {
           </motion.div>
 
           {/* Top 3 Featured Grid Items */}
-          <div className="lg:col-span-7 grid sm:grid-cols-3 gap-6">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
             {topItems.map((s, idx) => (
-              <motion.div
+              <motion.a
                 key={s.title}
+                href={s.href}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -139,7 +148,7 @@ export function Services() {
                   delay: idx * 0.08,
                 }}
                 whileHover={{ y: -6, scale: 1.015 }}
-                className="group relative rounded-3xl overflow-hidden bg-neutral-950 h-[340px] border border-white/10 cursor-pointer transition-all duration-300 hover:border-primary/30 [will-change:transform]"
+                className="group relative block rounded-3xl overflow-hidden bg-neutral-950 h-[240px] sm:h-[320px] lg:h-[340px] border border-white/10 cursor-pointer transition-all duration-300 hover:border-primary/30 [will-change:transform]"
               >
                 {/* Background image */}
                 <img
@@ -170,19 +179,16 @@ export function Services() {
                         {s.desc}
                       </p>
                       <div className="pt-2">
-                        <a
-                          href="#contact"
-                          className="relative inline-flex items-center gap-1.5 text-cta font-bold text-[9px] uppercase tracking-wider pb-0.5"
-                        >
-                          <span>Get Service</span>
+                        <span className="relative inline-flex items-center gap-1.5 text-cta group-hover:text-white font-bold text-[9px] uppercase tracking-wider pb-0.5 transition-colors">
+                          <span>Explore Service</span>
                           <ArrowRight className="w-3.5 h-3.5" />
                           <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-cta" />
-                        </a>
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>
@@ -215,16 +221,17 @@ export function Services() {
             }}
             className="w-full relative"
           >
-            <CarouselContent className="-ml-6 [will-change:transform]">
+            <CarouselContent className="-ml-3 sm:-ml-6 [will-change:transform]">
               {slideItems.map((s, idx) => (
                 <CarouselItem
                   key={`${s.title}-${idx}`}
-                  className="pl-6 sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 [will-change:transform]"
+                  className="pl-3 sm:pl-6 basis-[85%] sm:basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 [will-change:transform]"
                 >
-                  <motion.div
+                  <motion.a
+                    href={s.href}
                     whileHover={{ y: -4, scale: 1.01 }}
                     transition={{ type: "spring", stiffness: 350, damping: 25 }}
-                    className="group relative rounded-3xl overflow-hidden bg-neutral-950 h-[340px] border border-white/10 cursor-pointer transition-all duration-300 hover:border-primary/30 [will-change:transform]"
+                    className="group relative block rounded-3xl overflow-hidden bg-neutral-950 h-[240px] sm:h-[300px] lg:h-[340px] border border-white/10 cursor-pointer transition-all duration-300 hover:border-primary/30 [will-change:transform]"
                   >
                     {/* Background image */}
                     <img
@@ -255,19 +262,16 @@ export function Services() {
                             {s.desc}
                           </p>
                           <div className="pt-2">
-                            <a
-                              href="#contact"
-                              className="relative inline-flex items-center gap-1.5 text-cta font-bold text-[9px] uppercase tracking-wider pb-0.5"
-                            >
-                              <span>Get Service</span>
+                            <span className="relative inline-flex items-center gap-1.5 text-cta group-hover:text-white font-bold text-[9px] uppercase tracking-wider pb-0.5 transition-colors">
+                              <span>Explore Service</span>
                               <ArrowRight className="w-3.5 h-3.5" />
                               <span className="absolute bottom-0 left-0 w-full h-[1px] bg-cta" />
-                            </a>
+                            </span>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </motion.div>
+                  </motion.a>
                 </CarouselItem>
               ))}
             </CarouselContent>

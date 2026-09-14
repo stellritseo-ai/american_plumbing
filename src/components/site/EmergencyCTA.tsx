@@ -4,7 +4,7 @@ import heroVideo from "@/assets/herovideo.mp4";
 
 export function EmergencyCTA() {
   return (
-    <section className="relative w-full overflow-hidden py-[50px] text-white bg-navy border-y border-white/5">
+    <section className="relative w-full overflow-hidden py-10 sm:py-12 lg:py-[50px] text-white bg-navy border-y border-white/5">
       {/* Background Video */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none overflow-hidden translate-z-0">
         <video
@@ -25,7 +25,7 @@ export function EmergencyCTA() {
       </div>
 
       <div className="relative z-10 mx-auto w-[90%] max-w-7xl">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Content Column */}
           <div className="lg:col-span-7 space-y-6">
             <motion.div
@@ -57,7 +57,7 @@ export function EmergencyCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg text-white/80 max-w-xl leading-relaxed"
+              className="text-base sm:text-lg text-white/80 max-w-xl leading-relaxed font-medium"
             >
               Burst pipe? Flooding? Main sewer line backup? Don't wait and let
               water damage spread. Our certified plumbers are on call 24/7 with
@@ -69,7 +69,7 @@ export function EmergencyCTA() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md pt-2"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-md pt-2"
             >
               <li className="flex items-center gap-3 text-white/90">
                 <div className="flex h-6 w-6 items-center justify-center rounded-full bg-electric/15 text-electric shrink-0">
@@ -125,7 +125,7 @@ export function EmergencyCTA() {
 
               <a
                 href="tel:+15202212010"
-                className="relative flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-cta to-[#d62828] p-5 sm:p-6 font-semibold text-white shadow-2xl hover:brightness-110 transition-all duration-300 w-full"
+                className="relative flex items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-cta to-[#d62828] p-4 sm:p-6 font-semibold text-white shadow-2xl hover:brightness-110 transition-all duration-300 w-full"
               >
                 <div className="flex items-center gap-4">
                   <span className="relative grid place-items-center h-12 w-12 rounded-full bg-white/10 ring-4 ring-white/5 pulse-ring shrink-0">

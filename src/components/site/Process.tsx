@@ -45,7 +45,7 @@ const desktopPositions = [
 
 export function Process() {
   return (
-    <section className="relative py-[60px] overflow-hidden bg-white border-y border-slate-100">
+    <section className="relative py-12 sm:py-14 lg:py-[60px] overflow-hidden bg-white border-y border-slate-100">
       {/* CSS Animation for dripping water drop */}
       <style>{`
         @keyframes drip {
@@ -96,7 +96,7 @@ export function Process() {
 
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
         {/* Header Block */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-16">
           <span className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
             Step by step process
           </span>
@@ -104,7 +104,7 @@ export function Process() {
             We Complete Every{" "}
             <span className="text-gradient-brand">Step Carefully.</span>
           </h2>
-          <p className="mt-4 text-sm sm:text-base text-slate-500 max-w-xl mx-auto font-medium leading-relaxed mb-[-45px]">
+          <p className="mt-4 text-sm sm:text-base text-slate-500 max-w-xl mx-auto font-medium leading-relaxed mb-6 sm:mb-8 lg:mb-[-45px]">
             Our step-by-step methodology guarantees precision, transparency, and clean, code-compliant results from scheduling to final quality check.
           </p>
         </div>
@@ -303,9 +303,9 @@ export function Process() {
         </div>
 
         {/* 2. Responsive Mobile Connected layout (Small/Tablet Screens) */}
-        <div className="relative grid gap-10 pl-14 lg:hidden">
+        <div className="relative grid gap-10 pl-16 sm:pl-20 lg:hidden">
           {/* Volumetric vertical pipe background */}
-          <div className="absolute left-[39px] top-6 bottom-6 w-2.5 pointer-events-none z-0">
+          <div className="absolute left-[23px] top-6 bottom-6 w-2.5 pointer-events-none z-0">
             {/* Drop shadow */}
             <div className="absolute inset-0 bg-slate-900/10 rounded-full blur-[2px]" />
             {/* Pipe case */}
@@ -313,11 +313,11 @@ export function Process() {
             {/* Vibrant Core with flowing animation */}
             <div className="absolute inset-[2px] rounded-full mobile-pipe-flow" />
             {/* Glossy highlight */}
-            <div className="absolute left-[3px] top-[2px] bottom-[2px] w-[1.5px] bg-white/75 rounded-full" />
+            <div className="absolute left-[2px] top-[2px] bottom-[2px] w-[1px] bg-white/75 rounded-full" />
           </div>
 
           {/* Small mobile faucet at top of line */}
-          <div className="absolute left-[20px] -top-6 pointer-events-none z-10 w-[48px] h-[48px]">
+          <div className="absolute left-[16px] -top-6 pointer-events-none z-10 w-[48px] h-[48px]">
             <svg viewBox="0 0 80 80" className="w-full h-full" fill="none">
               {/* Handle */}
               <rect x="36" y="6" width="20" height="5" rx="1" fill="#0284c7" />
@@ -351,14 +351,14 @@ export function Process() {
               className="relative flex flex-col group text-left"
             >
               {/* Circle Node */}
-              <div className="absolute -left-[54px] top-0 w-12 h-12 rounded-full bg-white shadow-[0_4px_15px_rgb(0,0,0,0.06)] border border-slate-100 flex items-center justify-center z-10 transition-all duration-300 group-hover:scale-105">
+              <div className="absolute -left-16 top-0 w-12 h-12 rounded-full bg-white shadow-[0_4px_15px_rgb(0,0,0,0.06)] border border-slate-100 flex items-center justify-center z-10 transition-all duration-300 group-hover:scale-105">
                 <div className="absolute inset-0.5 rounded-full border border-transparent group-hover:border-primary/45 transition-colors duration-300" />
                 <div className="absolute -inset-1.5 rounded-full border border-primary/20 scale-75 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300" />
                 <s.icon className="h-5 w-5 text-slate-500 group-hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Content text */}
-              <div className="pl-4">
+              <div className="pl-2">
                 <span className="text-[9px] font-bold text-slate-300 uppercase tracking-widest group-hover:text-primary transition-colors duration-300">
                   Step 0{i + 1}
                 </span>

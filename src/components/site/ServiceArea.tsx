@@ -18,7 +18,7 @@ export function ServiceArea() {
   const [hoveredArea, setHoveredArea] = useState<string | null>(null);
 
   return (
-    <section className="relative py-[60px] bg-white border-b border-slate-100 overflow-hidden">
+    <section className="relative py-12 sm:py-14 lg:py-[60px] bg-white border-b border-slate-100 overflow-hidden">
       <div className="mx-auto w-[90%] max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           

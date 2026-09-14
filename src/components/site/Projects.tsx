@@ -44,9 +44,9 @@ export function Projects() {
     filter === "All" ? projects : projects.filter((p) => p.cat === filter);
 
   return (
-    <section id="projects" className="relative py-[60px] bg-[#fafbfe]/40 border-b border-slate-100">
+    <section id="projects" className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe]/40 border-b border-slate-100">
       <div className="mx-auto w-[90%] max-w-7xl">
-        <div className="flex items-end justify-between gap-6 flex-wrap mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 sm:gap-8 flex-wrap mb-8 sm:mb-12">
           <div className="max-w-2xl">
             <span className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
               Featured Projects
@@ -57,7 +57,7 @@ export function Projects() {
           </div>
           
           {/* Category Filter Menu Capsule */}
-          <div className="flex flex-wrap gap-1.5 items-center bg-slate-100/80 backdrop-blur p-1 rounded-full border border-slate-200/50 select-none">
+          <div className="flex flex-wrap gap-1.5 items-center bg-slate-100/80 backdrop-blur p-1 rounded-2xl sm:rounded-full border border-slate-200/50 select-none">
             {categories.map((c) => (
               <motion.button
                 key={c}
@@ -86,7 +86,7 @@ export function Projects() {
 
         <motion.div
           layout
-          className="grid sm:grid-cols-2 lg:grid-cols-3 auto-rows-[220px] gap-5"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[180px] sm:auto-rows-[210px] lg:auto-rows-[220px] gap-3 sm:gap-4 lg:gap-5"
         >
           <AnimatePresence mode="popLayout">
             {filtered.map((p, i) => (
@@ -122,7 +122,7 @@ export function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-95 group-hover:opacity-90 transition-opacity duration-300" />
 
                 {/* Premium glass card drawer */}
-                <div className="absolute inset-x-4 bottom-4 p-4 rounded-2xl bg-navy/40 backdrop-blur-md border border-white/10 shadow-lg translate-y-3 opacity-90 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                <div className="absolute inset-x-3 bottom-3 sm:inset-x-4 sm:bottom-4 p-3 sm:p-4 rounded-2xl bg-navy/40 backdrop-blur-md border border-white/10 shadow-lg translate-y-3 opacity-90 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                   <div className="text-[10px] font-bold uppercase tracking-widest text-sky-400">
                     {p.cat}
                   </div>
@@ -145,7 +145,7 @@ export function Projects() {
             whileHover={{ scale: 1.03, y: -2 }}
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 400, damping: 18 }}
-            href="#contact"
+            href="/projects"
             className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-primary to-blue-600 px-7 py-3.5 font-bold uppercase tracking-wider text-xs text-white shadow-md hover:shadow-lg transition-all duration-300"
           >
             View All Projects <ArrowUpRight className="h-4 w-4" />

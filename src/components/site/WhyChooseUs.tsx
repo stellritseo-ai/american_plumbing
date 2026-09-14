@@ -10,7 +10,7 @@ import logo from "@/assets/logo.png";
 
 export function WhyChooseUs() {
   return (
-    <section className="relative py-[60px] overflow-hidden bg-[#fafbfe] border-b border-slate-100">
+    <section className="relative py-12 sm:py-14 lg:py-[60px] overflow-hidden bg-[#fafbfe] border-b border-slate-100">
       {/* Background Gradients */}
       <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl opacity-30 pointer-events-none" />
@@ -102,7 +102,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="md:col-span-2 relative group overflow-hidden rounded-3xl border border-amber-100/70 bg-gradient-to-br from-[#fffdf5] via-white to-white p-8 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col sm:flex-row justify-between items-start sm:items-center min-h-[260px]"
+            className="md:col-span-2 relative group overflow-hidden rounded-3xl border border-amber-100/70 bg-gradient-to-br from-[#fffdf5] via-white to-white p-5 sm:p-7 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col sm:flex-row justify-between items-start sm:items-center min-h-[260px]"
           >
             {/* Background Glow */}
             <div className="absolute right-0 top-0 w-80 h-80 bg-gradient-to-br from-amber-200/10 to-primary/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
@@ -171,7 +171,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="relative group overflow-hidden rounded-3xl border border-slate-800/80 bg-gradient-to-br from-[#0c1324] to-[#040814] p-8 shadow-sm hover:shadow-[0_20px_40px_-6px_rgba(37,99,235,0.25)] transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
+            className="relative group overflow-hidden rounded-3xl border border-slate-800/80 bg-gradient-to-br from-[#0c1324] to-[#040814] p-5 sm:p-7 lg:p-8 shadow-sm hover:shadow-[0_20px_40px_-6px_rgba(37,99,235,0.25)] transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
           >
             {/* Visual Header */}
             <div className="relative h-[90px] w-full flex items-center justify-between mb-4 select-none">
@@ -223,7 +223,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative group overflow-hidden rounded-3xl border border-emerald-100/80 bg-gradient-to-br from-[#f0fdf4] via-white to-white p-8 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
+            className="relative group overflow-hidden rounded-3xl border border-emerald-100/80 bg-gradient-to-br from-[#f0fdf4] via-white to-white p-5 sm:p-7 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
           >
             {/* Visual Graphic */}
             <div className="relative h-[90px] w-full flex items-center justify-center mb-4 select-none">
@@ -263,7 +263,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="relative group overflow-hidden rounded-3xl border border-sky-100/80 bg-gradient-to-br from-[#f0f9ff] via-white to-white p-8 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
+            className="relative group overflow-hidden rounded-3xl border border-sky-100/80 bg-gradient-to-br from-[#f0f9ff] via-white to-white p-5 sm:p-7 lg:p-8 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
           >
             {/* Visual Graphic */}
             <div className="relative h-[90px] w-full flex items-center justify-center mb-4 select-none">
@@ -307,7 +307,7 @@ export function WhyChooseUs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="relative group overflow-hidden rounded-3xl border border-slate-800/80 bg-gradient-to-br from-[#0f172a] to-[#020617] p-8 shadow-sm hover:shadow-[0_20px_40px_-6px_rgba(6,182,212,0.25)] transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
+            className="relative group overflow-hidden rounded-3xl border border-slate-800/80 bg-gradient-to-br from-[#0f172a] to-[#020617] p-5 sm:p-7 lg:p-8 shadow-sm hover:shadow-[0_20px_40px_-6px_rgba(6,182,212,0.25)] transition-all duration-500 cursor-pointer flex flex-col justify-between min-h-[260px]"
           >
             {/* Visual Graphic */}
             <div className="relative h-[90px] w-full flex items-center justify-center mb-4 select-none">

@@ -14,7 +14,7 @@ export function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section id="contact" className="relative py-[60px] bg-white border-b border-slate-100 overflow-hidden">
+    <section id="contact" className="relative py-12 sm:py-14 lg:py-[60px] bg-white border-b border-slate-100 overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-12">
@@ -36,7 +36,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 150, damping: 20 }}
-            className="lg:col-span-5 relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0c2357] via-[#0d2866] to-primary text-white p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+            className="lg:col-span-5 relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0c2357] via-[#0d2866] to-primary text-white p-6 sm:p-8 lg:p-10 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
           >
             <div className="absolute inset-0 bg-grid opacity-20 mix-blend-overlay pointer-events-none" />
             <div className="absolute -bottom-32 -right-32 h-96 w-96 rounded-full bg-electric/20 blur-3xl pointer-events-none" />
@@ -83,7 +83,7 @@ export function Contact() {
             <div className="relative mt-10 pt-6 border-t border-white/10 flex items-center gap-3">
               <ShieldAlert className="h-5 w-5 text-cta shrink-0" />
               <span className="text-[10px] uppercase font-bold tracking-wider text-white/70">
-                Licensed Contractor ROC #382109
+                Licensed Contractor ROC #321353
               </span>
             </div>
           </motion.div>
@@ -94,7 +94,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 150, damping: 20 }}
-            className="lg:col-span-7 bg-white border border-slate-100 rounded-3xl p-8 lg:p-10 shadow-sm hover:shadow-md transition-shadow duration-300 relative flex flex-col justify-center"
+            className="lg:col-span-7 bg-white border border-slate-100 rounded-3xl p-5 sm:p-8 lg:p-10 shadow-sm hover:shadow-md transition-shadow duration-300 relative flex flex-col justify-center"
           >
             <AnimatePresence mode="wait">
               {submitted ? (

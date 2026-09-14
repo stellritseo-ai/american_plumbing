@@ -42,7 +42,7 @@ export function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="relative py-[60px] bg-[#fafbfe] border-b border-slate-100 overflow-hidden"
+      className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe] border-b border-slate-100 overflow-hidden"
     >
       <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
       
@@ -58,12 +58,13 @@ export function Testimonials() {
             </h2>
 
             {/* Google trust card */}
-            <motion.div
+            <motion.a
+              href="/testimonials"
               whileHover={{ scale: 1.02 }}
-              className="w-full mb-6 rounded-2xl bg-white border border-slate-100 py-3 px-4 shadow-sm flex flex-col items-center lg:items-start select-none"
+              className="w-full mb-6 rounded-2xl bg-white border border-slate-100 py-3 px-4 shadow-sm flex flex-col items-center lg:items-start select-none group cursor-pointer hover:border-primary/30 transition-colors"
             >
               <div className="flex items-center gap-1.5">
-                <span className="font-display font-bold text-base tracking-tight bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                <span className="font-display font-bold text-base tracking-tight bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent group-hover:underline">
                   Google Reviews
                 </span>
                 <ShieldCheck className="h-4 w-4 text-emerald-500 fill-emerald-100" />
@@ -79,23 +80,34 @@ export function Testimonials() {
                     ))}
                   </div>
                   <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider mt-1">
-                    180+ verified reviews
+                    180+ verified reviews · View All →
                   </span>
                 </div>
               </div>
-            </motion.div>
-
-            {/* CTA Button */}
-            <motion.a
-              whileHover={{ scale: 1.03, y: -2 }}
-              whileTap={{ scale: 0.97 }}
-              transition={{ type: "spring", stiffness: 400, damping: 15 }}
-              href="#contact"
-              className="inline-flex items-center justify-center bg-gradient-to-r from-primary to-blue-600 text-xs font-bold uppercase tracking-wider text-white rounded-xl px-7 py-3.5 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
-            >
-              <span>Book Service Now</span>
-              <ArrowRight className="h-4 w-4 text-white ml-2" />
             </motion.a>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-3 w-full justify-center lg:justify-start">
+              <motion.a
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                href="/request-estimate"
+                className="inline-flex items-center justify-center bg-gradient-to-r from-primary to-blue-600 text-xs font-bold uppercase tracking-wider text-white rounded-xl px-6 py-3.5 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer"
+              >
+                <span>Book Service Now</span>
+                <ArrowRight className="h-4 w-4 text-white ml-2" />
+              </motion.a>
+              <motion.a
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                href="/testimonials"
+                className="inline-flex items-center justify-center bg-white hover:bg-slate-50 border border-slate-200 text-xs font-bold uppercase tracking-wider text-navy rounded-xl px-5 py-3.5 transition-all duration-300 shadow-xs cursor-pointer"
+              >
+                <span>All Reviews</span>
+              </motion.a>
+            </div>
           </div>
 
           {/* Right Column: Infinite Marquee */}

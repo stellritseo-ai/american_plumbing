@@ -9,38 +9,745 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WaterHeatersRouteImport } from './routes/water-heaters'
+import { Route as WaterHeaterServicesRouteImport } from './routes/water-heater-services'
+import { Route as TestimonialsRouteImport } from './routes/testimonials'
+import { Route as TestimonialRouteImport } from './routes/testimonial'
+import { Route as SewerLineInspectionRouteImport } from './routes/sewer-line-inspection'
+import { Route as SewerInspectionRouteImport } from './routes/sewer-inspection'
+import { Route as ResidentialPlumbingRouteImport } from './routes/residential-plumbing'
+import { Route as RequestEstimateRouteImport } from './routes/request-estimate'
+import { Route as RepipingGasLinesRouteImport } from './routes/repiping-gas-lines'
+import { Route as RepipingRouteImport } from './routes/repiping'
+import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as ProjectRouteImport } from './routes/project'
+import { Route as PortfolioRouteImport } from './routes/portfolio'
+import { Route as OurWorkRouteImport } from './routes/our-work'
+import { Route as LeakDetectionRepairRouteImport } from './routes/leak-detection-repair'
+import { Route as LeakDetectionRouteImport } from './routes/leak-detection'
+import { Route as GasLinesRouteImport } from './routes/gas-lines'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as FreeEstimateRouteImport } from './routes/free-estimate'
+import { Route as EstimateRouteImport } from './routes/estimate'
+import { Route as EmergencyRepairsRouteImport } from './routes/emergency-repairs'
+import { Route as EmergencyPlumbingRouteImport } from './routes/emergency-plumbing'
+import { Route as DrainCleaningJettingRouteImport } from './routes/drain-cleaning-jetting'
+import { Route as DrainCleaningRouteImport } from './routes/drain-cleaning'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CommercialPlumbingRouteImport } from './routes/commercial-plumbing'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServicesWaterHeatersRouteImport } from './routes/services/water-heaters'
+import { Route as ServicesSewerLineInspectionRouteImport } from './routes/services/sewer-line-inspection'
+import { Route as ServicesResidentialPlumbingRouteImport } from './routes/services/residential-plumbing'
+import { Route as ServicesRepipingGasLinesRouteImport } from './routes/services/repiping-gas-lines'
+import { Route as ServicesRepipingRouteImport } from './routes/services/repiping'
+import { Route as ServicesLeakDetectionRepairRouteImport } from './routes/services/leak-detection-repair'
+import { Route as ServicesLeakDetectionRouteImport } from './routes/services/leak-detection'
+import { Route as ServicesGasLinesRouteImport } from './routes/services/gas-lines'
+import { Route as ServicesEmergencyRepairsRouteImport } from './routes/services/emergency-repairs'
+import { Route as ServicesDrainCleaningJettingRouteImport } from './routes/services/drain-cleaning-jetting'
+import { Route as ServicesDrainCleaningRouteImport } from './routes/services/drain-cleaning'
+import { Route as ServicesCommercialPlumbingRouteImport } from './routes/services/commercial-plumbing'
 
+const WaterHeatersRoute = WaterHeatersRouteImport.update({
+  id: '/water-heaters',
+  path: '/water-heaters',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WaterHeaterServicesRoute = WaterHeaterServicesRouteImport.update({
+  id: '/water-heater-services',
+  path: '/water-heater-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimonialsRoute = TestimonialsRouteImport.update({
+  id: '/testimonials',
+  path: '/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TestimonialRoute = TestimonialRouteImport.update({
+  id: '/testimonial',
+  path: '/testimonial',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SewerLineInspectionRoute = SewerLineInspectionRouteImport.update({
+  id: '/sewer-line-inspection',
+  path: '/sewer-line-inspection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SewerInspectionRoute = SewerInspectionRouteImport.update({
+  id: '/sewer-inspection',
+  path: '/sewer-inspection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResidentialPlumbingRoute = ResidentialPlumbingRouteImport.update({
+  id: '/residential-plumbing',
+  path: '/residential-plumbing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RequestEstimateRoute = RequestEstimateRouteImport.update({
+  id: '/request-estimate',
+  path: '/request-estimate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RepipingGasLinesRoute = RepipingGasLinesRouteImport.update({
+  id: '/repiping-gas-lines',
+  path: '/repiping-gas-lines',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RepipingRoute = RepipingRouteImport.update({
+  id: '/repiping',
+  path: '/repiping',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsRoute = ProjectsRouteImport.update({
+  id: '/projects',
+  path: '/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectRoute = ProjectRouteImport.update({
+  id: '/project',
+  path: '/project',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PortfolioRoute = PortfolioRouteImport.update({
+  id: '/portfolio',
+  path: '/portfolio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurWorkRoute = OurWorkRouteImport.update({
+  id: '/our-work',
+  path: '/our-work',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeakDetectionRepairRoute = LeakDetectionRepairRouteImport.update({
+  id: '/leak-detection-repair',
+  path: '/leak-detection-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeakDetectionRoute = LeakDetectionRouteImport.update({
+  id: '/leak-detection',
+  path: '/leak-detection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GasLinesRoute = GasLinesRouteImport.update({
+  id: '/gas-lines',
+  path: '/gas-lines',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FreeEstimateRoute = FreeEstimateRouteImport.update({
+  id: '/free-estimate',
+  path: '/free-estimate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EstimateRoute = EstimateRouteImport.update({
+  id: '/estimate',
+  path: '/estimate',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyRepairsRoute = EmergencyRepairsRouteImport.update({
+  id: '/emergency-repairs',
+  path: '/emergency-repairs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyPlumbingRoute = EmergencyPlumbingRouteImport.update({
+  id: '/emergency-plumbing',
+  path: '/emergency-plumbing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrainCleaningJettingRoute = DrainCleaningJettingRouteImport.update({
+  id: '/drain-cleaning-jetting',
+  path: '/drain-cleaning-jetting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrainCleaningRoute = DrainCleaningRouteImport.update({
+  id: '/drain-cleaning',
+  path: '/drain-cleaning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommercialPlumbingRoute = CommercialPlumbingRouteImport.update({
+  id: '/commercial-plumbing',
+  path: '/commercial-plumbing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ServicesWaterHeatersRoute = ServicesWaterHeatersRouteImport.update({
+  id: '/services/water-heaters',
+  path: '/services/water-heaters',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesSewerLineInspectionRoute =
+  ServicesSewerLineInspectionRouteImport.update({
+    id: '/services/sewer-line-inspection',
+    path: '/services/sewer-line-inspection',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicesResidentialPlumbingRoute =
+  ServicesResidentialPlumbingRouteImport.update({
+    id: '/services/residential-plumbing',
+    path: '/services/residential-plumbing',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicesRepipingGasLinesRoute =
+  ServicesRepipingGasLinesRouteImport.update({
+    id: '/services/repiping-gas-lines',
+    path: '/services/repiping-gas-lines',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicesRepipingRoute = ServicesRepipingRouteImport.update({
+  id: '/services/repiping',
+  path: '/services/repiping',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesLeakDetectionRepairRoute =
+  ServicesLeakDetectionRepairRouteImport.update({
+    id: '/services/leak-detection-repair',
+    path: '/services/leak-detection-repair',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicesLeakDetectionRoute = ServicesLeakDetectionRouteImport.update({
+  id: '/services/leak-detection',
+  path: '/services/leak-detection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesGasLinesRoute = ServicesGasLinesRouteImport.update({
+  id: '/services/gas-lines',
+  path: '/services/gas-lines',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesEmergencyRepairsRoute =
+  ServicesEmergencyRepairsRouteImport.update({
+    id: '/services/emergency-repairs',
+    path: '/services/emergency-repairs',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicesDrainCleaningJettingRoute =
+  ServicesDrainCleaningJettingRouteImport.update({
+    id: '/services/drain-cleaning-jetting',
+    path: '/services/drain-cleaning-jetting',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicesDrainCleaningRoute = ServicesDrainCleaningRouteImport.update({
+  id: '/services/drain-cleaning',
+  path: '/services/drain-cleaning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicesCommercialPlumbingRoute =
+  ServicesCommercialPlumbingRouteImport.update({
+    id: '/services/commercial-plumbing',
+    path: '/services/commercial-plumbing',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial-plumbing': typeof CommercialPlumbingRoute
+  '/contact': typeof ContactRoute
+  '/drain-cleaning': typeof DrainCleaningRoute
+  '/drain-cleaning-jetting': typeof DrainCleaningJettingRoute
+  '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/emergency-repairs': typeof EmergencyRepairsRoute
+  '/estimate': typeof EstimateRoute
+  '/free-estimate': typeof FreeEstimateRoute
+  '/gallery': typeof GalleryRoute
+  '/gas-lines': typeof GasLinesRoute
+  '/leak-detection': typeof LeakDetectionRoute
+  '/leak-detection-repair': typeof LeakDetectionRepairRoute
+  '/our-work': typeof OurWorkRoute
+  '/portfolio': typeof PortfolioRoute
+  '/project': typeof ProjectRoute
+  '/projects': typeof ProjectsRoute
+  '/repiping': typeof RepipingRoute
+  '/repiping-gas-lines': typeof RepipingGasLinesRoute
+  '/request-estimate': typeof RequestEstimateRoute
+  '/residential-plumbing': typeof ResidentialPlumbingRoute
+  '/sewer-inspection': typeof SewerInspectionRoute
+  '/sewer-line-inspection': typeof SewerLineInspectionRoute
+  '/testimonial': typeof TestimonialRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/water-heater-services': typeof WaterHeaterServicesRoute
+  '/water-heaters': typeof WaterHeatersRoute
+  '/services/commercial-plumbing': typeof ServicesCommercialPlumbingRoute
+  '/services/drain-cleaning': typeof ServicesDrainCleaningRoute
+  '/services/drain-cleaning-jetting': typeof ServicesDrainCleaningJettingRoute
+  '/services/emergency-repairs': typeof ServicesEmergencyRepairsRoute
+  '/services/gas-lines': typeof ServicesGasLinesRoute
+  '/services/leak-detection': typeof ServicesLeakDetectionRoute
+  '/services/leak-detection-repair': typeof ServicesLeakDetectionRepairRoute
+  '/services/repiping': typeof ServicesRepipingRoute
+  '/services/repiping-gas-lines': typeof ServicesRepipingGasLinesRoute
+  '/services/residential-plumbing': typeof ServicesResidentialPlumbingRoute
+  '/services/sewer-line-inspection': typeof ServicesSewerLineInspectionRoute
+  '/services/water-heaters': typeof ServicesWaterHeatersRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial-plumbing': typeof CommercialPlumbingRoute
+  '/contact': typeof ContactRoute
+  '/drain-cleaning': typeof DrainCleaningRoute
+  '/drain-cleaning-jetting': typeof DrainCleaningJettingRoute
+  '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/emergency-repairs': typeof EmergencyRepairsRoute
+  '/estimate': typeof EstimateRoute
+  '/free-estimate': typeof FreeEstimateRoute
+  '/gallery': typeof GalleryRoute
+  '/gas-lines': typeof GasLinesRoute
+  '/leak-detection': typeof LeakDetectionRoute
+  '/leak-detection-repair': typeof LeakDetectionRepairRoute
+  '/our-work': typeof OurWorkRoute
+  '/portfolio': typeof PortfolioRoute
+  '/project': typeof ProjectRoute
+  '/projects': typeof ProjectsRoute
+  '/repiping': typeof RepipingRoute
+  '/repiping-gas-lines': typeof RepipingGasLinesRoute
+  '/request-estimate': typeof RequestEstimateRoute
+  '/residential-plumbing': typeof ResidentialPlumbingRoute
+  '/sewer-inspection': typeof SewerInspectionRoute
+  '/sewer-line-inspection': typeof SewerLineInspectionRoute
+  '/testimonial': typeof TestimonialRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/water-heater-services': typeof WaterHeaterServicesRoute
+  '/water-heaters': typeof WaterHeatersRoute
+  '/services/commercial-plumbing': typeof ServicesCommercialPlumbingRoute
+  '/services/drain-cleaning': typeof ServicesDrainCleaningRoute
+  '/services/drain-cleaning-jetting': typeof ServicesDrainCleaningJettingRoute
+  '/services/emergency-repairs': typeof ServicesEmergencyRepairsRoute
+  '/services/gas-lines': typeof ServicesGasLinesRoute
+  '/services/leak-detection': typeof ServicesLeakDetectionRoute
+  '/services/leak-detection-repair': typeof ServicesLeakDetectionRepairRoute
+  '/services/repiping': typeof ServicesRepipingRoute
+  '/services/repiping-gas-lines': typeof ServicesRepipingGasLinesRoute
+  '/services/residential-plumbing': typeof ServicesResidentialPlumbingRoute
+  '/services/sewer-line-inspection': typeof ServicesSewerLineInspectionRoute
+  '/services/water-heaters': typeof ServicesWaterHeatersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/commercial-plumbing': typeof CommercialPlumbingRoute
+  '/contact': typeof ContactRoute
+  '/drain-cleaning': typeof DrainCleaningRoute
+  '/drain-cleaning-jetting': typeof DrainCleaningJettingRoute
+  '/emergency-plumbing': typeof EmergencyPlumbingRoute
+  '/emergency-repairs': typeof EmergencyRepairsRoute
+  '/estimate': typeof EstimateRoute
+  '/free-estimate': typeof FreeEstimateRoute
+  '/gallery': typeof GalleryRoute
+  '/gas-lines': typeof GasLinesRoute
+  '/leak-detection': typeof LeakDetectionRoute
+  '/leak-detection-repair': typeof LeakDetectionRepairRoute
+  '/our-work': typeof OurWorkRoute
+  '/portfolio': typeof PortfolioRoute
+  '/project': typeof ProjectRoute
+  '/projects': typeof ProjectsRoute
+  '/repiping': typeof RepipingRoute
+  '/repiping-gas-lines': typeof RepipingGasLinesRoute
+  '/request-estimate': typeof RequestEstimateRoute
+  '/residential-plumbing': typeof ResidentialPlumbingRoute
+  '/sewer-inspection': typeof SewerInspectionRoute
+  '/sewer-line-inspection': typeof SewerLineInspectionRoute
+  '/testimonial': typeof TestimonialRoute
+  '/testimonials': typeof TestimonialsRoute
+  '/water-heater-services': typeof WaterHeaterServicesRoute
+  '/water-heaters': typeof WaterHeatersRoute
+  '/services/commercial-plumbing': typeof ServicesCommercialPlumbingRoute
+  '/services/drain-cleaning': typeof ServicesDrainCleaningRoute
+  '/services/drain-cleaning-jetting': typeof ServicesDrainCleaningJettingRoute
+  '/services/emergency-repairs': typeof ServicesEmergencyRepairsRoute
+  '/services/gas-lines': typeof ServicesGasLinesRoute
+  '/services/leak-detection': typeof ServicesLeakDetectionRoute
+  '/services/leak-detection-repair': typeof ServicesLeakDetectionRepairRoute
+  '/services/repiping': typeof ServicesRepipingRoute
+  '/services/repiping-gas-lines': typeof ServicesRepipingGasLinesRoute
+  '/services/residential-plumbing': typeof ServicesResidentialPlumbingRoute
+  '/services/sewer-line-inspection': typeof ServicesSewerLineInspectionRoute
+  '/services/water-heaters': typeof ServicesWaterHeatersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/commercial-plumbing'
+    | '/contact'
+    | '/drain-cleaning'
+    | '/drain-cleaning-jetting'
+    | '/emergency-plumbing'
+    | '/emergency-repairs'
+    | '/estimate'
+    | '/free-estimate'
+    | '/gallery'
+    | '/gas-lines'
+    | '/leak-detection'
+    | '/leak-detection-repair'
+    | '/our-work'
+    | '/portfolio'
+    | '/project'
+    | '/projects'
+    | '/repiping'
+    | '/repiping-gas-lines'
+    | '/request-estimate'
+    | '/residential-plumbing'
+    | '/sewer-inspection'
+    | '/sewer-line-inspection'
+    | '/testimonial'
+    | '/testimonials'
+    | '/water-heater-services'
+    | '/water-heaters'
+    | '/services/commercial-plumbing'
+    | '/services/drain-cleaning'
+    | '/services/drain-cleaning-jetting'
+    | '/services/emergency-repairs'
+    | '/services/gas-lines'
+    | '/services/leak-detection'
+    | '/services/leak-detection-repair'
+    | '/services/repiping'
+    | '/services/repiping-gas-lines'
+    | '/services/residential-plumbing'
+    | '/services/sewer-line-inspection'
+    | '/services/water-heaters'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/commercial-plumbing'
+    | '/contact'
+    | '/drain-cleaning'
+    | '/drain-cleaning-jetting'
+    | '/emergency-plumbing'
+    | '/emergency-repairs'
+    | '/estimate'
+    | '/free-estimate'
+    | '/gallery'
+    | '/gas-lines'
+    | '/leak-detection'
+    | '/leak-detection-repair'
+    | '/our-work'
+    | '/portfolio'
+    | '/project'
+    | '/projects'
+    | '/repiping'
+    | '/repiping-gas-lines'
+    | '/request-estimate'
+    | '/residential-plumbing'
+    | '/sewer-inspection'
+    | '/sewer-line-inspection'
+    | '/testimonial'
+    | '/testimonials'
+    | '/water-heater-services'
+    | '/water-heaters'
+    | '/services/commercial-plumbing'
+    | '/services/drain-cleaning'
+    | '/services/drain-cleaning-jetting'
+    | '/services/emergency-repairs'
+    | '/services/gas-lines'
+    | '/services/leak-detection'
+    | '/services/leak-detection-repair'
+    | '/services/repiping'
+    | '/services/repiping-gas-lines'
+    | '/services/residential-plumbing'
+    | '/services/sewer-line-inspection'
+    | '/services/water-heaters'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/commercial-plumbing'
+    | '/contact'
+    | '/drain-cleaning'
+    | '/drain-cleaning-jetting'
+    | '/emergency-plumbing'
+    | '/emergency-repairs'
+    | '/estimate'
+    | '/free-estimate'
+    | '/gallery'
+    | '/gas-lines'
+    | '/leak-detection'
+    | '/leak-detection-repair'
+    | '/our-work'
+    | '/portfolio'
+    | '/project'
+    | '/projects'
+    | '/repiping'
+    | '/repiping-gas-lines'
+    | '/request-estimate'
+    | '/residential-plumbing'
+    | '/sewer-inspection'
+    | '/sewer-line-inspection'
+    | '/testimonial'
+    | '/testimonials'
+    | '/water-heater-services'
+    | '/water-heaters'
+    | '/services/commercial-plumbing'
+    | '/services/drain-cleaning'
+    | '/services/drain-cleaning-jetting'
+    | '/services/emergency-repairs'
+    | '/services/gas-lines'
+    | '/services/leak-detection'
+    | '/services/leak-detection-repair'
+    | '/services/repiping'
+    | '/services/repiping-gas-lines'
+    | '/services/residential-plumbing'
+    | '/services/sewer-line-inspection'
+    | '/services/water-heaters'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CommercialPlumbingRoute: typeof CommercialPlumbingRoute
+  ContactRoute: typeof ContactRoute
+  DrainCleaningRoute: typeof DrainCleaningRoute
+  DrainCleaningJettingRoute: typeof DrainCleaningJettingRoute
+  EmergencyPlumbingRoute: typeof EmergencyPlumbingRoute
+  EmergencyRepairsRoute: typeof EmergencyRepairsRoute
+  EstimateRoute: typeof EstimateRoute
+  FreeEstimateRoute: typeof FreeEstimateRoute
+  GalleryRoute: typeof GalleryRoute
+  GasLinesRoute: typeof GasLinesRoute
+  LeakDetectionRoute: typeof LeakDetectionRoute
+  LeakDetectionRepairRoute: typeof LeakDetectionRepairRoute
+  OurWorkRoute: typeof OurWorkRoute
+  PortfolioRoute: typeof PortfolioRoute
+  ProjectRoute: typeof ProjectRoute
+  ProjectsRoute: typeof ProjectsRoute
+  RepipingRoute: typeof RepipingRoute
+  RepipingGasLinesRoute: typeof RepipingGasLinesRoute
+  RequestEstimateRoute: typeof RequestEstimateRoute
+  ResidentialPlumbingRoute: typeof ResidentialPlumbingRoute
+  SewerInspectionRoute: typeof SewerInspectionRoute
+  SewerLineInspectionRoute: typeof SewerLineInspectionRoute
+  TestimonialRoute: typeof TestimonialRoute
+  TestimonialsRoute: typeof TestimonialsRoute
+  WaterHeaterServicesRoute: typeof WaterHeaterServicesRoute
+  WaterHeatersRoute: typeof WaterHeatersRoute
+  ServicesCommercialPlumbingRoute: typeof ServicesCommercialPlumbingRoute
+  ServicesDrainCleaningRoute: typeof ServicesDrainCleaningRoute
+  ServicesDrainCleaningJettingRoute: typeof ServicesDrainCleaningJettingRoute
+  ServicesEmergencyRepairsRoute: typeof ServicesEmergencyRepairsRoute
+  ServicesGasLinesRoute: typeof ServicesGasLinesRoute
+  ServicesLeakDetectionRoute: typeof ServicesLeakDetectionRoute
+  ServicesLeakDetectionRepairRoute: typeof ServicesLeakDetectionRepairRoute
+  ServicesRepipingRoute: typeof ServicesRepipingRoute
+  ServicesRepipingGasLinesRoute: typeof ServicesRepipingGasLinesRoute
+  ServicesResidentialPlumbingRoute: typeof ServicesResidentialPlumbingRoute
+  ServicesSewerLineInspectionRoute: typeof ServicesSewerLineInspectionRoute
+  ServicesWaterHeatersRoute: typeof ServicesWaterHeatersRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/water-heaters': {
+      id: '/water-heaters'
+      path: '/water-heaters'
+      fullPath: '/water-heaters'
+      preLoaderRoute: typeof WaterHeatersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/water-heater-services': {
+      id: '/water-heater-services'
+      path: '/water-heater-services'
+      fullPath: '/water-heater-services'
+      preLoaderRoute: typeof WaterHeaterServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimonials': {
+      id: '/testimonials'
+      path: '/testimonials'
+      fullPath: '/testimonials'
+      preLoaderRoute: typeof TestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/testimonial': {
+      id: '/testimonial'
+      path: '/testimonial'
+      fullPath: '/testimonial'
+      preLoaderRoute: typeof TestimonialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sewer-line-inspection': {
+      id: '/sewer-line-inspection'
+      path: '/sewer-line-inspection'
+      fullPath: '/sewer-line-inspection'
+      preLoaderRoute: typeof SewerLineInspectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sewer-inspection': {
+      id: '/sewer-inspection'
+      path: '/sewer-inspection'
+      fullPath: '/sewer-inspection'
+      preLoaderRoute: typeof SewerInspectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/residential-plumbing': {
+      id: '/residential-plumbing'
+      path: '/residential-plumbing'
+      fullPath: '/residential-plumbing'
+      preLoaderRoute: typeof ResidentialPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/request-estimate': {
+      id: '/request-estimate'
+      path: '/request-estimate'
+      fullPath: '/request-estimate'
+      preLoaderRoute: typeof RequestEstimateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/repiping-gas-lines': {
+      id: '/repiping-gas-lines'
+      path: '/repiping-gas-lines'
+      fullPath: '/repiping-gas-lines'
+      preLoaderRoute: typeof RepipingGasLinesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/repiping': {
+      id: '/repiping'
+      path: '/repiping'
+      fullPath: '/repiping'
+      preLoaderRoute: typeof RepipingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects': {
+      id: '/projects'
+      path: '/projects'
+      fullPath: '/projects'
+      preLoaderRoute: typeof ProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/project': {
+      id: '/project'
+      path: '/project'
+      fullPath: '/project'
+      preLoaderRoute: typeof ProjectRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio': {
+      id: '/portfolio'
+      path: '/portfolio'
+      fullPath: '/portfolio'
+      preLoaderRoute: typeof PortfolioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-work': {
+      id: '/our-work'
+      path: '/our-work'
+      fullPath: '/our-work'
+      preLoaderRoute: typeof OurWorkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leak-detection-repair': {
+      id: '/leak-detection-repair'
+      path: '/leak-detection-repair'
+      fullPath: '/leak-detection-repair'
+      preLoaderRoute: typeof LeakDetectionRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leak-detection': {
+      id: '/leak-detection'
+      path: '/leak-detection'
+      fullPath: '/leak-detection'
+      preLoaderRoute: typeof LeakDetectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gas-lines': {
+      id: '/gas-lines'
+      path: '/gas-lines'
+      fullPath: '/gas-lines'
+      preLoaderRoute: typeof GasLinesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/free-estimate': {
+      id: '/free-estimate'
+      path: '/free-estimate'
+      fullPath: '/free-estimate'
+      preLoaderRoute: typeof FreeEstimateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/estimate': {
+      id: '/estimate'
+      path: '/estimate'
+      fullPath: '/estimate'
+      preLoaderRoute: typeof EstimateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency-repairs': {
+      id: '/emergency-repairs'
+      path: '/emergency-repairs'
+      fullPath: '/emergency-repairs'
+      preLoaderRoute: typeof EmergencyRepairsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency-plumbing': {
+      id: '/emergency-plumbing'
+      path: '/emergency-plumbing'
+      fullPath: '/emergency-plumbing'
+      preLoaderRoute: typeof EmergencyPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drain-cleaning-jetting': {
+      id: '/drain-cleaning-jetting'
+      path: '/drain-cleaning-jetting'
+      fullPath: '/drain-cleaning-jetting'
+      preLoaderRoute: typeof DrainCleaningJettingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/drain-cleaning': {
+      id: '/drain-cleaning'
+      path: '/drain-cleaning'
+      fullPath: '/drain-cleaning'
+      preLoaderRoute: typeof DrainCleaningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/commercial-plumbing': {
+      id: '/commercial-plumbing'
+      path: '/commercial-plumbing'
+      fullPath: '/commercial-plumbing'
+      preLoaderRoute: typeof CommercialPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +755,134 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/services/water-heaters': {
+      id: '/services/water-heaters'
+      path: '/services/water-heaters'
+      fullPath: '/services/water-heaters'
+      preLoaderRoute: typeof ServicesWaterHeatersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/sewer-line-inspection': {
+      id: '/services/sewer-line-inspection'
+      path: '/services/sewer-line-inspection'
+      fullPath: '/services/sewer-line-inspection'
+      preLoaderRoute: typeof ServicesSewerLineInspectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/residential-plumbing': {
+      id: '/services/residential-plumbing'
+      path: '/services/residential-plumbing'
+      fullPath: '/services/residential-plumbing'
+      preLoaderRoute: typeof ServicesResidentialPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/repiping-gas-lines': {
+      id: '/services/repiping-gas-lines'
+      path: '/services/repiping-gas-lines'
+      fullPath: '/services/repiping-gas-lines'
+      preLoaderRoute: typeof ServicesRepipingGasLinesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/repiping': {
+      id: '/services/repiping'
+      path: '/services/repiping'
+      fullPath: '/services/repiping'
+      preLoaderRoute: typeof ServicesRepipingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/leak-detection-repair': {
+      id: '/services/leak-detection-repair'
+      path: '/services/leak-detection-repair'
+      fullPath: '/services/leak-detection-repair'
+      preLoaderRoute: typeof ServicesLeakDetectionRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/leak-detection': {
+      id: '/services/leak-detection'
+      path: '/services/leak-detection'
+      fullPath: '/services/leak-detection'
+      preLoaderRoute: typeof ServicesLeakDetectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/gas-lines': {
+      id: '/services/gas-lines'
+      path: '/services/gas-lines'
+      fullPath: '/services/gas-lines'
+      preLoaderRoute: typeof ServicesGasLinesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/emergency-repairs': {
+      id: '/services/emergency-repairs'
+      path: '/services/emergency-repairs'
+      fullPath: '/services/emergency-repairs'
+      preLoaderRoute: typeof ServicesEmergencyRepairsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/drain-cleaning-jetting': {
+      id: '/services/drain-cleaning-jetting'
+      path: '/services/drain-cleaning-jetting'
+      fullPath: '/services/drain-cleaning-jetting'
+      preLoaderRoute: typeof ServicesDrainCleaningJettingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/drain-cleaning': {
+      id: '/services/drain-cleaning'
+      path: '/services/drain-cleaning'
+      fullPath: '/services/drain-cleaning'
+      preLoaderRoute: typeof ServicesDrainCleaningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/services/commercial-plumbing': {
+      id: '/services/commercial-plumbing'
+      path: '/services/commercial-plumbing'
+      fullPath: '/services/commercial-plumbing'
+      preLoaderRoute: typeof ServicesCommercialPlumbingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CommercialPlumbingRoute: CommercialPlumbingRoute,
+  ContactRoute: ContactRoute,
+  DrainCleaningRoute: DrainCleaningRoute,
+  DrainCleaningJettingRoute: DrainCleaningJettingRoute,
+  EmergencyPlumbingRoute: EmergencyPlumbingRoute,
+  EmergencyRepairsRoute: EmergencyRepairsRoute,
+  EstimateRoute: EstimateRoute,
+  FreeEstimateRoute: FreeEstimateRoute,
+  GalleryRoute: GalleryRoute,
+  GasLinesRoute: GasLinesRoute,
+  LeakDetectionRoute: LeakDetectionRoute,
+  LeakDetectionRepairRoute: LeakDetectionRepairRoute,
+  OurWorkRoute: OurWorkRoute,
+  PortfolioRoute: PortfolioRoute,
+  ProjectRoute: ProjectRoute,
+  ProjectsRoute: ProjectsRoute,
+  RepipingRoute: RepipingRoute,
+  RepipingGasLinesRoute: RepipingGasLinesRoute,
+  RequestEstimateRoute: RequestEstimateRoute,
+  ResidentialPlumbingRoute: ResidentialPlumbingRoute,
+  SewerInspectionRoute: SewerInspectionRoute,
+  SewerLineInspectionRoute: SewerLineInspectionRoute,
+  TestimonialRoute: TestimonialRoute,
+  TestimonialsRoute: TestimonialsRoute,
+  WaterHeaterServicesRoute: WaterHeaterServicesRoute,
+  WaterHeatersRoute: WaterHeatersRoute,
+  ServicesCommercialPlumbingRoute: ServicesCommercialPlumbingRoute,
+  ServicesDrainCleaningRoute: ServicesDrainCleaningRoute,
+  ServicesDrainCleaningJettingRoute: ServicesDrainCleaningJettingRoute,
+  ServicesEmergencyRepairsRoute: ServicesEmergencyRepairsRoute,
+  ServicesGasLinesRoute: ServicesGasLinesRoute,
+  ServicesLeakDetectionRoute: ServicesLeakDetectionRoute,
+  ServicesLeakDetectionRepairRoute: ServicesLeakDetectionRepairRoute,
+  ServicesRepipingRoute: ServicesRepipingRoute,
+  ServicesRepipingGasLinesRoute: ServicesRepipingGasLinesRoute,
+  ServicesResidentialPlumbingRoute: ServicesResidentialPlumbingRoute,
+  ServicesSewerLineInspectionRoute: ServicesSewerLineInspectionRoute,
+  ServicesWaterHeatersRoute: ServicesWaterHeatersRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

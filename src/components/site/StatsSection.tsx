@@ -4,7 +4,7 @@ import heroVideo from "@/assets/herovideo.mp4";
 
 export function StatsSection() {
   return (
-    <section id="stats" className="relative py-[80px] overflow-hidden">
+    <section id="stats" className="relative py-12 sm:py-16 lg:py-[80px] overflow-hidden">
       {/* Background Grid Pattern Overlay */}
       <div className="absolute inset-0 bg-grid opacity-[0.02] pointer-events-none" />
       
@@ -34,14 +34,14 @@ export function StatsSection() {
               </p>
 
               {/* Buttons Row */}
-              <div className="flex flex-wrap gap-4 select-none">
+              <div className="flex flex-wrap gap-3 sm:gap-4 select-none">
                 {/* Call Us Now */}
                 <motion.a
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ type: "spring", stiffness: 400, damping: 15 }}
                   href="tel:+15202212010"
-                  className="group inline-flex items-center justify-center bg-gradient-to-r from-cta to-[#d62828] text-white text-xs font-bold uppercase tracking-wider rounded-xl px-9 py-4 shadow-cta transition-all duration-300 hover:brightness-110 cursor-pointer gap-2"
+                  className="group inline-flex items-center justify-center bg-gradient-to-r from-cta to-[#d62828] text-white text-xs font-bold uppercase tracking-wider rounded-xl px-6 sm:px-9 py-3.5 sm:py-4 shadow-cta transition-all duration-300 hover:brightness-110 cursor-pointer gap-2"
                 >
                   <Phone className="h-4 w-4 transition-transform group-hover:rotate-12" />
                   <span>Call Us Now</span>
@@ -52,8 +52,8 @@ export function StatsSection() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                  href="#contact"
-                  className="group inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-navy text-xs font-bold uppercase tracking-wider rounded-xl px-9 py-4 transition-all duration-300 shadow-sm cursor-pointer gap-2"
+                  href="/request-estimate"
+                  className="group inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 text-navy text-xs font-bold uppercase tracking-wider rounded-xl px-6 sm:px-9 py-3.5 sm:py-4 transition-all duration-300 shadow-sm cursor-pointer gap-2"
                 >
                   <span>Free Estimate</span>
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -67,7 +67,7 @@ export function StatsSection() {
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             whileHover={{ scale: 1.02 }}
-            className="w-full lg:col-span-2 relative rounded-[2rem] overflow-hidden border border-slate-200/50 shadow-glow min-h-[300px] lg:min-h-[400px] cursor-pointer group"
+            className="w-full lg:col-span-2 relative rounded-[2rem] overflow-hidden border border-slate-200/50 shadow-glow min-h-[260px] sm:min-h-[320px] lg:min-h-[400px] cursor-pointer group"
           >
             <video
               src={heroVideo}

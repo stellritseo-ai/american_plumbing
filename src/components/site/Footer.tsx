@@ -44,21 +44,24 @@ const socials = [
 ];
 
 const quickLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/#services" },
+  { label: "Projects", href: "/projects" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "Request Estimate", href: "/request-estimate" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const servicesLinks = [
-  { label: "Residential Plumbing", href: "#services" },
-  { label: "Commercial Plumbing", href: "#services" },
-  { label: "Emergency Services", href: "#services" },
-  { label: "Water Heaters", href: "#services" },
-  { label: "Sewer Repair", href: "#services" },
-  { label: "Drain Cleaning", href: "#services" },
+  { label: "Residential Plumbing", href: "/residential-plumbing" },
+  { label: "Commercial Plumbing", href: "/commercial-plumbing" },
+  { label: "Emergency Services", href: "/emergency-repairs" },
+  { label: "Water Heaters", href: "/water-heaters" },
+  { label: "Sewer Repair", href: "/sewer-line-inspection" },
+  { label: "Drain Cleaning & Jetting", href: "/drain-cleaning" },
+  { label: "Leak Detection & Repair", href: "/leak-detection" },
+  { label: "Repiping & Gas Lines", href: "/repiping-gas-lines" },
 ];
 
 export function Footer() {
@@ -66,16 +69,16 @@ export function Footer() {
     <footer className="relative bg-[#050b1a] text-white overflow-hidden border-t border-slate-900">
       {/* Background patterns */}
       <div className="absolute inset-0 bg-grid opacity-[0.02] pointer-events-none" />
-      
+
       {/* Decorative Blur Blobs */}
       <div className="absolute -top-40 left-1/4 w-[400px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none animate-pulse" style={{ animationDuration: '8s' }} />
       <div className="absolute -bottom-40 right-10 w-[350px] h-[350px] bg-electric/5 rounded-full blur-3xl pointer-events-none animate-pulse" style={{ animationDuration: '10s' }} />
 
-      <div className="relative mx-auto w-[90%] max-w-7xl py-20 lg:py-24 z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-10">
-          
+      <div className="relative mx-auto w-[90%] max-w-7xl pt-14 sm:pt-20 lg:pt-24 pb-[20px] z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-10">
+
           {/* Logo & Description */}
-          <div className="col-span-2 lg:col-span-4">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-4">
             <div className="flex items-center">
               <img
                 src={logo}
@@ -83,12 +86,12 @@ export function Footer() {
                 className="h-16 w-auto object-contain"
               />
             </div>
-            
+
             <p className="mt-6 text-sm text-slate-400 leading-relaxed max-w-sm font-semibold">
-              Tucson's premier commercial & residential plumbing specialists. 
+              Tucson's premier commercial & residential plumbing specialists.
               Delivering licensed, bonded, and guaranteed plumbing solutions across Southern Arizona since 1999.
             </p>
-            
+
             {/* Socials row */}
             <div className="mt-8 flex gap-3 select-none">
               {socials.map(({ icon: Icon, href, label }, i) => (
@@ -109,7 +112,7 @@ export function Footer() {
             <div className="mt-8 flex flex-wrap gap-2 select-none">
               <div className="flex items-center gap-2 bg-slate-900/40 border border-slate-800/80 rounded-xl px-3 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                ROC #346122
+                ROC #321353
               </div>
               <div className="flex items-center gap-2 bg-slate-900/40 border border-slate-800/80 rounded-xl px-3 py-2 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -129,8 +132,8 @@ export function Footer() {
           <Col title="Our Services" items={servicesLinks} />
 
           {/* Contact & Hours Column (4-span grid layout subsplit) */}
-          <div className="col-span-2 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-6">
-            
+          <div className="col-span-1 sm:col-span-2 lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-6">
+
             {/* Contact Details */}
             <div>
               <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-6">
@@ -138,8 +141,8 @@ export function Footer() {
               </div>
               <ul className="space-y-4.5 text-sm">
                 <li>
-                  <a 
-                    href="tel:+15202212010" 
+                  <a
+                    href="tel:+15202212010"
                     className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors group"
                   >
                     <div className="h-9 w-9 rounded-lg bg-slate-900/50 border border-slate-800 flex items-center justify-center text-electric group-hover:bg-electric/10 group-hover:border-electric/30 transition-all shrink-0">
@@ -152,8 +155,8 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="mailto:shawn@acptucson.com" 
+                  <a
+                    href="mailto:shawn@acptucson.com"
                     className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors group"
                   >
                     <div className="h-9 w-9 rounded-lg bg-slate-900/50 border border-slate-800 flex items-center justify-center text-electric group-hover:bg-electric/10 group-hover:border-electric/30 transition-all shrink-0">
@@ -166,10 +169,10 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="https://maps.google.com/?q=226+E+Forrest+Feezor+St,+Vail,+AZ+85641" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://maps.google.com/?q=226+E+Forrest+Feezor+St,+Vail,+AZ+85641"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-start gap-3 text-slate-400 hover:text-white transition-colors group"
                   >
                     <div className="h-9 w-9 rounded-lg bg-slate-900/50 border border-slate-800 flex items-center justify-center text-electric group-hover:bg-electric/10 group-hover:border-electric/30 transition-all shrink-0">
@@ -203,8 +206,8 @@ export function Footer() {
                 <p className="text-xs text-slate-400 leading-relaxed font-semibold">
                   We are available 24/7 for emergency dispatches across Tucson.<br /><br />
                   <span className="text-white block font-bold mb-1">Standard Office:</span>
-                  Mon–Fri: 7am–6pm<br />
-                  Sat–Sun: Closed
+                  Mon–Fri: 7:00 AM – 4:00 PM<br />
+                  Sat–Sun: Emergency Dispatch
                 </p>
               </div>
             </div>
@@ -213,16 +216,16 @@ export function Footer() {
         </div>
 
         {/* Bottom Copy/Trademark Row with Back to Top trigger */}
-        <div className="mt-16 pt-8 border-t border-slate-900 flex flex-wrap items-center justify-between gap-6">
+        <div className="mt-12 sm:mt-16 pt-8 border-t border-slate-900 flex flex-col sm:flex-row flex-wrap items-center justify-between gap-4 sm:gap-6 text-center sm:text-left">
           <p className="text-xs text-slate-500 font-semibold">
             © {new Date().getFullYear()} American Commercial Plumbing LLC. All rights reserved.
           </p>
-          
+
           <div className="flex items-center gap-6">
             <p className="text-xs text-slate-500 font-semibold hidden sm:block">
-              ROC #346122 · Licensed, Bonded & Insured
+              ROC #321353 · Licensed, Bonded & Insured
             </p>
-            
+
             <motion.button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               whileHover={{ y: -3 }}
@@ -243,10 +246,10 @@ export function Footer() {
 function Col({ title, items }: { title: string; items: { label: string; href: string }[] }) {
   return (
     <div className="col-span-1 lg:col-span-2">
-      <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-6">
+      <div className="text-xs uppercase tracking-widest text-slate-400 font-bold mb-5 sm:mb-6">
         {title}
       </div>
-      <ul className="space-y-4">
+      <ul className="space-y-3.5 sm:space-y-4">
         {items.map(({ label, href }) => (
           <li key={label}>
             <motion.a

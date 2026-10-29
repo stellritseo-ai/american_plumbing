@@ -10,6 +10,7 @@ import {
   ShieldAlert,
 } from "lucide-react";
 import { submitLead } from "../../lib/send-lead";
+import { HoneypotFields } from "../ui/HoneypotFields";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -121,6 +122,7 @@ export function Contact() {
                 <form
                   onSubmit={async (e) => {
                     e.preventDefault();
+                    if (submitting) return;
                     setSubmitting(true);
                     const fd = new FormData(e.currentTarget);
                     await submitLead({
@@ -130,12 +132,15 @@ export function Contact() {
                       email: String(fd.get("email") || ""),
                       service: String(fd.get("service") || ""),
                       message: String(fd.get("message") || ""),
+                      hp_company: String(fd.get("company_website") || ""),
+                      hp_fax: String(fd.get("business_fax") || ""),
                     });
                     setSubmitting(false);
                     setSubmitted(true);
                   }}
                   className="space-y-6"
                 >
+                  <HoneypotFields />
                   <div className="grid sm:grid-cols-2 gap-5">
                     <Field
                       label="Full Name"

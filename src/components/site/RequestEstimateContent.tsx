@@ -30,6 +30,7 @@ import {
   Info,
 } from "lucide-react";
 import { submitLead } from "../../lib/send-lead";
+import { HoneypotFields } from "../ui/HoneypotFields";
 
 export function RequestEstimateContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -51,6 +52,7 @@ export function RequestEstimateContent() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (formSubmitting) return;
     setFormSubmitting(true);
     await submitLead({
       formTitle: "Request Estimate Page Form",
@@ -639,6 +641,7 @@ export function RequestEstimateContent() {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                <HoneypotFields />
                 {/* Name, Phone, Email */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                   <div>

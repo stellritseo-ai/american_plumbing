@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { toast } from "sonner";
+import { validateLeadSubmission } from "./anti-spam";
 
 export interface LeadSubmission {
   formTitle?: string;
@@ -15,6 +16,11 @@ export interface LeadSubmission {
   rating?: number;
   location?: string;
   pageUrl?: string;
+  // Anti-bot & security fields
+  hp_company?: string;
+  hp_website?: string;
+  hp_fax?: string;
+  formStartTime?: number;
 }
 
 export interface LeadResponse {
@@ -26,9 +32,51 @@ export interface LeadResponse {
 // Server function executed exclusively on the server side
 export const sendLeadServerFn = createServerFn({ method: "POST" })
   .validator((data: LeadSubmission) => data)
-  .handler(async ({ data }): Promise<LeadResponse> => {
+  .handler(async (ctx): Promise<LeadResponse> => {
+    const data = ctx.data;
     try {
-      // 1. Resolve Zoho credentials safely on server
+      // 1. Extract Client IP and User Agent for Rate Limiting & Security
+      let clientIp = "unknown";
+      try {
+        const req = (ctx as any).request;
+        if (req && typeof req.headers?.get === "function") {
+          clientIp =
+            req.headers.get("cf-connecting-ip") ||
+            req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+            req.headers.get("x-real-ip") ||
+            "unknown";
+        }
+      } catch {
+        // Fallback if request context is not standard
+      }
+
+      // 2. Anti-Spam, Bot Trap & Request Deduplication Validation
+      const spamCheck = validateLeadSubmission(data, clientIp);
+
+      if (!spamCheck.allowed) {
+        // If it's a duplicate request (e.g. double click within 60s, or browser retry):
+        if (spamCheck.isDuplicate) {
+          console.log(
+            `[sendLeadServerFn] Suppressed duplicate lead submission within 60s window for "${data.name || "Customer"}". Prevented 2nd email.`
+          );
+          return {
+            success: true,
+            message: "Thank you! Your request has been received. Our team will contact you promptly.",
+          };
+        }
+
+        // Silent discard for bots: return success response so automated bots
+        // do not know they were trapped, while protecting your Zoho inbox from spam!
+        console.log(
+          `[sendLeadServerFn] Silently blocked spam/bot submission (Reason: ${spamCheck.reason}). No email dispatched.`
+        );
+        return {
+          success: true,
+          message: "Thank you! Your request has been received. Our team will contact you promptly.",
+        };
+      }
+
+      // 3. Resolve Zoho credentials safely on server
       let host = process.env.ZOHO_SMTP_HOST;
       let port = process.env.ZOHO_SMTP_PORT;
       let secure = process.env.ZOHO_SMTP_SECURE;
@@ -71,7 +119,7 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
       const smtpPass = pass || "2AN9XcT8kiq5";
       const toRecipient = recipient || "jack@stellrit.com";
 
-      // 2. Import nodemailer dynamically
+      // 4. Import nodemailer dynamically
       const nodemailer = await import("nodemailer");
 
       const transporter = nodemailer.createTransport({
@@ -89,7 +137,7 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
       const title = data.formTitle || "Website Lead Form";
       const subject = `[ACP Tucson Lead] ${title} - ${data.name || "Customer"}`;
 
-      // 3. Plain text format
+      // 5. Plain text format
       const textLines: string[] = [
         `=== NEW LEAD SUBMISSION: ${title} ===`,
         `Name: ${data.name || "N/A"}`,
@@ -105,9 +153,10 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
       if (data.rating) textLines.push(`Rating: ${data.rating} / 5 Stars`);
       if (data.message) textLines.push(`\nMessage / Notes:\n${data.message}`);
       if (data.pageUrl) textLines.push(`\nSubmitted from: ${data.pageUrl}`);
+      textLines.push(`Security Status: Verified Human Lead`);
       textLines.push(`Submitted at: ${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} MST`);
 
-      // 4. HTML format
+      // 6. HTML format
       const rows: string[] = [];
       const addRow = (label: string, value?: string | number) => {
         if (value === undefined || value === null || value === "") return;
@@ -138,6 +187,7 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
         addRow("Message / Scope", `<div style="white-space: pre-wrap; background: #ffffff; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px;">${data.message}</div>`);
       }
       if (data.pageUrl) addRow("Source Page", `<a href="${data.pageUrl}" style="color: #2563eb;">${data.pageUrl}</a>`);
+      addRow("Bot Protection", `<span style="color: #16a34a; font-weight: 600;">✓ Verified Human Lead</span>`);
       addRow("Submitted At", `${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} MST`);
 
       const html = `
@@ -159,7 +209,7 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
             </div>
             <div style="padding: 24px 28px;">
               <p style="margin: 0 0 16px 0; font-size: 14px; color: #475569;">
-                A new customer inquiry was just received on <strong>acptucson.com</strong>:
+                A new verified inquiry was just received on <strong>acptucson.com</strong>:
               </p>
               <table style="width: 100%; border-collapse: collapse; font-size: 13px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden;">
                 <tbody>
@@ -197,7 +247,7 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
         html,
       });
 
-      console.log(`[sendLeadServerFn] Lead "${title}" dispatched to ${toRecipient}`);
+      console.log(`[sendLeadServerFn] Verified lead "${title}" dispatched to ${toRecipient}`);
       return {
         success: true,
         message: "Thank you! Your request has been received. Our team will contact you promptly.",
@@ -213,9 +263,58 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
     }
   });
 
+// ── CLIENT-SIDE IN-FLIGHT MUTEX & DEBOUNCE GUARDS ──
+let isSubmittingLock = false;
+let lastSubmissionTimestamp = 0;
+let lastSubmissionSignature = "";
+const pageLoadedAt = typeof Date !== "undefined" ? Date.now() : 0;
+
 export async function submitLead(payload: LeadSubmission): Promise<LeadResponse> {
-  if (typeof window !== "undefined" && !payload.pageUrl) {
-    payload.pageUrl = window.location.href;
+  if (typeof window !== "undefined") {
+    if (!payload.pageUrl) {
+      payload.pageUrl = window.location.href;
+    }
+
+    // Attach form start time if not provided
+    if (!payload.formStartTime) {
+      payload.formStartTime = pageLoadedAt;
+    }
+
+    // Automatically inspect DOM for any honeypot inputs filled by web bots
+    try {
+      const hpCompany = (document.querySelector('input[name="company_website"]') as HTMLInputElement)?.value;
+      const hpFax = (document.querySelector('input[name="business_fax"]') as HTMLInputElement)?.value;
+      if (hpCompany && !payload.hp_company) payload.hp_company = hpCompany;
+      if (hpFax && !payload.hp_fax) payload.hp_fax = hpFax;
+    } catch {
+      // DOM access fallback
+    }
+
+    // Guard: Prevent rapid multiple clicks or concurrent submissions
+    const now = Date.now();
+    const signature = `${payload.name}|${payload.email || payload.phone}|${(payload.message || "").slice(0, 50)}`;
+
+    if (isSubmittingLock) {
+      console.warn("[submitLead] Prevented concurrent submission (already in-flight).");
+      return {
+        success: true,
+        message: "Your request is already being processed. Thank you!",
+      };
+    }
+
+    // Guard: Prevent re-submitting the exact same content within 15 seconds
+    if (signature === lastSubmissionSignature && now - lastSubmissionTimestamp < 15000) {
+      console.warn("[submitLead] Prevented duplicate re-submission within 15s.");
+      toast.success("Thank you! Your request has been received.");
+      return {
+        success: true,
+        message: "Thank you! Your request has been received.",
+      };
+    }
+
+    isSubmittingLock = true;
+    lastSubmissionTimestamp = now;
+    lastSubmissionSignature = signature;
   }
 
   try {
@@ -229,11 +328,15 @@ export async function submitLead(payload: LeadSubmission): Promise<LeadResponse>
   } catch (err: unknown) {
     const errorMessage = err instanceof Error ? err.message : String(err);
     console.warn("[submitLead] Client call notice:", errorMessage);
-    // User feedback remains smooth and reassuring
     toast.success("Thank you! Your request has been received. We will contact you shortly.");
     return {
       success: true,
       message: "Thank you! Your request has been received.",
     };
+  } finally {
+    // Release in-flight lock after a short cooling period
+    setTimeout(() => {
+      isSubmittingLock = false;
+    }, 2000);
   }
 }

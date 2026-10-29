@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 
 import { submitLead } from "../../lib/send-lead";
+import { HoneypotFields } from "../ui/HoneypotFields";
 
 export function ContactPageContent() {
   const [submitting, setSubmitting] = useState(false);
@@ -43,6 +44,7 @@ export function ContactPageContent() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (submitting) return;
     setSubmitting(true);
     await submitLead({
       formTitle: "Contact Page - Service & Estimate Form",
@@ -347,6 +349,7 @@ export function ContactPageContent() {
                     </motion.div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-5">
+                      <HoneypotFields />
                       {/* Name & Phone */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>

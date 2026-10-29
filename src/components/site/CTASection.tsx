@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, ChevronDown, ArrowRight } from "lucide-react";
 import { submitLead } from "../../lib/send-lead";
+import { HoneypotFields } from "../ui/HoneypotFields";
 
 export function CTASection() {
   const [name, setName] = useState("");
@@ -15,6 +16,7 @@ export function CTASection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting) return;
     if (!name.trim() || !email.trim()) return;
 
     setIsSubmitting(true);
@@ -81,6 +83,7 @@ export function CTASection() {
           ) : (
             /* Contact Form */
             <form className="w-full space-y-4 text-left" onSubmit={handleSubmit}>
+              <HoneypotFields />
 
               {/* Row 1: Name and Phone */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

@@ -115,7 +115,8 @@ export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
       {
-        title: "Client Testimonials & 5-Star Reviews | American Commercial Plumbing LLC — Tucson, AZ",
+        title:
+          "Client Testimonials & 5-Star Reviews | American Commercial Plumbing LLC — Tucson, AZ",
       },
       {
         name: "description",
@@ -129,7 +130,8 @@ export const Route = createFileRoute("/testimonials")({
       },
       {
         property: "og:title",
-        content: "Client Testimonials & 5-Star Reviews | American Commercial Plumbing LLC",
+        content:
+          "Client Testimonials & 5-Star Reviews | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -154,7 +156,8 @@ export const Route = createFileRoute("/testimonials")({
       },
       {
         name: "twitter:title",
-        content: "Client Testimonials & 5-Star Reviews | American Commercial Plumbing LLC — Tucson, AZ",
+        content:
+          "Client Testimonials & 5-Star Reviews | American Commercial Plumbing LLC — Tucson, AZ",
       },
       {
         name: "twitter:description",

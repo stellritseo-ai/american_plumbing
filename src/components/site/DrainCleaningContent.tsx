@@ -329,8 +329,12 @@ export function DrainCleaningContent() {
                 <Droplets className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">Hydro Jetting</span>
-                <span className="text-[11px] font-bold text-slate-500">Up to 4,000 PSI</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  Hydro Jetting
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Up to 4,000 PSI
+                </span>
               </div>
             </div>
 
@@ -339,8 +343,12 @@ export function DrainCleaningContent() {
                 <Video className="h-5 w-5 text-cyan-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">Video Scoping</span>
-                <span className="text-[11px] font-bold text-slate-500">Camera Verified</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  Video Scoping
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Camera Verified
+                </span>
               </div>
             </div>
 
@@ -349,8 +357,12 @@ export function DrainCleaningContent() {
                 <ShieldCheck className="h-5 w-5 text-emerald-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">ROC #321353</span>
-                <span className="text-[11px] font-bold text-slate-500">Licensed & Insured</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  ROC #321353
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Licensed & Insured
+                </span>
               </div>
             </div>
 
@@ -359,8 +371,12 @@ export function DrainCleaningContent() {
                 <Star className="h-5 w-5 text-amber-500 fill-amber-500" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">4.9 Star Rating</span>
-                <span className="text-[11px] font-bold text-slate-500">1,000+ Verified Reviews</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  4.9 Star Rating
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  1,000+ Verified Reviews
+                </span>
               </div>
             </div>
           </div>
@@ -382,13 +398,30 @@ export function DrainCleaningContent() {
               </h2>
               <div className="space-y-4 text-slate-700 text-base leading-relaxed">
                 <p>
-                  A slow drain or a backed-up toilet is more than an inconvenience; it's a warning sign. Most store-bought chemicals and basic hand snakes only poke a hole through the blockage, leaving behind grease, scale, and debris that will cause another clog in a few weeks or months.
+                  A slow drain or a backed-up toilet is more than an
+                  inconvenience; it's a warning sign. Most store-bought
+                  chemicals and basic hand snakes only poke a hole through the
+                  blockage, leaving behind grease, scale, and debris that will
+                  cause another clog in a few weeks or months.
                 </p>
                 <p>
-                  At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we take a different approach. We don't just remove the blockage—we restore your pipes to their original diameter, removing the buildup that causes recurrent clogs in the first place.
+                  At{" "}
+                  <strong className="text-navy font-bold">
+                    American Commercial Plumbing LLC
+                  </strong>
+                  , we take a different approach. We don't just remove the
+                  blockage—we restore your pipes to their original diameter,
+                  removing the buildup that causes recurrent clogs in the first
+                  place.
                 </p>
                 <p>
-                  Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>, our family-run business has been serving Tucson and Southern Arizona since 1999. We bring commercial-grade equipment and 25+ years of clean engineering expertise to every drain cleaning job, whether it's a residential kitchen sink or a commercial grease line.
+                  Led by owner{" "}
+                  <strong className="text-navy font-bold">Shawn Holton</strong>,
+                  our family-run business has been serving Tucson and Southern
+                  Arizona since 1999. We bring commercial-grade equipment and
+                  25+ years of clean engineering expertise to every drain
+                  cleaning job, whether it's a residential kitchen sink or a
+                  commercial grease line.
                 </p>
               </div>
 
@@ -399,10 +432,16 @@ export function DrainCleaningContent() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-800 italic leading-snug">
-                    "Snaking pokes a small hole; hydro jetting restores the entire pipe. We clean all 360 degrees of the pipe wall so you don't have to deal with the same frustrating clog month after month."
+                    "Snaking pokes a small hole; hydro jetting restores the
+                    entire pipe. We clean all 360 degrees of the pipe wall so
+                    you don't have to deal with the same frustrating clog month
+                    after month."
                   </p>
                   <div className="mt-2 text-xs font-black text-navy uppercase tracking-wider">
-                    Shawn Holton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
+                    Shawn Holton{" "}
+                    <span className="font-normal text-slate-500">
+                      · Owner & Master Plumber
+                    </span>
                   </div>
                 </div>
               </div>
@@ -426,8 +465,12 @@ export function DrainCleaningContent() {
                       <Droplets className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs font-black text-navy">Up to 4,000 PSI Hydro Scouring</div>
-                      <div className="text-[11px] text-slate-500 font-medium">Scours grease, roots & scale to original pipe bore</div>
+                      <div className="text-xs font-black text-navy">
+                        Up to 4,000 PSI Hydro Scouring
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-medium">
+                        Scours grease, roots & scale to original pipe bore
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -449,7 +492,9 @@ export function DrainCleaningContent() {
               Our Drain Cleaning Services
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              We offer a comprehensive suite of drain services to handle any blockage, from the simplest sink to the most stubborn main sewer line:
+              We offer a comprehensive suite of drain services to handle any
+              blockage, from the simplest sink to the most stubborn main sewer
+              line:
             </p>
           </div>
 
@@ -461,7 +506,12 @@ export function DrainCleaningContent() {
                   key={idx}
                   className="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                 >
-                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300" style={{ backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))` }} />
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300"
+                    style={{
+                      backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))`,
+                    }}
+                  />
                   <div>
                     <div className="flex items-center justify-between mb-5">
                       <div className="h-12 w-12 rounded-2xl bg-blue-50 border border-blue-200/80 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
@@ -482,7 +532,10 @@ export function DrainCleaningContent() {
 
                     <div className="space-y-2.5 pt-4 border-t border-slate-100 mb-6">
                       {svc.bullets.map((bullet, bIdx) => (
-                        <div key={bIdx} className="flex items-start gap-2.5 text-xs font-semibold text-slate-700">
+                        <div
+                          key={bIdx}
+                          className="flex items-start gap-2.5 text-xs font-semibold text-slate-700"
+                        >
                           <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{bullet}</span>
                         </div>
@@ -518,7 +571,9 @@ export function DrainCleaningContent() {
               Hydro Jetting vs. Snaking: What's the Difference?
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              Many homeowners and business owners ask us which method is better. The answer depends on the situation, but here is a clear breakdown:
+              Many homeowners and business owners ask us which method is better.
+              The answer depends on the situation, but here is a clear
+              breakdown:
             </p>
           </div>
 
@@ -527,36 +582,66 @@ export function DrainCleaningContent() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="bg-[#F8FAFC] border-b border-slate-200">
-                  <th className="py-4 px-6 text-xs font-black uppercase tracking-wider text-navy w-1/4">Feature</th>
-                  <th className="py-4 px-6 text-xs font-black uppercase tracking-wider text-slate-700 w-3/8">Drain Snaking</th>
-                  <th className="py-4 px-6 text-xs font-black uppercase tracking-wider text-primary w-3/8 bg-blue-50/50">Hydro Jetting</th>
+                  <th className="py-4 px-6 text-xs font-black uppercase tracking-wider text-navy w-1/4">
+                    Feature
+                  </th>
+                  <th className="py-4 px-6 text-xs font-black uppercase tracking-wider text-slate-700 w-3/8">
+                    Drain Snaking
+                  </th>
+                  <th className="py-4 px-6 text-xs font-black uppercase tracking-wider text-primary w-3/8 bg-blue-50/50">
+                    Hydro Jetting
+                  </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 text-xs font-semibold text-slate-700">
                 <tr className="hover:bg-slate-50/50">
                   <td className="py-4 px-6 font-black text-navy">Method</td>
-                  <td className="py-4 px-6">Mechanical rotating cable cuts hole through clog</td>
-                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">High-pressure water scours 360° of pipe walls</td>
+                  <td className="py-4 px-6">
+                    Mechanical rotating cable cuts hole through clog
+                  </td>
+                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">
+                    High-pressure water scours 360° of pipe walls
+                  </td>
                 </tr>
                 <tr className="hover:bg-slate-50/50">
                   <td className="py-4 px-6 font-black text-navy">Result</td>
-                  <td className="py-4 px-6">Clears a temporary path through the blockage</td>
-                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">Cleans the entire pipe circumference to original bore</td>
+                  <td className="py-4 px-6">
+                    Clears a temporary path through the blockage
+                  </td>
+                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">
+                    Cleans the entire pipe circumference to original bore
+                  </td>
                 </tr>
                 <tr className="hover:bg-slate-50/50">
-                  <td className="py-4 px-6 font-black text-navy">Effectiveness</td>
-                  <td className="py-4 px-6">Temporary; buildup remains and clog often returns</td>
-                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">Long-lasting; eliminates buildup and prevents future blocks</td>
+                  <td className="py-4 px-6 font-black text-navy">
+                    Effectiveness
+                  </td>
+                  <td className="py-4 px-6">
+                    Temporary; buildup remains and clog often returns
+                  </td>
+                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">
+                    Long-lasting; eliminates buildup and prevents future blocks
+                  </td>
                 </tr>
                 <tr className="hover:bg-slate-50/50">
                   <td className="py-4 px-6 font-black text-navy">Best For</td>
-                  <td className="py-4 px-6">Emergency flow opening, solid toy/wipe obstructions</td>
-                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">Grease, mineral scale, roots, full preventative maintenance</td>
+                  <td className="py-4 px-6">
+                    Emergency flow opening, solid toy/wipe obstructions
+                  </td>
+                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">
+                    Grease, mineral scale, roots, full preventative maintenance
+                  </td>
                 </tr>
                 <tr className="hover:bg-slate-50/50">
-                  <td className="py-4 px-6 font-black text-navy">Risk Assessment</td>
-                  <td className="py-4 px-6">Can punch holes in fragile, heavily corroded older pipes</td>
-                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">Extremely safe for most pipes; camera-evaluated first</td>
+                  <td className="py-4 px-6 font-black text-navy">
+                    Risk Assessment
+                  </td>
+                  <td className="py-4 px-6">
+                    Can punch holes in fragile, heavily corroded older pipes
+                  </td>
+                  <td className="py-4 px-6 font-bold text-primary bg-blue-50/20">
+                    Extremely safe for most pipes; camera-evaluated first
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -569,7 +654,10 @@ export function DrainCleaningContent() {
               Our Professional Approach:
             </h3>
             <p className="text-xs text-slate-700 leading-relaxed font-semibold">
-              We often use a combination of both. We may snake first to establish flow, then follow with hydro jetting to thoroughly clean the line. We always assess your pipe material and condition before recommending a method.
+              We often use a combination of both. We may snake first to
+              establish flow, then follow with hydro jetting to thoroughly clean
+              the line. We always assess your pipe material and condition before
+              recommending a method.
             </p>
           </div>
         </div>
@@ -587,7 +675,8 @@ export function DrainCleaningContent() {
               Commercial Drain Cleaning Services
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              For businesses, a clogged drain is a costly disruption. We provide rapid-response drain cleaning and preventative maintenance for:
+              For businesses, a clogged drain is a costly disruption. We provide
+              rapid-response drain cleaning and preventative maintenance for:
             </p>
           </div>
 
@@ -603,8 +692,12 @@ export function DrainCleaningContent() {
                     <div className="h-11 w-11 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-primary mb-4">
                       <SectorIcon className="h-5 w-5" />
                     </div>
-                    <h3 className="text-base font-black text-navy mb-2">{sector.title}</h3>
-                    <p className="text-xs text-slate-600 leading-relaxed font-semibold">{sector.desc}</p>
+                    <h3 className="text-base font-black text-navy mb-2">
+                      {sector.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed font-semibold">
+                      {sector.desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -614,10 +707,16 @@ export function DrainCleaningContent() {
           {/* Preventative Maintenance Callout */}
           <div className="p-8 rounded-3xl bg-navy text-white shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
-              <span className="text-[10px] font-black uppercase tracking-widest text-electric block mb-1">Preventative Maintenance Plans</span>
-              <h3 className="text-xl font-black text-white mb-2">Avoid Emergency Restaurant & Facility Shutdowns</h3>
+              <span className="text-[10px] font-black uppercase tracking-widest text-electric block mb-1">
+                Preventative Maintenance Plans
+              </span>
+              <h3 className="text-xl font-black text-white mb-2">
+                Avoid Emergency Restaurant & Facility Shutdowns
+              </h3>
               <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
-                We offer scheduled quarterly and bi-annual jetting maintenance plans for commercial clients to keep grease lines flowing smoothly and ensure continuous health inspection compliance.
+                We offer scheduled quarterly and bi-annual jetting maintenance
+                plans for commercial clients to keep grease lines flowing
+                smoothly and ensure continuous health inspection compliance.
               </p>
             </div>
             <button
@@ -642,7 +741,8 @@ export function DrainCleaningContent() {
               Signs You Need Drain Cleaning
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              Don't wait for a complete backup. If you notice any of these warning signs, call us for professional drain cleaning:
+              Don't wait for a complete backup. If you notice any of these
+              warning signs, call us for professional drain cleaning:
             </p>
           </div>
 
@@ -663,8 +763,12 @@ export function DrainCleaningContent() {
                         {item.badge}
                       </span>
                     </div>
-                    <h3 className="text-base font-black text-navy mb-2">{item.title}</h3>
-                    <p className="text-xs text-slate-600 leading-relaxed font-semibold">{item.desc}</p>
+                    <h3 className="text-base font-black text-navy mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed font-semibold">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -685,7 +789,8 @@ export function DrainCleaningContent() {
               The American Commercial Plumbing Advantage
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              When you choose us for your drain cleaning needs, you are choosing a partner committed to doing the job right.
+              When you choose us for your drain cleaning needs, you are choosing
+              a partner committed to doing the job right.
             </p>
           </div>
 
@@ -706,8 +811,12 @@ export function DrainCleaningContent() {
                         {adv.badge}
                       </span>
                     </div>
-                    <h3 className="text-lg font-black text-navy mb-2.5">{adv.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">{adv.desc}</p>
+                    <h3 className="text-lg font-black text-navy mb-2.5">
+                      {adv.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      {adv.desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -717,7 +826,10 @@ export function DrainCleaningContent() {
       </section>
 
       {/* ── 8. SCHEDULE DRAIN SERVICE INTERACTIVE FORM ── */}
-      <section id="drain-cleaning-schedule-form" className="py-20 lg:py-24 bg-white border-b border-slate-200 scroll-mt-20">
+      <section
+        id="drain-cleaning-schedule-form"
+        className="py-20 lg:py-24 bg-white border-b border-slate-200 scroll-mt-20"
+      >
         <div className="mx-auto w-[92%] max-w-5xl">
           <div className="bg-[#F8FAFC] rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-md">
             <div className="text-center max-w-2xl mx-auto mb-10">
@@ -729,7 +841,14 @@ export function DrainCleaningContent() {
                 Schedule Drain Cleaning & Jetting
               </h2>
               <p className="text-slate-600 text-sm">
-                Book a service appointment or call us directly at <a href="tel:+15202212010" className="text-primary font-bold hover:underline">(520) 221-2010</a> for immediate dispatch.
+                Book a service appointment or call us directly at{" "}
+                <a
+                  href="tel:+15202212010"
+                  className="text-primary font-bold hover:underline"
+                >
+                  (520) 221-2010
+                </a>{" "}
+                for immediate dispatch.
               </p>
             </div>
 
@@ -742,9 +861,13 @@ export function DrainCleaningContent() {
                 <div className="h-16 w-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-4">
                   <Check className="h-8 w-8 stroke-[3]" />
                 </div>
-                <h3 className="text-xl font-black text-navy mb-2">Service Request Received!</h3>
+                <h3 className="text-xl font-black text-navy mb-2">
+                  Service Request Received!
+                </h3>
                 <p className="text-sm text-slate-600 max-w-md mx-auto mb-6">
-                  Thank you for contacting American Commercial Plumbing LLC. Our dispatch team will call you within one business hour to confirm technician arrival and service details.
+                  Thank you for contacting American Commercial Plumbing LLC. Our
+                  dispatch team will call you within one business hour to
+                  confirm technician arrival and service details.
                 </p>
                 <button
                   onClick={() => setFormSubmitted(false)}
@@ -765,7 +888,9 @@ export function DrainCleaningContent() {
                       required
                       placeholder="e.g. Jason Scott"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     />
                   </div>
@@ -779,7 +904,9 @@ export function DrainCleaningContent() {
                       required
                       placeholder="(520) 000-0000"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     />
                   </div>
@@ -792,13 +919,26 @@ export function DrainCleaningContent() {
                     </label>
                     <select
                       value={formData.propertyType}
-                      onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          propertyType: e.target.value,
+                        })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     >
-                      <option value="Residential Home">Residential Home / Condo</option>
-                      <option value="Restaurant / Food Service">Restaurant / Food Service Facility</option>
-                      <option value="Commercial Business / Retail">Commercial Business / Retail</option>
-                      <option value="Property Management / HOA">Property Management / HOA</option>
+                      <option value="Residential Home">
+                        Residential Home / Condo
+                      </option>
+                      <option value="Restaurant / Food Service">
+                        Restaurant / Food Service Facility
+                      </option>
+                      <option value="Commercial Business / Retail">
+                        Commercial Business / Retail
+                      </option>
+                      <option value="Property Management / HOA">
+                        Property Management / HOA
+                      </option>
                     </select>
                   </div>
 
@@ -808,16 +948,32 @@ export function DrainCleaningContent() {
                     </label>
                     <select
                       value={formData.drainIssue}
-                      onChange={(e) => setFormData({ ...formData, drainIssue: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, drainIssue: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     >
-                      <option value="Kitchen Sink / Garbage Disposal">Kitchen Sink / Garbage Disposal</option>
-                      <option value="Toilet Blockage / Overflow">Toilet Blockage / Overflow</option>
-                      <option value="Shower / Bathtub Drain">Shower / Bathtub Drain</option>
-                      <option value="High-Pressure Hydro Jetting">High-Pressure Hydro Jetting</option>
-                      <option value="Main Sewer Lateral Backup">Main Sewer Lateral Backup</option>
-                      <option value="Commercial Grease Trap Lines">Commercial Grease Trap Lines</option>
-                      <option value="Camera Video Inspection">Camera Video Verification</option>
+                      <option value="Kitchen Sink / Garbage Disposal">
+                        Kitchen Sink / Garbage Disposal
+                      </option>
+                      <option value="Toilet Blockage / Overflow">
+                        Toilet Blockage / Overflow
+                      </option>
+                      <option value="Shower / Bathtub Drain">
+                        Shower / Bathtub Drain
+                      </option>
+                      <option value="High-Pressure Hydro Jetting">
+                        High-Pressure Hydro Jetting
+                      </option>
+                      <option value="Main Sewer Lateral Backup">
+                        Main Sewer Lateral Backup
+                      </option>
+                      <option value="Commercial Grease Trap Lines">
+                        Commercial Grease Trap Lines
+                      </option>
+                      <option value="Camera Video Inspection">
+                        Camera Video Verification
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -831,7 +987,9 @@ export function DrainCleaningContent() {
                     required
                     placeholder="e.g. 7890 N Oracle Rd, Tucson (or Marana, Oro Valley, Vail)"
                     value={formData.address}
-                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, address: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                   />
                 </div>
@@ -844,14 +1002,17 @@ export function DrainCleaningContent() {
                     rows={3}
                     placeholder="Describe symptoms (e.g. multiple sinks backing up, water gurgling in tub, standing water on floor)..."
                     value={formData.notes}
-                    onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, notes: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                   />
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="text-xs text-slate-500 font-medium">
-                    🔒 100% Upfront Pricing · Clean Engineering · Commercial-Grade Technology
+                    🔒 100% Upfront Pricing · Clean Engineering ·
+                    Commercial-Grade Technology
                   </div>
                   <button
                     type="submit"
@@ -886,7 +1047,8 @@ export function DrainCleaningContent() {
               Frequently Asked Questions (Drain Cleaning & Jetting)
             </h2>
             <p className="text-slate-600 text-sm">
-              Clear answers to common questions about hydro jetting, snaking, and drain clearing in Tucson.
+              Clear answers to common questions about hydro jetting, snaking,
+              and drain clearing in Tucson.
             </p>
           </div>
 
@@ -948,7 +1110,8 @@ export function DrainCleaningContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            Restore your drains to full flow with professional hydro jetting and drain cleaning from Tucson’s most trusted plumbing experts.
+            Restore your drains to full flow with professional hydro jetting and
+            drain cleaning from Tucson’s most trusted plumbing experts.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

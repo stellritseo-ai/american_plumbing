@@ -300,8 +300,12 @@ export function WaterHeaterContent() {
                 <Wrench className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">Expert Repair</span>
-                <span className="text-[11px] font-bold text-slate-500">& New Installations</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  Expert Repair
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  & New Installations
+                </span>
               </div>
             </div>
 
@@ -310,8 +314,12 @@ export function WaterHeaterContent() {
                 <Flame className="h-5 w-5 text-amber-500" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">Tank & Tankless</span>
-                <span className="text-[11px] font-bold text-slate-500">All Leading Brands</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  Tank & Tankless
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  All Leading Brands
+                </span>
               </div>
             </div>
 
@@ -320,8 +328,12 @@ export function WaterHeaterContent() {
                 <ShieldCheck className="h-5 w-5 text-emerald-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">ROC #321353</span>
-                <span className="text-[11px] font-bold text-slate-500">Licensed & Insured</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  ROC #321353
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Licensed & Insured
+                </span>
               </div>
             </div>
 
@@ -330,8 +342,12 @@ export function WaterHeaterContent() {
                 <Star className="h-5 w-5 text-amber-500 fill-amber-500" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">4.9 Star Rating</span>
-                <span className="text-[11px] font-bold text-slate-500">1,000+ Verified Reviews</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  4.9 Star Rating
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  1,000+ Verified Reviews
+                </span>
               </div>
             </div>
           </div>
@@ -353,13 +369,30 @@ export function WaterHeaterContent() {
               </h2>
               <div className="space-y-4 text-slate-700 text-base leading-relaxed">
                 <p>
-                  Your water heater works tirelessly behind the scenes, providing comfort for your morning routine, sanitation for your kitchen, and warmth for your family. When it fails, it disrupts your entire household or business operations.
+                  Your water heater works tirelessly behind the scenes,
+                  providing comfort for your morning routine, sanitation for
+                  your kitchen, and warmth for your family. When it fails, it
+                  disrupts your entire household or business operations.
                 </p>
                 <p>
-                  At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we specialize in keeping your hot water flowing. Whether you need a quick repair on a traditional tank system or are ready to upgrade to a modern, energy-efficient tankless unit, our certified technicians have the expertise to get the job done right.
+                  At{" "}
+                  <strong className="text-navy font-bold">
+                    American Commercial Plumbing LLC
+                  </strong>
+                  , we specialize in keeping your hot water flowing. Whether you
+                  need a quick repair on a traditional tank system or are ready
+                  to upgrade to a modern, energy-efficient tankless unit, our
+                  certified technicians have the expertise to get the job done
+                  right.
                 </p>
                 <p>
-                  Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>, our family-run business has been serving Tucson since 1999. We bring commercial-grade precision and clean engineering to every residential and commercial water heater project, ensuring your system is installed to code, operates safely, and lasts for years to come.
+                  Led by owner{" "}
+                  <strong className="text-navy font-bold">Shawn Holton</strong>,
+                  our family-run business has been serving Tucson since 1999. We
+                  bring commercial-grade precision and clean engineering to
+                  every residential and commercial water heater project,
+                  ensuring your system is installed to code, operates safely,
+                  and lasts for years to come.
                 </p>
               </div>
 
@@ -370,10 +403,16 @@ export function WaterHeaterContent() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-800 italic leading-snug">
-                    "In Tucson, hard water is ruthless on water heaters. We don't just swap parts; we engineer installations and flushes that maximize lifespan and efficiency, backed by honest, upfront flat-rate pricing."
+                    "In Tucson, hard water is ruthless on water heaters. We
+                    don't just swap parts; we engineer installations and flushes
+                    that maximize lifespan and efficiency, backed by honest,
+                    upfront flat-rate pricing."
                   </p>
                   <div className="mt-2 text-xs font-black text-navy uppercase tracking-wider">
-                    Shawn Holton <span className="font-normal text-slate-500">· Owner & Master Plumber</span>
+                    Shawn Holton{" "}
+                    <span className="font-normal text-slate-500">
+                      · Owner & Master Plumber
+                    </span>
                   </div>
                 </div>
               </div>
@@ -397,8 +436,13 @@ export function WaterHeaterContent() {
                       <Sparkles className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs font-black text-navy">Clean Installation Guarantee</div>
-                      <div className="text-[11px] text-slate-500 font-medium">Floor protection, complete debris cleanup & free haul-away</div>
+                      <div className="text-xs font-black text-navy">
+                        Clean Installation Guarantee
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-medium">
+                        Floor protection, complete debris cleanup & free
+                        haul-away
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -420,7 +464,8 @@ export function WaterHeaterContent() {
               Our Comprehensive Water Heater Services
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              We offer a full suite of services to meet all your hot water needs across Tucson and Southern Arizona:
+              We offer a full suite of services to meet all your hot water needs
+              across Tucson and Southern Arizona:
             </p>
           </div>
 
@@ -432,7 +477,12 @@ export function WaterHeaterContent() {
                   key={idx}
                   className="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                 >
-                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300" style={{ backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))` }} />
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300"
+                    style={{
+                      backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))`,
+                    }}
+                  />
                   <div>
                     <div className="flex items-center justify-between mb-5">
                       <div className="h-12 w-12 rounded-2xl bg-amber-50 border border-amber-200/80 flex items-center justify-center text-amber-600 group-hover:scale-105 transition-transform">
@@ -453,7 +503,10 @@ export function WaterHeaterContent() {
 
                     <div className="space-y-2.5 pt-4 border-t border-slate-100 mb-6">
                       {svc.bullets.map((bullet, bIdx) => (
-                        <div key={bIdx} className="flex items-start gap-2.5 text-xs font-semibold text-slate-700">
+                        <div
+                          key={bIdx}
+                          className="flex items-start gap-2.5 text-xs font-semibold text-slate-700"
+                        >
                           <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{bullet}</span>
                         </div>
@@ -482,9 +535,13 @@ export function WaterHeaterContent() {
                   <Sparkles className="w-3.5 h-3.5" />
                   24/7 Water Heater Hotline
                 </div>
-                <h3 className="text-2xl font-black text-white mb-3">Water Heater Leaking or Burst?</h3>
+                <h3 className="text-2xl font-black text-white mb-3">
+                  Water Heater Leaking or Burst?
+                </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-6">
-                  Don't risk major ceiling collapse or floor water damage. Our emergency plumbers are on standby 24/7 for immediate shutoff and rapid replacement.
+                  Don't risk major ceiling collapse or floor water damage. Our
+                  emergency plumbers are on standby 24/7 for immediate shutoff
+                  and rapid replacement.
                 </p>
               </div>
 
@@ -517,7 +574,9 @@ export function WaterHeaterContent() {
               Tank vs. Tankless: Which is Right for You?
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              Choosing the right water heater depends on your household size, water usage habits, and budget. Here is a quick comparison to help you decide:
+              Choosing the right water heater depends on your household size,
+              water usage habits, and budget. Here is a quick comparison to help
+              you decide:
             </p>
           </div>
 
@@ -527,8 +586,12 @@ export function WaterHeaterContent() {
               <div>
                 <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-200/80">
                   <div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 block mb-1">Conventional Model</span>
-                    <h3 className="text-2xl font-black text-navy">Traditional Tank Water Heaters</h3>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 block mb-1">
+                      Conventional Model
+                    </span>
+                    <h3 className="text-2xl font-black text-navy">
+                      Traditional Tank Water Heaters
+                    </h3>
                   </div>
                   <div className="h-12 w-12 rounded-2xl bg-blue-50 border border-blue-200 flex items-center justify-center text-primary font-bold">
                     <Flame className="w-6 h-6" />
@@ -543,8 +606,12 @@ export function WaterHeaterContent() {
                       Pros:
                     </div>
                     <ul className="space-y-2 text-xs font-semibold text-slate-700">
-                      <li>• Lower initial upfront equipment and installation cost</li>
-                      <li>• Simpler, straightforward plug-and-play installation</li>
+                      <li>
+                        • Lower initial upfront equipment and installation cost
+                      </li>
+                      <li>
+                        • Simpler, straightforward plug-and-play installation
+                      </li>
                       <li>• Readily available replacement tanks on trucks</li>
                     </ul>
                   </div>
@@ -556,8 +623,13 @@ export function WaterHeaterContent() {
                       Cons:
                     </div>
                     <ul className="space-y-2 text-xs font-semibold text-slate-700">
-                      <li>• Standby energy loss constantly reheating standing water</li>
-                      <li>• Limited hot water supply (runs out when tank empties)</li>
+                      <li>
+                        • Standby energy loss constantly reheating standing
+                        water
+                      </li>
+                      <li>
+                        • Limited hot water supply (runs out when tank empties)
+                      </li>
                       <li>• Larger floor footprint in closets or garages</li>
                       <li>• Shorter lifespan of 8-12 years</li>
                     </ul>
@@ -569,7 +641,8 @@ export function WaterHeaterContent() {
                       Best For:
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed font-semibold">
-                      Budget-conscious homeowners, smaller households, or properties without space or venting for tankless systems.
+                      Budget-conscious homeowners, smaller households, or
+                      properties without space or venting for tankless systems.
                     </p>
                   </div>
                 </div>
@@ -593,8 +666,12 @@ export function WaterHeaterContent() {
               <div>
                 <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-200/80">
                   <div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-primary block mb-1">On-Demand Technology</span>
-                    <h3 className="text-2xl font-black text-navy">Tankless Water Heaters</h3>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-primary block mb-1">
+                      On-Demand Technology
+                    </span>
+                    <h3 className="text-2xl font-black text-navy">
+                      Tankless Water Heaters
+                    </h3>
                   </div>
                   <div className="h-12 w-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold">
                     <RotateCw className="w-6 h-6" />
@@ -609,10 +686,20 @@ export function WaterHeaterContent() {
                       Pros:
                     </div>
                     <ul className="space-y-2 text-xs font-semibold text-slate-700">
-                      <li>• Endless continuous hot water on demand that never runs out</li>
-                      <li>• 20-30% more energy-efficient with zero standby standby loss</li>
-                      <li>• Compact wall-mounted design frees up closets & garages</li>
-                      <li>• Longer lifespan of 20+ years with annual descaling</li>
+                      <li>
+                        • Endless continuous hot water on demand that never runs
+                        out
+                      </li>
+                      <li>
+                        • 20-30% more energy-efficient with zero standby standby
+                        loss
+                      </li>
+                      <li>
+                        • Compact wall-mounted design frees up closets & garages
+                      </li>
+                      <li>
+                        • Longer lifespan of 20+ years with annual descaling
+                      </li>
                     </ul>
                   </div>
 
@@ -624,8 +711,14 @@ export function WaterHeaterContent() {
                     </div>
                     <ul className="space-y-2 text-xs font-semibold text-slate-700">
                       <li>• Higher upfront initial installation investment</li>
-                      <li>• May require electrical panel or gas supply line upgrades</li>
-                      <li>• Limited simultaneous flow rate (run showers + laundry together)</li>
+                      <li>
+                        • May require electrical panel or gas supply line
+                        upgrades
+                      </li>
+                      <li>
+                        • Limited simultaneous flow rate (run showers + laundry
+                        together)
+                      </li>
                     </ul>
                   </div>
 
@@ -635,7 +728,9 @@ export function WaterHeaterContent() {
                       Best For:
                     </div>
                     <p className="text-xs text-slate-600 leading-relaxed font-semibold">
-                      Large families, eco-conscious homeowners, or properties with limited storage looking to invest in long-term savings.
+                      Large families, eco-conscious homeowners, or properties
+                      with limited storage looking to invest in long-term
+                      savings.
                     </p>
                   </div>
                 </div>
@@ -659,8 +754,14 @@ export function WaterHeaterContent() {
                 <Sparkles className="w-5 h-5" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block">Not sure which is right for your home?</span>
-                <span className="text-xs text-slate-600">Our technicians will assess your home's infrastructure and water demands to provide honest, pressure-free recommendations.</span>
+                <span className="text-sm font-black text-navy block">
+                  Not sure which is right for your home?
+                </span>
+                <span className="text-xs text-slate-600">
+                  Our technicians will assess your home's infrastructure and
+                  water demands to provide honest, pressure-free
+                  recommendations.
+                </span>
               </div>
             </div>
             <a
@@ -685,7 +786,8 @@ export function WaterHeaterContent() {
               Signs You Need Water Heater Service
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              Don't wait for a catastrophic failure. If you notice any of these warning signs, call us for a diagnostic inspection:
+              Don't wait for a catastrophic failure. If you notice any of these
+              warning signs, call us for a diagnostic inspection:
             </p>
           </div>
 
@@ -706,8 +808,12 @@ export function WaterHeaterContent() {
                         {item.badge}
                       </span>
                     </div>
-                    <h3 className="text-base font-black text-navy mb-2">{item.title}</h3>
-                    <p className="text-xs text-slate-600 leading-relaxed font-semibold">{item.desc}</p>
+                    <h3 className="text-base font-black text-navy mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed font-semibold">
+                      {item.desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -720,9 +826,12 @@ export function WaterHeaterContent() {
                   <Sparkles className="w-3 h-3" />
                   Same-Day Diagnosis
                 </div>
-                <h3 className="text-lg font-black text-white mb-2">Noticed One of These Signs?</h3>
+                <h3 className="text-lg font-black text-white mb-2">
+                  Noticed One of These Signs?
+                </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-4">
-                  Catching sediment calcification or leaks early saves thousands in emergency restoration costs.
+                  Catching sediment calcification or leaks early saves thousands
+                  in emergency restoration costs.
                 </p>
               </div>
 
@@ -749,7 +858,9 @@ export function WaterHeaterContent() {
               The American Commercial Plumbing Advantage
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              When you hire us for your water heater needs, you get more than just a plumber—you get a dedicated partner committed to your safety and satisfaction.
+              When you hire us for your water heater needs, you get more than
+              just a plumber—you get a dedicated partner committed to your
+              safety and satisfaction.
             </p>
           </div>
 
@@ -770,8 +881,12 @@ export function WaterHeaterContent() {
                         {adv.badge}
                       </span>
                     </div>
-                    <h3 className="text-lg font-black text-navy mb-2.5">{adv.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">{adv.desc}</p>
+                    <h3 className="text-lg font-black text-navy mb-2.5">
+                      {adv.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      {adv.desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -781,7 +896,10 @@ export function WaterHeaterContent() {
       </section>
 
       {/* ── 7. SCHEDULE WATER HEATER SERVICE INTERACTIVE FORM ── */}
-      <section id="water-heater-schedule-form" className="py-20 lg:py-24 bg-[#F8FAFC] border-b border-slate-200 scroll-mt-20">
+      <section
+        id="water-heater-schedule-form"
+        className="py-20 lg:py-24 bg-[#F8FAFC] border-b border-slate-200 scroll-mt-20"
+      >
         <div className="mx-auto w-[92%] max-w-5xl">
           <div className="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-md">
             <div className="text-center max-w-2xl mx-auto mb-10">
@@ -793,7 +911,15 @@ export function WaterHeaterContent() {
                 Schedule Your Water Heater Service
               </h2>
               <p className="text-slate-600 text-sm">
-                Request a free installation estimate, repair diagnostic, or annual flush. You can also call us directly at <a href="tel:+15202212010" className="text-primary font-bold hover:underline">(520) 221-2010</a>.
+                Request a free installation estimate, repair diagnostic, or
+                annual flush. You can also call us directly at{" "}
+                <a
+                  href="tel:+15202212010"
+                  className="text-primary font-bold hover:underline"
+                >
+                  (520) 221-2010
+                </a>
+                .
               </p>
             </div>
 
@@ -806,9 +932,14 @@ export function WaterHeaterContent() {
                 <div className="h-16 w-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-4">
                   <Check className="h-8 w-8 stroke-[3]" />
                 </div>
-                <h3 className="text-xl font-black text-navy mb-2">Service Request Received!</h3>
+                <h3 className="text-xl font-black text-navy mb-2">
+                  Service Request Received!
+                </h3>
                 <p className="text-sm text-slate-600 max-w-md mx-auto mb-6">
-                  Thank you for contacting American Commercial Plumbing LLC. Our water heater dispatch team will contact you within one business hour to confirm your appointment time and provide preliminary options.
+                  Thank you for contacting American Commercial Plumbing LLC. Our
+                  water heater dispatch team will contact you within one
+                  business hour to confirm your appointment time and provide
+                  preliminary options.
                 </p>
                 <button
                   onClick={() => setFormSubmitted(false)}
@@ -829,7 +960,9 @@ export function WaterHeaterContent() {
                       required
                       placeholder="e.g. Robert Miller"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     />
                   </div>
@@ -843,7 +976,9 @@ export function WaterHeaterContent() {
                       required
                       placeholder="(520) 000-0000"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     />
                   </div>
@@ -856,14 +991,29 @@ export function WaterHeaterContent() {
                     </label>
                     <select
                       value={formData.serviceNeeded}
-                      onChange={(e) => setFormData({ ...formData, serviceNeeded: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          serviceNeeded: e.target.value,
+                        })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     >
-                      <option value="Water Heater Repair">Water Heater Repair (No Hot Water / Noises)</option>
-                      <option value="Water Heater Replacement & Installation">New Installation / Replacement Estimate</option>
-                      <option value="Tankless Upgrade Conversion">Tankless Upgrade Conversion</option>
-                      <option value="Routine Maintenance & Flush">Routine Annual Flush & Inspection</option>
-                      <option value="Emergency Leaking Unit">Emergency Leaking / Flooding Unit</option>
+                      <option value="Water Heater Repair">
+                        Water Heater Repair (No Hot Water / Noises)
+                      </option>
+                      <option value="Water Heater Replacement & Installation">
+                        New Installation / Replacement Estimate
+                      </option>
+                      <option value="Tankless Upgrade Conversion">
+                        Tankless Upgrade Conversion
+                      </option>
+                      <option value="Routine Maintenance & Flush">
+                        Routine Annual Flush & Inspection
+                      </option>
+                      <option value="Emergency Leaking Unit">
+                        Emergency Leaking / Flooding Unit
+                      </option>
                     </select>
                   </div>
 
@@ -873,14 +1023,26 @@ export function WaterHeaterContent() {
                     </label>
                     <select
                       value={formData.heaterType}
-                      onChange={(e) => setFormData({ ...formData, heaterType: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, heaterType: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     >
-                      <option value="Traditional Tank (Gas or Electric)">Traditional Tank (Gas or Electric)</option>
-                      <option value="Tankless Water Heater">Tankless Unit</option>
-                      <option value="Heat Pump / Hybrid Unit">Heat Pump / Hybrid Unit</option>
-                      <option value="Commercial System">Commercial Boiler / System</option>
-                      <option value="Not Sure">Not Sure / Need Help Identifying</option>
+                      <option value="Traditional Tank (Gas or Electric)">
+                        Traditional Tank (Gas or Electric)
+                      </option>
+                      <option value="Tankless Water Heater">
+                        Tankless Unit
+                      </option>
+                      <option value="Heat Pump / Hybrid Unit">
+                        Heat Pump / Hybrid Unit
+                      </option>
+                      <option value="Commercial System">
+                        Commercial Boiler / System
+                      </option>
+                      <option value="Not Sure">
+                        Not Sure / Need Help Identifying
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -891,14 +1053,26 @@ export function WaterHeaterContent() {
                   </label>
                   <select
                     value={formData.timeframe}
-                    onChange={(e) => setFormData({ ...formData, timeframe: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, timeframe: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                   >
-                    <option value="Emergency - As Soon As Possible">Emergency - As Soon As Possible</option>
-                    <option value="Today - Next Available Tech">Today - Next Available Tech</option>
-                    <option value="Tomorrow Morning (7 AM - 11 AM)">Tomorrow Morning (7 AM - 11 AM)</option>
-                    <option value="Tomorrow Afternoon (11 AM - 3 PM)">Tomorrow Afternoon (11 AM - 3 PM)</option>
-                    <option value="Flexible / Need Free Estimate First">Flexible / Need Free Estimate First</option>
+                    <option value="Emergency - As Soon As Possible">
+                      Emergency - As Soon As Possible
+                    </option>
+                    <option value="Today - Next Available Tech">
+                      Today - Next Available Tech
+                    </option>
+                    <option value="Tomorrow Morning (7 AM - 11 AM)">
+                      Tomorrow Morning (7 AM - 11 AM)
+                    </option>
+                    <option value="Tomorrow Afternoon (11 AM - 3 PM)">
+                      Tomorrow Afternoon (11 AM - 3 PM)
+                    </option>
+                    <option value="Flexible / Need Free Estimate First">
+                      Flexible / Need Free Estimate First
+                    </option>
                   </select>
                 </div>
 
@@ -910,14 +1084,17 @@ export function WaterHeaterContent() {
                     rows={3}
                     placeholder="Describe what's happening (e.g., water heater is 12 years old, making knocking noises, or leaking from the bottom)..."
                     value={formData.notes}
-                    onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, notes: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                   />
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="text-xs text-slate-500 font-medium">
-                    🔒 100% Upfront Pricing · Free Replacement Estimates · Clean Engineering
+                    🔒 100% Upfront Pricing · Free Replacement Estimates · Clean
+                    Engineering
                   </div>
                   <button
                     type="submit"
@@ -952,7 +1129,8 @@ export function WaterHeaterContent() {
               Frequently Asked Questions (Water Heaters)
             </h2>
             <p className="text-slate-600 text-sm">
-              Clear answers to common questions about repairs, installations, and hard water maintenance in Tucson.
+              Clear answers to common questions about repairs, installations,
+              and hard water maintenance in Tucson.
             </p>
           </div>
 
@@ -1014,7 +1192,9 @@ export function WaterHeaterContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            Don't suffer through cold showers or risk a flooded home. Contact American Commercial Plumbing LLC for expert water heater repair, maintenance, or installation.
+            Don't suffer through cold showers or risk a flooded home. Contact
+            American Commercial Plumbing LLC for expert water heater repair,
+            maintenance, or installation.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

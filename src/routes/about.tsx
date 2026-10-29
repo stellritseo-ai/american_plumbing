@@ -88,7 +88,8 @@ export const Route = createFileRoute("/about")({
       },
       {
         property: "og:title",
-        content: "About American Commercial Plumbing LLC — Tucson’s Trusted Plumbers",
+        content:
+          "About American Commercial Plumbing LLC — Tucson’s Trusted Plumbers",
       },
       {
         property: "og:description",

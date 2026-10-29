@@ -52,7 +52,12 @@ interface ProjectItem {
   id: number;
   image: string;
   title: string;
-  category: "Residential" | "Commercial" | "Water Heaters" | "Repiping & Fixtures" | "Drain & Sewer";
+  category:
+    | "Residential"
+    | "Commercial"
+    | "Water Heaters"
+    | "Repiping & Fixtures"
+    | "Drain & Sewer";
   location: string;
   scope: string;
   highlights: string[];
@@ -65,8 +70,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Luxury Soaking Tub Installation",
     category: "Residential",
     location: "Catalina Foothills, Tucson",
-    scope: "Complete bathroom remodel fixture installation, deep oval soaking tub rough-in, and custom brass deck faucet integration.",
-    highlights: ["Custom Tile Surrounds", "Pressure-Balanced Valves", "Clean Rough-In"],
+    scope:
+      "Complete bathroom remodel fixture installation, deep oval soaking tub rough-in, and custom brass deck faucet integration.",
+    highlights: [
+      "Custom Tile Surrounds",
+      "Pressure-Balanced Valves",
+      "Clean Rough-In",
+    ],
   },
   {
     id: 2,
@@ -74,8 +84,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Precision Faucet Valve Restoration",
     category: "Repiping & Fixtures",
     location: "Sam Hughes, Tucson",
-    scope: "Disassembly and valve seat machining to stop chronic hard water leakage without having to replace vintage architectural fixtures.",
-    highlights: ["Zero-Drip Precision", "Ceramic Cartridge Rebuild", "Surface Protection"],
+    scope:
+      "Disassembly and valve seat machining to stop chronic hard water leakage without having to replace vintage architectural fixtures.",
+    highlights: [
+      "Zero-Drip Precision",
+      "Ceramic Cartridge Rebuild",
+      "Surface Protection",
+    ],
   },
   {
     id: 3,
@@ -83,8 +98,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Exterior Sewer Main Trench & Backfill",
     category: "Drain & Sewer",
     location: "Oro Valley, AZ",
-    scope: "Excavation, grading, high-density PVC sewer replacement, and gravel bedding compaction safeguarding desert landscape drainage.",
-    highlights: ["SDR-35 PVC Main", "Grade Verification", "Landscape Preservation"],
+    scope:
+      "Excavation, grading, high-density PVC sewer replacement, and gravel bedding compaction safeguarding desert landscape drainage.",
+    highlights: [
+      "SDR-35 PVC Main",
+      "Grade Verification",
+      "Landscape Preservation",
+    ],
   },
   {
     id: 4,
@@ -92,8 +112,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Commercial Kitchen Disposal & Waste Line",
     category: "Commercial",
     location: "Downtown Tucson Culinary District",
-    scope: "High-horsepower commercial garbage disposal install, reinforced vibration baffling, and grease-resistant waste arm plumbing.",
-    highlights: ["Health Code Compliant", "Heavy-Duty Baffling", "High-Flow Drain Traps"],
+    scope:
+      "High-horsepower commercial garbage disposal install, reinforced vibration baffling, and grease-resistant waste arm plumbing.",
+    highlights: [
+      "Health Code Compliant",
+      "Heavy-Duty Baffling",
+      "High-Flow Drain Traps",
+    ],
   },
   {
     id: 5,
@@ -101,8 +126,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Motorized Mechanical Rooter Augering",
     category: "Drain & Sewer",
     location: "Central Tucson",
-    scope: "Heavy-duty electric snake cleanout running C-cutter blades through a 4-inch main stack to shear invasive eucalyptus tree roots.",
-    highlights: ["Heavy-Duty Steel Cable", "Root Shearing Cutters", "Zero-Mess Cleanup"],
+    scope:
+      "Heavy-duty electric snake cleanout running C-cutter blades through a 4-inch main stack to shear invasive eucalyptus tree roots.",
+    highlights: [
+      "Heavy-Duty Steel Cable",
+      "Root Shearing Cutters",
+      "Zero-Mess Cleanup",
+    ],
   },
   {
     id: 6,
@@ -110,8 +140,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Modern Chrome Shower Fixture Installation",
     category: "Residential",
     location: "Rancho Vistoso, Oro Valley",
-    scope: "Dual-head thermostatic shower system with adjustable slide rail, integrated diverter valve, and calcium-resistant spray nozzles.",
-    highlights: ["Anti-Scald Thermostatic", "Chrome Slide Bar", "Flow Restrictor Tuning"],
+    scope:
+      "Dual-head thermostatic shower system with adjustable slide rail, integrated diverter valve, and calcium-resistant spray nozzles.",
+    highlights: [
+      "Anti-Scald Thermostatic",
+      "Chrome Slide Bar",
+      "Flow Restrictor Tuning",
+    ],
   },
   {
     id: 7,
@@ -119,8 +154,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Toilet Flange & Clean Porcelain Replacement",
     category: "Repiping & Fixtures",
     location: "Midtown Tucson",
-    scope: "Before & After wax ring failure repair, subfloor sanitization, cast-iron flange leveling, and dual-flush comfort height toilet installation.",
-    highlights: ["Heavy-Duty Wax Ring", "Subfloor Waterproofing", "Before & After Quality"],
+    scope:
+      "Before & After wax ring failure repair, subfloor sanitization, cast-iron flange leveling, and dual-flush comfort height toilet installation.",
+    highlights: [
+      "Heavy-Duty Wax Ring",
+      "Subfloor Waterproofing",
+      "Before & After Quality",
+    ],
   },
   {
     id: 8,
@@ -128,8 +168,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Contemporary Freestanding Acrylic Tub",
     category: "Residential",
     location: "Dove Mountain, Marana",
-    scope: "Seamless floor rough-in with freestanding chrome floor filler and concealed P-trap alignment for a luxury desert retreat.",
-    highlights: ["Freestanding Floor Mount", "Sub-Slab P-Trap", "Mirror-Finish Trim"],
+    scope:
+      "Seamless floor rough-in with freestanding chrome floor filler and concealed P-trap alignment for a luxury desert retreat.",
+    highlights: [
+      "Freestanding Floor Mount",
+      "Sub-Slab P-Trap",
+      "Mirror-Finish Trim",
+    ],
   },
   {
     id: 9,
@@ -137,8 +182,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Dual Vessel Sinks & High-Arc Faucets",
     category: "Repiping & Fixtures",
     location: "Tanque Verde, Tucson",
-    scope: "Twin porcelain vessel basins installed on granite vanity with individual quarter-turn angle stops and braided stainless supply lines.",
-    highlights: ["Dual Ceramic Sinks", "Stainless Steel Braids", "Under-Counter Manifold"],
+    scope:
+      "Twin porcelain vessel basins installed on granite vanity with individual quarter-turn angle stops and braided stainless supply lines.",
+    highlights: [
+      "Dual Ceramic Sinks",
+      "Stainless Steel Braids",
+      "Under-Counter Manifold",
+    ],
   },
   {
     id: 10,
@@ -146,8 +196,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Perimeter Footing & Channel Drain",
     category: "Drain & Sewer",
     location: "Sabino Canyon Area",
-    scope: "Deep footing drainage channel and rock filtration embedment to prevent monsoon flash flood erosion from pooling along foundation slabs.",
-    highlights: ["Monsoon Flood Protection", "Slotted Channel Pipe", "Clean Rock Backfill"],
+    scope:
+      "Deep footing drainage channel and rock filtration embedment to prevent monsoon flash flood erosion from pooling along foundation slabs.",
+    highlights: [
+      "Monsoon Flood Protection",
+      "Slotted Channel Pipe",
+      "Clean Rock Backfill",
+    ],
   },
   {
     id: 11,
@@ -155,8 +210,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Multi-Zone PEX Home Plumbing Manifold",
     category: "Repiping & Fixtures",
     location: "Eastside Tucson",
-    scope: "Whole-home repiping central distribution manifold with labeled individual ball valves for tub, basin, and toilet supply isolation.",
-    highlights: ["Individual Zone Shutoffs", "PEX-A Expansion Fittings", "Zero Pressure Drop"],
+    scope:
+      "Whole-home repiping central distribution manifold with labeled individual ball valves for tub, basin, and toilet supply isolation.",
+    highlights: [
+      "Individual Zone Shutoffs",
+      "PEX-A Expansion Fittings",
+      "Zero Pressure Drop",
+    ],
   },
   {
     id: 12,
@@ -164,8 +224,13 @@ const galleryProjects: ProjectItem[] = [
     title: "High-Efficiency Outdoor Tankless Water Heater",
     category: "Water Heaters",
     location: "Marana, AZ",
-    scope: "Exterior wall-mounted condensing tankless gas water heater with insulated copper lines, seismic mounting, and dedicated gas supply.",
-    highlights: ["Endless Hot Water", "Exterior Space Saver", "Condensing 0.96 UEF"],
+    scope:
+      "Exterior wall-mounted condensing tankless gas water heater with insulated copper lines, seismic mounting, and dedicated gas supply.",
+    highlights: [
+      "Endless Hot Water",
+      "Exterior Space Saver",
+      "Condensing 0.96 UEF",
+    ],
   },
   {
     id: 13,
@@ -173,8 +238,13 @@ const galleryProjects: ProjectItem[] = [
     title: "High-Capacity Commercial Electric Water Heater",
     category: "Commercial",
     location: "South Tucson Medical Suites",
-    scope: "Commercial storage water heater installation adjacent to main power panel, with expansion tank, thermal relief valve, and drain pan.",
-    highlights: ["Commercial Spec", "ASME Pressure Relief", "Code-Compliant Pan"],
+    scope:
+      "Commercial storage water heater installation adjacent to main power panel, with expansion tank, thermal relief valve, and drain pan.",
+    highlights: [
+      "Commercial Spec",
+      "ASME Pressure Relief",
+      "Code-Compliant Pan",
+    ],
   },
   {
     id: 14,
@@ -182,8 +252,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Gas Water Heater & Copper Manifold Buildout",
     category: "Water Heaters",
     location: "Vail, AZ",
-    scope: "In-progress installation of high-recovery atmospheric gas water heater, soldered copper cold/hot headers, and black iron fuel pipe.",
-    highlights: ["Soldered Copper Headers", "Rigid Gas Piping", "Draft Flue Verification"],
+    scope:
+      "In-progress installation of high-recovery atmospheric gas water heater, soldered copper cold/hot headers, and black iron fuel pipe.",
+    highlights: [
+      "Soldered Copper Headers",
+      "Rigid Gas Piping",
+      "Draft Flue Verification",
+    ],
   },
   {
     id: 15,
@@ -191,8 +266,13 @@ const galleryProjects: ProjectItem[] = [
     title: "Whirlpool Spa Tub Deep Restoration",
     category: "Residential",
     location: "Green Valley, AZ",
-    scope: "Before & After jet line decontamination, calcium scale removal, and mechanical air switch rebuild restoring 100% whirlpool circulation.",
-    highlights: ["Circulation Line Flush", "Scale Dissolution", "Before & After Finish"],
+    scope:
+      "Before & After jet line decontamination, calcium scale removal, and mechanical air switch rebuild restoring 100% whirlpool circulation.",
+    highlights: [
+      "Circulation Line Flush",
+      "Scale Dissolution",
+      "Before & After Finish",
+    ],
   },
   {
     id: 16,
@@ -200,8 +280,13 @@ const galleryProjects: ProjectItem[] = [
     title: "High-Velocity Drain Flow & Trap Inspection",
     category: "Drain & Sewer",
     location: "University District, Tucson",
-    scope: "Dynamic hydrostatic flow testing through newly cleared bathroom drain following hydro jetting, confirming instantaneous vortex drainage.",
-    highlights: ["Full Vortex Flow", "Camera Verified Clean", "Zero Siphoning Noise"],
+    scope:
+      "Dynamic hydrostatic flow testing through newly cleared bathroom drain following hydro jetting, confirming instantaneous vortex drainage.",
+    highlights: [
+      "Full Vortex Flow",
+      "Camera Verified Clean",
+      "Zero Siphoning Noise",
+    ],
   },
 ];
 
@@ -215,7 +300,9 @@ const categories = [
 ] as const;
 
 export function ProjectsPageContent() {
-  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(
+    null,
+  );
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   useEffect(() => {
@@ -235,7 +322,6 @@ export function ProjectsPageContent() {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [selectedProject]);
-
 
   const trustBadges = [
     {
@@ -392,7 +478,7 @@ export function ProjectsPageContent() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
           >
             <AnimatePresence mode="popLayout">
-                  {galleryProjects.map((project) => (
+              {galleryProjects.map((project) => (
                 <motion.div
                   key={project.id}
                   layout
@@ -459,8 +545,9 @@ export function ProjectsPageContent() {
               The Standards Behind Every Project
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Behind every clean solder joint, flawless drain line, and quiet water heater is a commitment
-              to rigorous craftsmanship and clean engineering.
+              Behind every clean solder joint, flawless drain line, and quiet
+              water heater is a commitment to rigorous craftsmanship and clean
+              engineering.
             </p>
           </div>
 
@@ -543,7 +630,8 @@ export function ProjectsPageContent() {
               Frequently Asked Questions (Projects)
             </h2>
             <p className="text-slate-600 text-base">
-              Everything you need to know about planning and scheduling your plumbing project with us.
+              Everything you need to know about planning and scheduling your
+              plumbing project with us.
             </p>
           </div>
 
@@ -606,8 +694,9 @@ export function ProjectsPageContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            From luxury residential bath upgrades and whole-home repiping to complex commercial mechanical buildouts,
-            our licensed specialists deliver clean, durable, code-compliant results.
+            From luxury residential bath upgrades and whole-home repiping to
+            complex commercial mechanical buildouts, our licensed specialists
+            deliver clean, durable, code-compliant results.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

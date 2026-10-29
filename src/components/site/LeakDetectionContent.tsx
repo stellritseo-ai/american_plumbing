@@ -369,7 +369,9 @@ export function LeakDetectionContent() {
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black uppercase tracking-widest mb-6"
             >
               <Search className="w-3.5 h-3.5 text-cta" />
-              <span>Tucson Precision Diagnostics · Non-Invasive Technology</span>
+              <span>
+                Tucson Precision Diagnostics · Non-Invasive Technology
+              </span>
             </motion.div>
 
             {/* Headline */}
@@ -393,9 +395,10 @@ export function LeakDetectionContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal mb-8 max-w-2xl mx-auto"
             >
-              Hidden leaks waste thousands of gallons of water and cause severe structural damage.
-              American Commercial Plumbing LLC uses state-of-the-art technology to pinpoint leaks with
-              surgical accuracy—no guesswork, no unnecessary digging.
+              Hidden leaks waste thousands of gallons of water and cause severe
+              structural damage. American Commercial Plumbing LLC uses
+              state-of-the-art technology to pinpoint leaks with surgical
+              accuracy—no guesswork, no unnecessary digging.
             </motion.p>
 
             {/* Call to Action Buttons */}
@@ -470,12 +473,15 @@ export function LeakDetectionContent() {
                 <span className="text-primary">Big Problems.</span>
               </h2>
               <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-6">
-                A hidden water leak is one of the most destructive and costly issues a property owner can face.
-                Unlike a burst pipe that announces itself with a dramatic flood, hidden leaks silently drip behind walls,
-                beneath concrete slabs, or under your foundation.
+                A hidden water leak is one of the most destructive and costly
+                issues a property owner can face. Unlike a burst pipe that
+                announces itself with a dramatic flood, hidden leaks silently
+                drip behind walls, beneath concrete slabs, or under your
+                foundation.
               </p>
               <p className="text-slate-600 leading-relaxed text-base mb-8">
-                Over time, this constant moisture silently degrades building integrity:
+                Over time, this constant moisture silently degrades building
+                integrity:
               </p>
 
               {/* 5 Threat Cards */}
@@ -514,10 +520,12 @@ export function LeakDetectionContent() {
                   <ShieldCheck className="w-4 h-4 text-primary" />
                   <span>25+ Years of Tucson Craftsmanship · Shawn Holton</span>
                 </div>
-                At American Commercial Plumbing LLC, we believe in solving problems at the source.
-                Led by owner Shawn Holton, our family-run business has been protecting Tucson properties since 1999.
-                We combine 25+ years of clean engineering expertise with cutting-edge diagnostic technology to find and
-                fix leaks with minimal disruption to your home or business.
+                At American Commercial Plumbing LLC, we believe in solving
+                problems at the source. Led by owner Shawn Holton, our
+                family-run business has been protecting Tucson properties since
+                1999. We combine 25+ years of clean engineering expertise with
+                cutting-edge diagnostic technology to find and fix leaks with
+                minimal disruption to your home or business.
               </div>
             </div>
 
@@ -542,7 +550,8 @@ export function LeakDetectionContent() {
                         Thermal Imaging & Sonar
                       </div>
                       <div className="text-[11px] text-slate-600 font-medium">
-                        Sub-surface heat bloom pinpointing pressurized line faults without tearing walls.
+                        Sub-surface heat bloom pinpointing pressurized line
+                        faults without tearing walls.
                       </div>
                     </div>
                   </div>
@@ -566,8 +575,8 @@ export function LeakDetectionContent() {
               <span className="text-primary">We Prove It.</span>
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Our licensed technicians use a suite of non-invasive diagnostic tools to locate hidden leaks
-              without tearing your property apart.
+              Our licensed technicians use a suite of non-invasive diagnostic
+              tools to locate hidden leaks without tearing your property apart.
             </p>
           </div>
 
@@ -621,8 +630,9 @@ export function LeakDetectionContent() {
                   24/7 Rapid Emergency Dispatch
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed mb-6">
-                  If water is actively rising or your water meter dial is spinning out of control,
-                  our emergency leak teams are ready for rapid dispatch across Tucson and Pima County.
+                  If water is actively rising or your water meter dial is
+                  spinning out of control, our emergency leak teams are ready
+                  for rapid dispatch across Tucson and Pima County.
                 </p>
               </div>
               <a
@@ -649,8 +659,9 @@ export function LeakDetectionContent() {
               Types of Leaks We Detect & Repair
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Our team is equipped to handle any leak, anywhere on your property—from residential slabs
-              to multi-story commercial facilities.
+              Our team is equipped to handle any leak, anywhere on your
+              property—from residential slabs to multi-story commercial
+              facilities.
             </p>
           </div>
 
@@ -680,7 +691,9 @@ export function LeakDetectionContent() {
                   </div>
                   <div className="mt-5 pt-3.5 border-t border-slate-200/60 flex items-center justify-between text-[11px] font-bold text-navy">
                     <span className="text-slate-500">Diagnosis & Repair:</span>
-                    <span className="text-primary font-black">Guaranteed Work</span>
+                    <span className="text-primary font-black">
+                      Guaranteed Work
+                    </span>
                   </div>
                 </div>
               );
@@ -704,8 +717,9 @@ export function LeakDetectionContent() {
               Our Leak Repair Process
             </h2>
             <p className="text-slate-300 text-base sm:text-lg">
-              Once we locate the leak, we provide a clear, upfront solution. Our repair process is designed to be
-              efficient, code-compliant, and minimally invasive.
+              Once we locate the leak, we provide a clear, upfront solution. Our
+              repair process is designed to be efficient, code-compliant, and
+              minimally invasive.
             </p>
           </div>
 
@@ -778,8 +792,9 @@ export function LeakDetectionContent() {
               The American Commercial Plumbing Advantage
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              When you choose us for leak detection and repair, you are choosing a partner with the experience
-              and technology to get it right the first time.
+              When you choose us for leak detection and repair, you are choosing
+              a partner with the experience and technology to get it right the
+              first time.
             </p>
           </div>
 
@@ -821,8 +836,9 @@ export function LeakDetectionContent() {
               Signs You Might Have a Hidden Leak
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Don't wait for visible pooling or catastrophic foundation settlement. If you notice any of these
-              10 warning signs, call us for a professional inspection:
+              Don't wait for visible pooling or catastrophic foundation
+              settlement. If you notice any of these 10 warning signs, call us
+              for a professional inspection:
             </p>
           </div>
 
@@ -862,8 +878,8 @@ export function LeakDetectionContent() {
                 Schedule a Leak Inspection
               </h2>
               <p className="text-slate-600 text-sm sm:text-base">
-                Request an acoustic & thermal inspection with upfront flat-rate pricing.
-                For urgent active leaks, please call{" "}
+                Request an acoustic & thermal inspection with upfront flat-rate
+                pricing. For urgent active leaks, please call{" "}
                 <a
                   href="tel:+15202212010"
                   className="font-bold text-primary underline hover:text-cta"
@@ -887,8 +903,10 @@ export function LeakDetectionContent() {
                   Inspection Request Received!
                 </h3>
                 <p className="text-sm text-slate-600 mb-6">
-                  Thank you, <strong>{formData.name}</strong>. Our leak diagnostic dispatch team has received your details
-                  and will call you shortly at <strong>{formData.phone}</strong> to confirm your technician window.
+                  Thank you, <strong>{formData.name}</strong>. Our leak
+                  diagnostic dispatch team has received your details and will
+                  call you shortly at <strong>{formData.phone}</strong> to
+                  confirm your technician window.
                 </p>
                 <a
                   href="tel:+15202212010"
@@ -957,15 +975,26 @@ export function LeakDetectionContent() {
                     <select
                       value={formData.propertyType}
                       onChange={(e) =>
-                        setFormData({ ...formData, propertyType: e.target.value })
+                        setFormData({
+                          ...formData,
+                          propertyType: e.target.value,
+                        })
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
                       <option value="Residential Home">Residential Home</option>
-                      <option value="Commercial Business">Commercial Business</option>
-                      <option value="Restaurant / Food Service">Restaurant / Food Service</option>
-                      <option value="Multi-Family / HOA">Multi-Family / HOA</option>
-                      <option value="Industrial / Warehouse">Industrial / Warehouse</option>
+                      <option value="Commercial Business">
+                        Commercial Business
+                      </option>
+                      <option value="Restaurant / Food Service">
+                        Restaurant / Food Service
+                      </option>
+                      <option value="Multi-Family / HOA">
+                        Multi-Family / HOA
+                      </option>
+                      <option value="Industrial / Warehouse">
+                        Industrial / Warehouse
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -982,13 +1011,27 @@ export function LeakDetectionContent() {
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      <option value="Slab / Under Foundation">Slab / Under Foundation</option>
-                      <option value="Behind Wall / Ceiling">Behind Wall / Ceiling</option>
-                      <option value="Shower / Bathroom">Shower / Bathroom</option>
-                      <option value="Yard / Main Irrigation Line">Yard / Main Irrigation Line</option>
-                      <option value="Under Kitchen / Faucet Sink">Under Kitchen / Faucet Sink</option>
-                      <option value="Water Heater System">Water Heater System</option>
-                      <option value="High Water Bill (Unknown Location)">High Water Bill (Unknown Location)</option>
+                      <option value="Slab / Under Foundation">
+                        Slab / Under Foundation
+                      </option>
+                      <option value="Behind Wall / Ceiling">
+                        Behind Wall / Ceiling
+                      </option>
+                      <option value="Shower / Bathroom">
+                        Shower / Bathroom
+                      </option>
+                      <option value="Yard / Main Irrigation Line">
+                        Yard / Main Irrigation Line
+                      </option>
+                      <option value="Under Kitchen / Faucet Sink">
+                        Under Kitchen / Faucet Sink
+                      </option>
+                      <option value="Water Heater System">
+                        Water Heater System
+                      </option>
+                      <option value="High Water Bill (Unknown Location)">
+                        High Water Bill (Unknown Location)
+                      </option>
                     </select>
                   </div>
 
@@ -1042,7 +1085,8 @@ export function LeakDetectionContent() {
                     )}
                   </button>
                   <p className="text-[11px] text-slate-500 mt-2">
-                    🔒 We respect your privacy. No spam. 100% honest flat-rate service.
+                    🔒 We respect your privacy. No spam. 100% honest flat-rate
+                    service.
                   </p>
                 </div>
               </form>
@@ -1126,8 +1170,8 @@ export function LeakDetectionContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            Don't let a hidden leak compromise your property. Contact American Commercial Plumbing LLC today
-            for expert leak detection and repair.
+            Don't let a hidden leak compromise your property. Contact American
+            Commercial Plumbing LLC today for expert leak detection and repair.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

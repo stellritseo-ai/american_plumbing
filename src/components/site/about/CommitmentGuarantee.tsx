@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { ShieldCheck, Video, Clock, CheckCircle2, Phone, Zap } from "lucide-react";
+import {
+  ShieldCheck,
+  Video,
+  Clock,
+  CheckCircle2,
+  Phone,
+  Zap,
+} from "lucide-react";
 
 export function CommitmentGuarantee() {
   return (
@@ -28,16 +35,20 @@ export function CommitmentGuarantee() {
 
               <p className="mt-6 text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
                 We believe in doing things the right way. That is why we offer a{" "}
-                <strong className="text-white font-bold">100% Upfront & Honest Guarantee</strong>. We
-                combine state-of-the-art tools—like advanced leak detection and camera
-                inspections—with decades of practical experience to offer you the best possible
-                service experience.
+                <strong className="text-white font-bold">
+                  100% Upfront & Honest Guarantee
+                </strong>
+                . We combine state-of-the-art tools—like advanced leak detection
+                and camera inspections—with decades of practical experience to
+                offer you the best possible service experience.
               </p>
 
               <p className="mt-4 text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
                 Whether it’s a routine maintenance check or a{" "}
-                <span className="text-electric font-bold">2:00 AM emergency</span>, our team is ready
-                to serve you with professionalism and speed.
+                <span className="text-electric font-bold">
+                  2:00 AM emergency
+                </span>
+                , our team is ready to serve you with professionalism and speed.
               </p>
 
               <div className="mt-8 grid sm:grid-cols-2 gap-4 pt-6 border-t border-white/10">
@@ -64,7 +75,8 @@ export function CommitmentGuarantee() {
                       2:00 AM Or 2:00 PM Readiness
                     </div>
                     <div className="text-xs text-slate-300 mt-0.5">
-                      Prompt, courteous dispatch on nights, weekends, and holidays.
+                      Prompt, courteous dispatch on nights, weekends, and
+                      holidays.
                     </div>
                   </div>
                 </div>

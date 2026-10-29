@@ -46,7 +46,8 @@ export function CTASection() {
         <div
           className="w-full rounded-2xl border border-slate-200/50 shadow-[0_10px_35px_rgba(0,0,0,0.02)] relative z-10 p-6 sm:p-8 md:p-10 lg:p-12"
           style={{
-            backgroundImage: "radial-gradient(#e5e7eb 1.5px, transparent 1.5px)",
+            backgroundImage:
+              "radial-gradient(#e5e7eb 1.5px, transparent 1.5px)",
             backgroundSize: "20px 20px",
             backgroundColor: "#ffffff",
           }}
@@ -63,26 +64,40 @@ export function CTASection() {
 
           {/* Description */}
           <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto mb-[24px] text-xs sm:text-sm font-medium">
-            Contact American Commercial Plumbing for a free, no-obligation estimate. We're here to diagnose your issues, discuss your project, and provide the expert solutions you need in Tucson.
+            Contact American Commercial Plumbing for a free, no-obligation
+            estimate. We're here to diagnose your issues, discuss your project,
+            and provide the expert solutions you need in Tucson.
           </p>
 
           {isSubmitted ? (
             <div className="flex flex-col justify-center items-center text-center w-full py-12 space-y-4">
               <div className="bg-emerald-50 text-emerald-600 p-4 rounded-full shadow-sm animate-bounce">
-                <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                <svg
+                  className="w-8 h-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-navy">
-                Request Received
-              </h3>
+              <h3 className="text-2xl font-bold text-navy">Request Received</h3>
               <p className="text-sm text-slate-600 max-w-md">
-                Thank you! A Tucson dispatch specialist will review your details and contact you within 60 minutes.
+                Thank you! A Tucson dispatch specialist will review your details
+                and contact you within 60 minutes.
               </p>
             </div>
           ) : (
             /* Contact Form */
-            <form className="w-full space-y-4 text-left" onSubmit={handleSubmit}>
+            <form
+              className="w-full space-y-4 text-left"
+              onSubmit={handleSubmit}
+            >
               <HoneypotFields />
 
               {/* Row 1: Name and Phone */}
@@ -143,9 +158,15 @@ export function CTASection() {
                   <option value="commercial">Commercial Plumbing</option>
                   <option value="residential">Residential Plumbing</option>
                   <option value="emergency">24/7 Emergency Service</option>
-                  <option value="water-heaters">Water Heater Install & Repair</option>
-                  <option value="leak-detection">Advanced Leak Detection</option>
-                  <option value="drain-sewer">Drain Scoping & Sewer Repair</option>
+                  <option value="water-heaters">
+                    Water Heater Install & Repair
+                  </option>
+                  <option value="leak-detection">
+                    Advanced Leak Detection
+                  </option>
+                  <option value="drain-sewer">
+                    Drain Scoping & Sewer Repair
+                  </option>
                   <option value="repiping">Whole-Home/Building Repiping</option>
                 </select>
                 <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 flex items-center">
@@ -171,10 +192,11 @@ export function CTASection() {
                 disabled={isSubmitting}
                 className="w-full bg-gradient-to-r from-cta to-red-600 hover:brightness-110 text-white text-xs font-bold uppercase tracking-wider rounded-xl py-4 transition-all duration-300 shadow-cta select-none cursor-pointer text-center disabled:opacity-75 disabled:pointer-events-none flex items-center justify-center gap-2"
               >
-                <span>{isSubmitting ? "Submitting..." : "Send Estimate Request"}</span>
+                <span>
+                  {isSubmitting ? "Submitting..." : "Send Estimate Request"}
+                </span>
                 <ArrowRight className="h-4 w-4" />
               </motion.button>
-
             </form>
           )}
         </div>

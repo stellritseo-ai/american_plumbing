@@ -131,8 +131,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="mt-4 sm:mt-6 max-w-xl text-base sm:text-lg text-white/80 leading-relaxed font-medium"
           >
-            Licensed, bonded, and backed by 25+ years of local craftsmanship.
-            We deliver upfront, transparent pricing and emergency support for
+            Licensed, bonded, and backed by 25+ years of local craftsmanship. We
+            deliver upfront, transparent pricing and emergency support for
             commercial complexes and local homes.
           </motion.p>
 
@@ -182,7 +182,9 @@ export function Hero() {
                     <div
                       className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl ${t.bgColor} border ${t.borderColor} flex items-center justify-center ${t.iconColor} group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-xs`}
                     >
-                      <Icon className={`h-4 w-4 sm:h-5 sm:w-5 ${t.iconColor}`} />
+                      <Icon
+                        className={`h-4 w-4 sm:h-5 sm:w-5 ${t.iconColor}`}
+                      />
                     </div>
                     <div className="flex flex-col min-w-0 text-left">
                       <span className="text-[10px] sm:text-[13px] font-black text-white tracking-wide leading-tight">

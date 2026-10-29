@@ -69,8 +69,9 @@ export function ComprehensiveServices() {
           </h2>
 
           <p className="mt-5 text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
-            Whether you are a property manager maintaining a large facility or a homeowner dealing
-            with a midnight emergency, we have the tools and expertise to handle it.
+            Whether you are a property manager maintaining a large facility or a
+            homeowner dealing with a midnight emergency, we have the tools and
+            expertise to handle it.
           </p>
         </div>
 
@@ -103,9 +104,10 @@ export function ComprehensiveServices() {
               </h3>
 
               <p className="mt-4 text-slate-300 text-base leading-relaxed font-normal">
-                We understand that downtime costs money. We provide rapid response and preventative
-                maintenance for Tucson businesses, ensuring your operations run smoothly without
-                plumbing interruptions.
+                We understand that downtime costs money. We provide rapid
+                response and preventative maintenance for Tucson businesses,
+                ensuring your operations run smoothly without plumbing
+                interruptions.
               </p>
 
               <div className="mt-6 grid grid-cols-2 gap-3 pt-6 border-t border-slate-800">
@@ -156,9 +158,9 @@ export function ComprehensiveServices() {
               </h3>
 
               <p className="mt-4 text-slate-600 text-base leading-relaxed font-normal">
-                From leaky faucets to full repiping, we keep your home’s water running clean and
-                safe. We bring commercial-grade fixtures and heavy-duty pipe craftsmanship to your
-                residence.
+                From leaky faucets to full repiping, we keep your home’s water
+                running clean and safe. We bring commercial-grade fixtures and
+                heavy-duty pipe craftsmanship to your residence.
               </p>
 
               <div className="mt-6 grid grid-cols-2 gap-3 pt-6 border-t border-slate-100">

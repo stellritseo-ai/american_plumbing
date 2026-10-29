@@ -261,7 +261,9 @@ function Index() {
     <main className="relative bg-background text-foreground min-h-screen overflow-x-clip">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
       />
       <BackgroundBlobs />
       <Header />

@@ -47,7 +47,11 @@ const containerVariants: Variants = {
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, x: -10 },
-  show: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 300, damping: 24 } },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { type: "spring", stiffness: 300, damping: 24 },
+  },
   exit: { opacity: 0, x: -5 },
 };
 
@@ -74,11 +78,14 @@ export function Header() {
   });
   const isAbout = pathname === "/about";
   const isContact = pathname === "/contact";
-  const isTestimonials = pathname === "/testimonials" || pathname === "/testimonial";
+  const isTestimonials =
+    pathname === "/testimonials" || pathname === "/testimonial";
   const isCommercial =
-    pathname === "/commercial-plumbing" || pathname.startsWith("/services/commercial-plumbing");
+    pathname === "/commercial-plumbing" ||
+    pathname.startsWith("/services/commercial-plumbing");
   const isResidential =
-    pathname === "/residential-plumbing" || pathname.startsWith("/services/residential-plumbing");
+    pathname === "/residential-plumbing" ||
+    pathname.startsWith("/services/residential-plumbing");
   const isEmergency =
     pathname === "/emergency-repairs" ||
     pathname === "/emergency-plumbing" ||
@@ -194,21 +201,21 @@ export function Header() {
 
   const links = isInnerPage
     ? [
-      { label: "Home", href: "/#home" },
-      { label: "About", href: "/about" },
-      { label: "Services", href: "/#services", hasDropdown: true },
-      { label: "Projects", href: "/projects" },
-      { label: "Testimonials", href: "/testimonials" },
-      { label: "Contact", href: "/contact" },
-    ]
+        { label: "Home", href: "/#home" },
+        { label: "About", href: "/about" },
+        { label: "Services", href: "/#services", hasDropdown: true },
+        { label: "Projects", href: "/projects" },
+        { label: "Testimonials", href: "/testimonials" },
+        { label: "Contact", href: "/contact" },
+      ]
     : [
-      { label: "Home", href: "#home" },
-      { label: "About", href: "/about" },
-      { label: "Services", href: "#services", hasDropdown: true },
-      { label: "Projects", href: "/projects" },
-      { label: "Testimonials", href: "/testimonials" },
-      { label: "Contact", href: "/contact" },
-    ];
+        { label: "Home", href: "#home" },
+        { label: "About", href: "/about" },
+        { label: "Services", href: "#services", hasDropdown: true },
+        { label: "Projects", href: "/projects" },
+        { label: "Testimonials", href: "/testimonials" },
+        { label: "Contact", href: "/contact" },
+      ];
 
   const getInitialActive = () => {
     if (isProjects) return "/projects";
@@ -294,7 +301,9 @@ export function Header() {
                 Licensed ROC #321353
               </span>
               <span className="hidden md:inline w-1 h-1 rounded-full bg-slate-500" />
-              <span className="hidden md:inline text-slate-300">Tucson & Pima County</span>
+              <span className="hidden md:inline text-slate-300">
+                Tucson & Pima County
+              </span>
             </div>
           </div>
 
@@ -320,13 +329,15 @@ export function Header() {
         animate={scrolled ? "scrolled" : "top"}
         variants={navVariants}
         transition={{ duration: 0.25 }}
-        className={`fixed inset-x-0 z-40 backdrop-blur-2xl border-b transition-all duration-300 ${scrolled ? "top-0" : "top-8 sm:top-9"
-          }`}
+        className={`fixed inset-x-0 z-40 backdrop-blur-2xl border-b transition-all duration-300 ${
+          scrolled ? "top-0" : "top-8 sm:top-9"
+        }`}
       >
         <div className="mx-auto w-[92%] max-w-7xl">
           <div
-            className={`flex items-center justify-between gap-4 transition-all duration-300 ${scrolled ? "h-18 sm:h-20" : "h-20 sm:h-22"
-              }`}
+            className={`flex items-center justify-between gap-4 transition-all duration-300 ${
+              scrolled ? "h-18 sm:h-20" : "h-20 sm:h-22"
+            }`}
           >
             {/* Brand Logo */}
             <a
@@ -354,14 +365,14 @@ export function Header() {
                       : isProjects
                         ? l.href === "/projects"
                         : (isCommercial ||
-                          isResidential ||
-                          isEmergency ||
-                          isWaterHeaters ||
-                          isSewer ||
-                          isDrain ||
-                          isLeak ||
-                          isRepiping) &&
-                          l.label === "Services"
+                              isResidential ||
+                              isEmergency ||
+                              isWaterHeaters ||
+                              isSewer ||
+                              isDrain ||
+                              isLeak ||
+                              isRepiping) &&
+                            l.label === "Services"
                           ? true
                           : active === l.href;
 
@@ -372,10 +383,11 @@ export function Header() {
                         whileHover={{ y: -0.5 }}
                         href={l.href}
                         onClick={() => setActive(l.href)}
-                        className={`relative px-4 py-2 text-[13px] font-extrabold uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center gap-1.5 cursor-pointer ${isItemActive
+                        className={`relative px-4 py-2 text-[13px] font-extrabold uppercase tracking-wider rounded-xl transition-all duration-200 flex items-center gap-1.5 cursor-pointer ${
+                          isItemActive
                             ? "text-primary bg-primary/10 shadow-xs"
                             : "text-navy hover:text-primary hover:bg-slate-100/70"
-                          }`}
+                        }`}
                       >
                         <span>{l.label}</span>
                         <ChevronDown className="h-3.5 w-3.5 text-slate-400 group-hover/nav:text-primary group-hover/nav:rotate-180 transition-transform duration-300" />
@@ -383,7 +395,11 @@ export function Header() {
                           <motion.span
                             layoutId="nav-active"
                             className="absolute inset-x-3 -bottom-0.5 h-[2.5px] rounded-full bg-gradient-to-r from-cta to-amber-500 shadow-[0_2px_8px_rgba(255,102,0,0.5)]"
-                            transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                            transition={{
+                              type: "spring",
+                              stiffness: 380,
+                              damping: 30,
+                            }}
                           />
                         )}
                       </motion.a>
@@ -406,7 +422,8 @@ export function Header() {
                                   Commercial & Residential Solutions
                                 </span>
                                 <span className="text-[10px] text-slate-400 font-medium">
-                                  Licensed Pima County Plumbing Contractors · ROC #321353
+                                  Licensed Pima County Plumbing Contractors ·
+                                  ROC #321353
                                 </span>
                               </div>
                             </div>
@@ -462,8 +479,12 @@ export function Header() {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                               </span>
-                              <span className="text-cta">Emergency Hotline:</span>
-                              <span className="underline decoration-slate-300 underline-offset-2 font-bold">(520) 221-2010</span>
+                              <span className="text-cta">
+                                Emergency Hotline:
+                              </span>
+                              <span className="underline decoration-slate-300 underline-offset-2 font-bold">
+                                (520) 221-2010
+                              </span>
                             </a>
 
                             <div className="flex items-center gap-2 text-[11px] font-bold text-slate-400 uppercase tracking-wider">
@@ -483,17 +504,22 @@ export function Header() {
                     key={l.label}
                     href={l.href}
                     onClick={() => setActive(l.href)}
-                    className={`relative px-4 py-2 text-[13px] font-extrabold uppercase tracking-wider rounded-xl transition-all duration-200 ${isItemActive
+                    className={`relative px-4 py-2 text-[13px] font-extrabold uppercase tracking-wider rounded-xl transition-all duration-200 ${
+                      isItemActive
                         ? "text-primary bg-primary/10 shadow-xs"
                         : "text-navy hover:text-primary hover:bg-slate-100/70"
-                      }`}
+                    }`}
                   >
                     {l.label}
                     {isItemActive && (
                       <motion.span
                         layoutId="nav-active"
                         className="absolute inset-x-3 -bottom-0.5 h-[2.5px] rounded-full bg-gradient-to-r from-cta to-amber-500 shadow-[0_2px_8px_rgba(255,102,0,0.5)]"
-                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 380,
+                          damping: 30,
+                        }}
                       />
                     )}
                   </motion.a>
@@ -523,7 +549,9 @@ export function Header() {
                 whileHover={{ scale: 1.03, y: -1 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                href={isEstimate ? "#estimate-form-section" : "/request-estimate"}
+                href={
+                  isEstimate ? "#estimate-form-section" : "/request-estimate"
+                }
                 className="relative inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-cta via-[#ff731d] to-[#ff570a] text-white hover:brightness-105 active:scale-95 transition-all duration-300 shadow-[0_4px_16px_rgba(255,102,0,0.35)] hover:shadow-[0_8px_24px_rgba(255,102,0,0.5)] border border-white/20 overflow-hidden group"
               >
                 <Calendar className="w-3.5 h-3.5 shrink-0" />
@@ -572,8 +600,11 @@ export function Header() {
                               </span>
                             </div>
                             <ChevronDown
-                              className={`h-4 w-4 text-slate-400 group-hover:text-primary transition-transform duration-300 ${mobileServicesOpen ? "rotate-180 text-primary" : ""
-                                }`}
+                              className={`h-4 w-4 text-slate-400 group-hover:text-primary transition-transform duration-300 ${
+                                mobileServicesOpen
+                                  ? "rotate-180 text-primary"
+                                  : ""
+                              }`}
                             />
                           </motion.button>
 
@@ -602,7 +633,9 @@ export function Header() {
                                       <div className="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
                                         <Icon className="h-4 w-4" />
                                       </div>
-                                      <span className="truncate flex-1">{srv.title}</span>
+                                      <span className="truncate flex-1">
+                                        {srv.title}
+                                      </span>
                                       <span className="text-[9px] font-bold uppercase tracking-wider text-slate-400 bg-slate-100 px-1.5 py-0.5 rounded">
                                         {srv.tag}
                                       </span>
@@ -656,7 +689,11 @@ export function Header() {
                       <span>Call 24/7</span>
                     </a>
                     <a
-                      href={isEstimate ? "#estimate-form-section" : "/request-estimate"}
+                      href={
+                        isEstimate
+                          ? "#estimate-form-section"
+                          : "/request-estimate"
+                      }
                       onClick={() => setOpen(false)}
                       className="flex items-center justify-center gap-2 px-3 py-3.5 rounded-2xl text-xs font-black uppercase tracking-wider bg-gradient-to-r from-cta to-[#ff570a] text-white hover:brightness-110 active:scale-95 transition-all duration-300 shadow-cta"
                     >

@@ -291,8 +291,12 @@ export function CommercialPlumbingContent() {
                 <Award className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">25+ Years</span>
-                <span className="text-[11px] font-bold text-slate-500">Serving Tucson</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  25+ Years
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Serving Tucson
+                </span>
               </div>
             </div>
 
@@ -301,8 +305,12 @@ export function CommercialPlumbingContent() {
                 <ShieldCheck className="h-5 w-5 text-emerald-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">ROC #321353</span>
-                <span className="text-[11px] font-bold text-slate-500">Licensed & Insured</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  ROC #321353
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Licensed & Insured
+                </span>
               </div>
             </div>
 
@@ -311,8 +319,12 @@ export function CommercialPlumbingContent() {
                 <Clock className="h-5 w-5 text-cta" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">24/7 Rapid</span>
-                <span className="text-[11px] font-bold text-slate-500">Emergency Dispatch</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  24/7 Rapid
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Emergency Dispatch
+                </span>
               </div>
             </div>
 
@@ -321,8 +333,12 @@ export function CommercialPlumbingContent() {
                 <UserCheck className="h-5 w-5 text-indigo-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">100% Vetted</span>
-                <span className="text-[11px] font-bold text-slate-500">Certified Techs</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  100% Vetted
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Certified Techs
+                </span>
               </div>
             </div>
           </div>
@@ -352,21 +368,25 @@ export function CommercialPlumbingContent() {
 
               <div className="mt-6 space-y-4 text-base text-slate-700 leading-relaxed font-medium">
                 <p>
-                  In the commercial sector, a plumbing failure isn't just an inconvenience—it’s a costly
-                  operational hazard. From health code violations to water damage and forced shutdowns,
-                  plumbing issues can cripple your business.
+                  In the commercial sector, a plumbing failure isn't just an
+                  inconvenience—it’s a costly operational hazard. From health
+                  code violations to water damage and forced shutdowns, plumbing
+                  issues can cripple your business.
                 </p>
                 <p>
-                  At American Commercial Plumbing LLC, we understand the high stakes of commercial
-                  property management. Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>,
-                  our team brings over two decades of clean engineering and large-scale diagnostic
-                  expertise to every job. We don't just patch problems; we provide long-term, durable
-                  solutions that keep your business running smoothly.
+                  At American Commercial Plumbing LLC, we understand the high
+                  stakes of commercial property management. Led by owner{" "}
+                  <strong className="text-navy font-bold">Shawn Holton</strong>,
+                  our team brings over two decades of clean engineering and
+                  large-scale diagnostic expertise to every job. We don't just
+                  patch problems; we provide long-term, durable solutions that
+                  keep your business running smoothly.
                 </p>
                 <p>
-                  Whether you manage a retail center, a multi-family complex, or a large-scale
-                  industrial facility, we have the tools, licensing, and workforce to handle your
-                  plumbing infrastructure.
+                  Whether you manage a retail center, a multi-family complex, or
+                  a large-scale industrial facility, we have the tools,
+                  licensing, and workforce to handle your plumbing
+                  infrastructure.
                 </p>
               </div>
 
@@ -374,12 +394,14 @@ export function CommercialPlumbingContent() {
               <div className="mt-8 p-6 rounded-3xl bg-[#F7F7F7] border border-slate-200 shadow-xs">
                 <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-primary mb-2">
                   <Sparkles className="w-4 h-4 text-cta" />
-                  <span>Licensed Commercial Plumbing Contractor · ROC #321353</span>
+                  <span>
+                    Licensed Commercial Plumbing Contractor · ROC #321353
+                  </span>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 font-semibold leading-relaxed">
-                  Fully bonded and carrying comprehensive liability insurance across Pima County. We
-                  handle engineering plan submissions, county permits, and scheduled shutoffs with
-                  extreme care.
+                  Fully bonded and carrying comprehensive liability insurance
+                  across Pima County. We handle engineering plan submissions,
+                  county permits, and scheduled shutoffs with extreme care.
                 </p>
               </div>
 
@@ -465,8 +487,9 @@ export function CommercialPlumbingContent() {
               Our Commercial Plumbing Capabilities
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              We offer comprehensive plumbing services tailored to the unique demands of commercial
-              and industrial properties across Southern Arizona.
+              We offer comprehensive plumbing services tailored to the unique
+              demands of commercial and industrial properties across Southern
+              Arizona.
             </p>
           </div>
 
@@ -504,7 +527,10 @@ export function CommercialPlumbingContent() {
 
                     <ul className="mt-5 space-y-2 pt-4 border-t border-slate-100">
                       {cap.bullets.map((bullet, bIdx) => (
-                        <li key={bIdx} className="flex items-start gap-2 text-xs font-semibold text-slate-700">
+                        <li
+                          key={bIdx}
+                          className="flex items-start gap-2 text-xs font-semibold text-slate-700"
+                        >
                           <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{bullet}</span>
                         </li>
@@ -542,8 +568,9 @@ export function CommercialPlumbingContent() {
               Industries We Serve
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              Our commercial plumbing expertise spans a wide range of industries across Tucson and
-              Southern Arizona, ensuring code compliance and seamless operations.
+              Our commercial plumbing expertise spans a wide range of industries
+              across Tucson and Southern Arizona, ensuring code compliance and
+              seamless operations.
             </p>
           </div>
 
@@ -569,7 +596,9 @@ export function CommercialPlumbingContent() {
                       </span>
                     </div>
 
-                    <h3 className="text-lg font-black text-navy">{ind.title}</h3>
+                    <h3 className="text-lg font-black text-navy">
+                      {ind.title}
+                    </h3>
                     <p className="mt-2.5 text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
                       {ind.desc}
                     </p>
@@ -589,10 +618,13 @@ export function CommercialPlumbingContent() {
                 <span className="text-[10px] font-black uppercase tracking-widest text-cta bg-white/10 px-2.5 py-1 rounded-full border border-white/20 inline-block mb-4">
                   Custom Facilities
                 </span>
-                <h3 className="text-lg font-black text-white">Have a Specialty Facility?</h3>
+                <h3 className="text-lg font-black text-white">
+                  Have a Specialty Facility?
+                </h3>
                 <p className="mt-2.5 text-xs sm:text-sm text-slate-200 font-medium leading-relaxed">
-                  We service distribution warehouses, manufacturing plants, laboratories, and athletic
-                  complexes. Let our engineering team review your site plans.
+                  We service distribution warehouses, manufacturing plants,
+                  laboratories, and athletic complexes. Let our engineering team
+                  review your site plans.
                 </p>
               </div>
 
@@ -619,8 +651,8 @@ export function CommercialPlumbingContent() {
               The American Commercial Plumbing Advantage
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              When you partner with us, you get more than just a contractor—you get a dedicated ally
-              in facility maintenance and risk mitigation.
+              When you partner with us, you get more than just a contractor—you
+              get a dedicated ally in facility maintenance and risk mitigation.
             </p>
           </div>
 
@@ -675,7 +707,9 @@ export function CommercialPlumbingContent() {
               <div className="lg:col-span-7 text-left">
                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1 text-xs font-black uppercase tracking-widest text-primary mb-4">
                   <CalendarCheck className="w-3.5 h-3.5 text-cta" />
-                  <span>Preventative Maintenance for Commercial Properties</span>
+                  <span>
+                    Preventative Maintenance for Commercial Properties
+                  </span>
                 </div>
 
                 <h2 className="font-display text-2xl sm:text-3xl lg:text-4xl font-black text-navy leading-tight tracking-tight">
@@ -683,10 +717,11 @@ export function CommercialPlumbingContent() {
                 </h2>
 
                 <p className="mt-4 text-slate-700 text-sm sm:text-base leading-relaxed font-medium">
-                  The best way to handle a plumbing emergency is to prevent it from happening in the
-                  first place. Our commercial preventative maintenance programs are designed to save
-                  you money on costly repairs, avoid unexpected shutdowns, and extend the lifespan of
-                  your plumbing infrastructure.
+                  The best way to handle a plumbing emergency is to prevent it
+                  from happening in the first place. Our commercial preventative
+                  maintenance programs are designed to save you money on costly
+                  repairs, avoid unexpected shutdowns, and extend the lifespan
+                  of your plumbing infrastructure.
                 </p>
 
                 <div className="mt-6 pt-4 border-t border-slate-200">
@@ -702,7 +737,10 @@ export function CommercialPlumbingContent() {
                       "Grease trap and backflow preventer annual checks",
                       "Documented facility audit for management & insurance",
                     ].map((item, idx) => (
-                      <div key={idx} className="flex items-start gap-2 text-xs font-bold text-slate-700">
+                      <div
+                        key={idx}
+                        className="flex items-start gap-2 text-xs font-bold text-slate-700"
+                      >
                         <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </div>
@@ -744,7 +782,10 @@ export function CommercialPlumbingContent() {
       </section>
 
       {/* ── 7. COMMERCIAL SERVICE REQUEST FORM (INTERACTIVE) ───────── */}
-      <section id="commercial-service-form" className="py-16 sm:py-24 bg-[#F8FAFC] border-t border-slate-200">
+      <section
+        id="commercial-service-form"
+        className="py-16 sm:py-24 bg-[#F8FAFC] border-t border-slate-200"
+      >
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 px-3.5 py-1 rounded-full border border-primary/20">
@@ -754,8 +795,8 @@ export function CommercialPlumbingContent() {
               Request Commercial Service or Consultation
             </h2>
             <p className="mt-2 text-slate-600 text-sm font-medium">
-              Submit your property details below. A commercial plumbing manager will respond within one
-              hour during business hours.
+              Submit your property details below. A commercial plumbing manager
+              will respond within one hour during business hours.
             </p>
           </div>
 
@@ -770,10 +811,13 @@ export function CommercialPlumbingContent() {
                   <div className="h-16 w-16 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mx-auto mb-4">
                     <CheckCircle2 className="h-8 w-8" />
                   </div>
-                  <h3 className="text-2xl font-black text-navy mb-2">Request Received</h3>
+                  <h3 className="text-2xl font-black text-navy mb-2">
+                    Request Received
+                  </h3>
                   <p className="text-slate-600 text-sm max-w-md mx-auto font-medium">
-                    Thank you! Our commercial dispatch team has received your project details. Shawn
-                    Holton or a senior commercial specialist will follow up shortly.
+                    Thank you! Our commercial dispatch team has received your
+                    project details. Shawn Holton or a senior commercial
+                    specialist will follow up shortly.
                   </p>
                   <div className="mt-6">
                     <a
@@ -786,7 +830,10 @@ export function CommercialPlumbingContent() {
                   </div>
                 </motion.div>
               ) : (
-                <form onSubmit={handleFormSubmit} className="space-y-4 sm:space-y-5">
+                <form
+                  onSubmit={handleFormSubmit}
+                  className="space-y-4 sm:space-y-5"
+                >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-xs font-bold text-slate-700 mb-1.5">
@@ -797,7 +844,12 @@ export function CommercialPlumbingContent() {
                         required
                         placeholder="e.g. Foothills Plaza / Downtown Bistro"
                         value={formData.businessName}
-                        onChange={(e) => setFormData({ ...formData, businessName: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            businessName: e.target.value,
+                          })
+                        }
                         className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400"
                       />
                     </div>
@@ -810,7 +862,12 @@ export function CommercialPlumbingContent() {
                         required
                         placeholder="e.g. Mark Stevens (Facility Mgr)"
                         value={formData.contactName}
-                        onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            contactName: e.target.value,
+                          })
+                        }
                         className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400"
                       />
                     </div>
@@ -826,7 +883,9 @@ export function CommercialPlumbingContent() {
                         required
                         placeholder="(520) 000-0000"
                         value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, phone: e.target.value })
+                        }
                         className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400"
                       />
                     </div>
@@ -839,7 +898,9 @@ export function CommercialPlumbingContent() {
                         required
                         placeholder="manager@company.com"
                         value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, email: e.target.value })
+                        }
                         className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400"
                       />
                     </div>
@@ -852,17 +913,36 @@ export function CommercialPlumbingContent() {
                       </label>
                       <select
                         value={formData.facilityType}
-                        onChange={(e) => setFormData({ ...formData, facilityType: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            facilityType: e.target.value,
+                          })
+                        }
                         className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white"
                       >
-                        <option value="Restaurant / Food Service">Restaurant / Food Service</option>
-                        <option value="Property Management / HOA">Property Management / HOA</option>
-                        <option value="Retail / Shopping Center">Retail / Shopping Center</option>
+                        <option value="Restaurant / Food Service">
+                          Restaurant / Food Service
+                        </option>
+                        <option value="Property Management / HOA">
+                          Property Management / HOA
+                        </option>
+                        <option value="Retail / Shopping Center">
+                          Retail / Shopping Center
+                        </option>
                         <option value="Office Building">Office Building</option>
-                        <option value="Medical / Dental Clinic">Medical / Dental Clinic</option>
-                        <option value="Industrial / Warehouse">Industrial / Warehouse</option>
-                        <option value="School / Municipal">School / Municipal</option>
-                        <option value="Other Commercial">Other Commercial</option>
+                        <option value="Medical / Dental Clinic">
+                          Medical / Dental Clinic
+                        </option>
+                        <option value="Industrial / Warehouse">
+                          Industrial / Warehouse
+                        </option>
+                        <option value="School / Municipal">
+                          School / Municipal
+                        </option>
+                        <option value="Other Commercial">
+                          Other Commercial
+                        </option>
                       </select>
                     </div>
 
@@ -872,17 +952,38 @@ export function CommercialPlumbingContent() {
                       </label>
                       <select
                         value={formData.serviceNeeded}
-                        onChange={(e) => setFormData({ ...formData, serviceNeeded: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            serviceNeeded: e.target.value,
+                          })
+                        }
                         className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white"
                       >
-                        <option value="Emergency Repair">🚨 24/7 Emergency Repair</option>
-                        <option value="Restroom & Fixture Services">Restroom & Flush Valve Services</option>
-                        <option value="Commercial Water Heater / Boiler">Commercial Water Heater / Boiler</option>
-                        <option value="Hydro Jetting & Drain Cleaning">Hydro Jetting & Drain Snaking</option>
-                        <option value="Sewer Camera & Line Repair">Sewer Camera & Line Repair</option>
-                        <option value="Backflow Testing & Certification">Backflow Testing & Certification</option>
-                        <option value="Preventative Maintenance Plan">Preventative Maintenance Program</option>
-                        <option value="Full Commercial Repiping / Bidding">Commercial Bid / Repiping Project</option>
+                        <option value="Emergency Repair">
+                          🚨 24/7 Emergency Repair
+                        </option>
+                        <option value="Restroom & Fixture Services">
+                          Restroom & Flush Valve Services
+                        </option>
+                        <option value="Commercial Water Heater / Boiler">
+                          Commercial Water Heater / Boiler
+                        </option>
+                        <option value="Hydro Jetting & Drain Cleaning">
+                          Hydro Jetting & Drain Snaking
+                        </option>
+                        <option value="Sewer Camera & Line Repair">
+                          Sewer Camera & Line Repair
+                        </option>
+                        <option value="Backflow Testing & Certification">
+                          Backflow Testing & Certification
+                        </option>
+                        <option value="Preventative Maintenance Plan">
+                          Preventative Maintenance Program
+                        </option>
+                        <option value="Full Commercial Repiping / Bidding">
+                          Commercial Bid / Repiping Project
+                        </option>
                       </select>
                     </div>
                   </div>
@@ -895,7 +996,9 @@ export function CommercialPlumbingContent() {
                       rows={3}
                       placeholder="Please describe symptoms, number of units affected, or bidding requirements..."
                       value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, message: e.target.value })
+                      }
                       className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400 resize-none"
                     />
                   </div>
@@ -907,10 +1010,15 @@ export function CommercialPlumbingContent() {
                       className="w-full bg-cta hover:brightness-110 text-white font-black text-xs uppercase tracking-wider py-4 px-6 rounded-full shadow-cta transition-all cursor-pointer active:scale-95 disabled:opacity-50 flex items-center justify-center gap-2"
                     >
                       <Send className="h-4 w-4" />
-                      <span>{formSubmitting ? "Sending Request..." : "Submit Commercial Request"}</span>
+                      <span>
+                        {formSubmitting
+                          ? "Sending Request..."
+                          : "Submit Commercial Request"}
+                      </span>
                     </button>
                     <p className="text-center text-[11px] text-slate-500 font-semibold mt-3">
-                      ROC #321353 · Licensed, Bonded & Insured · 100% Upfront Flat-Rate Pricing
+                      ROC #321353 · Licensed, Bonded & Insured · 100% Upfront
+                      Flat-Rate Pricing
                     </p>
                   </div>
                 </form>
@@ -931,7 +1039,8 @@ export function CommercialPlumbingContent() {
               Frequently Asked Questions (Commercial)
             </h2>
             <p className="mt-2 text-slate-600 text-sm font-medium">
-              Important details about after-hours scheduling, sensitive environments, and licensing.
+              Important details about after-hours scheduling, sensitive
+              environments, and licensing.
             </p>
           </div>
 
@@ -999,8 +1108,9 @@ export function CommercialPlumbingContent() {
           </h2>
 
           <p className="mt-4 text-slate-200 text-sm sm:text-base font-medium max-w-2xl mx-auto leading-relaxed">
-            Partner with Tucson’s most trusted commercial plumbing experts. Contact us today for rapid
-            response, preventative maintenance, and code-compliant solutions.
+            Partner with Tucson’s most trusted commercial plumbing experts.
+            Contact us today for rapid response, preventative maintenance, and
+            code-compliant solutions.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center items-center gap-4">

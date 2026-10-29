@@ -21,19 +21,22 @@ export function ServiceArea() {
     <section className="relative py-12 sm:py-14 lg:py-[60px] bg-white border-b border-slate-100 overflow-hidden">
       <div className="mx-auto w-[90%] max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          
           {/* Left Column: Heading & Chips (50% width) */}
           <div className="z-10">
             <span className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider mb-5">
               Service Area
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy leading-tight mb-5 tracking-tight">
-              Proudly Serving <span className="text-gradient-brand">Tucson</span> & Surrounding Communities.
+              Proudly Serving{" "}
+              <span className="text-gradient-brand">Tucson</span> & Surrounding
+              Communities.
             </h2>
             <p className="text-sm sm:text-base text-slate-500 font-medium leading-relaxed max-w-lg mb-8">
-              We provide prompt, dependable plumbing solutions across Southern Arizona — typically within a 40-mile radius of our downtown Tucson dispatch hub.
+              We provide prompt, dependable plumbing solutions across Southern
+              Arizona — typically within a 40-mile radius of our downtown Tucson
+              dispatch hub.
             </p>
-            
+
             {/* Premium Capsule Chips */}
             <div className="flex flex-wrap gap-2.5">
               {areasData.map((a) => {
@@ -50,9 +53,11 @@ export function ServiceArea() {
                         : "text-slate-600 bg-slate-50 border-slate-100 hover:bg-primary/5 hover:border-primary/25 hover:text-primary"
                     }`}
                   >
-                    <MapPin className={`h-3.5 w-3.5 shrink-0 transition-colors duration-300 ${
-                      isActive ? "text-primary" : "text-primary/75"
-                    }`} />
+                    <MapPin
+                      className={`h-3.5 w-3.5 shrink-0 transition-colors duration-300 ${
+                        isActive ? "text-primary" : "text-primary/75"
+                      }`}
+                    />
                     {a.name}
                   </motion.div>
                 );
@@ -79,7 +84,7 @@ export function ServiceArea() {
             />
 
             <div className="absolute inset-0 bg-grid opacity-[0.05] pointer-events-none" />
-            
+
             {/* Stylized map grid and contour boundary */}
             <svg
               viewBox="0 0 600 450"
@@ -93,7 +98,7 @@ export function ServiceArea() {
                   <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
                 </radialGradient>
               </defs>
-              
+
               {/* Coverage radial glow under Tucson */}
               <circle cx="330" cy="225" r="200" fill="url(#mapGlow)" />
 
@@ -168,7 +173,6 @@ export function ServiceArea() {
                 ~40 Mile Tucson Hub
               </div>
             </div>
-
           </motion.div>
         </div>
       </div>
@@ -224,33 +228,39 @@ function Pin({
         {/* Glowing hotspot */}
         <div className="relative flex h-8 w-8 items-center justify-center">
           {/* Pulsing ring */}
-          <span className={`animate-ping absolute inline-flex h-6 w-6 rounded-full opacity-75 transition-all duration-300 ${
-            active 
-              ? "bg-primary scale-125" 
-              : primary 
-                ? "bg-cta" 
-                : "bg-cyan-400"
-          }`}></span>
+          <span
+            className={`animate-ping absolute inline-flex h-6 w-6 rounded-full opacity-75 transition-all duration-300 ${
+              active
+                ? "bg-primary scale-125"
+                : primary
+                  ? "bg-cta"
+                  : "bg-cyan-400"
+            }`}
+          ></span>
           {/* Inner solid ring */}
-          <span className={`relative inline-flex rounded-full h-4.5 w-4.5 items-center justify-center text-white shadow-md transition-all duration-300 ${
-            active 
-              ? "bg-primary scale-110 shadow-[0_0_12px_rgba(59,130,246,0.5)]" 
-              : primary 
-                ? "bg-cta" 
-                : "bg-gradient-to-r from-primary to-cyan-500"
-          }`}>
+          <span
+            className={`relative inline-flex rounded-full h-4.5 w-4.5 items-center justify-center text-white shadow-md transition-all duration-300 ${
+              active
+                ? "bg-primary scale-110 shadow-[0_0_12px_rgba(59,130,246,0.5)]"
+                : primary
+                  ? "bg-cta"
+                  : "bg-gradient-to-r from-primary to-cyan-500"
+            }`}
+          >
             <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse" />
           </span>
         </div>
-        
+
         {/* Label frame */}
-        <span className={`px-2.5 py-0.5 rounded-lg backdrop-blur-sm border transition-all duration-300 text-[10px] font-bold uppercase tracking-wider whitespace-nowrap shadow-sm ${
-          primary || active ? "inline-block" : "hidden sm:inline-block"
-        } ${
-          active
-            ? "bg-primary border-primary text-white scale-105 shadow-[0_4px_12px_rgba(59,130,246,0.3)]"
-            : "bg-navy/85 border-slate-800/80 text-white group-hover:bg-primary group-hover:border-primary/50 group-hover:text-white"
-        }`}>
+        <span
+          className={`px-2.5 py-0.5 rounded-lg backdrop-blur-sm border transition-all duration-300 text-[10px] font-bold uppercase tracking-wider whitespace-nowrap shadow-sm ${
+            primary || active ? "inline-block" : "hidden sm:inline-block"
+          } ${
+            active
+              ? "bg-primary border-primary text-white scale-105 shadow-[0_4px_12px_rgba(59,130,246,0.3)]"
+              : "bg-navy/85 border-slate-800/80 text-white group-hover:bg-primary group-hover:border-primary/50 group-hover:text-white"
+          }`}
+        >
           {label}
         </span>
       </div>

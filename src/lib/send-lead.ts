@@ -57,22 +57,24 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
         // If it's a duplicate request (e.g. double click within 60s, or browser retry):
         if (spamCheck.isDuplicate) {
           console.log(
-            `[sendLeadServerFn] Suppressed duplicate lead submission within 60s window for "${data.name || "Customer"}". Prevented 2nd email.`
+            `[sendLeadServerFn] Suppressed duplicate lead submission within 60s window for "${data.name || "Customer"}". Prevented 2nd email.`,
           );
           return {
             success: true,
-            message: "Thank you! Your request has been received. Our team will contact you promptly.",
+            message:
+              "Thank you! Your request has been received. Our team will contact you promptly.",
           };
         }
 
         // Silent discard for bots: return success response so automated bots
         // do not know they were trapped, while protecting your Zoho inbox from spam!
         console.log(
-          `[sendLeadServerFn] Silently blocked spam/bot submission (Reason: ${spamCheck.reason}). No email dispatched.`
+          `[sendLeadServerFn] Silently blocked spam/bot submission (Reason: ${spamCheck.reason}). No email dispatched.`,
         );
         return {
           success: true,
-          message: "Thank you! Your request has been received. Our team will contact you promptly.",
+          message:
+            "Thank you! Your request has been received. Our team will contact you promptly.",
         };
       }
 
@@ -97,13 +99,17 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
               const idx = trimmed.indexOf("=");
               if (idx > 0) {
                 const k = trimmed.substring(0, idx).trim();
-                const v = trimmed.substring(idx + 1).trim().replace(/^["']|["']$/g, "");
+                const v = trimmed
+                  .substring(idx + 1)
+                  .trim()
+                  .replace(/^["']|["']$/g, "");
                 if (k === "ZOHO_SMTP_HOST" && !host) host = v;
                 if (k === "ZOHO_SMTP_PORT" && !port) port = v;
                 if (k === "ZOHO_SMTP_SECURE" && !secure) secure = v;
                 if (k === "ZOHO_SMTP_USER" && !user) user = v;
                 if (k === "ZOHO_SMTP_PASS" && !pass) pass = v;
-                if (k === "CONTACT_EMAIL_RECIPIENT" && !recipient) recipient = v;
+                if (k === "CONTACT_EMAIL_RECIPIENT" && !recipient)
+                  recipient = v;
               }
             }
           }
@@ -145,16 +151,20 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
         `Email: ${data.email || "N/A"}`,
       ];
       if (data.service) textLines.push(`Service Requested: ${data.service}`);
-      if (data.propertyType) textLines.push(`Property Type: ${data.propertyType}`);
+      if (data.propertyType)
+        textLines.push(`Property Type: ${data.propertyType}`);
       if (data.urgency) textLines.push(`Urgency / Timing: ${data.urgency}`);
       if (data.address) textLines.push(`Service Address: ${data.address}`);
       if (data.location) textLines.push(`Location: ${data.location}`);
-      if (data.preferredContact) textLines.push(`Preferred Contact: ${data.preferredContact}`);
+      if (data.preferredContact)
+        textLines.push(`Preferred Contact: ${data.preferredContact}`);
       if (data.rating) textLines.push(`Rating: ${data.rating} / 5 Stars`);
       if (data.message) textLines.push(`\nMessage / Notes:\n${data.message}`);
       if (data.pageUrl) textLines.push(`\nSubmitted from: ${data.pageUrl}`);
       textLines.push(`Security Status: Verified Human Lead`);
-      textLines.push(`Submitted at: ${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} MST`);
+      textLines.push(
+        `Submitted at: ${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} MST`,
+      );
 
       // 6. HTML format
       const rows: string[] = [];
@@ -174,8 +184,18 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
 
       addRow("Form Name", title);
       addRow("Customer Name", `<strong>${data.name}</strong>`);
-      addRow("Phone", data.phone ? `<a href="tel:${data.phone.replace(/[^0-9+]/g, "")}" style="color: #0c2357; font-weight: bold; text-decoration: none;">${data.phone}</a>` : "N/A");
-      addRow("Email", data.email ? `<a href="mailto:${data.email}" style="color: #0c2357; text-decoration: none;">${data.email}</a>` : "N/A");
+      addRow(
+        "Phone",
+        data.phone
+          ? `<a href="tel:${data.phone.replace(/[^0-9+]/g, "")}" style="color: #0c2357; font-weight: bold; text-decoration: none;">${data.phone}</a>`
+          : "N/A",
+      );
+      addRow(
+        "Email",
+        data.email
+          ? `<a href="mailto:${data.email}" style="color: #0c2357; text-decoration: none;">${data.email}</a>`
+          : "N/A",
+      );
       addRow("Service Needed", data.service);
       addRow("Property Type", data.propertyType);
       addRow("Urgency / Timeline", data.urgency);
@@ -184,11 +204,24 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
       addRow("Preferred Contact", data.preferredContact);
       if (data.rating) addRow("Customer Rating", `${data.rating} / 5 ⭐`);
       if (data.message) {
-        addRow("Message / Scope", `<div style="white-space: pre-wrap; background: #ffffff; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px;">${data.message}</div>`);
+        addRow(
+          "Message / Scope",
+          `<div style="white-space: pre-wrap; background: #ffffff; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px;">${data.message}</div>`,
+        );
       }
-      if (data.pageUrl) addRow("Source Page", `<a href="${data.pageUrl}" style="color: #2563eb;">${data.pageUrl}</a>`);
-      addRow("Bot Protection", `<span style="color: #16a34a; font-weight: 600;">✓ Verified Human Lead</span>`);
-      addRow("Submitted At", `${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} MST`);
+      if (data.pageUrl)
+        addRow(
+          "Source Page",
+          `<a href="${data.pageUrl}" style="color: #2563eb;">${data.pageUrl}</a>`,
+        );
+      addRow(
+        "Bot Protection",
+        `<span style="color: #16a34a; font-weight: 600;">✓ Verified Human Lead</span>`,
+      );
+      addRow(
+        "Submitted At",
+        `${new Date().toLocaleString("en-US", { timeZone: "America/Phoenix" })} MST`,
+      );
 
       const html = `
         <!DOCTYPE html>
@@ -217,16 +250,24 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
                 </tbody>
               </table>
               <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center;">
-                ${data.phone ? `
+                ${
+                  data.phone
+                    ? `
                   <a href="tel:${data.phone.replace(/[^0-9+]/g, "")}" style="display: inline-block; background-color: #f97316; color: #ffffff; font-weight: 700; font-size: 13px; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-right: 10px; margin-bottom: 8px;">
                     📞 Call ${data.phone}
                   </a>
-                ` : ""}
-                ${data.email ? `
+                `
+                    : ""
+                }
+                ${
+                  data.email
+                    ? `
                   <a href="mailto:${data.email}" style="display: inline-block; background-color: #0c2357; color: #ffffff; font-weight: 700; font-size: 13px; padding: 10px 20px; border-radius: 8px; text-decoration: none; margin-bottom: 8px;">
                     ✉️ Reply via Email
                   </a>
-                ` : ""}
+                `
+                    : ""
+                }
               </div>
             </div>
             <div style="background-color: #f8fafc; padding: 14px 28px; border-top: 1px solid #e2e8f0; font-size: 11px; color: #94a3b8; text-align: center;">
@@ -247,17 +288,24 @@ export const sendLeadServerFn = createServerFn({ method: "POST" })
         html,
       });
 
-      console.log(`[sendLeadServerFn] Verified lead "${title}" dispatched to ${toRecipient}`);
+      console.log(
+        `[sendLeadServerFn] Verified lead "${title}" dispatched to ${toRecipient}`,
+      );
       return {
         success: true,
-        message: "Thank you! Your request has been received. Our team will contact you promptly.",
+        message:
+          "Thank you! Your request has been received. Our team will contact you promptly.",
       };
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : String(err);
-      console.error("[sendLeadServerFn] Error sending email via Zoho:", errorMessage);
+      console.error(
+        "[sendLeadServerFn] Error sending email via Zoho:",
+        errorMessage,
+      );
       return {
         success: false,
-        message: "We encountered an issue submitting your request. Please call us directly at (520) 221-2010.",
+        message:
+          "We encountered an issue submitting your request. Please call us directly at (520) 221-2010.",
         error: errorMessage,
       };
     }
@@ -269,7 +317,9 @@ let lastSubmissionTimestamp = 0;
 let lastSubmissionSignature = "";
 const pageLoadedAt = typeof Date !== "undefined" ? Date.now() : 0;
 
-export async function submitLead(payload: LeadSubmission): Promise<LeadResponse> {
+export async function submitLead(
+  payload: LeadSubmission,
+): Promise<LeadResponse> {
   if (typeof window !== "undefined") {
     if (!payload.pageUrl) {
       payload.pageUrl = window.location.href;
@@ -282,8 +332,14 @@ export async function submitLead(payload: LeadSubmission): Promise<LeadResponse>
 
     // Automatically inspect DOM for any honeypot inputs filled by web bots
     try {
-      const hpCompany = (document.querySelector('input[name="company_website"]') as HTMLInputElement)?.value;
-      const hpFax = (document.querySelector('input[name="business_fax"]') as HTMLInputElement)?.value;
+      const hpCompany = (
+        document.querySelector(
+          'input[name="company_website"]',
+        ) as HTMLInputElement
+      )?.value;
+      const hpFax = (
+        document.querySelector('input[name="business_fax"]') as HTMLInputElement
+      )?.value;
       if (hpCompany && !payload.hp_company) payload.hp_company = hpCompany;
       if (hpFax && !payload.hp_fax) payload.hp_fax = hpFax;
     } catch {
@@ -295,7 +351,9 @@ export async function submitLead(payload: LeadSubmission): Promise<LeadResponse>
     const signature = `${payload.name}|${payload.email || payload.phone}|${(payload.message || "").slice(0, 50)}`;
 
     if (isSubmittingLock) {
-      console.warn("[submitLead] Prevented concurrent submission (already in-flight).");
+      console.warn(
+        "[submitLead] Prevented concurrent submission (already in-flight).",
+      );
       return {
         success: true,
         message: "Your request is already being processed. Thank you!",
@@ -303,8 +361,13 @@ export async function submitLead(payload: LeadSubmission): Promise<LeadResponse>
     }
 
     // Guard: Prevent re-submitting the exact same content within 15 seconds
-    if (signature === lastSubmissionSignature && now - lastSubmissionTimestamp < 15000) {
-      console.warn("[submitLead] Prevented duplicate re-submission within 15s.");
+    if (
+      signature === lastSubmissionSignature &&
+      now - lastSubmissionTimestamp < 15000
+    ) {
+      console.warn(
+        "[submitLead] Prevented duplicate re-submission within 15s.",
+      );
       toast.success("Thank you! Your request has been received.");
       return {
         success: true,
@@ -320,15 +383,21 @@ export async function submitLead(payload: LeadSubmission): Promise<LeadResponse>
   try {
     const result = await sendLeadServerFn({ data: payload });
     if (result.success) {
-      toast.success(result.message || "Thank you! Your request has been received.");
+      toast.success(
+        result.message || "Thank you! Your request has been received.",
+      );
     } else {
-      toast.error(result.message || "Please call us directly at (520) 221-2010.");
+      toast.error(
+        result.message || "Please call us directly at (520) 221-2010.",
+      );
     }
     return result;
   } catch (err: unknown) {
     const errorMessage = err instanceof Error ? err.message : String(err);
     console.warn("[submitLead] Client call notice:", errorMessage);
-    toast.success("Thank you! Your request has been received. We will contact you shortly.");
+    toast.success(
+      "Thank you! Your request has been received. We will contact you shortly.",
+    );
     return {
       success: true,
       message: "Thank you! Your request has been received.",

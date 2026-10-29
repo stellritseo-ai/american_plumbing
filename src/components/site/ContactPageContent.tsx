@@ -179,15 +179,17 @@ export function ContactPageContent() {
             </h2>
             <div className="mt-4 text-slate-700 text-sm sm:text-base leading-relaxed font-medium space-y-3">
               <p>
-                At American Commercial Plumbing LLC, we understand that plumbing issues can't always
-                wait for normal business hours. That’s why we offer flexible scheduling and true 24/7
-                emergency response for both residential and commercial clients across Southern
+                At American Commercial Plumbing LLC, we understand that plumbing
+                issues can't always wait for normal business hours. That’s why
+                we offer flexible scheduling and true 24/7 emergency response
+                for both residential and commercial clients across Southern
                 Arizona.
               </p>
               <p>
-                No matter the size of the job—from a leaky faucet to a major sewer line
-                replacement—you can count on our licensed, bonded, and background-checked technicians
-                to arrive on time and get it done right.
+                No matter the size of the job—from a leaky faucet to a major
+                sewer line replacement—you can count on our licensed, bonded,
+                and background-checked technicians to arrive on time and get it
+                done right.
               </p>
             </div>
           </div>
@@ -226,7 +228,9 @@ export function ContactPageContent() {
                 <div className="w-12 h-12 rounded-2xl bg-navy text-white flex items-center justify-center mb-4 shadow-sm">
                   <Mail className="w-6 h-6 text-electric" />
                 </div>
-                <h3 className="text-lg font-black text-navy">Email Communications</h3>
+                <h3 className="text-lg font-black text-navy">
+                  Email Communications
+                </h3>
                 <div className="mt-3 space-y-2">
                   <div>
                     <div className="text-[10px] font-black uppercase tracking-wider text-slate-500">
@@ -247,12 +251,18 @@ export function ContactPageContent() {
                 <div className="w-12 h-12 rounded-2xl bg-cta text-white flex items-center justify-center mb-4 shadow-sm">
                   <Clock className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-black text-navy">Office & Operating Hours</h3>
+                <h3 className="text-lg font-black text-navy">
+                  Office & Operating Hours
+                </h3>
 
                 <div className="mt-3 text-xs text-slate-700 space-y-1.5 font-medium">
-                  <div className="font-extrabold text-navy">Monday – Friday:</div>
+                  <div className="font-extrabold text-navy">
+                    Monday – Friday:
+                  </div>
                   <div className="text-slate-600">7:00 AM – 4:00 PM</div>
-                  <div className="font-extrabold text-navy pt-1">Saturday – Sunday:</div>
+                  <div className="font-extrabold text-navy pt-1">
+                    Saturday – Sunday:
+                  </div>
                   <div className="text-slate-600">Closed for routine calls</div>
                   <div className="pt-2">
                     <span className="inline-flex items-center gap-1.5 font-black text-cta text-[11px] uppercase tracking-wider">
@@ -276,8 +286,8 @@ export function ContactPageContent() {
                     226 E Forrest Feezor St, Vail, AZ 85641
                   </a>
                   <p className="text-[11px] text-slate-500 mt-1 italic">
-                    Serving Tucson, Vail, Sahuarita, Marana, Green Valley, Catalina, and surrounding
-                    communities.
+                    Serving Tucson, Vail, Sahuarita, Marana, Green Valley,
+                    Catalina, and surrounding communities.
                   </p>
                 </div>
               </div>
@@ -306,10 +316,11 @@ export function ContactPageContent() {
                     Send Us a Message
                   </h2>
                   <p className="mt-2 text-xs sm:text-sm text-slate-600 font-medium">
-                    Fill out the form below to request a free estimate or schedule a service call. Please
-                    provide as much detail as possible about your plumbing issue or project. A member
-                    of our team will review your request and get back to you within one hour during normal
-                    business hours.
+                    Fill out the form below to request a free estimate or
+                    schedule a service call. Please provide as much detail as
+                    possible about your plumbing issue or project. A member of
+                    our team will review your request and get back to you within
+                    one hour during normal business hours.
                   </p>
                 </div>
 
@@ -328,9 +339,10 @@ export function ContactPageContent() {
                         Message Received!
                       </h3>
                       <p className="mt-3 text-sm sm:text-base text-slate-600 font-medium max-w-md mx-auto leading-relaxed">
-                        Thank you, {formData.fullName || "valued client"}! A member of the American
-                        Commercial Plumbing team will review your request and get back to you within one
-                        hour during normal business hours.
+                        Thank you, {formData.fullName || "valued client"}! A
+                        member of the American Commercial Plumbing team will
+                        review your request and get back to you within one hour
+                        during normal business hours.
                       </p>
                       <div className="mt-6 flex justify-center gap-4">
                         <button
@@ -360,7 +372,12 @@ export function ContactPageContent() {
                             type="text"
                             required
                             value={formData.fullName}
-                            onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                            onChange={(e) =>
+                              setFormData({
+                                ...formData,
+                                fullName: e.target.value,
+                              })
+                            }
                             placeholder="Shawn Holton"
                             className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
                           />
@@ -373,7 +390,12 @@ export function ContactPageContent() {
                             type="tel"
                             required
                             value={formData.phone}
-                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                            onChange={(e) =>
+                              setFormData({
+                                ...formData,
+                                phone: e.target.value,
+                              })
+                            }
                             placeholder="(520) 221-2010"
                             className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
                           />
@@ -390,7 +412,12 @@ export function ContactPageContent() {
                             type="email"
                             required
                             value={formData.email}
-                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            onChange={(e) =>
+                              setFormData({
+                                ...formData,
+                                email: e.target.value,
+                              })
+                            }
                             placeholder="you@domain.com"
                             className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
                           />
@@ -403,7 +430,10 @@ export function ContactPageContent() {
                             type="text"
                             value={formData.serviceAddress}
                             onChange={(e) =>
-                              setFormData({ ...formData, serviceAddress: e.target.value })
+                              setFormData({
+                                ...formData,
+                                serviceAddress: e.target.value,
+                              })
                             }
                             placeholder="226 E Forrest Feezor St, Vail, AZ 85641"
                             className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
@@ -420,7 +450,10 @@ export function ContactPageContent() {
                           <select
                             value={formData.propertyType}
                             onChange={(e) =>
-                              setFormData({ ...formData, propertyType: e.target.value })
+                              setFormData({
+                                ...formData,
+                                propertyType: e.target.value,
+                              })
                             }
                             className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition cursor-pointer"
                           >
@@ -435,14 +468,23 @@ export function ContactPageContent() {
                           <select
                             value={formData.serviceNeeded}
                             onChange={(e) =>
-                              setFormData({ ...formData, serviceNeeded: e.target.value })
+                              setFormData({
+                                ...formData,
+                                serviceNeeded: e.target.value,
+                              })
                             }
                             className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition cursor-pointer"
                           >
-                            <option value="Emergency Repair">Emergency Repair</option>
+                            <option value="Emergency Repair">
+                              Emergency Repair
+                            </option>
                             <option value="Water Heater">Water Heater</option>
-                            <option value="Drain Cleaning">Drain Cleaning</option>
-                            <option value="Leak Detection">Leak Detection</option>
+                            <option value="Drain Cleaning">
+                              Drain Cleaning
+                            </option>
+                            <option value="Leak Detection">
+                              Leak Detection
+                            </option>
                             <option value="Sewer Line">Sewer Line</option>
                             <option value="Remodeling">Remodeling</option>
                             <option value="Other">Other</option>
@@ -467,7 +509,10 @@ export function ContactPageContent() {
                                 value={method}
                                 checked={formData.preferredContact === method}
                                 onChange={(e) =>
-                                  setFormData({ ...formData, preferredContact: e.target.value })
+                                  setFormData({
+                                    ...formData,
+                                    preferredContact: e.target.value,
+                                  })
                                 }
                                 className="text-primary focus:ring-primary cursor-pointer"
                               />
@@ -486,7 +531,12 @@ export function ContactPageContent() {
                           rows={4}
                           required
                           value={formData.message}
-                          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                          onChange={(e) =>
+                            setFormData({
+                              ...formData,
+                              message: e.target.value,
+                            })
+                          }
                           placeholder="Please provide details about your plumbing issue or project scope..."
                           className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition resize-none"
                         />
@@ -499,7 +549,10 @@ export function ContactPageContent() {
                           id="smsConsent"
                           checked={formData.smsConsent}
                           onChange={(e) =>
-                            setFormData({ ...formData, smsConsent: e.target.checked })
+                            setFormData({
+                              ...formData,
+                              smsConsent: e.target.checked,
+                            })
                           }
                           className="w-4 h-4 rounded text-primary focus:ring-primary border-slate-300 cursor-pointer mt-0.5"
                         />
@@ -507,7 +560,8 @@ export function ContactPageContent() {
                           htmlFor="smsConsent"
                           className="text-xs font-semibold text-slate-700 cursor-pointer select-none"
                         >
-                          I consent to receive SMS updates regarding my service request.
+                          I consent to receive SMS updates regarding my service
+                          request.
                         </label>
                       </div>
 
@@ -518,11 +572,14 @@ export function ContactPageContent() {
                         className="w-full bg-cta hover:brightness-110 text-white text-xs font-black uppercase tracking-wider px-8 py-4 rounded-full shadow-cta transition-all active:scale-95 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                       >
                         <Send className="w-4 h-4" />
-                        <span>{submitting ? "Sending..." : "Send Message"}</span>
+                        <span>
+                          {submitting ? "Sending..." : "Send Message"}
+                        </span>
                       </button>
 
                       <p className="text-center text-[11px] text-slate-500 font-semibold">
-                        100% Upfront & Honest Guarantee · ROC #321353 · Replies within 1 hour during business hours
+                        100% Upfront & Honest Guarantee · ROC #321353 · Replies
+                        within 1 hour during business hours
                       </p>
                     </form>
                   )}
@@ -544,8 +601,9 @@ export function ContactPageContent() {
               Why Choose American Commercial Plumbing?
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              When you contact us, you aren't just getting a plumber; you're getting a dedicated
-              partner committed to your safety and satisfaction.
+              When you contact us, you aren't just getting a plumber; you're
+              getting a dedicated partner committed to your safety and
+              satisfaction.
             </p>
           </div>
 
@@ -601,7 +659,8 @@ export function ContactPageContent() {
               Frequently Asked Questions
             </h2>
             <p className="mt-2 text-slate-600 text-sm font-medium">
-              Common questions about our contact response, emergency services, and pricing.
+              Common questions about our contact response, emergency services,
+              and pricing.
             </p>
           </div>
 
@@ -663,7 +722,8 @@ export function ContactPageContent() {
             Don't Let a Plumbing Problem Turn into a Disaster.
           </h2>
           <p className="mt-4 text-slate-200 text-sm sm:text-base font-semibold max-w-2xl mx-auto leading-relaxed">
-            Contact American Commercial Plumbing LLC today for fast, reliable, and honest service.
+            Contact American Commercial Plumbing LLC today for fast, reliable,
+            and honest service.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
@@ -685,11 +745,12 @@ export function ContactPageContent() {
 
           <div className="mt-12 pt-8 border-t border-white/20 text-xs font-bold text-slate-300 flex flex-col items-center gap-1">
             <div className="text-white font-black uppercase tracking-widest text-[11px]">
-              American Commercial Plumbing LLC — Family Owned & Operated Since 1999 · ROC #321353
+              American Commercial Plumbing LLC — Family Owned & Operated Since
+              1999 · ROC #321353
             </div>
             <div className="text-slate-300 text-[10px]">
-              Serving Tucson, Vail, Sahuarita, Marana, Green Valley, Catalina, and all of Southern
-              Arizona.
+              Serving Tucson, Vail, Sahuarita, Marana, Green Valley, Catalina,
+              and all of Southern Arizona.
             </div>
           </div>
         </div>

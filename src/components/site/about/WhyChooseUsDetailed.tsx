@@ -1,5 +1,13 @@
 import { motion } from "framer-motion";
-import { Award, Users, ShieldCheck, UserCheck, ReceiptText, Sparkles, Check } from "lucide-react";
+import {
+  Award,
+  Users,
+  ShieldCheck,
+  UserCheck,
+  ReceiptText,
+  Sparkles,
+  Check,
+} from "lucide-react";
 
 export function WhyChooseUsDetailed() {
   const reasons = [
@@ -12,7 +20,11 @@ export function WhyChooseUsDetailed() {
       iconBg: "bg-primary/10 text-primary",
       description:
         "Since 1999, we have navigated the ever-changing plumbing codes and technologies to bring you the most reliable solutions available. Two-and-a-half decades in the Tucson climate means we know local pipe dynamics inside and out.",
-      highlights: ["Local Code Experts", "25+ Years Field Record", "Master Plumber Led"],
+      highlights: [
+        "Local Code Experts",
+        "25+ Years Field Record",
+        "Master Plumber Led",
+      ],
     },
     {
       id: "02",
@@ -23,7 +35,11 @@ export function WhyChooseUsDetailed() {
       iconBg: "bg-cta/10 text-cta",
       description:
         "As a family business, our name is on the line with every job. We treat your property with the same respect we would our own. No corporate middlemen—just genuine personal accountability.",
-      highlights: ["Direct Owner Oversight", "Personal Accountability", "White-Glove Cleanliness"],
+      highlights: [
+        "Direct Owner Oversight",
+        "Personal Accountability",
+        "White-Glove Cleanliness",
+      ],
     },
     {
       id: "03",
@@ -34,7 +50,11 @@ export function WhyChooseUsDetailed() {
       iconBg: "bg-emerald-100 text-emerald-700",
       description:
         "Your peace of mind is our priority. We are fully compliant with Arizona state regulations (ROC #321353) and carry comprehensive liability and worker compensation insurance on every project.",
-      highlights: ["Arizona ROC #321353", "Comprehensive Insurance", "Bonded Protection"],
+      highlights: [
+        "Arizona ROC #321353",
+        "Comprehensive Insurance",
+        "Bonded Protection",
+      ],
     },
     {
       id: "04",
@@ -45,7 +65,11 @@ export function WhyChooseUsDetailed() {
       iconBg: "bg-indigo-100 text-indigo-700",
       description:
         "We send only certified, background-checked professionals to your door. You can feel safe knowing exactly who is working in your home or business, fully badged, uniformed, and drug-tested.",
-      highlights: ["Rigorous Background Checks", "Uniformed & Badged", "Drug-Tested Technicians"],
+      highlights: [
+        "Rigorous Background Checks",
+        "Uniformed & Badged",
+        "Drug-Tested Technicians",
+      ],
     },
     {
       id: "05",
@@ -56,7 +80,11 @@ export function WhyChooseUsDetailed() {
       iconBg: "bg-rose-100 text-rose-700",
       description:
         "No hidden fees. No surprises. We provide transparent pricing before any work begins so you can make informed decisions. We explain your options clearly so you remain in complete control.",
-      highlights: ["Clear Invoices Ahead", "No Hidden Charges", "Flat-Rate Options"],
+      highlights: [
+        "Clear Invoices Ahead",
+        "No Hidden Charges",
+        "Flat-Rate Options",
+      ],
     },
   ];
 
@@ -77,8 +105,9 @@ export function WhyChooseUsDetailed() {
           </h2>
 
           <p className="mt-5 text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
-            When you hire us, you aren't just getting a contractor; you are getting a dedicated
-            partner who ensures the job is done safely, efficiently, and correctly the first time.
+            When you hire us, you aren't just getting a contractor; you are
+            getting a dedicated partner who ensures the job is done safely,
+            efficiently, and correctly the first time.
           </p>
         </div>
 
@@ -129,7 +158,10 @@ export function WhyChooseUsDetailed() {
                 <div className="mt-6 pt-5 border-t border-slate-100">
                   <div className="space-y-2">
                     {r.highlights.map((h) => (
-                      <div key={h} className="flex items-center gap-2 text-xs font-semibold text-slate-700">
+                      <div
+                        key={h}
+                        className="flex items-center gap-2 text-xs font-semibold text-slate-700"
+                      >
                         <span className="h-4 w-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
                           <Check className="h-2.5 w-2.5" />
                         </span>

@@ -45,7 +45,7 @@ export function Testimonials() {
       className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe] border-b border-slate-100 overflow-hidden"
     >
       <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
-      
+
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
         <div className="grid gap-12 lg:grid-cols-[1fr_2.2fr] items-center">
           {/* Left Column: Rating & Trust card */}

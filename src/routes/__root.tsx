@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -55,8 +56,14 @@ function ErrorComponent({ error, reset }: { error: any; reset: () => void }) {
         </p>
         {import.meta.env.DEV && error && (
           <div className="mt-4 p-3 bg-red-50 border border-red-200 text-red-700 text-xs text-left rounded-lg font-mono overflow-auto max-h-48">
-            <div className="font-bold mb-1">{error.name || "Error"}: {error.message}</div>
-            {error.stack && <pre className="whitespace-pre-wrap text-[10px] opacity-80">{error.stack}</pre>}
+            <div className="font-bold mb-1">
+              {error.name || "Error"}: {error.message}
+            </div>
+            {error.stack && (
+              <pre className="whitespace-pre-wrap text-[10px] opacity-80">
+                {error.stack}
+              </pre>
+            )}
           </div>
         )}
         <div className="mt-6 flex flex-wrap justify-center gap-2">
@@ -110,10 +117,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         { name: "geo.placename", content: "Tucson, Arizona" },
         { name: "geo.position", content: "32.2226;-110.9747" },
         { name: "ICBM", content: "32.2226, -110.9747" },
-        { property: "og:site_name", content: "American Commercial Plumbing LLC" },
+        {
+          property: "og:site_name",
+          content: "American Commercial Plumbing LLC",
+        },
         { property: "og:locale", content: "en_US" },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: "American Commercial Plumbing LLC — Tucson, AZ Plumbers" },
+        {
+          property: "og:title",
+          content: "American Commercial Plumbing LLC — Tucson, AZ Plumbers",
+        },
         {
           property: "og:description",
           content:
@@ -130,7 +143,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           content: "American Commercial Plumbing LLC - Tucson Plumbers",
         },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "American Commercial Plumbing LLC — Tucson, AZ Plumbers" },
+        {
+          name: "twitter:title",
+          content: "American Commercial Plumbing LLC — Tucson, AZ Plumbers",
+        },
         {
           name: "twitter:description",
           content:
@@ -180,6 +196,7 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );

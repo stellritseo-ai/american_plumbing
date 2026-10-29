@@ -27,7 +27,8 @@ function RequestEstimatePage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Plumbing Estimate Services",
-    serviceType: "Free Plumbing Estimates on Installations, Replacements & Commercial Projects",
+    serviceType:
+      "Free Plumbing Estimates on Installations, Replacements & Commercial Projects",
     provider: {
       "@type": "PlumbingService",
       name: "American Commercial Plumbing LLC",
@@ -153,7 +154,8 @@ export const Route = createFileRoute("/request-estimate")({
   head: () => ({
     meta: [
       {
-        title: "Request a Free Plumbing Estimate Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "Request a Free Plumbing Estimate Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -192,7 +194,8 @@ export const Route = createFileRoute("/request-estimate")({
       },
       {
         name: "twitter:title",
-        content: "Request a Free Plumbing Estimate Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "Request a Free Plumbing Estimate Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",

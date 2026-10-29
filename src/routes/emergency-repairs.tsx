@@ -141,7 +141,8 @@ export const Route = createFileRoute("/emergency-repairs")({
   head: () => ({
     meta: [
       {
-        title: "24/7 Emergency Plumbing Repairs Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "24/7 Emergency Plumbing Repairs Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -155,7 +156,8 @@ export const Route = createFileRoute("/emergency-repairs")({
       },
       {
         property: "og:title",
-        content: "24/7 Emergency Plumbing Repairs | American Commercial Plumbing LLC",
+        content:
+          "24/7 Emergency Plumbing Repairs | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -180,7 +182,8 @@ export const Route = createFileRoute("/emergency-repairs")({
       },
       {
         name: "twitter:title",
-        content: "24/7 Emergency Plumbing Repairs Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "24/7 Emergency Plumbing Repairs Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",

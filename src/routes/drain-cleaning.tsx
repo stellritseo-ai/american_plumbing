@@ -33,7 +33,8 @@ function DrainCleaningPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Drain Cleaning & Hydro Jetting Services",
-    serviceType: "Commercial & Residential Drain Cleaning, High-Pressure Hydro Jetting, Video Camera Verification",
+    serviceType:
+      "Commercial & Residential Drain Cleaning, High-Pressure Hydro Jetting, Video Camera Verification",
     provider: {
       "@type": "PlumbingService",
       name: "American Commercial Plumbing LLC",
@@ -159,7 +160,8 @@ export const Route = createFileRoute("/drain-cleaning")({
   head: () => ({
     meta: [
       {
-        title: "Drain Cleaning & Hydro Jetting Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "Drain Cleaning & Hydro Jetting Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -173,7 +175,8 @@ export const Route = createFileRoute("/drain-cleaning")({
       },
       {
         property: "og:title",
-        content: "Drain Cleaning & Jetting Services | American Commercial Plumbing LLC",
+        content:
+          "Drain Cleaning & Jetting Services | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -198,7 +201,8 @@ export const Route = createFileRoute("/drain-cleaning")({
       },
       {
         name: "twitter:title",
-        content: "Drain Cleaning & Hydro Jetting Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "Drain Cleaning & Hydro Jetting Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",

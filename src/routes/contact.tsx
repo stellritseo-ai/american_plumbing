@@ -80,7 +80,8 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       {
-        title: "Contact Us & Free Estimates | American Commercial Plumbing LLC — Tucson, AZ",
+        title:
+          "Contact Us & Free Estimates | American Commercial Plumbing LLC — Tucson, AZ",
       },
       {
         name: "description",
@@ -94,7 +95,8 @@ export const Route = createFileRoute("/contact")({
       },
       {
         property: "og:title",
-        content: "Contact Us & Free Estimates | American Commercial Plumbing LLC",
+        content:
+          "Contact Us & Free Estimates | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -119,7 +121,8 @@ export const Route = createFileRoute("/contact")({
       },
       {
         name: "twitter:title",
-        content: "Contact Us & Free Estimates | American Commercial Plumbing LLC — Tucson, AZ",
+        content:
+          "Contact Us & Free Estimates | American Commercial Plumbing LLC — Tucson, AZ",
       },
       {
         name: "twitter:description",

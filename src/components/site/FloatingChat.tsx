@@ -100,7 +100,7 @@ export function FloatingChat() {
         botResponse =
           "Thank you! We've received your information. A plumbing specialist will reach out to you shortly. You can also reach us directly at (520) 221-2010 for immediate service.";
         setStep("submitted");
-        
+
         const historyText = [...messages, userMsg]
           .map((m) => `${m.sender.toUpperCase()}: ${m.text}`)
           .join("\n");

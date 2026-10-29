@@ -134,7 +134,8 @@ export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
       {
-        title: "Plumbing Projects & Work Portfolio Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "Plumbing Projects & Work Portfolio Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -148,7 +149,8 @@ export const Route = createFileRoute("/projects")({
       },
       {
         property: "og:title",
-        content: "Plumbing Projects & Portfolio | American Commercial Plumbing LLC",
+        content:
+          "Plumbing Projects & Portfolio | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -173,7 +175,8 @@ export const Route = createFileRoute("/projects")({
       },
       {
         name: "twitter:title",
-        content: "Plumbing Projects & Work Portfolio Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "Plumbing Projects & Work Portfolio Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",

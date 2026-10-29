@@ -173,13 +173,36 @@ export function RequestEstimateContent() {
   ];
 
   const infoPreparation = [
-    { title: "Contact Information", detail: "Full name, phone number, and preferred email address." },
-    { title: "Service Address", detail: "Street address, city, and ZIP code where work will take place." },
-    { title: "Property Type", detail: "Single-family residential, HOA/multi-family, or commercial facility." },
-    { title: "Project or Issue Description", detail: "What you need done, fixtures involved, or symptoms observed." },
-    { title: "Photos (If Applicable)", detail: "Visual snapshots of the existing equipment, leaks, or layout." },
-    { title: "Preferred Timeline", detail: "When you need the project started or completed." },
-    { title: "Budget Considerations", detail: "Sharing target budgets helps us tailor the most value-driven solutions." },
+    {
+      title: "Contact Information",
+      detail: "Full name, phone number, and preferred email address.",
+    },
+    {
+      title: "Service Address",
+      detail: "Street address, city, and ZIP code where work will take place.",
+    },
+    {
+      title: "Property Type",
+      detail:
+        "Single-family residential, HOA/multi-family, or commercial facility.",
+    },
+    {
+      title: "Project or Issue Description",
+      detail: "What you need done, fixtures involved, or symptoms observed.",
+    },
+    {
+      title: "Photos (If Applicable)",
+      detail: "Visual snapshots of the existing equipment, leaks, or layout.",
+    },
+    {
+      title: "Preferred Timeline",
+      detail: "When you need the project started or completed.",
+    },
+    {
+      title: "Budget Considerations",
+      detail:
+        "Sharing target budgets helps us tailor the most value-driven solutions.",
+    },
   ];
 
   const advantages = [
@@ -287,8 +310,9 @@ export function RequestEstimateContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal mb-8 max-w-2xl mx-auto"
             >
-              No hidden fees. No surprise charges. Tell us about your plumbing project or issue,
-              and we'll provide you with a transparent, flat-rate estimate before any work begins.
+              No hidden fees. No surprise charges. Tell us about your plumbing
+              project or issue, and we'll provide you with a transparent,
+              flat-rate estimate before any work begins.
             </motion.p>
 
             {/* Call to Action Buttons */}
@@ -363,14 +387,18 @@ export function RequestEstimateContent() {
                 <span className="text-primary">Before We Start.</span>
               </h2>
               <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-6">
-                We believe that genuine trust begins with transparency. Homeowners and business owners deserve
-                to know exactly what a plumbing project will cost before making a commitment. That's why we offer
-                free, no-obligation estimates on a wide range of plumbing installations, replacements, and large-scale projects.
+                We believe that genuine trust begins with transparency.
+                Homeowners and business owners deserve to know exactly what a
+                plumbing project will cost before making a commitment. That's
+                why we offer free, no-obligation estimates on a wide range of
+                plumbing installations, replacements, and large-scale projects.
               </p>
               <p className="text-slate-600 leading-relaxed text-base mb-8">
-                Led by owner Shawn Holton, our family-run business has been serving Tucson since 1999.
-                We combine 25+ years of clean engineering expertise with a commitment to honest, responsive communication.
-                When you request an estimate from us, you get straight answers and real engineering precision.
+                Led by owner Shawn Holton, our family-run business has been
+                serving Tucson since 1999. We combine 25+ years of clean
+                engineering expertise with a commitment to honest, responsive
+                communication. When you request an estimate from us, you get
+                straight answers and real engineering precision.
               </p>
 
               {/* Founder quote box */}
@@ -379,8 +407,9 @@ export function RequestEstimateContent() {
                   <ShieldCheck className="w-4.5 h-4.5 text-primary" />
                   <span>The Shawn Holton Commitment · Tucson Since 1999</span>
                 </div>
-                "Plumbing should never come with fine print or surprise invoices. We quote the actual scope,
-                stand by our flat rates, and treat your property with the same care we would our own."
+                "Plumbing should never come with fine print or surprise
+                invoices. We quote the actual scope, stand by our flat rates,
+                and treat your property with the same care we would our own."
               </div>
             </div>
 
@@ -424,8 +453,9 @@ export function RequestEstimateContent() {
               What Projects Qualify for a Free Estimate?
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We provide free estimates for a wide variety of installation, replacement, and remodeling projects
-              across residential and commercial sectors.
+              We provide free estimates for a wide variety of installation,
+              replacement, and remodeling projects across residential and
+              commercial sectors.
             </p>
           </div>
 
@@ -449,7 +479,10 @@ export function RequestEstimateContent() {
 
                 <div className="space-y-3.5">
                   {residentialProjects.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3 text-xs text-slate-700 font-medium">
+                    <div
+                      key={idx}
+                      className="flex items-start gap-3 text-xs text-slate-700 font-medium"
+                    >
                       <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </div>
@@ -481,7 +514,10 @@ export function RequestEstimateContent() {
 
                 <div className="space-y-3.5">
                   {commercialProjects.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-3 text-xs text-slate-700 font-medium">
+                    <div
+                      key={idx}
+                      className="flex items-start gap-3 text-xs text-slate-700 font-medium"
+                    >
                       <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </div>
@@ -503,10 +539,16 @@ export function RequestEstimateContent() {
                 Note on Diagnostic Service Calls
               </h4>
               <p className="text-slate-600 leading-relaxed">
-                For diagnostic service calls (e.g., locating an unknown hidden leak, troubleshooting a faulty water heater,
-                or scoping a stubborn drain clog), a standard dispatch fee applies. This fee covers the cost of sending a
-                certified technician to your property equipped with diagnostic gear. We will always disclose this fee upfront
-                before scheduling. <strong>If you proceed with the recommended repair, this diagnostic fee is often credited directly toward the cost of the work.</strong>
+                For diagnostic service calls (e.g., locating an unknown hidden
+                leak, troubleshooting a faulty water heater, or scoping a
+                stubborn drain clog), a standard dispatch fee applies. This fee
+                covers the cost of sending a certified technician to your
+                property equipped with diagnostic gear. We will always disclose
+                this fee upfront before scheduling.{" "}
+                <strong>
+                  If you proceed with the recommended repair, this diagnostic
+                  fee is often credited directly toward the cost of the work.
+                </strong>
               </p>
             </div>
           </div>
@@ -525,7 +567,8 @@ export function RequestEstimateContent() {
               How Our Estimate Process Works
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We've designed our estimate workflow to be fast, clear, and organized from first click to final walkthrough.
+              We've designed our estimate workflow to be fast, clear, and
+              organized from first click to final walkthrough.
             </p>
           </div>
 
@@ -572,7 +615,8 @@ export function RequestEstimateContent() {
               What Information Should You Have Ready?
             </h3>
             <p className="text-xs sm:text-sm text-slate-600 max-w-xl mx-auto">
-              Having these quick details on hand helps us provide the fastest, most accurate pricing possible:
+              Having these quick details on hand helps us provide the fastest,
+              most accurate pricing possible:
             </p>
           </div>
 
@@ -598,7 +642,10 @@ export function RequestEstimateContent() {
       </section>
 
       {/* ── 7. REQUEST YOUR ESTIMATE NOW (INTERACTIVE FORM) ── */}
-      <section id="estimate-form-section" className="py-20 lg:py-28 bg-white scroll-mt-20">
+      <section
+        id="estimate-form-section"
+        className="py-20 lg:py-28 bg-white scroll-mt-20"
+      >
         <div className="mx-auto w-[90%] max-w-5xl">
           <div className="p-8 sm:p-12 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-xl">
             <div className="max-w-2xl mx-auto text-center mb-10">
@@ -610,8 +657,9 @@ export function RequestEstimateContent() {
                 Request Your Estimate Now
               </h2>
               <p className="text-slate-600 text-sm sm:text-base">
-                Please provide as much detail as possible. A member of our team will review your request
-                and get back to you within one hour during normal business hours (Mon-Fri, 7 AM - 4 PM).
+                Please provide as much detail as possible. A member of our team
+                will review your request and get back to you within one hour
+                during normal business hours (Mon-Fri, 7 AM - 4 PM).
               </p>
             </div>
 
@@ -628,8 +676,10 @@ export function RequestEstimateContent() {
                   Estimate Request Received!
                 </h3>
                 <p className="text-sm text-slate-600 mb-6">
-                  Thank you, <strong>{formData.fullName}</strong>. Our estimating coordinator has received your project details
-                  and will contact you via <strong>{formData.contactMethod}</strong> shortly.
+                  Thank you, <strong>{formData.fullName}</strong>. Our
+                  estimating coordinator has received your project details and
+                  will contact you via <strong>{formData.contactMethod}</strong>{" "}
+                  shortly.
                 </p>
                 <a
                   href="tel:+15202212010"
@@ -717,7 +767,10 @@ export function RequestEstimateContent() {
                     <select
                       value={formData.propertyType}
                       onChange={(e) =>
-                        setFormData({ ...formData, propertyType: e.target.value })
+                        setFormData({
+                          ...formData,
+                          propertyType: e.target.value,
+                        })
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
@@ -733,17 +786,34 @@ export function RequestEstimateContent() {
                     <select
                       value={formData.serviceNeeded}
                       onChange={(e) =>
-                        setFormData({ ...formData, serviceNeeded: e.target.value })
+                        setFormData({
+                          ...formData,
+                          serviceNeeded: e.target.value,
+                        })
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      <option value="Water Heater">Water Heater Installation / Repair</option>
-                      <option value="Repiping">Whole-Home / Commercial Repiping</option>
-                      <option value="Sewer Line">Sewer Line Inspection / Replacement</option>
-                      <option value="Leak Detection">Leak Detection & Slab Repair</option>
-                      <option value="Drain Cleaning">Drain Cleaning & Hydro Jetting</option>
-                      <option value="Gas Line">Gas Line Installation / Repair</option>
-                      <option value="Remodel">Bathroom / Kitchen Remodel</option>
+                      <option value="Water Heater">
+                        Water Heater Installation / Repair
+                      </option>
+                      <option value="Repiping">
+                        Whole-Home / Commercial Repiping
+                      </option>
+                      <option value="Sewer Line">
+                        Sewer Line Inspection / Replacement
+                      </option>
+                      <option value="Leak Detection">
+                        Leak Detection & Slab Repair
+                      </option>
+                      <option value="Drain Cleaning">
+                        Drain Cleaning & Hydro Jetting
+                      </option>
+                      <option value="Gas Line">
+                        Gas Line Installation / Repair
+                      </option>
+                      <option value="Remodel">
+                        Bathroom / Kitchen Remodel
+                      </option>
                       <option value="Other">Other Plumbing Project</option>
                     </select>
                   </div>
@@ -752,7 +822,8 @@ export function RequestEstimateContent() {
                 {/* Project Description */}
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-navy mb-1.5">
-                    Project Description (Please describe your project or issue in detail)
+                    Project Description (Please describe your project or issue
+                    in detail)
                   </label>
                   <textarea
                     rows={4}
@@ -777,7 +848,10 @@ export function RequestEstimateContent() {
                     <select
                       value={formData.contactMethod}
                       onChange={(e) =>
-                        setFormData({ ...formData, contactMethod: e.target.value })
+                        setFormData({
+                          ...formData,
+                          contactMethod: e.target.value,
+                        })
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
@@ -794,12 +868,17 @@ export function RequestEstimateContent() {
                     <select
                       value={formData.contactTime}
                       onChange={(e) =>
-                        setFormData({ ...formData, contactTime: e.target.value })
+                        setFormData({
+                          ...formData,
+                          contactTime: e.target.value,
+                        })
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
                       <option value="Morning">Morning (7 AM - 11 AM)</option>
-                      <option value="Afternoon">Afternoon (11 AM - 3 PM)</option>
+                      <option value="Afternoon">
+                        Afternoon (11 AM - 3 PM)
+                      </option>
                       <option value="Evening">Evening (3 PM - 6 PM)</option>
                     </select>
                   </div>
@@ -811,12 +890,17 @@ export function RequestEstimateContent() {
                     <select
                       value={formData.hearAboutUs}
                       onChange={(e) =>
-                        setFormData({ ...formData, hearAboutUs: e.target.value })
+                        setFormData({
+                          ...formData,
+                          hearAboutUs: e.target.value,
+                        })
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
                       <option value="Google">Google Search</option>
-                      <option value="Referral">Friend / Neighbor Referral</option>
+                      <option value="Referral">
+                        Friend / Neighbor Referral
+                      </option>
                       <option value="Social Media">Social Media</option>
                       <option value="Repeat Customer">Repeat Customer</option>
                       <option value="Other">Other</option>
@@ -835,8 +919,12 @@ export function RequestEstimateContent() {
                     }
                     className="w-4 h-4 rounded border-slate-300 text-primary focus:ring-primary/20 cursor-pointer"
                   />
-                  <label htmlFor="smsConsent" className="text-xs text-slate-600 cursor-pointer">
-                    I consent to receive SMS updates regarding my service request. Message and data rates may apply.
+                  <label
+                    htmlFor="smsConsent"
+                    className="text-xs text-slate-600 cursor-pointer"
+                  >
+                    I consent to receive SMS updates regarding my service
+                    request. Message and data rates may apply.
                   </label>
                 </div>
 
@@ -860,7 +948,8 @@ export function RequestEstimateContent() {
                     )}
                   </button>
                   <p className="text-[11px] text-slate-500 mt-2">
-                    🔒 100% upfront flat-rate pricing. No obligation. ROC #321353.
+                    🔒 100% upfront flat-rate pricing. No obligation. ROC
+                    #321353.
                   </p>
                 </div>
               </form>
@@ -881,7 +970,8 @@ export function RequestEstimateContent() {
               The American Commercial Plumbing Advantage
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              When you request an estimate from us, you're not just getting a price—you're getting total peace of mind.
+              When you request an estimate from us, you're not just getting a
+              price—you're getting total peace of mind.
             </p>
           </div>
 
@@ -923,7 +1013,8 @@ export function RequestEstimateContent() {
               Frequently Asked Questions (Estimates)
             </h2>
             <p className="text-slate-600 text-base">
-              Everything you need to know about our honest, upfront estimating process.
+              Everything you need to know about our honest, upfront estimating
+              process.
             </p>
           </div>
 
@@ -986,8 +1077,9 @@ export function RequestEstimateContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            Don't wait for a small issue to become a big expense. Contact American Commercial Plumbing LLC today
-            for your free, upfront estimate.
+            Don't wait for a small issue to become a big expense. Contact
+            American Commercial Plumbing LLC today for your free, upfront
+            estimate.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

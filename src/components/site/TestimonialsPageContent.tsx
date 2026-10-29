@@ -304,7 +304,9 @@ const commitments = [
 import { submitLead } from "../../lib/send-lead";
 
 export function TestimonialsPageContent() {
-  const [filter, setFilter] = useState<"all" | "residential" | "commercial">("all");
+  const [filter, setFilter] = useState<"all" | "residential" | "commercial">(
+    "all",
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [submittedSuccess, setSubmittedSuccess] = useState(false);
   const [modalSubmitting, setModalSubmitting] = useState(false);
@@ -323,8 +325,12 @@ export function TestimonialsPageContent() {
     return t.category === filter;
   });
 
-  const residentialCount = testimonials.filter((t) => t.category === "residential").length;
-  const commercialCount = testimonials.filter((t) => t.category === "commercial").length;
+  const residentialCount = testimonials.filter(
+    (t) => t.category === "residential",
+  ).length;
+  const commercialCount = testimonials.filter(
+    (t) => t.category === "commercial",
+  ).length;
 
   const handleModalSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -334,7 +340,8 @@ export function TestimonialsPageContent() {
       name: modalForm.name,
       email: modalForm.email,
       location: modalForm.location,
-      propertyType: modalForm.serviceType === "residential" ? "Residential" : "Commercial",
+      propertyType:
+        modalForm.serviceType === "residential" ? "Residential" : "Commercial",
       rating: modalForm.rating,
       service: modalForm.headline || "Customer Review",
       message: `${modalForm.headline ? `Headline: ${modalForm.headline}\n\n` : ""}Review:\n${modalForm.reviewText}`,
@@ -362,7 +369,6 @@ export function TestimonialsPageContent() {
       <section className="py-8 sm:py-12 bg-[#F8FAFC] border-b border-slate-200">
         <div className="mx-auto w-[92%] max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
-            
             {/* Card 1: 4.9 Star Rating */}
             <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-xs hover:shadow-md hover:border-amber-400/50 transition-all flex items-start gap-4">
               <div className="h-12 w-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center shrink-0">
@@ -447,7 +453,6 @@ export function TestimonialsPageContent() {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -475,15 +480,17 @@ export function TestimonialsPageContent() {
 
               <div className="mt-6 space-y-4 text-base text-slate-700 leading-relaxed font-medium">
                 <p>
-                  At American Commercial Plumbing LLC, we believe that a job isn't finished until the
-                  customer is 100% satisfied. As a family-owned and operated business led by Shawn
-                  Holton, we treat every home and commercial property with the same respect and
-                  urgency we would our own.
+                  At American Commercial Plumbing LLC, we believe that a job
+                  isn't finished until the customer is 100% satisfied. As a
+                  family-owned and operated business led by Shawn Holton, we
+                  treat every home and commercial property with the same respect
+                  and urgency we would our own.
                 </p>
                 <p>
-                  From transparent, upfront pricing to background-checked technicians, we strive to make
-                  every plumbing experience stress-free. But don't just take our word for it—hear from
-                  the residents and business owners of Southern Arizona.
+                  From transparent, upfront pricing to background-checked
+                  technicians, we strive to make every plumbing experience
+                  stress-free. But don't just take our word for it—hear from the
+                  residents and business owners of Southern Arizona.
                 </p>
               </div>
 
@@ -528,35 +535,51 @@ export function TestimonialsPageContent() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white border border-slate-200 rounded-2xl p-5 text-left shadow-2xs">
-                    <div className="text-3xl sm:text-4xl font-black font-display text-navy">25+</div>
+                    <div className="text-3xl sm:text-4xl font-black font-display text-navy">
+                      25+
+                    </div>
                     <p className="text-xs font-black uppercase tracking-wider text-slate-600 mt-1">
                       Years Serving Tucson
                     </p>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Continuous Operations</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">
+                      Continuous Operations
+                    </p>
                   </div>
 
                   <div className="bg-white border border-slate-200 rounded-2xl p-5 text-left shadow-2xs">
-                    <div className="text-3xl sm:text-4xl font-black font-display text-emerald-600">98%</div>
+                    <div className="text-3xl sm:text-4xl font-black font-display text-emerald-600">
+                      98%
+                    </div>
                     <p className="text-xs font-black uppercase tracking-wider text-slate-600 mt-1">
                       Satisfaction Rate
                     </p>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Over 1,000+ Clients</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">
+                      Over 1,000+ Clients
+                    </p>
                   </div>
 
                   <div className="bg-white border border-slate-200 rounded-2xl p-5 text-left shadow-2xs">
-                    <div className="text-3xl sm:text-4xl font-black font-display text-amber-500">4.9★</div>
+                    <div className="text-3xl sm:text-4xl font-black font-display text-amber-500">
+                      4.9★
+                    </div>
                     <p className="text-xs font-black uppercase tracking-wider text-slate-600 mt-1">
                       Google Rating
                     </p>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Top-Ranked Tucson</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">
+                      Top-Ranked Tucson
+                    </p>
                   </div>
 
                   <div className="bg-white border border-slate-200 rounded-2xl p-5 text-left shadow-2xs">
-                    <div className="text-3xl sm:text-4xl font-black font-display text-cta">100%</div>
+                    <div className="text-3xl sm:text-4xl font-black font-display text-cta">
+                      100%
+                    </div>
                     <p className="text-xs font-black uppercase tracking-wider text-slate-600 mt-1">
                       Upfront Pricing
                     </p>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Zero Hidden Surcharges</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">
+                      Zero Hidden Surcharges
+                    </p>
                   </div>
                 </div>
 
@@ -586,7 +609,8 @@ export function TestimonialsPageContent() {
                 What Our Customers Say
               </h2>
               <p className="text-slate-600 text-sm mt-1 font-medium">
-                Explore real experiences from homeowners and local businesses across Southern Arizona.
+                Explore real experiences from homeowners and local businesses
+                across Southern Arizona.
               </p>
             </div>
 
@@ -698,8 +722,12 @@ export function TestimonialsPageContent() {
                       {t.initials}
                     </div>
                     <div>
-                      <p className="text-sm font-black text-navy leading-snug">{t.author}</p>
-                      <p className="text-xs text-slate-500 font-medium">{t.location}</p>
+                      <p className="text-sm font-black text-navy leading-snug">
+                        {t.author}
+                      </p>
+                      <p className="text-xs text-slate-500 font-medium">
+                        {t.location}
+                      </p>
                     </div>
                   </div>
                 </motion.div>
@@ -720,8 +748,8 @@ export function TestimonialsPageContent() {
               Experience the American Commercial Plumbing Difference
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              We are proud to maintain a 4.9-star average rating and a 98% customer satisfaction rate.
-              When you choose us, you are choosing:
+              We are proud to maintain a 4.9-star average rating and a 98%
+              customer satisfaction rate. When you choose us, you are choosing:
             </p>
           </div>
 
@@ -782,9 +810,11 @@ export function TestimonialsPageContent() {
             </h2>
 
             <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed font-medium mb-8">
-              Did our team recently help you with a plumbing issue? We would love to hear about your
-              experience! Your feedback helps us continue to provide the highest level of service to the
-              Tucson community and helps other homeowners and businesses find reliable plumbing experts.
+              Did our team recently help you with a plumbing issue? We would
+              love to hear about your experience! Your feedback helps us
+              continue to provide the highest level of service to the Tucson
+              community and helps other homeowners and businesses find reliable
+              plumbing experts.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
@@ -852,8 +882,8 @@ export function TestimonialsPageContent() {
           </h2>
 
           <p className="mt-4 text-slate-200 text-sm sm:text-base font-medium max-w-2xl mx-auto leading-relaxed">
-            Join thousands of satisfied Tucson residents and business owners. Contact us today for fast,
-            reliable, and honest plumbing solutions.
+            Join thousands of satisfied Tucson residents and business owners.
+            Contact us today for fast, reliable, and honest plumbing solutions.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
@@ -924,10 +954,13 @@ export function TestimonialsPageContent() {
                   <div className="h-16 w-16 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mx-auto mb-4">
                     <ThumbsUp className="h-8 w-8" />
                   </div>
-                  <h3 className="text-2xl font-black text-navy mb-2">Thank You For Your Review!</h3>
+                  <h3 className="text-2xl font-black text-navy mb-2">
+                    Thank You For Your Review!
+                  </h3>
                   <p className="text-slate-600 text-sm max-w-md mx-auto font-medium">
-                    Shawn and our entire team greatly appreciate your trust. Your testimonial will be
-                    reviewed and added to our wall of customer stories!
+                    Shawn and our entire team greatly appreciate your trust.
+                    Your testimonial will be reviewed and added to our wall of
+                    customer stories!
                   </p>
                 </div>
               ) : (
@@ -937,9 +970,12 @@ export function TestimonialsPageContent() {
                       <Star className="h-3 w-3 fill-amber-400 text-amber-400" />
                       Client Feedback
                     </div>
-                    <h3 className="text-2xl font-black text-navy">Share Your Story</h3>
+                    <h3 className="text-2xl font-black text-navy">
+                      Share Your Story
+                    </h3>
                     <p className="text-xs text-slate-500 mt-1 font-medium">
-                      Tell the Tucson community about your experience with American Commercial Plumbing.
+                      Tell the Tucson community about your experience with
+                      American Commercial Plumbing.
                     </p>
                   </div>
 
@@ -954,7 +990,9 @@ export function TestimonialsPageContent() {
                           <button
                             key={star}
                             type="button"
-                            onClick={() => setModalForm({ ...modalForm, rating: star })}
+                            onClick={() =>
+                              setModalForm({ ...modalForm, rating: star })
+                            }
                             className="p-1 cursor-pointer transition-transform hover:scale-110"
                           >
                             <Star
@@ -982,7 +1020,9 @@ export function TestimonialsPageContent() {
                           required
                           placeholder="e.g. Maria G."
                           value={modalForm.name}
-                          onChange={(e) => setModalForm({ ...modalForm, name: e.target.value })}
+                          onChange={(e) =>
+                            setModalForm({ ...modalForm, name: e.target.value })
+                          }
                           className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400"
                         />
                       </div>
@@ -996,7 +1036,12 @@ export function TestimonialsPageContent() {
                           required
                           placeholder="e.g. Tucson Homeowner"
                           value={modalForm.location}
-                          onChange={(e) => setModalForm({ ...modalForm, location: e.target.value })}
+                          onChange={(e) =>
+                            setModalForm({
+                              ...modalForm,
+                              location: e.target.value,
+                            })
+                          }
                           className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400"
                         />
                       </div>
@@ -1010,12 +1055,17 @@ export function TestimonialsPageContent() {
                         <select
                           value={modalForm.serviceType}
                           onChange={(e) =>
-                            setModalForm({ ...modalForm, serviceType: e.target.value })
+                            setModalForm({
+                              ...modalForm,
+                              serviceType: e.target.value,
+                            })
                           }
                           className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white"
                         >
                           <option value="residential">Residential Home</option>
-                          <option value="commercial">Commercial Property / Business</option>
+                          <option value="commercial">
+                            Commercial Property / Business
+                          </option>
                         </select>
                       </div>
 
@@ -1027,7 +1077,12 @@ export function TestimonialsPageContent() {
                           type="text"
                           placeholder="e.g. Fast, honest and professional"
                           value={modalForm.headline}
-                          onChange={(e) => setModalForm({ ...modalForm, headline: e.target.value })}
+                          onChange={(e) =>
+                            setModalForm({
+                              ...modalForm,
+                              headline: e.target.value,
+                            })
+                          }
                           className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400"
                         />
                       </div>
@@ -1043,7 +1098,10 @@ export function TestimonialsPageContent() {
                         placeholder="Describe what our technicians fixed and how your service went..."
                         value={modalForm.reviewText}
                         onChange={(e) =>
-                          setModalForm({ ...modalForm, reviewText: e.target.value })
+                          setModalForm({
+                            ...modalForm,
+                            reviewText: e.target.value,
+                          })
                         }
                         className="w-full bg-[#F7F7F7] border border-slate-200 rounded-xl px-3.5 py-2.5 text-sm font-medium text-navy focus:outline-none focus:border-primary focus:bg-white placeholder:text-slate-400 resize-none"
                       />
@@ -1056,7 +1114,11 @@ export function TestimonialsPageContent() {
                         className="w-full inline-flex items-center justify-center gap-2 bg-cta hover:brightness-110 text-white font-black text-xs uppercase tracking-wider py-4 px-6 rounded-full shadow-cta transition-all cursor-pointer active:scale-95 disabled:opacity-50"
                       >
                         <Send className="h-4 w-4" />
-                        <span>{modalSubmitting ? "Submitting Review..." : "Submit My Testimonial"}</span>
+                        <span>
+                          {modalSubmitting
+                            ? "Submitting Review..."
+                            : "Submit My Testimonial"}
+                        </span>
                       </button>
                     </div>
                   </form>

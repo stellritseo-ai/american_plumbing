@@ -314,8 +314,12 @@ export function ResidentialPlumbingContent() {
                 <Star className="h-5 w-5 text-amber-500 fill-amber-500" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">4.9 Star Rating</span>
-                <span className="text-[11px] font-bold text-slate-500">1,000+ Verified Reviews</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  4.9 Star Rating
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  1,000+ Verified Reviews
+                </span>
               </div>
             </div>
 
@@ -324,8 +328,12 @@ export function ResidentialPlumbingContent() {
                 <ShieldCheck className="h-5 w-5 text-emerald-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">ROC #321353</span>
-                <span className="text-[11px] font-bold text-slate-500">Licensed, Bonded & Insured</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  ROC #321353
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Licensed, Bonded & Insured
+                </span>
               </div>
             </div>
 
@@ -334,8 +342,12 @@ export function ResidentialPlumbingContent() {
                 <UserCheck className="h-5 w-5 text-indigo-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">Vetted Technicians</span>
-                <span className="text-[11px] font-bold text-slate-500">100% Background-Checked</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  Vetted Technicians
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  100% Background-Checked
+                </span>
               </div>
             </div>
 
@@ -344,8 +356,12 @@ export function ResidentialPlumbingContent() {
                 <Clock className="h-5 w-5 text-cta" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">24/7 Emergency</span>
-                <span className="text-[11px] font-bold text-slate-500">Rapid Home Response</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  24/7 Emergency
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Rapid Home Response
+                </span>
               </div>
             </div>
           </div>
@@ -367,13 +383,29 @@ export function ResidentialPlumbingContent() {
               </h2>
               <div className="space-y-4 text-slate-700 text-base leading-relaxed">
                 <p>
-                  Your home is your sanctuary, and its plumbing system is the lifeline that keeps it running smoothly. A leaky pipe, a broken water heater, or a stubborn clog can disrupt your entire day and lead to costly water damage.
+                  Your home is your sanctuary, and its plumbing system is the
+                  lifeline that keeps it running smoothly. A leaky pipe, a
+                  broken water heater, or a stubborn clog can disrupt your
+                  entire day and lead to costly water damage.
                 </p>
                 <p>
-                  At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we believe your home deserves the same precision, clean engineering, and high-quality materials we provide to large commercial facilities. Led by owner <strong className="text-navy font-bold">Shawn Holton</strong>, our family-run business has been serving Tucson homeowners for over 25 years. We treat your home with the respect it deserves—which means wearing shoe covers, laying down floor protection, and leaving your space cleaner than we found it.
+                  At{" "}
+                  <strong className="text-navy font-bold">
+                    American Commercial Plumbing LLC
+                  </strong>
+                  , we believe your home deserves the same precision, clean
+                  engineering, and high-quality materials we provide to large
+                  commercial facilities. Led by owner{" "}
+                  <strong className="text-navy font-bold">Shawn Holton</strong>,
+                  our family-run business has been serving Tucson homeowners for
+                  over 25 years. We treat your home with the respect it
+                  deserves—which means wearing shoe covers, laying down floor
+                  protection, and leaving your space cleaner than we found it.
                 </p>
                 <p>
-                  When you invite us into your home, you aren't just getting a plumber; you're getting a trusted neighbor dedicated to your safety and comfort.
+                  When you invite us into your home, you aren't just getting a
+                  plumber; you're getting a trusted neighbor dedicated to your
+                  safety and comfort.
                 </p>
               </div>
 
@@ -384,10 +416,16 @@ export function ResidentialPlumbingContent() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-slate-800 italic leading-snug">
-                    "Every home we step into receives the exact same meticulous engineering and honest pricing we demand for our own families. No shortcuts, no hidden fees—just genuine craftsmanship."
+                    "Every home we step into receives the exact same meticulous
+                    engineering and honest pricing we demand for our own
+                    families. No shortcuts, no hidden fees—just genuine
+                    craftsmanship."
                   </p>
                   <div className="mt-2 text-xs font-black text-navy uppercase tracking-wider">
-                    Shawn Holton <span className="font-normal text-slate-500">· Founder & Master Plumber</span>
+                    Shawn Holton{" "}
+                    <span className="font-normal text-slate-500">
+                      · Founder & Master Plumber
+                    </span>
                   </div>
                 </div>
               </div>
@@ -411,8 +449,12 @@ export function ResidentialPlumbingContent() {
                       <Sparkles className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs font-black text-navy">Clean Engineering Promise</div>
-                      <div className="text-[11px] text-slate-500 font-medium">Shoe covers, floor protection & spotless clean exit</div>
+                      <div className="text-xs font-black text-navy">
+                        Clean Engineering Promise
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-medium">
+                        Shoe covers, floor protection & spotless clean exit
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -434,7 +476,8 @@ export function ResidentialPlumbingContent() {
               Our Residential Plumbing Services
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              We offer a comprehensive suite of residential plumbing solutions, ensuring your home's water runs clean, safe, and efficiently:
+              We offer a comprehensive suite of residential plumbing solutions,
+              ensuring your home's water runs clean, safe, and efficiently:
             </p>
           </div>
 
@@ -446,7 +489,12 @@ export function ResidentialPlumbingContent() {
                   key={idx}
                   className="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                 >
-                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300" style={{ backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))` }} />
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300"
+                    style={{
+                      backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))`,
+                    }}
+                  />
                   <div>
                     <div className="flex items-center justify-between mb-5">
                       <div className="h-12 w-12 rounded-2xl bg-blue-50 border border-blue-200/80 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
@@ -467,7 +515,10 @@ export function ResidentialPlumbingContent() {
 
                     <div className="space-y-2.5 pt-4 border-t border-slate-100 mb-6">
                       {svc.bullets.map((bullet, bIdx) => (
-                        <div key={bIdx} className="flex items-start gap-2.5 text-xs font-semibold text-slate-700">
+                        <div
+                          key={bIdx}
+                          className="flex items-start gap-2.5 text-xs font-semibold text-slate-700"
+                        >
                           <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{bullet}</span>
                         </div>
@@ -503,7 +554,8 @@ export function ResidentialPlumbingContent() {
               The American Commercial Plumbing Advantage
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              Why do thousands of Tucson homeowners choose us? Because we go above and beyond the standard plumbing call.
+              Why do thousands of Tucson homeowners choose us? Because we go
+              above and beyond the standard plumbing call.
             </p>
           </div>
 
@@ -524,8 +576,12 @@ export function ResidentialPlumbingContent() {
                         {adv.badge}
                       </span>
                     </div>
-                    <h3 className="text-lg font-black text-navy mb-2.5">{adv.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">{adv.desc}</p>
+                    <h3 className="text-lg font-black text-navy mb-2.5">
+                      {adv.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      {adv.desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -547,7 +603,10 @@ export function ResidentialPlumbingContent() {
                 100% Satisfaction Guaranteed
               </h2>
               <p className="text-slate-700 text-base leading-relaxed mb-4">
-                We aren't happy until you are. When you choose American Commercial Plumbing LLC, you are choosing a partner who stands behind their work. If you aren't completely satisfied with our service, we will make it right. That's our promise to you.
+                We aren't happy until you are. When you choose American
+                Commercial Plumbing LLC, you are choosing a partner who stands
+                behind their work. If you aren't completely satisfied with our
+                service, we will make it right. That's our promise to you.
               </p>
               <div className="flex items-center gap-4 pt-2">
                 <div className="flex items-center gap-1.5 text-amber-500">
@@ -563,11 +622,19 @@ export function ResidentialPlumbingContent() {
 
             <div className="lg:col-span-6">
               <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm">
-                <h3 className="text-lg font-black text-navy mb-2">What to expect when you hire us:</h3>
-                <p className="text-xs text-slate-500 mb-6 font-medium">A seamless, courteous, professional experience from your first call to our clean exit.</p>
+                <h3 className="text-lg font-black text-navy mb-2">
+                  What to expect when you hire us:
+                </h3>
+                <p className="text-xs text-slate-500 mb-6 font-medium">
+                  A seamless, courteous, professional experience from your first
+                  call to our clean exit.
+                </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {expectations.map((exp, idx) => (
-                    <div key={idx} className="p-4 rounded-2xl bg-slate-50 border border-slate-200/70">
+                    <div
+                      key={idx}
+                      className="p-4 rounded-2xl bg-slate-50 border border-slate-200/70"
+                    >
                       <div className="text-xs font-black text-primary mb-1">
                         {exp.step} · {exp.title}
                       </div>
@@ -584,7 +651,10 @@ export function ResidentialPlumbingContent() {
       </section>
 
       {/* ── 6. SCHEDULE YOUR SERVICE INTERACTIVE FORM ── */}
-      <section id="residential-schedule-form" className="py-20 lg:py-24 bg-white border-b border-slate-200 scroll-mt-20">
+      <section
+        id="residential-schedule-form"
+        className="py-20 lg:py-24 bg-white border-b border-slate-200 scroll-mt-20"
+      >
         <div className="mx-auto w-[92%] max-w-5xl">
           <div className="bg-[#F8FAFC] rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-md">
             <div className="text-center max-w-2xl mx-auto mb-10">
@@ -596,7 +666,14 @@ export function ResidentialPlumbingContent() {
                 Schedule Your Residential Service
               </h2>
               <p className="text-slate-600 text-sm">
-                Fill out the quick request below or call us directly at <a href="tel:+15202212010" className="text-primary font-bold hover:underline">(520) 221-2010</a>. We confirm all appointments promptly.
+                Fill out the quick request below or call us directly at{" "}
+                <a
+                  href="tel:+15202212010"
+                  className="text-primary font-bold hover:underline"
+                >
+                  (520) 221-2010
+                </a>
+                . We confirm all appointments promptly.
               </p>
             </div>
 
@@ -609,9 +686,14 @@ export function ResidentialPlumbingContent() {
                 <div className="h-16 w-16 rounded-full bg-emerald-100 text-emerald-600 mx-auto flex items-center justify-center mb-4">
                   <Check className="h-8 w-8 stroke-[3]" />
                 </div>
-                <h3 className="text-xl font-black text-navy mb-2">Service Request Received!</h3>
+                <h3 className="text-xl font-black text-navy mb-2">
+                  Service Request Received!
+                </h3>
                 <p className="text-sm text-slate-600 max-w-md mx-auto mb-6">
-                  Thank you for contacting American Commercial Plumbing LLC. One of our Tucson residential dispatch specialists will call you within one business hour to confirm your appointment time and details.
+                  Thank you for contacting American Commercial Plumbing LLC. One
+                  of our Tucson residential dispatch specialists will call you
+                  within one business hour to confirm your appointment time and
+                  details.
                 </p>
                 <button
                   onClick={() => setFormSubmitted(false)}
@@ -632,7 +714,9 @@ export function ResidentialPlumbingContent() {
                       required
                       placeholder="e.g. Sarah Jenkins"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     />
                   </div>
@@ -646,7 +730,9 @@ export function ResidentialPlumbingContent() {
                       required
                       placeholder="(520) 000-0000"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     />
                   </div>
@@ -661,7 +747,9 @@ export function ResidentialPlumbingContent() {
                       type="email"
                       placeholder="sarah@example.com"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     />
                   </div>
@@ -672,17 +760,38 @@ export function ResidentialPlumbingContent() {
                     </label>
                     <select
                       value={formData.serviceType}
-                      onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          serviceType: e.target.value,
+                        })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                     >
-                      <option value="24/7 Emergency Repair">24/7 Emergency Repair</option>
-                      <option value="Water Heater Repair & Installation">Water Heater Repair & Installation</option>
-                      <option value="Leak Detection & Pipe Repair">Leak Detection & Pipe Repair</option>
-                      <option value="Drain Cleaning & Hydro Jetting">Drain Cleaning & Hydro Jetting</option>
-                      <option value="Sewer Line Inspection & Repair">Sewer Line Inspection & Repair</option>
-                      <option value="Fixture Installation & Repair">Fixture Installation & Repair</option>
-                      <option value="Whole-Home Repiping">Whole-Home Repiping (PEX/Copper)</option>
-                      <option value="Gas Line Services">Gas Line Services</option>
+                      <option value="24/7 Emergency Repair">
+                        24/7 Emergency Repair
+                      </option>
+                      <option value="Water Heater Repair & Installation">
+                        Water Heater Repair & Installation
+                      </option>
+                      <option value="Leak Detection & Pipe Repair">
+                        Leak Detection & Pipe Repair
+                      </option>
+                      <option value="Drain Cleaning & Hydro Jetting">
+                        Drain Cleaning & Hydro Jetting
+                      </option>
+                      <option value="Sewer Line Inspection & Repair">
+                        Sewer Line Inspection & Repair
+                      </option>
+                      <option value="Fixture Installation & Repair">
+                        Fixture Installation & Repair
+                      </option>
+                      <option value="Whole-Home Repiping">
+                        Whole-Home Repiping (PEX/Copper)
+                      </option>
+                      <option value="Gas Line Services">
+                        Gas Line Services
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -693,14 +802,29 @@ export function ResidentialPlumbingContent() {
                   </label>
                   <select
                     value={formData.preferredTime}
-                    onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        preferredTime: e.target.value,
+                      })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                   >
-                    <option value="As soon as possible">As soon as possible (Emergency)</option>
-                    <option value="Today - Next Available Tech">Today - Next Available Tech</option>
-                    <option value="Tomorrow Morning (7 AM - 11 AM)">Tomorrow Morning (7 AM - 11 AM)</option>
-                    <option value="Tomorrow Afternoon (11 AM - 3 PM)">Tomorrow Afternoon (11 AM - 3 PM)</option>
-                    <option value="Flexible / Just Need an Estimate">Flexible / Just Need an Estimate</option>
+                    <option value="As soon as possible">
+                      As soon as possible (Emergency)
+                    </option>
+                    <option value="Today - Next Available Tech">
+                      Today - Next Available Tech
+                    </option>
+                    <option value="Tomorrow Morning (7 AM - 11 AM)">
+                      Tomorrow Morning (7 AM - 11 AM)
+                    </option>
+                    <option value="Tomorrow Afternoon (11 AM - 3 PM)">
+                      Tomorrow Afternoon (11 AM - 3 PM)
+                    </option>
+                    <option value="Flexible / Just Need an Estimate">
+                      Flexible / Just Need an Estimate
+                    </option>
                   </select>
                 </div>
 
@@ -712,14 +836,17 @@ export function ResidentialPlumbingContent() {
                     rows={3}
                     placeholder="Describe what's happening (e.g., slow kitchen drain, water heater leaking from base, need new toilet installed)..."
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
                   />
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="text-xs text-slate-500 font-medium">
-                    🔒 100% Upfront Pricing · Zero Hidden Fees · Background-Checked Techs
+                    🔒 100% Upfront Pricing · Zero Hidden Fees ·
+                    Background-Checked Techs
                   </div>
                   <button
                     type="submit"
@@ -816,7 +943,8 @@ export function ResidentialPlumbingContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            Join thousands of satisfied Tucson homeowners. Contact us today for fast, reliable, and honest residential plumbing services.
+            Join thousands of satisfied Tucson homeowners. Contact us today for
+            fast, reliable, and honest residential plumbing services.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { Phone, ArrowRight, ShieldCheck, Award, Clock, Star } from "lucide-react";
+import {
+  Phone,
+  ArrowRight,
+  ShieldCheck,
+  Award,
+  Clock,
+  Star,
+} from "lucide-react";
 import teamImg from "@/assets/about-team.jpg";
 import welImg from "@/assets/wel-img.jpg";
 
@@ -28,7 +35,9 @@ export function AboutHero() {
             <span>Home</span>
             <span className="text-slate-300">/</span>
           </a>
-          <span className="text-xs font-bold text-primary tracking-wide">About Us</span>
+          <span className="text-xs font-bold text-primary tracking-wide">
+            About Us
+          </span>
 
           <span className="ml-auto inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200/60 shadow-xs">
             <span className="relative flex h-2 w-2">
@@ -61,8 +70,9 @@ export function AboutHero() {
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl">
-              Combining old-school integrity with modern technology to deliver the highest standard of
-              commercial and residential plumbing services in Southern Arizona.
+              Combining old-school integrity with modern technology to deliver
+              the highest standard of commercial and residential plumbing
+              services in Southern Arizona.
             </p>
 
             {/* CTAs */}
@@ -97,7 +107,9 @@ export function AboutHero() {
                   <Award className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl font-black text-navy leading-none">25+</div>
+                  <div className="text-xl sm:text-2xl font-black text-navy leading-none">
+                    25+
+                  </div>
                   <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">
                     Years in Tucson
                   </div>
@@ -109,7 +121,9 @@ export function AboutHero() {
                   <ShieldCheck className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl font-black text-navy leading-none">ROC #321353</div>
+                  <div className="text-xl sm:text-2xl font-black text-navy leading-none">
+                    ROC #321353
+                  </div>
                   <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">
                     Licensed & Insured
                   </div>
@@ -121,7 +135,9 @@ export function AboutHero() {
                   <Clock className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl font-black text-navy leading-none">24/7</div>
+                  <div className="text-xl sm:text-2xl font-black text-navy leading-none">
+                    24/7
+                  </div>
                   <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mt-1">
                     Emergency Line
                   </div>
@@ -159,7 +175,8 @@ export function AboutHero() {
                         Shawn Holton, Founder
                       </h4>
                       <p className="text-xs text-white/70 mt-0.5 font-medium">
-                        Leading Southern Arizona plumbing with integrity since 1999
+                        Leading Southern Arizona plumbing with integrity since
+                        1999
                       </p>
                     </div>
                     <div className="h-11 w-11 rounded-xl bg-cta/20 border border-cta/30 flex items-center justify-center text-cta shrink-0 font-black text-sm">
@@ -194,7 +211,12 @@ export function AboutHero() {
             {/* Floating Bottom Left Badge */}
             <motion.div
               animate={{ y: [0, 6, 0] }}
-              transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+              transition={{
+                duration: 4.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 0.5,
+              }}
               className="absolute -bottom-6 -left-4 sm:-left-6 glass rounded-2xl p-4 border border-white/60 shadow-xl hidden sm:block"
             >
               <div className="flex items-center gap-3">

@@ -262,8 +262,12 @@ export function EmergencyRepairsContent() {
                 <Clock className="h-5 w-5 text-cta" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">24/7 Emergency</span>
-                <span className="text-[11px] font-bold text-slate-500">Live Dispatch</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  24/7 Emergency
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Live Dispatch
+                </span>
               </div>
             </div>
 
@@ -272,8 +276,12 @@ export function EmergencyRepairsContent() {
                 <Zap className="h-5 w-5 text-amber-500" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">60-Min Average</span>
-                <span className="text-[11px] font-bold text-slate-500">Arrival Target</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  60-Min Average
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Arrival Target
+                </span>
               </div>
             </div>
 
@@ -282,8 +290,12 @@ export function EmergencyRepairsContent() {
                 <ShieldCheck className="h-5 w-5 text-emerald-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">ROC #321353</span>
-                <span className="text-[11px] font-bold text-slate-500">Licensed & Insured</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  ROC #321353
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Licensed & Insured
+                </span>
               </div>
             </div>
 
@@ -292,8 +304,12 @@ export function EmergencyRepairsContent() {
                 <UserCheck className="h-5 w-5 text-indigo-600" />
               </div>
               <div>
-                <span className="text-sm font-black text-navy block leading-tight">Background-Checked</span>
-                <span className="text-[11px] font-bold text-slate-500">Certified Techs</span>
+                <span className="text-sm font-black text-navy block leading-tight">
+                  Background-Checked
+                </span>
+                <span className="text-[11px] font-bold text-slate-500">
+                  Certified Techs
+                </span>
               </div>
             </div>
           </div>
@@ -315,13 +331,27 @@ export function EmergencyRepairsContent() {
               </h2>
               <div className="space-y-4 text-slate-700 text-base leading-relaxed">
                 <p>
-                  A plumbing emergency is more than just an inconvenience—it’s a race against time. A burst pipe can dump hundreds of gallons of water into your home or commercial facility in a matter of minutes, leading to catastrophic structural damage, mold growth, and ruined inventory.
+                  A plumbing emergency is more than just an inconvenience—it’s a
+                  race against time. A burst pipe can dump hundreds of gallons
+                  of water into your home or commercial facility in a matter of
+                  minutes, leading to catastrophic structural damage, mold
+                  growth, and ruined inventory.
                 </p>
                 <p>
-                  When disaster strikes, you don't need a call center that puts you on hold. You need a local, expert team that answers the phone immediately and dispatches a certified technician to your door.
+                  When disaster strikes, you don't need a call center that puts
+                  you on hold. You need a local, expert team that answers the
+                  phone immediately and dispatches a certified technician to
+                  your door.
                 </p>
                 <p>
-                  At <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong>, we have been Tucson’s trusted emergency plumbing partner since 1999. Whether it’s 2:00 PM on a Tuesday or 3:00 AM on a holiday, our on-call emergency team is fully equipped to diagnose, isolate, and repair your plumbing crisis fast.
+                  At{" "}
+                  <strong className="text-navy font-bold">
+                    American Commercial Plumbing LLC
+                  </strong>
+                  , we have been Tucson’s trusted emergency plumbing partner
+                  since 1999. Whether it’s 2:00 PM on a Tuesday or 3:00 AM on a
+                  holiday, our on-call emergency team is fully equipped to
+                  diagnose, isolate, and repair your plumbing crisis fast.
                 </p>
               </div>
 
@@ -332,8 +362,12 @@ export function EmergencyRepairsContent() {
                     <Phone className="w-5 h-5 fill-current animate-pulse" />
                   </div>
                   <div>
-                    <div className="text-xs font-black uppercase tracking-wider text-rose-700">Immediate Phone Dispatch</div>
-                    <div className="text-xl sm:text-2xl font-black text-navy">(520) 221-2010</div>
+                    <div className="text-xs font-black uppercase tracking-wider text-rose-700">
+                      Immediate Phone Dispatch
+                    </div>
+                    <div className="text-xl sm:text-2xl font-black text-navy">
+                      (520) 221-2010
+                    </div>
                   </div>
                 </div>
 
@@ -364,8 +398,12 @@ export function EmergencyRepairsContent() {
                       <Zap className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="text-xs font-black text-navy">60-Minute Arrival Target</div>
-                      <div className="text-[11px] text-slate-500 font-medium">Strategically positioned technicians across Tucson</div>
+                      <div className="text-xs font-black text-navy">
+                        60-Minute Arrival Target
+                      </div>
+                      <div className="text-[11px] text-slate-500 font-medium">
+                        Strategically positioned technicians across Tucson
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -387,7 +425,15 @@ export function EmergencyRepairsContent() {
               Emergency Situations We Handle
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              If you are experiencing any of the following, stop reading and call us immediately at <a href="tel:+15202212010" className="text-cta font-bold hover:underline">(520) 221-2010</a>:
+              If you are experiencing any of the following, stop reading and
+              call us immediately at{" "}
+              <a
+                href="tel:+15202212010"
+                className="text-cta font-bold hover:underline"
+              >
+                (520) 221-2010
+              </a>
+              :
             </p>
           </div>
 
@@ -399,7 +445,12 @@ export function EmergencyRepairsContent() {
                   key={idx}
                   className="bg-white rounded-3xl p-7 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                 >
-                  <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300" style={{ backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))` }} />
+                  <div
+                    className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r opacity-90 group-hover:h-2 transition-all duration-300"
+                    style={{
+                      backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))`,
+                    }}
+                  />
                   <div>
                     <div className="flex items-center justify-between mb-5">
                       <div className="h-12 w-12 rounded-2xl bg-rose-50 border border-rose-200/80 flex items-center justify-center text-cta group-hover:scale-105 transition-transform">
@@ -446,7 +497,10 @@ export function EmergencyRepairsContent() {
       </section>
 
       {/* ── 4. WHAT TO DO WHILE YOU WAIT FOR US TO ARRIVE ── */}
-      <section id="emergency-triage-guide" className="py-20 lg:py-24 bg-white border-b border-slate-200 scroll-mt-20">
+      <section
+        id="emergency-triage-guide"
+        className="py-20 lg:py-24 bg-white border-b border-slate-200 scroll-mt-20"
+      >
         <div className="mx-auto w-[92%] max-w-6xl">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-amber-700 mb-3">
@@ -457,7 +511,8 @@ export function EmergencyRepairsContent() {
               What to Do While You Wait for Us to Arrive
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              If you have a plumbing emergency, every second counts. While our team is en route, take these immediate steps to minimize damage:
+              If you have a plumbing emergency, every second counts. While our
+              team is en route, take these immediate steps to minimize damage:
             </p>
           </div>
 
@@ -470,27 +525,55 @@ export function EmergencyRepairsContent() {
                     <Droplets className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-primary block">Damage Control</span>
-                    <h3 className="text-lg font-black text-navy">For Burst Pipes or Major Leaks</h3>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-primary block">
+                      Damage Control
+                    </span>
+                    <h3 className="text-lg font-black text-navy">
+                      For Burst Pipes or Major Leaks
+                    </h3>
                   </div>
                 </div>
 
                 <ul className="space-y-3.5 text-xs font-semibold text-slate-700">
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">1</span>
-                    <span><strong>Shut off the main water valve.</strong> (Usually located near the street curb box or where the main line enters your home).</span>
+                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      1
+                    </span>
+                    <span>
+                      <strong>Shut off the main water valve.</strong> (Usually
+                      located near the street curb box or where the main line
+                      enters your home).
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">2</span>
-                    <span><strong>Turn off the electricity</strong> to affected rooms if it is safe to reach the breaker panel without standing in water.</span>
+                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      2
+                    </span>
+                    <span>
+                      <strong>Turn off the electricity</strong> to affected
+                      rooms if it is safe to reach the breaker panel without
+                      standing in water.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">3</span>
-                    <span><strong>Move furniture, electronics, and valuables</strong> away from standing water immediately.</span>
+                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      3
+                    </span>
+                    <span>
+                      <strong>
+                        Move furniture, electronics, and valuables
+                      </strong>{" "}
+                      away from standing water immediately.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">4</span>
-                    <span><strong>Use towels, buckets, or a wet/dry vac</strong> to contain and extract standing moisture.</span>
+                    <span className="h-5 w-5 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      4
+                    </span>
+                    <span>
+                      <strong>Use towels, buckets, or a wet/dry vac</strong> to
+                      contain and extract standing moisture.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -504,23 +587,43 @@ export function EmergencyRepairsContent() {
                     <Pipette className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-amber-700 block">Sanitation Safety</span>
-                    <h3 className="text-lg font-black text-navy">For Sewer Backups</h3>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-amber-700 block">
+                      Sanitation Safety
+                    </span>
+                    <h3 className="text-lg font-black text-navy">
+                      For Sewer Backups
+                    </h3>
                   </div>
                 </div>
 
                 <ul className="space-y-3.5 text-xs font-semibold text-slate-700">
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-[11px] font-black">1</span>
-                    <span><strong>Stop using all water completely.</strong> Do NOT flush toilets, run sinks, showers, or dishwashers.</span>
+                    <span className="h-5 w-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      1
+                    </span>
+                    <span>
+                      <strong>Stop using all water completely.</strong> Do NOT
+                      flush toilets, run sinks, showers, or dishwashers.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-[11px] font-black">2</span>
-                    <span><strong>Do NOT pour chemical drain cleaners.</strong> They will not resolve a mainline backup and create severe chemical splash hazards for plumbers.</span>
+                    <span className="h-5 w-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      2
+                    </span>
+                    <span>
+                      <strong>Do NOT pour chemical drain cleaners.</strong> They
+                      will not resolve a mainline backup and create severe
+                      chemical splash hazards for plumbers.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-[11px] font-black">3</span>
-                    <span><strong>Keep children and pets away</strong> from all contaminated drains and wet floor zones.</span>
+                    <span className="h-5 w-5 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      3
+                    </span>
+                    <span>
+                      <strong>Keep children and pets away</strong> from all
+                      contaminated drains and wet floor zones.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -534,23 +637,43 @@ export function EmergencyRepairsContent() {
                     <Wind className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-[10px] font-black uppercase tracking-widest text-rose-700 block">Immediate Evacuation</span>
-                    <h3 className="text-lg font-black text-navy">For Gas Leaks</h3>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-rose-700 block">
+                      Immediate Evacuation
+                    </span>
+                    <h3 className="text-lg font-black text-navy">
+                      For Gas Leaks
+                    </h3>
                   </div>
                 </div>
 
                 <ul className="space-y-3.5 text-xs font-semibold text-slate-800">
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center shrink-0 text-[11px] font-black">1</span>
-                    <span><strong>DO NOT turn on or off any lights</strong>, switches, garage doors, or electronics that might spark.</span>
+                    <span className="h-5 w-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      1
+                    </span>
+                    <span>
+                      <strong>DO NOT turn on or off any lights</strong>,
+                      switches, garage doors, or electronics that might spark.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center shrink-0 text-[11px] font-black">2</span>
-                    <span><strong>Evacuate the building immediately</strong> with all family members and pets. Leave doors open to ventilate if safe.</span>
+                    <span className="h-5 w-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      2
+                    </span>
+                    <span>
+                      <strong>Evacuate the building immediately</strong> with
+                      all family members and pets. Leave doors open to ventilate
+                      if safe.
+                    </span>
                   </li>
                   <li className="flex items-start gap-2.5">
-                    <span className="h-5 w-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center shrink-0 text-[11px] font-black">3</span>
-                    <span><strong>Call us from a safe outdoor location</strong> or call 911 / Southwest Gas if a severe leak is suspected.</span>
+                    <span className="h-5 w-5 rounded-full bg-rose-200 text-rose-800 flex items-center justify-center shrink-0 text-[11px] font-black">
+                      3
+                    </span>
+                    <span>
+                      <strong>Call us from a safe outdoor location</strong> or
+                      call 911 / Southwest Gas if a severe leak is suspected.
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -571,7 +694,8 @@ export function EmergencyRepairsContent() {
               Our Emergency Response Process
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              We don't just show up; we show up prepared to solve the problem. Here is what you can expect when you call our emergency line:
+              We don't just show up; we show up prepared to solve the problem.
+              Here is what you can expect when you call our emergency line:
             </p>
           </div>
 
@@ -585,8 +709,12 @@ export function EmergencyRepairsContent() {
                   <div className="h-10 w-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-primary font-black text-sm mb-4">
                     {step.step}
                   </div>
-                  <h3 className="text-lg font-black text-navy mb-2.5">{step.title}</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">{step.desc}</p>
+                  <h3 className="text-lg font-black text-navy mb-2.5">
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -598,9 +726,12 @@ export function EmergencyRepairsContent() {
                   <Sparkles className="w-3.5 h-3.5" />
                   Live Dispatch
                 </div>
-                <h3 className="text-xl font-black text-white mb-2">Need Help Right Now?</h3>
+                <h3 className="text-xl font-black text-white mb-2">
+                  Need Help Right Now?
+                </h3>
                 <p className="text-slate-300 text-xs leading-relaxed mb-6">
-                  Call our live on-call dispatcher. We will guide you through triage and dispatch a technician immediately.
+                  Call our live on-call dispatcher. We will guide you through
+                  triage and dispatch a technician immediately.
                 </p>
               </div>
 
@@ -628,7 +759,8 @@ export function EmergencyRepairsContent() {
               The American Commercial Plumbing Emergency Advantage
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              When you have a plumbing emergency, you can't afford to gamble on an unvetted contractor. Here is why Tucson trusts us in a crisis:
+              When you have a plumbing emergency, you can't afford to gamble on
+              an unvetted contractor. Here is why Tucson trusts us in a crisis:
             </p>
           </div>
 
@@ -649,8 +781,12 @@ export function EmergencyRepairsContent() {
                         {adv.badge}
                       </span>
                     </div>
-                    <h3 className="text-lg font-black text-navy mb-2.5">{adv.title}</h3>
-                    <p className="text-slate-600 text-sm leading-relaxed">{adv.desc}</p>
+                    <h3 className="text-lg font-black text-navy mb-2.5">
+                      {adv.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      {adv.desc}
+                    </p>
                   </div>
                 </div>
               );
@@ -660,7 +796,10 @@ export function EmergencyRepairsContent() {
       </section>
 
       {/* ── 7. ONLINE EMERGENCY DISPATCH / CONTACT FORM ── */}
-      <section id="emergency-request-form" className="py-20 lg:py-24 bg-[#F8FAFC] border-b border-slate-200 scroll-mt-20">
+      <section
+        id="emergency-request-form"
+        className="py-20 lg:py-24 bg-[#F8FAFC] border-b border-slate-200 scroll-mt-20"
+      >
         <div className="mx-auto w-[92%] max-w-5xl">
           <div className="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-md">
             <div className="text-center max-w-2xl mx-auto mb-10">
@@ -672,7 +811,15 @@ export function EmergencyRepairsContent() {
                 Fast Online Emergency Triage
               </h2>
               <p className="text-slate-600 text-sm">
-                Can't speak on the phone right now? Submit this rapid triage form or call our direct emergency line at <a href="tel:+15202212010" className="text-cta font-bold hover:underline">(520) 221-2010</a>.
+                Can't speak on the phone right now? Submit this rapid triage
+                form or call our direct emergency line at{" "}
+                <a
+                  href="tel:+15202212010"
+                  className="text-cta font-bold hover:underline"
+                >
+                  (520) 221-2010
+                </a>
+                .
               </p>
             </div>
 
@@ -685,9 +832,13 @@ export function EmergencyRepairsContent() {
                 <div className="h-16 w-16 rounded-full bg-rose-100 text-cta mx-auto flex items-center justify-center mb-4">
                   <Check className="h-8 w-8 stroke-[3]" />
                 </div>
-                <h3 className="text-xl font-black text-navy mb-2">Emergency Alert Dispatched!</h3>
+                <h3 className="text-xl font-black text-navy mb-2">
+                  Emergency Alert Dispatched!
+                </h3>
                 <p className="text-sm text-slate-700 max-w-md mx-auto mb-6">
-                  Our on-call emergency dispatcher is reviewing your request immediately and will phone you back within minutes. If water is spraying, please shut off your main water valve.
+                  Our on-call emergency dispatcher is reviewing your request
+                  immediately and will phone you back within minutes. If water
+                  is spraying, please shut off your main water valve.
                 </p>
                 <a
                   href="tel:+15202212010"
@@ -709,7 +860,9 @@ export function EmergencyRepairsContent() {
                       required
                       placeholder="e.g. David Martinez"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500"
                     />
                   </div>
@@ -723,7 +876,9 @@ export function EmergencyRepairsContent() {
                       required
                       placeholder="(520) 000-0000"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500"
                     />
                   </div>
@@ -736,12 +891,23 @@ export function EmergencyRepairsContent() {
                     </label>
                     <select
                       value={formData.propertyType}
-                      onChange={(e) => setFormData({ ...formData, propertyType: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          propertyType: e.target.value,
+                        })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500"
                     >
-                      <option value="Residential">Residential (Home / Condo / Apartment)</option>
-                      <option value="Commercial">Commercial (Business / Facility / Restaurant)</option>
-                      <option value="Property Management">Property Management / HOA</option>
+                      <option value="Residential">
+                        Residential (Home / Condo / Apartment)
+                      </option>
+                      <option value="Commercial">
+                        Commercial (Business / Facility / Restaurant)
+                      </option>
+                      <option value="Property Management">
+                        Property Management / HOA
+                      </option>
                     </select>
                   </div>
 
@@ -751,16 +917,35 @@ export function EmergencyRepairsContent() {
                     </label>
                     <select
                       value={formData.emergencyType}
-                      onChange={(e) => setFormData({ ...formData, emergencyType: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          emergencyType: e.target.value,
+                        })
+                      }
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500"
                     >
-                      <option value="Burst Pipe / Major Leak">Burst Pipe / Major Leak</option>
-                      <option value="Sewer Line Backup">Sewer Line Backup</option>
-                      <option value="Water Heater Bursting / Flooding">Water Heater Bursting / Flooding</option>
-                      <option value="Overflowing Toilet / Main Drain Block">Overflowing Toilet / Main Drain Block</option>
-                      <option value="Gas Line Odor / Leak">Gas Line Odor / Leak</option>
-                      <option value="Slab Leak Suspicion">Slab Leak Suspicion</option>
-                      <option value="Other Urgent Issue">Other Urgent Issue</option>
+                      <option value="Burst Pipe / Major Leak">
+                        Burst Pipe / Major Leak
+                      </option>
+                      <option value="Sewer Line Backup">
+                        Sewer Line Backup
+                      </option>
+                      <option value="Water Heater Bursting / Flooding">
+                        Water Heater Bursting / Flooding
+                      </option>
+                      <option value="Overflowing Toilet / Main Drain Block">
+                        Overflowing Toilet / Main Drain Block
+                      </option>
+                      <option value="Gas Line Odor / Leak">
+                        Gas Line Odor / Leak
+                      </option>
+                      <option value="Slab Leak Suspicion">
+                        Slab Leak Suspicion
+                      </option>
+                      <option value="Other Urgent Issue">
+                        Other Urgent Issue
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -774,7 +959,9 @@ export function EmergencyRepairsContent() {
                     required
                     placeholder="e.g. 1234 E Broadway Blvd, Tucson (or Vail, Marana, etc.)"
                     value={formData.location}
-                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, location: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500"
                   />
                 </div>
@@ -787,14 +974,17 @@ export function EmergencyRepairsContent() {
                     rows={3}
                     placeholder="Is the water shut off? Where is the water leaking? Any structural damage?"
                     value={formData.details}
-                    onChange={(e) => setFormData({ ...formData, details: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, details: e.target.value })
+                    }
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-rose-500/20 focus:border-rose-500"
                   />
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="text-xs text-slate-500 font-medium">
-                    ⚡ Live 24/7/365 On-Call Dispatch · True Emergency Rapid Response
+                    ⚡ Live 24/7/365 On-Call Dispatch · True Emergency Rapid
+                    Response
                   </div>
                   <button
                     type="submit"
@@ -829,7 +1019,8 @@ export function EmergencyRepairsContent() {
               Frequently Asked Questions (Emergency)
             </h2>
             <p className="text-slate-600 text-sm">
-              Answers to critical questions during plumbing emergencies in Tucson.
+              Answers to critical questions during plumbing emergencies in
+              Tucson.
             </p>
           </div>
 
@@ -891,7 +1082,9 @@ export function EmergencyRepairsContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            Every minute you wait increases the risk of severe water damage and costly repairs. Call American Commercial Plumbing LLC now for immediate 24/7 emergency assistance.
+            Every minute you wait increases the risk of severe water damage and
+            costly repairs. Call American Commercial Plumbing LLC now for
+            immediate 24/7 emergency assistance.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">

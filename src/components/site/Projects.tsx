@@ -44,7 +44,10 @@ export function Projects() {
     filter === "All" ? projects : projects.filter((p) => p.cat === filter);
 
   return (
-    <section id="projects" className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe]/40 border-b border-slate-100">
+    <section
+      id="projects"
+      className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe]/40 border-b border-slate-100"
+    >
       <div className="mx-auto w-[90%] max-w-7xl">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 sm:gap-8 flex-wrap mb-8 sm:mb-12">
           <div className="max-w-2xl">
@@ -52,10 +55,11 @@ export function Projects() {
               Featured Projects
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-[45px] font-bold text-navy tracking-tight text-balance">
-              Featured <span className="text-gradient-brand">Work</span> Across Tucson.
+              Featured <span className="text-gradient-brand">Work</span> Across
+              Tucson.
             </h2>
           </div>
-          
+
           {/* Category Filter Menu Capsule */}
           <div className="flex flex-wrap gap-1.5 items-center bg-slate-100/80 backdrop-blur p-1 rounded-2xl sm:rounded-full border border-slate-200/50 select-none">
             {categories.map((c) => (
@@ -168,8 +172,18 @@ export function Projects() {
               onClick={() => setSelectedImg(null)}
               className="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-2.5 rounded-full border border-white/10 transition-all duration-300 shadow-sm cursor-pointer z-50"
             >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2.5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
 

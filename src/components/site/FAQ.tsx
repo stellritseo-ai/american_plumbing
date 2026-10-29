@@ -9,40 +9,41 @@ export function FAQ() {
   const faqs = [
     {
       q: "Are you licensed and insured in Arizona?",
-      a: "Yes, American Commercial Plumbing is fully licensed, bonded, and insured. Our ROC license number is ROC #321353, and we carry comprehensive general liability and workman's compensation insurance for your complete peace of mind."
+      a: "Yes, American Commercial Plumbing is fully licensed, bonded, and insured. Our ROC license number is ROC #321353, and we carry comprehensive general liability and workman's compensation insurance for your complete peace of mind.",
     },
     {
       q: "Do you offer residential plumbing, or only commercial?",
-      a: "We specialize in both! While our name reflects our capacity for large-scale commercial contracts, our dispatch fleet regularly handles residential projects, including whole-home repiping, leak detection, water heaters, and drain cleaning."
+      a: "We specialize in both! While our name reflects our capacity for large-scale commercial contracts, our dispatch fleet regularly handles residential projects, including whole-home repiping, leak detection, water heaters, and drain cleaning.",
     },
     {
       q: "Do you offer 24/7 emergency services?",
-      a: "Absolutely. We stand ready 24/7 for urgent plumbing emergencies such as slab leaks, water heater failures, and sewer line backups. A dispatch technician is typically on-site in under 60 minutes."
+      a: "Absolutely. We stand ready 24/7 for urgent plumbing emergencies such as slab leaks, water heater failures, and sewer line backups. A dispatch technician is typically on-site in under 60 minutes.",
     },
     {
       q: "What should I do immediately during a burst pipe emergency?",
-      a: "First, locate your main water shut-off valve (usually near your street water meter or where the main line enters the home) and turn it off clockwise. Once the water is shut off to prevent property damage, call our dispatch team immediately."
+      a: "First, locate your main water shut-off valve (usually near your street water meter or where the main line enters the home) and turn it off clockwise. Once the water is shut off to prevent property damage, call our dispatch team immediately.",
     },
     {
       q: "How do you handle pricing and estimates?",
-      a: "We provide up-front, transparent quotes before any work begins. There are no hidden fees or surprise markups. For residential or commercial diagnostic visits, we analyze the issue and present itemized choices."
+      a: "We provide up-front, transparent quotes before any work begins. There are no hidden fees or surprise markups. For residential or commercial diagnostic visits, we analyze the issue and present itemized choices.",
     },
     {
       q: "What areas in Southern Arizona do you serve?",
-      a: "We service Tucson and all surrounding areas, including Oro Valley, Marana, Vail, Sahuarita, Catalina, Green Valley, Drexel Heights, and Casas Adobes. Our standard response radius is within 40 miles of our Tucson hub."
-    }
+      a: "We service Tucson and all surrounding areas, including Oro Valley, Marana, Vail, Sahuarita, Catalina, Green Valley, Drexel Heights, and Casas Adobes. Our standard response radius is within 40 miles of our Tucson hub.",
+    },
   ];
 
   return (
-    <section id="faq" className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe] border-b border-slate-100">
+    <section
+      id="faq"
+      className="relative py-12 sm:py-14 lg:py-[60px] bg-[#fafbfe] border-b border-slate-100"
+    >
       <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
-      
+
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[20px] items-start w-full relative">
-          
           {/* Left Column: Badge, Title, Description, Video & CTA (50% width) */}
           <div className="flex flex-col items-start w-full lg:sticky lg:top-24">
-            
             {/* Badge & Floating Logo */}
             <div className="w-full flex items-center justify-between mb-6 pr-4">
               <div className="inline-flex items-center bg-primary/10 border border-primary/20 text-primary rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wider select-none">
@@ -50,21 +51,32 @@ export function FAQ() {
               </div>
               <motion.div
                 animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="bg-white/80 backdrop-blur border border-slate-200/50 rounded-2xl p-2 shadow-md w-14 h-14 flex items-center justify-center rotate-6 hover:rotate-0 hover:scale-105 transition-all duration-300 select-none"
               >
-                <img src={logo} alt="ACP Logo" className="h-9 w-9 object-contain" />
+                <img
+                  src={logo}
+                  alt="ACP Logo"
+                  className="h-9 w-9 object-contain"
+                />
               </motion.div>
             </div>
 
             {/* Title */}
             <h2 className="text-3xl lg:text-[38px] font-bold text-navy leading-tight mt-[-20px] mb-[5px] tracking-tight">
-              Got Questions? <span className="text-gradient-brand">We Have Answers.</span>
+              Got Questions?{" "}
+              <span className="text-gradient-brand">We Have Answers.</span>
             </h2>
 
             {/* Description */}
             <p className="text-sm sm:text-base text-slate-500 font-medium leading-relaxed mb-6">
-              Find quick information on our most common plumbing services below. For direct, expert advice on your specific project or diagnostic issue in Tucson, call our dispatch desk at (520) 221-2010.
+              Find quick information on our most common plumbing services below.
+              For direct, expert advice on your specific project or diagnostic
+              issue in Tucson, call our dispatch desk at (520) 221-2010.
             </p>
 
             {/* Video Player Container */}
@@ -115,7 +127,9 @@ export function FAQ() {
                     </button>
                     <div
                       className={`grid transition-all duration-300 ease-in-out ${
-                        isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                        isOpen
+                          ? "grid-rows-[1fr] opacity-100"
+                          : "grid-rows-[0fr] opacity-0"
                       }`}
                     >
                       <div className="overflow-hidden">
@@ -129,7 +143,6 @@ export function FAQ() {
               })}
             </div>
           </div>
-
         </div>
       </div>
     </section>

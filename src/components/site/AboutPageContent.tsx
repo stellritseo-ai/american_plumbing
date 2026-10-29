@@ -308,10 +308,12 @@ export function AboutPageContent() {
               </h2>
 
               <p className="mt-6 text-slate-700 text-base sm:text-lg leading-relaxed font-medium">
-                American Commercial Plumbing LLC is a family-run enterprise proudly founded and led by
-                owner <strong className="text-navy font-bold">Shawn Holton</strong>. For over two
-                decades, we have been a staple in the Tucson community, building a reputation not just
-                on the quality of our pipes and fixtures, but on the foundation of clean engineering,
+                American Commercial Plumbing LLC is a family-run enterprise
+                proudly founded and led by owner{" "}
+                <strong className="text-navy font-bold">Shawn Holton</strong>.
+                For over two decades, we have been a staple in the Tucson
+                community, building a reputation not just on the quality of our
+                pipes and fixtures, but on the foundation of clean engineering,
                 integrity, and client satisfaction.
               </p>
 
@@ -322,16 +324,19 @@ export function AboutPageContent() {
                   <span>Commercial-Grade Quality For Every Home</span>
                 </div>
                 <p className="text-slate-800 text-sm sm:text-base leading-relaxed font-semibold">
-                  What started as a commitment to doing the job right has grown into a full-service
-                  operation capable of handling everything from minor residential repairs to complex
-                  commercial infrastructure. At American Commercial Plumbing, we believe that
-                  "commercial grade" quality shouldn't just be for businesses—it should be the standard
-                  for every home and family we serve.
+                  What started as a commitment to doing the job right has grown
+                  into a full-service operation capable of handling everything
+                  from minor residential repairs to complex commercial
+                  infrastructure. At American Commercial Plumbing, we believe
+                  that "commercial grade" quality shouldn't just be for
+                  businesses—it should be the standard for every home and family
+                  we serve.
                 </p>
                 <p className="mt-3 text-slate-600 text-xs sm:text-sm leading-relaxed font-medium">
-                  We are more than just plumbers; we are your neighbors. We are deeply rooted in
-                  Tucson and Southern Arizona, and we take pride in protecting the health and safety of
-                  our community’s water systems.
+                  We are more than just plumbers; we are your neighbors. We are
+                  deeply rooted in Tucson and Southern Arizona, and we take
+                  pride in protecting the health and safety of our community’s
+                  water systems.
                 </p>
               </div>
 
@@ -381,7 +386,11 @@ export function AboutPageContent() {
                         Licensed · Insured · Bonded
                       </div>
                     </div>
-                    <img src={logo} alt="ACP Logo" className="h-9 w-auto object-contain" />
+                    <img
+                      src={logo}
+                      alt="ACP Logo"
+                      className="h-9 w-auto object-contain"
+                    />
                   </div>
                 </div>
               </div>
@@ -416,8 +425,9 @@ export function AboutPageContent() {
               The American Commercial Plumbing Difference
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              When you hire us, you aren't just getting a contractor; you are getting a dedicated
-              partner who ensures the job is done safely, efficiently, and correctly the first time.
+              When you hire us, you aren't just getting a contractor; you are
+              getting a dedicated partner who ensures the job is done safely,
+              efficiently, and correctly the first time.
             </p>
           </div>
 
@@ -484,10 +494,11 @@ export function AboutPageContent() {
                 Our Commitment to You
               </h2>
               <p className="mt-2 text-slate-200 text-sm sm:text-base font-medium">
-                We believe in doing things the right way. That is why we offer a 100% Upfront & Honest
-                Guarantee. We combine state-of-the-art tools—like advanced leak detection and camera
-                inspections—with decades of practical experience to offer you the best possible service
-                experience.
+                We believe in doing things the right way. That is why we offer a
+                100% Upfront & Honest Guarantee. We combine state-of-the-art
+                tools—like advanced leak detection and camera inspections—with
+                decades of practical experience to offer you the best possible
+                service experience.
               </p>
 
               <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
@@ -500,7 +511,9 @@ export function AboutPageContent() {
                       <CheckCircle2 className="w-5 h-5 text-emerald-400" />
                     </div>
                     <div>
-                      <h4 className="text-base font-black text-white">{item.title}</h4>
+                      <h4 className="text-base font-black text-white">
+                        {item.title}
+                      </h4>
                       <p className="mt-1 text-xs text-slate-200 font-medium leading-relaxed">
                         {item.desc}
                       </p>
@@ -533,7 +546,9 @@ export function AboutPageContent() {
                     <div className="w-11 h-11 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4">
                       <Icon className="w-5.5 h-5.5" />
                     </div>
-                    <h3 className="text-base font-black text-navy tracking-tight">{val.title}</h3>
+                    <h3 className="text-base font-black text-navy tracking-tight">
+                      {val.title}
+                    </h3>
                     <p className="mt-2 text-xs sm:text-sm text-slate-600 font-medium leading-relaxed">
                       {val.desc}
                     </p>
@@ -556,8 +571,8 @@ export function AboutPageContent() {
               Our Simple 5-Step Process
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              From initial dispatch to final walkthrough, we keep everything streamlined, clear, and
-              hassle-free.
+              From initial dispatch to final walkthrough, we keep everything
+              streamlined, clear, and hassle-free.
             </p>
           </div>
 
@@ -571,7 +586,9 @@ export function AboutPageContent() {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-2xl font-black text-primary">{st.num}</span>
+                      <span className="text-2xl font-black text-primary">
+                        {st.num}
+                      </span>
                       <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                         <Icon className="w-5 h-5" />
                       </div>
@@ -601,33 +618,36 @@ export function AboutPageContent() {
               Expert Solutions for Every Pipe, Drain, and Fixture
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              Whether you are a property manager maintaining a large facility or a homeowner dealing
-              with a midnight emergency, we have the tools and expertise to handle it.
+              Whether you are a property manager maintaining a large facility or
+              a homeowner dealing with a midnight emergency, we have the tools
+              and expertise to handle it.
             </p>
 
             {/* Category Filter Buttons */}
             <div className="mt-8 flex flex-wrap justify-center gap-2">
-              {(Object.keys(serviceCategories) as Array<keyof typeof serviceCategories>).map(
-                (catKey) => {
-                  const cat = serviceCategories[catKey];
-                  const Icon = cat.icon;
-                  const active = activeCategory === catKey;
-                  return (
-                    <button
-                      key={catKey}
-                      onClick={() => setActiveCategory(catKey)}
-                      className={`px-4 py-2.5 rounded-full text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 cursor-pointer ${
-                        active
-                          ? "bg-primary text-white shadow-md border border-primary/50"
-                          : "bg-white text-slate-700 border border-slate-200 hover:bg-slate-50"
-                      }`}
-                    >
-                      <Icon className="w-4 h-4" />
-                      <span>{cat.title.split(" ")[0]}</span>
-                    </button>
-                  );
-                }
-              )}
+              {(
+                Object.keys(serviceCategories) as Array<
+                  keyof typeof serviceCategories
+                >
+              ).map((catKey) => {
+                const cat = serviceCategories[catKey];
+                const Icon = cat.icon;
+                const active = activeCategory === catKey;
+                return (
+                  <button
+                    key={catKey}
+                    onClick={() => setActiveCategory(catKey)}
+                    className={`px-4 py-2.5 rounded-full text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 cursor-pointer ${
+                      active
+                        ? "bg-primary text-white shadow-md border border-primary/50"
+                        : "bg-white text-slate-700 border border-slate-200 hover:bg-slate-50"
+                    }`}
+                  >
+                    <Icon className="w-4 h-4" />
+                    <span>{cat.title.split(" ")[0]}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
@@ -647,7 +667,10 @@ export function AboutPageContent() {
 
                 <ul className="mt-6 space-y-3">
                   {serviceCategories[activeCategory].items.map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-slate-800 text-sm font-semibold">
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 text-slate-800 text-sm font-semibold"
+                    >
                       <div className="p-1 rounded-full bg-emerald-100 text-emerald-600 shrink-0 mt-0.5">
                         <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                       </div>
@@ -704,8 +727,8 @@ export function AboutPageContent() {
                 Proudly Serving Tucson & Surrounding Communities
               </h2>
               <p className="mt-3 text-slate-200 text-sm font-medium">
-                We are locally owned and deeply invested in the safety of Southern Arizona. We proudly
-                serve:
+                We are locally owned and deeply invested in the safety of
+                Southern Arizona. We proudly serve:
               </p>
             </div>
 
@@ -714,7 +737,9 @@ export function AboutPageContent() {
               <div className="p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md">
                 <div className="flex items-center gap-2 mb-4 pb-2 border-b border-white/15">
                   <MapPin className="w-5 h-5 text-electric" />
-                  <h3 className="text-lg font-black text-white">Greater Tucson</h3>
+                  <h3 className="text-lg font-black text-white">
+                    Greater Tucson
+                  </h3>
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {areas.tucson.map((city) => (
@@ -750,7 +775,9 @@ export function AboutPageContent() {
               <div className="p-6 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md">
                 <div className="flex items-center gap-2 mb-4 pb-2 border-b border-white/15">
                   <MapPin className="w-5 h-5 text-electric" />
-                  <h3 className="text-lg font-black text-white">North & Northwest</h3>
+                  <h3 className="text-lg font-black text-white">
+                    North & Northwest
+                  </h3>
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {areas.corridor.map((city) => (
@@ -767,8 +794,9 @@ export function AboutPageContent() {
 
             <div className="mt-8 text-center relative z-10">
               <p className="text-xs text-slate-300 font-semibold italic">
-                "And surrounding areas. Don't see your neighborhood? Give our dispatch team a quick
-                call at (520) 221-2010—we serve throughout Southern Arizona."
+                "And surrounding areas. Don't see your neighborhood? Give our
+                dispatch team a quick call at (520) 221-2010—we serve throughout
+                Southern Arizona."
               </p>
             </div>
           </div>
@@ -786,8 +814,9 @@ export function AboutPageContent() {
               Our Reputation Speaks for Itself
             </h2>
             <p className="mt-4 text-slate-700 text-sm sm:text-base font-medium leading-relaxed">
-              Join the thousands of satisfied Tucson homeowners and businesses who trust American
-              Commercial Plumbing LLC for their plumbing needs.
+              Join the thousands of satisfied Tucson homeowners and businesses
+              who trust American Commercial Plumbing LLC for their plumbing
+              needs.
             </p>
 
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -804,7 +833,9 @@ export function AboutPageContent() {
                 </div>
               </div>
               <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-2xs">
-                <div className="text-3xl font-black text-primary">ROC #321353</div>
+                <div className="text-3xl font-black text-primary">
+                  ROC #321353
+                </div>
                 <div className="text-xs font-bold text-slate-500 uppercase mt-1">
                   Licensed & Bonded
                 </div>
@@ -821,7 +852,10 @@ export function AboutPageContent() {
       </section>
 
       {/* ── 8. LET'S WORK TOGETHER / MEET THE TEAM & CONTACT (BROWN STYLE) ── */}
-      <section id="estimate-section" className="py-16 sm:py-24 bg-white border-t border-slate-200">
+      <section
+        id="estimate-section"
+        className="py-16 sm:py-24 bg-white border-t border-slate-200"
+      >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="text-xs font-black uppercase tracking-widest text-cta bg-cta/10 px-3.5 py-1 rounded-full border border-cta/20">
@@ -831,8 +865,8 @@ export function AboutPageContent() {
               Let's Work Together
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base font-medium">
-              Whether it’s a routine maintenance check or a 2:00 AM emergency, our team is ready to
-              serve you with professionalism and speed.
+              Whether it’s a routine maintenance check or a 2:00 AM emergency,
+              our team is ready to serve you with professionalism and speed.
             </p>
           </div>
 
@@ -847,7 +881,8 @@ export function AboutPageContent() {
                   American Commercial Plumbing LLC
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-slate-300 font-medium">
-                  Family-run enterprise led by Shawn Holton. Serving Southern Arizona since 1999.
+                  Family-run enterprise led by Shawn Holton. Serving Southern
+                  Arizona since 1999.
                 </p>
 
                 <div className="mt-8 space-y-5">
@@ -863,7 +898,9 @@ export function AboutPageContent() {
                       <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">
                         Phone
                       </div>
-                      <div className="text-base font-bold text-white">(520) 221-2010</div>
+                      <div className="text-base font-bold text-white">
+                        (520) 221-2010
+                      </div>
                     </div>
                   </a>
 
@@ -900,7 +937,8 @@ export function AboutPageContent() {
                         Address
                       </div>
                       <div className="text-sm font-bold text-white leading-snug">
-                        226 E Forrest Feezor St<br />
+                        226 E Forrest Feezor St
+                        <br />
                         Vail, AZ 85641
                       </div>
                     </div>
@@ -928,7 +966,9 @@ export function AboutPageContent() {
               </div>
 
               <div className="mt-8 pt-6 border-t border-white/15 flex items-center justify-between">
-                <span className="text-[11px] font-bold text-slate-300">ROC #321353 Licensed</span>
+                <span className="text-[11px] font-bold text-slate-300">
+                  ROC #321353 Licensed
+                </span>
                 <a
                   href="tel:+15202212010"
                   className="px-4 py-2 rounded-full bg-cta text-white text-xs font-black uppercase tracking-wider hover:brightness-110 transition shadow-cta"
@@ -955,7 +995,8 @@ export function AboutPageContent() {
                       Request Received!
                     </h3>
                     <p className="mt-2 text-sm text-slate-600 font-medium max-w-sm mx-auto">
-                      Thank you! Our Tucson team will review your request and contact you within the hour.
+                      Thank you! Our Tucson team will review your request and
+                      contact you within the hour.
                     </p>
                     <button
                       onClick={() => setFormSubmitted(false)}
@@ -975,7 +1016,9 @@ export function AboutPageContent() {
                         phone: formData.phone,
                         email: formData.email,
                         service: formData.serviceType,
-                        urgency: formData.isEmergency ? "URGENT 24/7 EMERGENCY" : "Standard Scheduling",
+                        urgency: formData.isEmergency
+                          ? "URGENT 24/7 EMERGENCY"
+                          : "Standard Scheduling",
                         message: formData.message,
                       });
                       setFormSubmitting(false);
@@ -984,9 +1027,12 @@ export function AboutPageContent() {
                     className="space-y-5"
                   >
                     <div>
-                      <h3 className="text-xl font-black text-navy">Request Service Online</h3>
+                      <h3 className="text-xl font-black text-navy">
+                        Request Service Online
+                      </h3>
                       <p className="text-xs text-slate-500 font-medium mt-1">
-                        Fill in your details below for upfront pricing and fast scheduling.
+                        Fill in your details below for upfront pricing and fast
+                        scheduling.
                       </p>
                     </div>
 
@@ -999,7 +1045,9 @@ export function AboutPageContent() {
                           type="text"
                           required
                           value={formData.name}
-                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          onChange={(e) =>
+                            setFormData({ ...formData, name: e.target.value })
+                          }
                           placeholder="Your Name"
                           className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
                         />
@@ -1012,7 +1060,9 @@ export function AboutPageContent() {
                           type="tel"
                           required
                           value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                          onChange={(e) =>
+                            setFormData({ ...formData, phone: e.target.value })
+                          }
                           placeholder="(520) 221-2010"
                           className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
                         />
@@ -1028,7 +1078,9 @@ export function AboutPageContent() {
                           type="email"
                           required
                           value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          onChange={(e) =>
+                            setFormData({ ...formData, email: e.target.value })
+                          }
                           placeholder="you@example.com"
                           className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition"
                         />
@@ -1040,12 +1092,19 @@ export function AboutPageContent() {
                         <select
                           value={formData.serviceType}
                           onChange={(e) =>
-                            setFormData({ ...formData, serviceType: e.target.value })
+                            setFormData({
+                              ...formData,
+                              serviceType: e.target.value,
+                            })
                           }
                           className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition cursor-pointer"
                         >
-                          <option value="Commercial Plumbing">Commercial Plumbing</option>
-                          <option value="Residential Plumbing">Residential Plumbing</option>
+                          <option value="Commercial Plumbing">
+                            Commercial Plumbing
+                          </option>
+                          <option value="Residential Plumbing">
+                            Residential Plumbing
+                          </option>
                           <option value="Water Heater Repair & Installation">
                             Water Heater Repair & Installation
                           </option>
@@ -1055,9 +1114,15 @@ export function AboutPageContent() {
                           <option value="Drain Cleaning & Hydro Jetting">
                             Drain Cleaning & Hydro Jetting
                           </option>
-                          <option value="Leak Detection & Repair">Leak Detection & Repair</option>
-                          <option value="Gas Line Services">Gas Line Services</option>
-                          <option value="Emergency Repairs (24/7)">Emergency Repairs (24/7)</option>
+                          <option value="Leak Detection & Repair">
+                            Leak Detection & Repair
+                          </option>
+                          <option value="Gas Line Services">
+                            Gas Line Services
+                          </option>
+                          <option value="Emergency Repairs (24/7)">
+                            Emergency Repairs (24/7)
+                          </option>
                         </select>
                       </div>
                     </div>
@@ -1069,7 +1134,9 @@ export function AboutPageContent() {
                       <textarea
                         rows={3}
                         value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, message: e.target.value })
+                        }
                         placeholder="Tell us about the issue or project details..."
                         className="w-full px-4 py-3 rounded-2xl bg-white border border-slate-200 text-sm font-medium text-navy focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition resize-none"
                       />
@@ -1081,7 +1148,10 @@ export function AboutPageContent() {
                         id="emergency-toggle"
                         checked={formData.isEmergency}
                         onChange={(e) =>
-                          setFormData({ ...formData, isEmergency: e.target.checked })
+                          setFormData({
+                            ...formData,
+                            isEmergency: e.target.checked,
+                          })
                         }
                         className="w-4 h-4 rounded text-cta focus:ring-cta border-slate-300 cursor-pointer"
                       />
@@ -1099,7 +1169,9 @@ export function AboutPageContent() {
                         disabled={formSubmitting}
                         className="flex-1 min-w-[180px] bg-cta hover:brightness-110 text-white text-xs font-black uppercase tracking-wider px-8 py-3.5 rounded-full shadow-cta transition-all active:scale-95 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                       >
-                        <span>{formSubmitting ? "Submitting..." : "Request Service"}</span>
+                        <span>
+                          {formSubmitting ? "Submitting..." : "Request Service"}
+                        </span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
 

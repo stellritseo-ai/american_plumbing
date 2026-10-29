@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { MapPin, Navigation, Clock, ShieldCheck, CheckCircle2 } from "lucide-react";
+import {
+  MapPin,
+  Navigation,
+  Clock,
+  ShieldCheck,
+  CheckCircle2,
+} from "lucide-react";
 
 export function ServiceAreasGrid() {
   const serviceAreas = [
@@ -64,8 +70,9 @@ export function ServiceAreasGrid() {
           </h2>
 
           <p className="mt-5 text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
-            We are locally owned and deeply invested in the safety of Southern Arizona. Wherever you
-            are located in the greater Tucson valley, our fleet is fully stocked and ready to roll.
+            We are locally owned and deeply invested in the safety of Southern
+            Arizona. Wherever you are located in the greater Tucson valley, our
+            fleet is fully stocked and ready to roll.
           </p>
         </div>
 
@@ -80,7 +87,9 @@ export function ServiceAreasGrid() {
               transition={{ duration: 0.4, delay: i * 0.05 }}
               whileHover={{ y: -4 }}
               className={`rounded-2xl bg-white border border-slate-200/80 p-6 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between ${
-                i === serviceAreas.length - 1 ? "sm:col-span-2 lg:col-span-1 xl:col-span-2" : ""
+                i === serviceAreas.length - 1
+                  ? "sm:col-span-2 lg:col-span-1 xl:col-span-2"
+                  : ""
               }`}
             >
               <div>
@@ -93,7 +102,9 @@ export function ServiceAreasGrid() {
                   </span>
                 </div>
 
-                <h3 className="text-xl font-black text-navy tracking-tight">{area.city}</h3>
+                <h3 className="text-xl font-black text-navy tracking-tight">
+                  {area.city}
+                </h3>
 
                 <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
                   {area.desc}
@@ -125,7 +136,8 @@ export function ServiceAreasGrid() {
                 Unsure if your neighborhood is within our service perimeter?
               </div>
               <div className="text-xs text-slate-500 font-medium">
-                Give our Tucson dispatch team a quick call to check real-time availability.
+                Give our Tucson dispatch team a quick call to check real-time
+                availability.
               </div>
             </div>
           </div>

@@ -157,7 +157,8 @@ export const Route = createFileRoute("/water-heaters")({
   head: () => ({
     meta: [
       {
-        title: "Water Heater Repair & Installation Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "Water Heater Repair & Installation Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -196,7 +197,8 @@ export const Route = createFileRoute("/water-heaters")({
       },
       {
         name: "twitter:title",
-        content: "Water Heater Repair & Installation Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "Water Heater Repair & Installation Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",

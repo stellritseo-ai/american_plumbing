@@ -33,7 +33,8 @@ function LeakDetectionPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Leak Detection & Repair Services",
-    serviceType: "Acoustic, Thermal Imaging & Electronic Slab Leak Detection and Non-Invasive Pipe Repair",
+    serviceType:
+      "Acoustic, Thermal Imaging & Electronic Slab Leak Detection and Non-Invasive Pipe Repair",
     provider: {
       "@type": "PlumbingService",
       name: "American Commercial Plumbing LLC",
@@ -159,7 +160,8 @@ export const Route = createFileRoute("/leak-detection")({
   head: () => ({
     meta: [
       {
-        title: "Water Leak Detection & Repair Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "Water Leak Detection & Repair Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -173,7 +175,8 @@ export const Route = createFileRoute("/leak-detection")({
       },
       {
         property: "og:title",
-        content: "Leak Detection & Repair Services | American Commercial Plumbing LLC",
+        content:
+          "Leak Detection & Repair Services | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -198,7 +201,8 @@ export const Route = createFileRoute("/leak-detection")({
       },
       {
         name: "twitter:title",
-        content: "Water Leak Detection & Repair Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "Water Leak Detection & Repair Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",

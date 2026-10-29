@@ -139,7 +139,8 @@ export const Route = createFileRoute("/commercial-plumbing")({
   head: () => ({
     meta: [
       {
-        title: "Commercial Plumbing Services Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "Commercial Plumbing Services Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -153,7 +154,8 @@ export const Route = createFileRoute("/commercial-plumbing")({
       },
       {
         property: "og:title",
-        content: "Commercial Plumbing Services | American Commercial Plumbing LLC",
+        content:
+          "Commercial Plumbing Services | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -178,7 +180,8 @@ export const Route = createFileRoute("/commercial-plumbing")({
       },
       {
         name: "twitter:title",
-        content: "Commercial Plumbing Services Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "Commercial Plumbing Services Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",

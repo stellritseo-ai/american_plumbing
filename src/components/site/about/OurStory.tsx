@@ -1,20 +1,29 @@
 import { motion } from "framer-motion";
-import { Wrench, HeartHandshake, ShieldCheck, CheckCircle2, Quote } from "lucide-react";
+import {
+  Wrench,
+  HeartHandshake,
+  ShieldCheck,
+  CheckCircle2,
+  Quote,
+} from "lucide-react";
 import teamPhoto from "@/assets/about-team.jpg";
 
 export function OurStory() {
   const storyPoints = [
     {
       title: "Clean Engineering & Craftsmanship",
-      description: "Rooted in precision pipework, durable materials, and zero-compromise mechanical standards.",
+      description:
+        "Rooted in precision pipework, durable materials, and zero-compromise mechanical standards.",
     },
     {
       title: "Commercial-Grade for Every Home",
-      description: "Industrial strength, heavy-duty durability, and safety standards brought right to your family's front door.",
+      description:
+        "Industrial strength, heavy-duty durability, and safety standards brought right to your family's front door.",
     },
     {
       title: "Deeply Rooted Tucson Neighbors",
-      description: "Over 25 years actively protecting the water supply, homes, and businesses of Southern Arizona.",
+      description:
+        "Over 25 years actively protecting the water supply, homes, and businesses of Southern Arizona.",
     },
   ];
 
@@ -48,8 +57,9 @@ export function OurStory() {
                   </div>
                   <div>
                     <p className="text-xs sm:text-sm font-semibold italic text-slate-700 leading-relaxed">
-                      "Commercial grade quality shouldn't just be for big corporations. Every family in
-                      Tucson deserves durable, clean, and honest plumbing."
+                      "Commercial grade quality shouldn't just be for big
+                      corporations. Every family in Tucson deserves durable,
+                      clean, and honest plumbing."
                     </p>
                     <div className="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
                       <div>
@@ -78,7 +88,9 @@ export function OurStory() {
                 <div className="text-xs font-black uppercase tracking-wider text-navy">
                   25+ Years Legacy
                 </div>
-                <div className="text-[11px] text-slate-500 font-medium">Southern AZ Heritage</div>
+                <div className="text-[11px] text-slate-500 font-medium">
+                  Southern AZ Heritage
+                </div>
               </div>
             </div>
           </motion.div>
@@ -102,18 +114,22 @@ export function OurStory() {
 
             <div className="mt-6 space-y-4 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
               <p>
-                <strong className="text-navy font-bold">American Commercial Plumbing LLC</strong> is a
-                family-run enterprise proudly founded and led by owner{" "}
-                <span className="text-primary font-bold">Shawn Holton</span>. For over two decades, we
-                have been a staple in the Tucson community, building a reputation not just on the
-                quality of our pipes and fixtures, but on the foundation of clean engineering,
+                <strong className="text-navy font-bold">
+                  American Commercial Plumbing LLC
+                </strong>{" "}
+                is a family-run enterprise proudly founded and led by owner{" "}
+                <span className="text-primary font-bold">Shawn Holton</span>.
+                For over two decades, we have been a staple in the Tucson
+                community, building a reputation not just on the quality of our
+                pipes and fixtures, but on the foundation of clean engineering,
                 integrity, and client satisfaction.
               </p>
 
               <p>
-                What started as a commitment to doing the job right has grown into a full-service
-                operation capable of handling everything from minor residential repairs to complex
-                commercial infrastructure. At American Commercial Plumbing, we believe that{" "}
+                What started as a commitment to doing the job right has grown
+                into a full-service operation capable of handling everything
+                from minor residential repairs to complex commercial
+                infrastructure. At American Commercial Plumbing, we believe that{" "}
                 <span className="text-navy font-bold underline decoration-primary decoration-2 underline-offset-4">
                   "commercial grade" quality shouldn't just be for businesses
                 </span>
@@ -121,9 +137,10 @@ export function OurStory() {
               </p>
 
               <p>
-                We are more than just plumbers; we are your neighbors. We are deeply rooted in Tucson
-                and Southern Arizona, and we take pride in protecting the health and safety of our
-                community’s water systems.
+                We are more than just plumbers; we are your neighbors. We are
+                deeply rooted in Tucson and Southern Arizona, and we take pride
+                in protecting the health and safety of our community’s water
+                systems.
               </p>
             </div>
 

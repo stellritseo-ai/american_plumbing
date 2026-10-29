@@ -37,10 +37,10 @@ const steps = [
 
 const desktopPositions = [
   { left: "20%", top: "50px" }, // Step 1 (x=240, y=50)
-  { left: "50%", top: "50px" },    // Step 2 (x=600, y=50)
-  { left: "80%", top: "50px" },    // Step 3 (x=960, y=50)
+  { left: "50%", top: "50px" }, // Step 2 (x=600, y=50)
+  { left: "80%", top: "50px" }, // Step 3 (x=960, y=50)
   { left: "20%", top: "310px" }, // Step 4 (x=240, y=310)
-  { left: "50%", top: "310px" },    // Step 5 (x=600, y=310)
+  { left: "50%", top: "310px" }, // Step 5 (x=600, y=310)
 ];
 
 export function Process() {
@@ -92,8 +92,6 @@ export function Process() {
         }
       `}</style>
 
-
-
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
         {/* Header Block */}
         <div className="text-center max-w-4xl mx-auto mb-10 sm:mb-16">
@@ -105,7 +103,9 @@ export function Process() {
             <span className="text-gradient-brand">Step Carefully.</span>
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-500 max-w-xl mx-auto font-medium leading-relaxed mb-6 sm:mb-8 lg:mb-[-45px]">
-            Our step-by-step methodology guarantees precision, transparency, and clean, code-compliant results from scheduling to final quality check.
+            Our step-by-step methodology guarantees precision, transparency, and
+            clean, code-compliant results from scheduling to final quality
+            check.
           </p>
         </div>
 
@@ -192,7 +192,14 @@ export function Process() {
             <g>
               {/* Valve handle crossbar stem */}
               <rect x="85" y="24" width="8" height="10" rx="1" fill="#1e3a8a" />
-              <rect x="87" y="24" width="4" height="10" fill="#60a5fa" opacity="0.6" />
+              <rect
+                x="87"
+                y="24"
+                width="4"
+                height="10"
+                fill="#60a5fa"
+                opacity="0.6"
+              />
 
               {/* Handle crossbar */}
               <rect x="72" y="16" width="34" height="8" rx="2" fill="#0284c7" />
@@ -200,18 +207,67 @@ export function Process() {
               <circle cx="89" cy="20" r="2.5" fill="#ffffff" />
 
               {/* Main Faucet Body Cylinder */}
-              <path d="M 60 50 L 114 50" stroke="#3b82f6" strokeWidth="22" strokeLinecap="round" />
-              <path d="M 60 46 L 114 46" stroke="#60a5fa" strokeWidth="3" strokeLinecap="round" opacity="0.75" />
-              <path d="M 60 54 L 114 54" stroke="#1d4ed8" strokeWidth="3" strokeLinecap="round" opacity="0.4" />
+              <path
+                d="M 60 50 L 114 50"
+                stroke="#3b82f6"
+                strokeWidth="22"
+                strokeLinecap="round"
+              />
+              <path
+                d="M 60 46 L 114 46"
+                stroke="#60a5fa"
+                strokeWidth="3"
+                strokeLinecap="round"
+                opacity="0.75"
+              />
+              <path
+                d="M 60 54 L 114 54"
+                stroke="#1d4ed8"
+                strokeWidth="3"
+                strokeLinecap="round"
+                opacity="0.4"
+              />
 
               {/* Connection collar / Flange flange */}
-              <rect x="110" y="34" width="8" height="32" rx="1" fill="#1e3a8a" />
-              <rect x="112" y="34" width="2" height="32" fill="#60a5fa" opacity="0.5" />
+              <rect
+                x="110"
+                y="34"
+                width="8"
+                height="32"
+                rx="1"
+                fill="#1e3a8a"
+              />
+              <rect
+                x="112"
+                y="34"
+                width="2"
+                height="32"
+                fill="#60a5fa"
+                opacity="0.5"
+              />
 
               {/* Curved Faucet Spout pointing down */}
-              <path d="M 68 50 C 45 50, 45 58, 45 74" fill="none" stroke="#3b82f6" strokeWidth="22" strokeLinecap="round" />
-              <path d="M 68 46 C 49 46, 49 53, 49 74" fill="none" stroke="#60a5fa" strokeWidth="3" opacity="0.75" />
-              <path d="M 68 54 C 41 54, 41 62, 41 74" fill="none" stroke="#1d4ed8" strokeWidth="3" opacity="0.4" />
+              <path
+                d="M 68 50 C 45 50, 45 58, 45 74"
+                fill="none"
+                stroke="#3b82f6"
+                strokeWidth="22"
+                strokeLinecap="round"
+              />
+              <path
+                d="M 68 46 C 49 46, 49 53, 49 74"
+                fill="none"
+                stroke="#60a5fa"
+                strokeWidth="3"
+                opacity="0.75"
+              />
+              <path
+                d="M 68 54 C 41 54, 41 62, 41 74"
+                fill="none"
+                stroke="#1d4ed8"
+                strokeWidth="3"
+                opacity="0.4"
+              />
 
               {/* Animated Dripping Drop (teardrop path) */}
               <g className="dripping-drop">
@@ -225,8 +281,22 @@ export function Process() {
             {/* C. Water Storage Tank at pipe end (translated horizontally by 240px) */}
             <g transform="translate(240, 0)">
               {/* Connection Flange Joining Pipe to Tank */}
-              <rect x="676" y="294" width="6" height="32" rx="1" fill="#1e3a8a" />
-              <rect x="678" y="294" width="2" height="32" fill="#60a5fa" opacity="0.5" />
+              <rect
+                x="676"
+                y="294"
+                width="6"
+                height="32"
+                rx="1"
+                fill="#1e3a8a"
+              />
+              <rect
+                x="678"
+                y="294"
+                width="2"
+                height="32"
+                fill="#60a5fa"
+                opacity="0.5"
+              />
 
               {/* Sloped-shoulder Tank Body */}
               <path
@@ -235,28 +305,114 @@ export function Process() {
               />
 
               {/* Black Cap & Neck */}
-              <rect x="702" y="240" width="26" height="6" fill="#1e293b" rx="1" />
-              <rect x="698" y="234" width="34" height="6" fill="#0f172a" rx="1.5" />
+              <rect
+                x="702"
+                y="240"
+                width="26"
+                height="6"
+                fill="#1e293b"
+                rx="1"
+              />
+              <rect
+                x="698"
+                y="234"
+                width="34"
+                height="6"
+                fill="#0f172a"
+                rx="1.5"
+              />
 
               {/* Horizontal Rib Ridges (Glossy cylindrical surface overlays) */}
-              <rect x="678" y="268" width="74" height="5" rx="2" fill="#38bdf8" opacity="0.4" />
-              <rect x="678" y="284" width="74" height="5" rx="2" fill="#38bdf8" opacity="0.4" />
-              <rect x="678" y="300" width="74" height="5" rx="2" fill="#38bdf8" opacity="0.4" />
-              <rect x="678" y="316" width="74" height="5" rx="2" fill="#38bdf8" opacity="0.4" />
-              <rect x="678" y="332" width="74" height="5" rx="2" fill="#38bdf8" opacity="0.4" />
+              <rect
+                x="678"
+                y="268"
+                width="74"
+                height="5"
+                rx="2"
+                fill="#38bdf8"
+                opacity="0.4"
+              />
+              <rect
+                x="678"
+                y="284"
+                width="74"
+                height="5"
+                rx="2"
+                fill="#38bdf8"
+                opacity="0.4"
+              />
+              <rect
+                x="678"
+                y="300"
+                width="74"
+                height="5"
+                rx="2"
+                fill="#38bdf8"
+                opacity="0.4"
+              />
+              <rect
+                x="678"
+                y="316"
+                width="74"
+                height="5"
+                rx="2"
+                fill="#38bdf8"
+                opacity="0.4"
+              />
+              <rect
+                x="678"
+                y="332"
+                width="74"
+                height="5"
+                rx="2"
+                fill="#38bdf8"
+                opacity="0.4"
+              />
 
               {/* Water Tank Tap/Faucet on the Right Side */}
               <rect x="750" y="312" width="12" height="6" fill="#cbd5e1" />
               <rect x="756" y="306" width="4" height="6" fill="#ef4444" />
-              <path d="M 762 315 C 766 315, 766 318, 766 324" stroke="#cbd5e1" strokeWidth="4" strokeLinecap="round" fill="none" />
+              <path
+                d="M 762 315 C 766 315, 766 318, 766 324"
+                stroke="#cbd5e1"
+                strokeWidth="4"
+                strokeLinecap="round"
+                fill="none"
+              />
 
               {/* Animated Running Water Stream */}
-              <line x1="766" y1="322" x2="766" y2="352" stroke="#3b82f6" strokeWidth="3" className="water-flow" strokeLinecap="round" />
+              <line
+                x1="766"
+                y1="322"
+                x2="766"
+                y2="352"
+                stroke="#3b82f6"
+                strokeWidth="3"
+                className="water-flow"
+                strokeLinecap="round"
+              />
 
               {/* Splashing ripples at bottom of stream */}
-              <ellipse cx="766" cy="352" rx="4" ry="1.5" fill="#60a5fa" opacity="0.8">
-                <animate attributeName="rx" values="3;7;3" dur="1.2s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.8;0;0.8" dur="1.2s" repeatCount="indefinite" />
+              <ellipse
+                cx="766"
+                cy="352"
+                rx="4"
+                ry="1.5"
+                fill="#60a5fa"
+                opacity="0.8"
+              >
+                <animate
+                  attributeName="rx"
+                  values="3;7;3"
+                  dur="1.2s"
+                  repeatCount="indefinite"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0.8;0;0.8"
+                  dur="1.2s"
+                  repeatCount="indefinite"
+                />
               </ellipse>
             </g>
           </svg>

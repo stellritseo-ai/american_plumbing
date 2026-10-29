@@ -80,14 +80,16 @@ function Counter({
 
 export function About() {
   return (
-    <section id="about" className="relative py-12 sm:py-16 lg:py-[70px] overflow-hidden">
+    <section
+      id="about"
+      className="relative py-12 sm:py-16 lg:py-[70px] overflow-hidden"
+    >
       {/* Subtle background blobs */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/[0.04] rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-electric/[0.04] rounded-full blur-3xl pointer-events-none" />
 
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-12 gap-10 sm:gap-12 lg:gap-20 items-center">
-
           {/* ── LEFT COLUMN: Image Collage ── */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -98,7 +100,6 @@ export function About() {
           >
             {/* Outer wrapper: top padding reserves space for the badge */}
             <div className="relative pt-7 sm:pt-8 pl-2 sm:pl-4">
-
               {/* Experience Badge — anchored top-left, always visible */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -119,7 +120,11 @@ export function About() {
               {/* Primary Image */}
               <motion.div
                 animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 whileHover={{ scale: 1.015 }}
                 className="relative aspect-[4/5] sm:aspect-[5/6] lg:aspect-[4/5] overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] border border-neutral-200/10 shadow-glow cursor-pointer transition-[box-shadow] duration-300"
               >
@@ -137,7 +142,12 @@ export function About() {
               {/* Secondary Overlay Image — hidden on xs, visible sm+ */}
               <motion.div
                 animate={{ y: [0, 5, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.3,
+                }}
                 whileHover={{ scale: 1.04 }}
                 className="absolute -bottom-6 -right-2 sm:-bottom-8 sm:-right-6 w-32 sm:w-48 lg:w-52 aspect-square overflow-hidden rounded-[1.5rem] sm:rounded-[2rem] ring-4 sm:ring-8 ring-background shadow-soft hidden sm:block cursor-pointer transition-[box-shadow] duration-300 z-10"
               >
@@ -197,11 +207,11 @@ export function About() {
                 style={{ lineHeight: "33px", marginBottom: "-15px" }}
                 className="mt-4 sm:mt-6 text-sm sm:text-base text-muted-foreground leading-relaxed font-semibold max-w-2xl"
               >
-                American Commercial Plumbing LLC is a family-run enterprise led by
-                owner Shawn Holton, built on a heritage of clean engineering,
-                integrity, and client satisfaction. From commercial sewer operations
-                to standard home kitchen leaks, we deliver flat-rate diagnostic
-                answers.
+                American Commercial Plumbing LLC is a family-run enterprise led
+                by owner Shawn Holton, built on a heritage of clean engineering,
+                integrity, and client satisfaction. From commercial sewer
+                operations to standard home kitchen leaks, we deliver flat-rate
+                diagnostic answers.
               </p>
             </motion.div>
 
@@ -291,5 +301,3 @@ export function About() {
     </section>
   );
 }
-
-

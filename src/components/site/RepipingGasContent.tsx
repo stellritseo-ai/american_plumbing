@@ -356,8 +356,9 @@ export function RepipingGasContent() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg sm:text-xl text-slate-600 leading-relaxed font-normal mb-8 max-w-2xl mx-auto"
             >
-              From whole-home repiping to safe, code-compliant gas line installation and repair,
-              American Commercial Plumbing LLC delivers durable, long-term solutions for Tucson homes and businesses.
+              From whole-home repiping to safe, code-compliant gas line
+              installation and repair, American Commercial Plumbing LLC delivers
+              durable, long-term solutions for Tucson homes and businesses.
             </motion.p>
 
             {/* Call to Action Buttons */}
@@ -432,30 +433,41 @@ export function RepipingGasContent() {
                 <span className="text-primary">Better with Age.</span>
               </h2>
               <p className="text-slate-600 leading-relaxed text-base sm:text-lg mb-6">
-                Your home's plumbing system is only as reliable as the pipes that carry the water.
-                Over time, even the most well-installed pipes deteriorate due to age, internal corrosion,
-                Southern Arizona's hard water mineral buildup, and shifting desert clay soil.
+                Your home's plumbing system is only as reliable as the pipes
+                that carry the water. Over time, even the most well-installed
+                pipes deteriorate due to age, internal corrosion, Southern
+                Arizona's hard water mineral buildup, and shifting desert clay
+                soil.
               </p>
               <p className="text-slate-600 leading-relaxed text-base mb-6">
-                In Tucson and Pima County, many homes built before 1990 still rely on galvanized steel or defective
-                polybutylene pipes that were never designed to last this long. The result? Discolored water, low water pressure,
-                frequent pinhole leaks, and the constant fear of a major flood.
+                In Tucson and Pima County, many homes built before 1990 still
+                rely on galvanized steel or defective polybutylene pipes that
+                were never designed to last this long. The result? Discolored
+                water, low water pressure, frequent pinhole leaks, and the
+                constant fear of a major flood.
               </p>
               <p className="text-slate-600 leading-relaxed text-base mb-8">
-                Patching one leak after another quickly becomes an expensive, losing battle. At some point, the smartest
-                and most cost-effective financial decision is to replace the entire system with modern, high-efficiency piping.
+                Patching one leak after another quickly becomes an expensive,
+                losing battle. At some point, the smartest and most
+                cost-effective financial decision is to replace the entire
+                system with modern, high-efficiency piping.
               </p>
 
               {/* Shawn Holton / Clean Engineering Note */}
               <div className="p-6 rounded-2xl bg-blue-50/70 border border-blue-200/70 text-slate-700 text-sm leading-relaxed">
                 <div className="flex items-center gap-2.5 mb-2 font-black text-navy">
                   <ShieldCheck className="w-4.5 h-4.5 text-primary" />
-                  <span>25+ Years of Tucson Experience · Led by Shawn Holton</span>
+                  <span>
+                    25+ Years of Tucson Experience · Led by Shawn Holton
+                  </span>
                 </div>
-                At American Commercial Plumbing LLC, we specialize in whole-home and commercial repiping.
-                Led by owner Shawn Holton, our family-run business has been serving Tucson since 1999.
-                We bring 25+ years of clean engineering expertise to every repiping project, ensuring your new system
-                is installed to code, built to last, and backed by our commitment to complete customer satisfaction.
+                At American Commercial Plumbing LLC, we specialize in whole-home
+                and commercial repiping. Led by owner Shawn Holton, our
+                family-run business has been serving Tucson since 1999. We bring
+                25+ years of clean engineering expertise to every repiping
+                project, ensuring your new system is installed to code, built to
+                last, and backed by our commitment to complete customer
+                satisfaction.
               </div>
             </div>
 
@@ -480,7 +492,8 @@ export function RepipingGasContent() {
                         Clean Engineering Standards
                       </div>
                       <div className="text-[11px] text-slate-600 font-medium">
-                        Custom soldered copper manifolds & premium PEX piping engineered for zero-leak longevity.
+                        Custom soldered copper manifolds & premium PEX piping
+                        engineered for zero-leak longevity.
                       </div>
                     </div>
                   </div>
@@ -503,8 +516,9 @@ export function RepipingGasContent() {
               Whole-Home & Commercial Repiping
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We provide complete repiping solutions for residential and commercial properties,
-              using only certified, highest-quality materials.
+              We provide complete repiping solutions for residential and
+              commercial properties, using only certified, highest-quality
+              materials.
             </p>
           </div>
 
@@ -552,7 +566,8 @@ export function RepipingGasContent() {
                 Pipe Material Upgrades: PEX vs. Copper
               </h3>
               <p className="text-xs sm:text-sm text-slate-500 font-medium">
-                We replace outdated galvanized and polybutylene pipes with modern, reliable options.
+                We replace outdated galvanized and polybutylene pipes with
+                modern, reliable options.
               </p>
             </div>
 
@@ -564,7 +579,9 @@ export function RepipingGasContent() {
                 >
                   <div>
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                      <h4 className="text-lg font-black text-navy">{mat.name}</h4>
+                      <h4 className="text-lg font-black text-navy">
+                        {mat.name}
+                      </h4>
                       <span className="text-[10px] font-black uppercase px-2.5 py-0.5 rounded bg-primary/10 text-primary border border-primary/20">
                         {mat.badge}
                       </span>
@@ -574,7 +591,10 @@ export function RepipingGasContent() {
                     </p>
                     <div className="space-y-2.5">
                       {mat.pros.map((pro, pIdx) => (
-                        <div key={pIdx} className="flex items-start gap-2.5 text-xs text-slate-700 font-medium">
+                        <div
+                          key={pIdx}
+                          className="flex items-start gap-2.5 text-xs text-slate-700 font-medium"
+                        >
                           <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
                           <span>{pro}</span>
                         </div>
@@ -583,7 +603,9 @@ export function RepipingGasContent() {
                   </div>
                   <div className="mt-6 pt-4 border-t border-slate-200/80 text-[11px] font-bold text-navy flex items-center justify-between">
                     <span>Clean Engineering Spec:</span>
-                    <span className="text-primary font-black">ASTM Certified</span>
+                    <span className="text-primary font-black">
+                      ASTM Certified
+                    </span>
                   </div>
                 </div>
               ))}
@@ -604,8 +626,9 @@ export function RepipingGasContent() {
               Signs You Need Repiping
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              Don't wait for a catastrophic water line rupture. If you notice any of these 8 warning signs,
-              it's time to consider a professional whole-home repiping inspection:
+              Don't wait for a catastrophic water line rupture. If you notice
+              any of these 8 warning signs, it's time to consider a professional
+              whole-home repiping inspection:
             </p>
           </div>
 
@@ -647,8 +670,10 @@ export function RepipingGasContent() {
               Safe, Code-Compliant Gas Line Solutions
             </h2>
             <p className="text-slate-300 text-base sm:text-lg">
-              Natural gas is a highly efficient and convenient energy source, but it is also hazardous
-              if not installed and tested by certified professionals. We bring complete safety and code compliance to every line.
+              Natural gas is a highly efficient and convenient energy source,
+              but it is also hazardous if not installed and tested by certified
+              professionals. We bring complete safety and code compliance to
+              every line.
             </p>
           </div>
 
@@ -692,7 +717,8 @@ export function RepipingGasContent() {
                   Smell Gas or Have an Active Gas Leak Emergency?
                 </h4>
                 <p className="text-xs text-slate-300">
-                  Evacuate immediately. Do not use light switches. Call us 24/7 from a safe location.
+                  Evacuate immediately. Do not use light switches. Call us 24/7
+                  from a safe location.
                 </p>
               </div>
             </div>
@@ -718,7 +744,8 @@ export function RepipingGasContent() {
               The Repiping & Gas Line Process
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              We believe in transparent, organized, and clean work. Here is what you can expect from our certified team:
+              We believe in transparent, organized, and clean work. Here is what
+              you can expect from our certified team:
             </p>
           </div>
 
@@ -769,8 +796,9 @@ export function RepipingGasContent() {
               The American Commercial Plumbing Advantage
             </h2>
             <p className="text-slate-600 text-base sm:text-lg">
-              When you choose us for repiping or gas line work, you are partnering with certified specialists
-              committed to clean engineering, safety, and lasting quality.
+              When you choose us for repiping or gas line work, you are
+              partnering with certified specialists committed to clean
+              engineering, safety, and lasting quality.
             </p>
           </div>
 
@@ -801,7 +829,10 @@ export function RepipingGasContent() {
       </section>
 
       {/* ── 9. INTERACTIVE CONSULTATION / ESTIMATE FORM ── */}
-      <section id="repipe-form" className="py-20 lg:py-28 bg-white scroll-mt-20">
+      <section
+        id="repipe-form"
+        className="py-20 lg:py-28 bg-white scroll-mt-20"
+      >
         <div className="mx-auto w-[90%] max-w-5xl">
           <div className="p-8 sm:p-12 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-xl">
             <div className="max-w-2xl mx-auto text-center mb-10">
@@ -813,8 +844,9 @@ export function RepipingGasContent() {
                 Schedule a Repiping or Gas Consultation
               </h2>
               <p className="text-slate-600 text-sm sm:text-base">
-                Request a comprehensive evaluation of your water or gas system with 100% upfront flat-rate pricing.
-                For urgent gas leaks or pipe bursts, please call{" "}
+                Request a comprehensive evaluation of your water or gas system
+                with 100% upfront flat-rate pricing. For urgent gas leaks or
+                pipe bursts, please call{" "}
                 <a
                   href="tel:+15202212010"
                   className="font-bold text-primary underline hover:text-cta"
@@ -838,8 +870,10 @@ export function RepipingGasContent() {
                   Consultation Request Received!
                 </h3>
                 <p className="text-sm text-slate-600 mb-6">
-                  Thank you, <strong>{formData.name}</strong>. Our repiping and gas project manager will call you shortly at{" "}
-                  <strong>{formData.phone}</strong> to confirm your on-site assessment.
+                  Thank you, <strong>{formData.name}</strong>. Our repiping and
+                  gas project manager will call you shortly at{" "}
+                  <strong>{formData.phone}</strong> to confirm your on-site
+                  assessment.
                 </p>
                 <a
                   href="tel:+15202212010"
@@ -908,16 +942,31 @@ export function RepipingGasContent() {
                     <select
                       value={formData.serviceType}
                       onChange={(e) =>
-                        setFormData({ ...formData, serviceType: e.target.value })
+                        setFormData({
+                          ...formData,
+                          serviceType: e.target.value,
+                        })
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      <option value="Whole-Home Repipe (PEX/Copper)">Whole-Home Repipe (PEX/Copper)</option>
-                      <option value="Commercial Facility Repiping">Commercial Facility Repiping</option>
-                      <option value="Gas Line Installation (Appliance/Pool/Grill)">Gas Line Installation (Appliance/Pool/Grill)</option>
-                      <option value="Gas Line Repair & Leak Testing">Gas Line Repair & Leak Testing</option>
-                      <option value="Partial / Addition Repiping">Partial / Addition Repiping</option>
-                      <option value="Water Main Line Replacement">Water Main Line Replacement</option>
+                      <option value="Whole-Home Repipe (PEX/Copper)">
+                        Whole-Home Repipe (PEX/Copper)
+                      </option>
+                      <option value="Commercial Facility Repiping">
+                        Commercial Facility Repiping
+                      </option>
+                      <option value="Gas Line Installation (Appliance/Pool/Grill)">
+                        Gas Line Installation (Appliance/Pool/Grill)
+                      </option>
+                      <option value="Gas Line Repair & Leak Testing">
+                        Gas Line Repair & Leak Testing
+                      </option>
+                      <option value="Partial / Addition Repiping">
+                        Partial / Addition Repiping
+                      </option>
+                      <option value="Water Main Line Replacement">
+                        Water Main Line Replacement
+                      </option>
                     </select>
                   </div>
                 </div>
@@ -934,11 +983,21 @@ export function RepipingGasContent() {
                       }
                       className="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-navy text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
                     >
-                      <option value="Built 1970-1990 (High Priority)">Built 1970-1990 (Galvanized/Polybutylene Risk)</option>
-                      <option value="Built Before 1970">Built Before 1970 (Galvanized Steel)</option>
-                      <option value="Built 1990-2010">Built 1990-2010 (Copper/Early PEX)</option>
-                      <option value="Built After 2010">Built After 2010 (Modern Addition)</option>
-                      <option value="Commercial Building">Commercial Building</option>
+                      <option value="Built 1970-1990 (High Priority)">
+                        Built 1970-1990 (Galvanized/Polybutylene Risk)
+                      </option>
+                      <option value="Built Before 1970">
+                        Built Before 1970 (Galvanized Steel)
+                      </option>
+                      <option value="Built 1990-2010">
+                        Built 1990-2010 (Copper/Early PEX)
+                      </option>
+                      <option value="Built After 2010">
+                        Built After 2010 (Modern Addition)
+                      </option>
+                      <option value="Commercial Building">
+                        Commercial Building
+                      </option>
                     </select>
                   </div>
 
@@ -992,7 +1051,8 @@ export function RepipingGasContent() {
                     )}
                   </button>
                   <p className="text-[11px] text-slate-500 mt-2">
-                    🔒 100% upfront pricing. Clean engineering. Arizona ROC #321353.
+                    🔒 100% upfront pricing. Clean engineering. Arizona ROC
+                    #321353.
                   </p>
                 </div>
               </form>
@@ -1013,7 +1073,8 @@ export function RepipingGasContent() {
               Frequently Asked Questions (Repiping & Gas Lines)
             </h2>
             <p className="text-slate-600 text-base">
-              Clear, transparent answers from Tucson's premier repiping and gas line specialists.
+              Clear, transparent answers from Tucson's premier repiping and gas
+              line specialists.
             </p>
           </div>
 
@@ -1076,8 +1137,8 @@ export function RepipingGasContent() {
           </h2>
 
           <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed font-medium">
-            Whether you need whole-home repiping or expert gas line services, trust Tucson’s most
-            experienced plumbing professionals.
+            Whether you need whole-home repiping or expert gas line services,
+            trust Tucson’s most experienced plumbing professionals.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

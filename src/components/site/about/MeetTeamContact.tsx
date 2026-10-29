@@ -43,7 +43,10 @@ export function MeetTeamContact() {
   };
 
   return (
-    <section id="estimate-form" className="relative py-20 lg:py-28 overflow-hidden bg-white">
+    <section
+      id="estimate-form"
+      className="relative py-20 lg:py-28 overflow-hidden bg-white"
+    >
       <div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none" />
 
       <div className="mx-auto w-[90%] max-w-7xl relative z-10">
@@ -59,8 +62,8 @@ export function MeetTeamContact() {
           </h2>
 
           <p className="mt-5 text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
-            Join the thousands of satisfied Tucson homeowners and businesses who trust American
-            Commercial Plumbing LLC for their plumbing needs.
+            Join the thousands of satisfied Tucson homeowners and businesses who
+            trust American Commercial Plumbing LLC for their plumbing needs.
           </p>
         </div>
 
@@ -89,8 +92,8 @@ export function MeetTeamContact() {
                 American Commercial Plumbing LLC
               </h3>
               <p className="mt-2 text-sm text-slate-300 font-medium leading-relaxed">
-                Founded & operated by Shawn Holton. Serving Southern Arizona with licensed master
-                plumbing craftsmanship.
+                Founded & operated by Shawn Holton. Serving Southern Arizona
+                with licensed master plumbing craftsmanship.
               </p>
 
               {/* Contact Information List */}
@@ -146,7 +149,8 @@ export function MeetTeamContact() {
                       Headquarters Address
                     </div>
                     <div className="text-sm sm:text-base font-extrabold text-white leading-snug">
-                      226 E Forrest Feezor St<br />
+                      226 E Forrest Feezor St
+                      <br />
                       Vail, AZ 85641
                     </div>
                   </div>
@@ -213,9 +217,10 @@ export function MeetTeamContact() {
                     Service Request Submitted!
                   </h3>
                   <p className="mt-3 text-base text-slate-600 font-medium max-w-md mx-auto leading-relaxed">
-                    Thank you, {formData.name || "valued neighbor"}! Shawn Holton and our Tucson
-                    dispatch team have received your details. We will contact you within the hour to
-                    confirm your free estimate.
+                    Thank you, {formData.name || "valued neighbor"}! Shawn
+                    Holton and our Tucson dispatch team have received your
+                    details. We will contact you within the hour to confirm your
+                    free estimate.
                   </p>
                   <div className="mt-8 flex justify-center gap-4">
                     <button
@@ -239,7 +244,8 @@ export function MeetTeamContact() {
                       Request Service & Free Estimate
                     </h3>
                     <p className="mt-1 text-sm text-slate-500 font-medium">
-                      Fill out the form below. Transparent pricing and rapid response guaranteed.
+                      Fill out the form below. Transparent pricing and rapid
+                      response guaranteed.
                     </p>
                   </div>
 
@@ -253,7 +259,9 @@ export function MeetTeamContact() {
                         type="text"
                         required
                         value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, name: e.target.value })
+                        }
                         placeholder="Shawn Holton"
                         className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300/80 text-navy text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all shadow-xs"
                       />
@@ -268,7 +276,9 @@ export function MeetTeamContact() {
                         type="tel"
                         required
                         value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, phone: e.target.value })
+                        }
                         placeholder="(520) 221-2010"
                         className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300/80 text-navy text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all shadow-xs"
                       />
@@ -285,7 +295,9 @@ export function MeetTeamContact() {
                         type="email"
                         required
                         value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, email: e.target.value })
+                        }
                         placeholder="you@company.com"
                         className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300/80 text-navy text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all shadow-xs"
                       />
@@ -298,11 +310,20 @@ export function MeetTeamContact() {
                       </label>
                       <select
                         value={formData.serviceType}
-                        onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            serviceType: e.target.value,
+                          })
+                        }
                         className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300/80 text-navy text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all shadow-xs cursor-pointer"
                       >
-                        <option value="Commercial Plumbing">Commercial Plumbing</option>
-                        <option value="Residential Plumbing">Residential Plumbing</option>
+                        <option value="Commercial Plumbing">
+                          Commercial Plumbing
+                        </option>
+                        <option value="Residential Plumbing">
+                          Residential Plumbing
+                        </option>
                         <option value="Water Heater Repair & Installation">
                           Water Heater Repair & Installation
                         </option>
@@ -312,9 +333,15 @@ export function MeetTeamContact() {
                         <option value="Drain Cleaning & Hydro Jetting">
                           Drain Cleaning & Hydro Jetting
                         </option>
-                        <option value="Leak Detection & Repair">Leak Detection & Repair</option>
-                        <option value="Gas Line Services">Gas Line Services</option>
-                        <option value="Emergency Repairs (24/7)">Emergency Repairs (24/7)</option>
+                        <option value="Leak Detection & Repair">
+                          Leak Detection & Repair
+                        </option>
+                        <option value="Gas Line Services">
+                          Gas Line Services
+                        </option>
+                        <option value="Emergency Repairs (24/7)">
+                          Emergency Repairs (24/7)
+                        </option>
                       </select>
                     </div>
                   </div>
@@ -327,7 +354,9 @@ export function MeetTeamContact() {
                     <textarea
                       rows={3}
                       value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, message: e.target.value })
+                      }
                       placeholder="Let us know what fixtures, drains, or systems are affected..."
                       className="w-full px-4 py-3.5 rounded-xl bg-white border border-slate-300/80 text-navy text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all shadow-xs resize-none"
                     />
@@ -340,7 +369,10 @@ export function MeetTeamContact() {
                       id="emergency-check"
                       checked={formData.isEmergency}
                       onChange={(e) =>
-                        setFormData({ ...formData, isEmergency: e.target.checked })
+                        setFormData({
+                          ...formData,
+                          isEmergency: e.target.checked,
+                        })
                       }
                       className="h-4 w-4 rounded text-cta focus:ring-cta border-slate-300 cursor-pointer"
                     />
@@ -362,7 +394,9 @@ export function MeetTeamContact() {
                       className="flex-1 min-w-[200px] inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-cta text-white font-black text-sm uppercase tracking-wider shadow-cta hover:brightness-110 active:scale-95 transition-all cursor-pointer disabled:opacity-50"
                     >
                       <Send className="h-4 w-4" />
-                      <span>{submitting ? "Sending Request..." : "Request Service"}</span>
+                      <span>
+                        {submitting ? "Sending Request..." : "Request Service"}
+                      </span>
                     </motion.button>
 
                     <motion.a
@@ -377,7 +411,8 @@ export function MeetTeamContact() {
                   </div>
 
                   <p className="text-center text-[11px] text-slate-400 font-semibold">
-                    100% Upfront & Honest Guarantee · No Hidden Fees · ROC #321353
+                    100% Upfront & Honest Guarantee · No Hidden Fees · ROC
+                    #321353
                   </p>
                 </form>
               )}

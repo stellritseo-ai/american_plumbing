@@ -119,7 +119,7 @@ export function validateLeadSubmission(
     hp_fax?: string;
     formStartTime?: number;
   },
-  clientIp?: string
+  clientIp?: string,
 ): AntiSpamResult {
   runCleanup();
 
@@ -133,7 +133,11 @@ export function validateLeadSubmission(
   // ── LAYER 1: HONEYPOT TRAP ──
   // Bots auto-fill all visible and hidden form fields they find in the DOM.
   // Real humans will never interact with honeypot fields.
-  if (data.hp_company?.trim() || data.hp_website?.trim() || data.hp_fax?.trim()) {
+  if (
+    data.hp_company?.trim() ||
+    data.hp_website?.trim() ||
+    data.hp_fax?.trim()
+  ) {
     console.warn("[AntiSpam] Bot blocked: Honeypot field filled.");
     return { allowed: false, reason: "honeypot_triggered" };
   }
@@ -144,7 +148,9 @@ export function validateLeadSubmission(
   if (data.formStartTime && typeof data.formStartTime === "number") {
     const elapsed = now - data.formStartTime;
     if (elapsed < 2000) {
-      console.warn(`[AntiSpam] Bot blocked: Form submitted too fast (${elapsed}ms).`);
+      console.warn(
+        `[AntiSpam] Bot blocked: Form submitted too fast (${elapsed}ms).`,
+      );
       return { allowed: false, reason: "submitted_too_fast" };
     }
     // Invalid timestamp in future
@@ -161,8 +167,14 @@ export function validateLeadSubmission(
   const previousSubmissionTime = recentSubmissions.get(submissionKey);
 
   if (previousSubmissionTime && now - previousSubmissionTime < 60 * 1000) {
-    console.warn(`[AntiSpam] Duplicate submission detected within 60s for: "${submissionKey}". Suppressing duplicate email.`);
-    return { allowed: false, isDuplicate: true, reason: "duplicate_submission_within_60s" };
+    console.warn(
+      `[AntiSpam] Duplicate submission detected within 60s for: "${submissionKey}". Suppressing duplicate email.`,
+    );
+    return {
+      allowed: false,
+      isDuplicate: true,
+      reason: "duplicate_submission_within_60s",
+    };
   }
 
   // ── LAYER 4: RATE LIMITING (PER IP) ──
@@ -170,7 +182,9 @@ export function validateLeadSubmission(
     const timestamps = ipRateLimits.get(clientIp) || [];
     const recentFromIp = timestamps.filter((t) => now - t < 10 * 60 * 1000);
     if (recentFromIp.length >= 4) {
-      console.warn(`[AntiSpam] Rate limit exceeded for IP: ${clientIp} (${recentFromIp.length} in 10m).`);
+      console.warn(
+        `[AntiSpam] Rate limit exceeded for IP: ${clientIp} (${recentFromIp.length} in 10m).`,
+      );
       return { allowed: false, reason: "rate_limit_exceeded" };
     }
     recentFromIp.push(now);
@@ -180,7 +194,11 @@ export function validateLeadSubmission(
   // ── LAYER 5: SPAM CONTENT HEURISTICS ──
   // A) Cyrillic script: Tucson, Arizona local plumbing site does not expect Cyrillic spam
   const cyrillicRegex = /[\u0400-\u04FF]/;
-  if (cyrillicRegex.test(name) || cyrillicRegex.test(message) || cyrillicRegex.test(email)) {
+  if (
+    cyrillicRegex.test(name) ||
+    cyrillicRegex.test(message) ||
+    cyrillicRegex.test(email)
+  ) {
     console.warn("[AntiSpam] Spam blocked: Cyrillic characters detected.");
     return { allowed: false, reason: "cyrillic_content" };
   }
@@ -188,12 +206,18 @@ export function validateLeadSubmission(
   // B) Multiple promotional URLs (plumbing customers rarely include 2+ web links in problem description)
   const urlMatches = fullText.match(/https?:\/\/|www\.|\[url=/g);
   if (urlMatches && urlMatches.length >= 2) {
-    console.warn(`[AntiSpam] Spam blocked: Excessive URLs detected (${urlMatches.length}).`);
+    console.warn(
+      `[AntiSpam] Spam blocked: Excessive URLs detected (${urlMatches.length}).`,
+    );
     return { allowed: false, reason: "excessive_links" };
   }
 
   // C) Name field contains URL (classic bot giveaway)
-  if (name.includes("http://") || name.includes("https://") || name.includes("www.")) {
+  if (
+    name.includes("http://") ||
+    name.includes("https://") ||
+    name.includes("www.")
+  ) {
     console.warn("[AntiSpam] Spam blocked: URL in name field.");
     return { allowed: false, reason: "url_in_name" };
   }
@@ -201,7 +225,9 @@ export function validateLeadSubmission(
   // D) Known spam keywords
   for (const keyword of SPAM_KEYWORDS) {
     if (fullText.includes(keyword)) {
-      console.warn(`[AntiSpam] Spam blocked: Contains spam keyword "${keyword}".`);
+      console.warn(
+        `[AntiSpam] Spam blocked: Contains spam keyword "${keyword}".`,
+      );
       return { allowed: false, reason: `spam_keyword_${keyword}` };
     }
   }
@@ -210,7 +236,9 @@ export function validateLeadSubmission(
   if (email) {
     const domain = email.split("@")[1]?.toLowerCase();
     if (domain && SPAM_EMAIL_DOMAINS.includes(domain)) {
-      console.warn(`[AntiSpam] Spam blocked: High-risk spam domain "@${domain}".`);
+      console.warn(
+        `[AntiSpam] Spam blocked: High-risk spam domain "@${domain}".`,
+      );
       return { allowed: false, reason: "spam_email_domain" };
     }
   }

@@ -33,7 +33,8 @@ function RepipingGasPage() {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Repiping & Gas Line Services",
-    serviceType: "Whole-Home & Commercial Repiping, PEX & Copper Material Upgrades, Code-Compliant Gas Line Installation & Leak Repair",
+    serviceType:
+      "Whole-Home & Commercial Repiping, PEX & Copper Material Upgrades, Code-Compliant Gas Line Installation & Leak Repair",
     provider: {
       "@type": "PlumbingService",
       name: "American Commercial Plumbing LLC",
@@ -159,7 +160,8 @@ export const Route = createFileRoute("/repiping-gas-lines")({
   head: () => ({
     meta: [
       {
-        title: "Repiping & Gas Line Installation Tucson, AZ | American Commercial Plumbing LLC",
+        title:
+          "Repiping & Gas Line Installation Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "description",
@@ -173,7 +175,8 @@ export const Route = createFileRoute("/repiping-gas-lines")({
       },
       {
         property: "og:title",
-        content: "Repiping & Gas Line Services | American Commercial Plumbing LLC",
+        content:
+          "Repiping & Gas Line Services | American Commercial Plumbing LLC",
       },
       {
         property: "og:description",
@@ -198,7 +201,8 @@ export const Route = createFileRoute("/repiping-gas-lines")({
       },
       {
         name: "twitter:title",
-        content: "Repiping & Gas Line Installation Tucson, AZ | American Commercial Plumbing LLC",
+        content:
+          "Repiping & Gas Line Installation Tucson, AZ | American Commercial Plumbing LLC",
       },
       {
         name: "twitter:description",
